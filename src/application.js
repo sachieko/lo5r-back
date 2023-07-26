@@ -5,6 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT;
 const db = require('../db/connection');
+const chalk = require('chalk');
 
 // Set up middleware and cors
 const corsOptions = {
@@ -19,7 +20,7 @@ app.get("/questions", (req, res) => {
   db.query(`
   SELECT * from questions`, (err, result) => {
     if (err) {
-      console.error('Error executing query:', err);
+      console.error(chalk.red('Error executing query:'), err);
       res.status(500).send('Internal Server Error');
       return;
     }
@@ -28,5 +29,5 @@ app.get("/questions", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+  console.log(chalk.green(`Server is listening on port ${port}`));
 });
