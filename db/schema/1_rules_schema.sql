@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS rules CASCADE;
+
+CREATE TABLE rules (
+  id SERIAL PRIMARY KEY,
+  question_id INTEGER REFERENCES questions(id) ON DELETE CASCADE,
+
+  title VARCHAR(100) NOT NULL,
+  detail TEXT NOT NULL,
+  image_url VARCHAR(100) default NULL
+);
