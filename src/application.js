@@ -8,7 +8,7 @@ const db = require('../db/connection');
 
 // Set up middleware
 const corsOptions = {
-  origin: HOSTURL,
+  origin: process.env.HOSTURL,
   methods: 'GET, POST, PUT',
 };
 app.use(cors(corsOptions));
