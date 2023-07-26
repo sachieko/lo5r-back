@@ -1,20 +1,14 @@
 require('dotenv').config();
 const express = require('express');
-const { Pool } = require('pg');
 const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT;
+const db = require('../db/connection');
 
-const db = new Pool({
-  connectionString: process.env.DBURL,
-  ssl: {
-    rejectUnauthorized: false
-  }
-});
 // Set up middleware
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: HOSTURL,
   methods: 'GET, POST, PUT',
 };
 app.use(cors(corsOptions));
