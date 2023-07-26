@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT;
 const db = require('../db/connection');
 
-// Set up middleware
+// Set up middleware and cors
 const corsOptions = {
   origin: process.env.HOSTURL,
   methods: 'GET, POST, PUT',
@@ -14,8 +14,8 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
+// Query routes for API below
 app.get("/questions", (req, res) => {
-  console.log('query start');
   db.query(`
   SELECT * from questions`, (err, result) => {
     if (err) {
