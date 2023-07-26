@@ -1,4 +1,11 @@
 {
+  "name": "lo5r-backend",
+  "version": "1.0.0",
+  "main": "src/application.js",
+  "scripts": {
+    "start": "node src/application.js",
+    "db:reset": "node bin/resetdb.js"
+  },
   "dependencies": {
     "chalk": "^5.3.0",
     "cors": "^2.8.5",
