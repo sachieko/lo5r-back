@@ -6,7 +6,6 @@ const chalk = require('chalk');
 // GET /questions/id
 router.get('/:id', (req, res) => {
   const id = req.params.id;
-  console.log(chalk.red('ID:', id));
   db.query(`
   SELECT questions.title AS title, questions.info AS info, choices.id AS id, choices.choice AS choice, 
   choices.stat AS stat, choices.info AS choiceinfo FROM questions
@@ -18,7 +17,7 @@ router.get('/:id', (req, res) => {
       res.status(500).send('Internal Server Error');
       return;
     }
-    console.log(chalk.green('All good with the param!'));
+    // console.log(chalk.green('Route Questions with param! Results:', result.rows.length));
     res.json(result.rows);
   });
 });
@@ -33,7 +32,7 @@ router.get('/', (req, res) => {
       res.status(500).send('Internal Server Error');
       return;
     }
-    console.log(chalk.green('All good!'));
+    // console.log(chalk.green('Route Questions No Params!'));
     res.json(result.rows);
   });
 });
