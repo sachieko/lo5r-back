@@ -4,7 +4,7 @@ CREATE TABLE choices (
   id SERIAL PRIMARY KEY,
   question_id INTEGER REFERENCES questions(id) ON DELETE CASCADE,
 
-  choice VARCHAR(100) NOT NULL,
+  choice VARCHAR(255) NOT NULL,
   stat VARCHAR(255) NOT NULL,
   info TEXT
 );
