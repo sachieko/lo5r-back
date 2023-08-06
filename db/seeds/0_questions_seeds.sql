@@ -1,8 +1,9 @@
 -- Questions table seeds
-INSERT INTO questions (title, detail, image_url)
+INSERT INTO questions (title, detail, info)
 VALUES
 ('1. What clan do you belong to?', 
-'Lorum ipsum and stuff', NULL),
+'Find one of the great clans of Rokugan which your character will be a member of', 
+'Choose a clan which you personally find interesting from a storytelling point, consider whether your character will fit in or chafe compared to the status quo.'),
 ('2. What family do you belong to?',
 'Lorum ipsum and Crab Clan!', NULL),
 ('3. What school do you belong to and what roles does it fall into?',
