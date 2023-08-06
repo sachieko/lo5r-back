@@ -116,7 +116,7 @@ VALUES
 (4, 'Your grace, eloquence, or empathy', '+1 Air Ring', NULL),
 (4, 'Your adaptability, friendliness, or awareness', '+1 Water Ring', NULL),
 (4, 'Your thoroughness, patience, or calm', '+1 Earth Ring', NULL),
-(4, 'Your self-awareness, insight, or through mysticism', '+1 Void Ring', NULL);
+(4, 'Your self-awareness, insight, or mysticism', '+1 Void Ring', NULL);
 
 INSERT INTO choices (question_id, choice, stat, info)
 VALUES
