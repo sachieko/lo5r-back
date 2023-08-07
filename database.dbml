@@ -1,0 +1,37 @@
+// This project's ERD can be viewed on https://dbdiagram.io with this file.
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table questions {
+  id serial [primary key]
+
+  title varchar(100) [not null]
+  detail text [not null]
+  info text
+  image_url varchar(100) [default:null]
+}
+
+Table rules {
+  id serial [primary key]
+
+  title varchar(100) [not null]
+  detail text [not null]
+  image_url varchar(100) [default:null]
+}
+
+Table lore {
+  id serial [primary key]
+
+  title varchar(100) [not null]
+  detail text [not null]
+  image_url varchar(100) [default:null]
+}
+
+Table choices {
+  id serial [primary key]
+  question_id integer
+  title varchar(100) [not null]
+  detail text [not null]
+  image_url varchar(100) [default:null]
+}
+
+Ref: questions.id < choices.question_id
