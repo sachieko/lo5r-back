@@ -1,4 +1,4 @@
-// This project's ERD can be viewed on https://dbdiagram.io with this file.
+// Use DBML to define your database structure
 // Docs: https://dbml.dbdiagram.io/docs
 
 Table questions {
@@ -34,4 +34,14 @@ Table choices {
   image_url varchar(100) [default:null]
 }
 
+Table cards {
+  id serial [primary key]
+  rule_id integer [default: null]
+  lore_id integer [default: null]
+  title varchar(100) [not null]
+  content text [not null]
+}
+
 Ref: questions.id < choices.question_id
+Ref: cards.rule_id > rules.id
+Ref: cards.lore_id > lore.id
