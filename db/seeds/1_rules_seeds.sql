@@ -1,0 +1,1 @@
+-- Rule seeds will be separated by rule, cards will relate to EITHER rules OR lore but not both
