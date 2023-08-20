@@ -9,7 +9,7 @@ router.get('/:id', async(req, res) => {
 });
 
 // GET /questions
-router.get('/', (req, res) => {
+router.get('/', async(req, res) => {
   queryQuestions(res);
 });
 
