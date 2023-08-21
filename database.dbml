@@ -15,6 +15,7 @@ Table rules {
 
   title varchar(100) [not null]
   detail text [not null]
+  category varchar(50) [not null]
   image_url varchar(100) [default:null]
 }
 
