@@ -18,9 +18,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 const questionRoutes = require('./routes/questions');
+const rulesRoutes = require('./routes/rules');
 
 // Mount routes
 app.use('/questions', questionRoutes);
+app.use('/rules', rulesRoutes);
 
 app.listen(PORT, () => {
   console.log(chalk.green(`Server is listening on port ${PORT}`));

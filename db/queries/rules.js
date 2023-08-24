@@ -3,11 +3,11 @@ const chalk = require('chalk');
 
 const queryRule = async function(id, res) {
   return db.query(`
-    SELECT rules.title AS title, rules.detail AS detail, rules.imague_url AS image, cards.id AS cardId, 
-    cards.title AS cardTitle, cards.content AS cardContent FROM rules
+    SELECT rules.title AS title, rules.detail AS detail, rules.image_url AS image, cards.id AS id, 
+    cards.title AS header, cards.content AS content FROM rules
     JOIN cards ON rules.id = rule_id
     WHERE rule_id = $1
-    ORDER BY cardsId;`, [id], (err, result) => {
+    ORDER BY cards.id;`, [id], (err, result) => {
       if (err) {
         console.error(chalk.red('Error executing query:'), err);
         res.status(500).send('Internal Server Error');
