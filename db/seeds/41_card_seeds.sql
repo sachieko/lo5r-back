@@ -7,7 +7,10 @@ VALUES
 (1, 'Resolving Opportunities', 'Players will often have techniques as well as default options to spend opportunity on a check. This often prompts players and the Storyteller to create more narrative effects in a scene or add additional details for the players. Some techniques use it to alter the effects of the technique as well.'),
 (1, 'Resolving Successes', 'If the total number of successes meets the TN (Target number) of the check, the character succeeds. Successes that exceed the TN are bonus successes and may increase the degree of success.'),
 -- Rule 2: Conflict
-(2, 'Step One:', 'This page is a work in progress! Sorry!'),
+(2, 'Duels', 'Duels are one on one conflicts, and can happen in the middle of skirmishes as a clash.'),
+(2, 'Skirmishes', 'A skirmish is a conflict in which there are multiple participants, but still between individuals.'),
+(2, 'Mass Battles', 'A mass battle is a conflict between commanders and groups of soldiers rather than individuals.'),
+(2, 'Intrigue', 'An intrigue is a social conflict, where players are trying to achieve goals and turn order matters.'),
 -- Rule 3: Skill Approach Quick Reference Cards
 (3, 'Artisan Approaches', 
 'Earth: Restore (a work, an item).
