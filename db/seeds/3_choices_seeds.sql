@@ -146,10 +146,8 @@ VALUES
 
 INSERT INTO choices (question_id, choice, stat, info)
 VALUES
-(13, 'Positive relationship with a mentor', 'Write the name and nature of the relationship to this person in Relationships', 'You gain an advantage related to 
-your mentor to represent the beneficial effect of this relationship.'),
-(13, 'Negative relationship with a mentor', 'Write the name and nature of the relationship to this person in Relationships', 'You gain a disadvantage related 
-to your mentor to represent the negative effect of this relationship on your character. You also gain 1 rank in a skill your character developed as a result.');
+(13, 'Positive relationship with a mentor', 'Write the name and nature of the relationship to this person in Relationships', 'You gain an advantage related to your mentor to represent the beneficial effect of this relationship.'),
+(13, 'Negative relationship with a mentor', 'Write the name and nature of the relationship to this person in Relationships', 'You gain a disadvantage related to your mentor to represent the negative effect of this relationship on your character. You also gain 1 rank in a skill your character developed as a result.');
 
 INSERT INTO choices (question_id, choice, stat, info)
 VALUES
