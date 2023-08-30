@@ -129,12 +129,12 @@ VALUES
 
 INSERT INTO choices (question_id, choice, stat, info)
 VALUES
-(7, 'You believe in the precepts of the clan', 'Gain +5 Glory', NULL),
+(7, 'You believe in the precepts of the clan', 'Gain +5 Glory', 'This depends heavily on your clan and your family''s place within it. This can also happen if you are from another family but raised as a vassal or some such if the storyteller permits such in the game.'),
 (7, 'You have a disagreement with your clan''s beliefs, practices, or policies', 'Gain 1 rank in a skill you have 0 ranks in', 'When choosing this skill, it should represent how your character''s practice of this skill represents their diversion from their clan.');
 
 INSERT INTO choices (question_id, choice, stat, info)
 VALUES
-(8, 'You believe in living by an orthodox interpretation of Bushido', 'Gain +10 Honor', NULL), 
+(8, 'You believe in living by an orthodox interpretation of Bushido', 'Gain +10 Honor', 'See the Bushido tenets for specifics of what your character strives to live by.'), 
 (8, 'You diverge from some or all common beliefs about how samurai should behave honorably', 'Gain 1 rank in a specific skill', 'This skill should reflect how you have diverged from the orthodox beliefs about how a samurai should behave, which restricts the choice to: Commerce, Labor, Medicine, Seafaring, Skulduggery, or Survival.');
 
 INSERT INTO choices (question_id, choice, stat, info)
