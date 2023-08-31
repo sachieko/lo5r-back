@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
   if (path === '/.netlify/functions/lore') {
     try {
       const result = await db.query(`
-      SELECT id, title, detail, image_url FROM lore`)
+      SELECT id, title, detail, image_url FROM lore`);
       
       return {
         statusCode: 200,
