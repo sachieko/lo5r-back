@@ -1,13 +1,17 @@
 // PG database client/connection setup
 const { Pool } = require('pg');
 
-const db = new Pool({
-  connectionString: process.env.DBURL,
-  ssl: {
-    rejectUnauthorized: false
-  }
+const pool = new Pool({
+  connectionString: process.env.DBURL
 });
 
-db.connect();
-
-module.exports = db;
+module.exports = {
+  query: async (text, params) => {
+    const client = await pool.connect();
+    try {
+      return await client.query(text, params);
+    } finally {
+      client.release();
+    }
+  }
+};
