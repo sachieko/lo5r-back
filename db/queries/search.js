@@ -1,6 +1,7 @@
 const db = require('../connection');
 const chalk = require('chalk');
 
+// @Params: String is the search string to look for matches in lore, rules, techniques, etc.
 const querySearch = async function(string, res) {
   const query = `
     SELECT * FROM rules 
