@@ -18,20 +18,6 @@ exports.handler = async (event, context) => {
     }
   }
 
-  const queryAllLore = async function(res) {
-    return db.query(`
-    SELECT id, title, detail, image_url FROM lore`, 
-    (err, result) => {
-      if (err) {
-        console.error(chalk.red('Error executing query:'), err);
-        res.status(500).send('Internal Server Error');
-        return;
-      }
-      // console.log(chalk.green('Success: Route Questions without Params!'));
-      return res.json(result.rows);
-    });
-  };
-
   if (path.startsWith('/.netlify/functions/lore/')) {
     try {
       const result = await db.query(`
