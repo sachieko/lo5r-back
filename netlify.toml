@@ -2,21 +2,21 @@
   functions = "/.netlify/api/"
 
 [[redirects]]
-  from = "/.netlify/api/lore"
+  from = "/api/lore"
   to = "/.netlify/api/lore.js"
   status = 200
 
 [[redirects]]
-  from = "/.netlify/api/rules"
+  from = "/api/rules"
   to = "/.netlify/api/rules.js"
   status = 200
 
 [[redirects]]
-  from = "/.netlify/api/questions"
+  from = "/api/questions"
   to = "/.netlify/api/questions.js"
   status = 200
 
 [[redirects]]
-  from = "/.netlify/api/search"
+  from = "/api/search"
   to = "/.netlify/api/search.js"
   status = 200
