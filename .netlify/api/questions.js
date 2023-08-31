@@ -1,14 +1,14 @@
-// functions/lore.js
+// ap/questions.js
 const db = require('../db/connection');
 
 exports.handler = async (event, context) => {
-  const id = event.queryStringParameters.id;
+  const id = event.path.split('/').pop();
   const path = event.path;
 
-  if (path === '/.netlify/functions/lore') {
+  if (path === '/.netlify/api/questions') {
     try {
       const result = await db.query(`
-      SELECT id, title, detail, image_url FROM lore`);
+      SELECT id, title, detail, image_url FROM questions`);
       
       return {
         statusCode: 200,
@@ -22,14 +22,14 @@ exports.handler = async (event, context) => {
     }
   }
 
-  if (path.startsWith('/.netlify/functions/lore/')) {
+  if (path.startsWith('/.netlify/api/questions/')) {
     try {
       const result = await db.query(`
-        SELECT lore.title AS title, lore.detail AS detail, lore.image_url AS image, cards.id AS id, 
-        cards.title AS header, cards.content AS content FROM lore
-        JOIN cards ON lore.id = lore_id
-        WHERE lore_id = $1
-        ORDER BY cards.id;`, [id]);
+      SELECT questions.title AS title, questions.info AS info, choices.id AS id, choices.choice AS choice, 
+      choices.stat AS stat, choices.info AS choiceinfo FROM questions
+      JOIN choices ON questions.id = question_id
+      WHERE question_id = $1
+      ORDER BY choices.id;`, [id]);
 
       return {
         statusCode: 200,
