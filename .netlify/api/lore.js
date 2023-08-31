@@ -1,5 +1,5 @@
 // api/lore.js
-const db = require('../db/connection');
+const db = require('../../db/connection');
 
 exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();

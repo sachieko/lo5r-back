@@ -1,5 +1,5 @@
 // api/search.js
-const db = require('../db/connection');
+const db = require('../../db/connection');
 
 exports.handler = async (event, context) => {
   const searchString = event.queryStringParameters.q;
