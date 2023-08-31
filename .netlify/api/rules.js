@@ -1,6 +1,12 @@
 // api/rules.js
 const db = require('../../db/connection');
 
+const HOSTURL = process.env.HOSTURL;
+const headers = {
+  'Access-Control-Allow-Origin': HOSTURL, 
+  'Access-Control-Allow-Headers': 'Content-Type'
+};
+
 exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
@@ -11,11 +17,13 @@ exports.handler = async (event, context) => {
       SELECT id, title, detail, image_url FROM rules`);
       
       return {
+        headers,
         statusCode: 200,
         body: JSON.stringify(result.rows)
       };
     } catch (error) {
       return {
+        headers,
         statusCode: 500,
         body: JSON.stringify({ error: 'Internal Server Error' })
       };
@@ -32,11 +40,13 @@ exports.handler = async (event, context) => {
       ORDER BY cards.id;`, [id]);
 
       return {
+        headers,
         statusCode: 200,
         body: JSON.stringify(result.rows)
       };
     } catch (error) {
       return {
+        headers,
         statusCode: 500,
         body: JSON.stringify({ error: 'Internal Server Error' })
       };

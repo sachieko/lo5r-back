@@ -1,6 +1,12 @@
 // api/search.js
 const db = require('../../db/connection');
 
+const HOSTURL = process.env.HOSTURL;
+const headers = {
+  'Access-Control-Allow-Origin': HOSTURL, 
+  'Access-Control-Allow-Headers': 'Content-Type'
+};
+
 exports.handler = async (event, context) => {
   const searchString = event.queryStringParameters.q;
 
@@ -14,11 +20,13 @@ exports.handler = async (event, context) => {
       `);
       
       return {
+        headers,
         statusCode: 200,
         body: JSON.stringify(result.rows)
       };
     } catch (error) {
       return {
+        headers,
         statusCode: 500,
         body: JSON.stringify({ error: 'Internal Server Error' })
       };
