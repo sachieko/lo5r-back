@@ -4,8 +4,8 @@ const db = require('../../db/connection');
 exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
-
-  if (path === '/.netlify/api/questions') {
+  console.log(path);
+  if (path === '/.netlify/functions/questions') {
     try {
       const result = await db.query(`
       SELECT id, title, detail, image_url FROM questions`);
@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
     }
   }
 
-  if (path.startsWith('/.netlify/api/questions/')) {
+  if (path.startsWith('/.netlify/functions/questions/')) {
     try {
       const result = await db.query(`
       SELECT questions.title AS title, questions.info AS info, choices.id AS id, choices.choice AS choice, 
