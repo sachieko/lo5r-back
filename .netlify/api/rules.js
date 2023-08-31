@@ -5,7 +5,7 @@ exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
 
-  if (path === '/.netlify/api/rules') {
+  if (path === '/.netlify/functions/rules') {
     try {
       const result = await db.query(`
       SELECT id, title, detail, image_url FROM rules`);
@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
     }
   }
 
-  if (path.startsWith('/.netlify/api/rules/')) {
+  if (path.startsWith('/.netlify/functions/rules/')) {
     try {
       const result = await db.query(`
       SELECT rules.title AS title, rules.detail AS detail, rules.image_url AS image, cards.id AS id, 

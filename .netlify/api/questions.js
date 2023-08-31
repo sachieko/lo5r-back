@@ -4,7 +4,6 @@ const db = require('../../db/connection');
 exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
-  console.log(path);
   if (path === '/.netlify/functions/questions') {
     try {
       const result = await db.query(`

@@ -5,13 +5,16 @@ exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
 
-  if (path === '/.netlify/api/lore') {
+  if (path === '/.netlify/functions/lore') {
     try {
       const result = await db.query(`
       SELECT id, title, detail, image_url FROM lore`);
       
       return {
         statusCode: 200,
+        headers: {
+          "Content-Type": "application/json"
+        },
         body: JSON.stringify(result.rows)
       };
     } catch (error) {
@@ -22,7 +25,7 @@ exports.handler = async (event, context) => {
     }
   }
 
-  if (path.startsWith('/.netlify/api/lore/')) {
+  if (path.startsWith('/.netlify/functions/lore/')) {
     try {
       const result = await db.query(`
         SELECT lore.title AS title, lore.detail AS detail, lore.image_url AS image, cards.id AS id, 
@@ -33,6 +36,9 @@ exports.handler = async (event, context) => {
 
       return {
         statusCode: 200,
+        headers: {
+          "Content-Type": "application/json"
+        },
         body: JSON.stringify(result.rows)
       };
     } catch (error) {
