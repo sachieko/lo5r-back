@@ -10,6 +10,10 @@ exports.handler = async (event, context) => {
       const result = await db.query(`
       SELECT id, title, detail, image_url FROM lore`)
       
+      return {
+        statusCode: 200,
+        body: JSON.stringify(result.rows)
+      };
     } catch (error) {
       return {
         statusCode: 500,
