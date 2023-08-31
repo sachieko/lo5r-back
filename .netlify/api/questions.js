@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
   if (path === '/.netlify/functions/questions') {
     try {
       const result = await db.query(`
-      SELECT id, title, detail, image_url FROM questions`);
+        SELECT id, title, detail, image_url FROM questions`);
       
       return {
         headers,
@@ -33,11 +33,11 @@ exports.handler = async (event, context) => {
   if (path.startsWith('/.netlify/functions/questions/')) {
     try {
       const result = await db.query(`
-      SELECT questions.title AS title, questions.info AS info, choices.id AS id, choices.choice AS choice, 
-      choices.stat AS stat, choices.info AS choiceinfo FROM questions
-      JOIN choices ON questions.id = question_id
-      WHERE question_id = $1
-      ORDER BY choices.id;`, [id]);
+        SELECT questions.title AS title, questions.info AS info, choices.id AS id, choices.choice AS choice, 
+        choices.stat AS stat, choices.info AS choiceinfo FROM questions
+        JOIN choices ON questions.id = question_id
+        WHERE question_id = $1
+        ORDER BY choices.id;`, [id]);
 
       return {
         headers,
