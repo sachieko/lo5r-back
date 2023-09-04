@@ -164,7 +164,7 @@ Note at least one physical quirk your character has during times of stress. As y
 INSERT INTO choices (question_id, choice, stat, info)
 VALUES
 (18, '1 - Famous Deed', '+3 Glory', 'Roll a 10 sided die and gain a family heirloom. 
-1-3: A weapon. 4-6: Armor. 7-8: Another itmem. 9: A horse or other animal. 10: A boat or estate. 
+1-3: A weapon. 4-6: Armor. 7-8: Another item. 9: A horse or other animal. 10: A boat or estate. 
 You and the GM each choose one quality from the list of item qualities for this heirloom.'),
 (18, '2 - Glorious Sacrifice', '+5 Honor and +5 Glory', 'You have a lost family heirloom that exists somewhere in the world. You don''t know where it is, but you could come across it in the campaign. Again roll a 10 sided die. 
 1-3: A weapon. 4-6: Armor. 7-8: Another itmem. 9: A horse or other animal. 10: A boat or estate. 
