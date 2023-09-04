@@ -1,5 +1,4 @@
 const db = require('../connection');
-const chalk = require('chalk');
 
 const queryLore = async function(id, res) {
   try {
