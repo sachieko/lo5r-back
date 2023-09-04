@@ -20,3 +20,8 @@
   from = "/api/search"
   to = "/.netlify/api/search.js"
   status = 200
+
+[[redirects]]
+  from = "/api/opp"
+  to = "./netlify/api/opportunities.js"
+  status = 200
