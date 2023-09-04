@@ -24,8 +24,8 @@ const queryAllLore = async function(res) {
       cards.content FROM lore
       JOIN cards ON lore.id = lore_id
       ORDER BY lore.id, cards.id;`);
-      const result = formatLoreResult(loreResult);
-      return res.json(result);
+    const result = formatLoreResult(loreResult);
+    return res.json(result);
   } catch (error) {
     console.log(error);
     res.status(500).send('Internal Server Error');
