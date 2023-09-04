@@ -16,7 +16,7 @@ exports.handler = async (event, context) => {
     try {
       const questionResult = await db.query(`
       SELECT questions.*, choices.id AS choice_id, choices.choice,
-      choices.stat, choices.info FROM questions
+      choices.stat, choices.info AS choiceinfo FROM questions
       JOIN choices ON questions.id = question_id
       ORDER BY questions.id, choices.id;`);
       const result = formatQuestionResult(questionResult);
@@ -38,7 +38,7 @@ exports.handler = async (event, context) => {
   if (path.startsWith('/.netlify/functions/questions/')) {
     try {
       const questionResult = await db.query(`
-      SELECT questions.*, choices.id AS choice_id, choices.stat, choices.info, choices.choice FROM questions
+      SELECT questions.*, choices.id AS choice_id, choices.stat, choices.info AS choiceinfo, choices.choice FROM questions
       JOIN choices ON questions.id = question_id
       WHERE question_id = $1
       ORDER BY choices.id;`, [id]);
