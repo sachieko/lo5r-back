@@ -6,7 +6,7 @@ const queryLore = async function(id, res) {
     const loreResult = await db.query(`
       SELECT lore.*, cards.id AS card_id, 
       cards.header, cards.content FROM lore
-      JOIN cards ON lore.id = lore_id
+      LEFT JOIN cards ON lore.id = lore_id
       WHERE lore_id = $1
       ORDER BY cards.id;`, [id]);
     const result = formatLoreResult(loreResult);
@@ -22,7 +22,7 @@ const queryAllLore = async function(res) {
     const loreResult = await db.query(`
       SELECT lore.*, cards.id AS card_id, cards.header, 
       cards.content FROM lore
-      JOIN cards ON lore.id = lore_id
+      LEFT JOIN cards ON lore.id = lore_id
       ORDER BY lore.id, cards.id;`);
     const result = formatLoreResult(loreResult);
     return res.json(result);

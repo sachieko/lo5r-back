@@ -6,7 +6,7 @@ const queryRule = async function(id, res) {
     const ruleResult = await db.query(`
       SELECT rules.*, cards.id AS card_id, 
       cards.header, cards.content FROM rules
-      JOIN cards ON rules.id = rule_id
+      LEFT JOIN cards ON rules.id = rule_id
       WHERE rule_id = $1
       ORDER BY cards.id;`, [id]);
     return res.json(formatRuleResult(ruleResult));
@@ -19,7 +19,7 @@ const queryRules = async function(res) {
   try {
     const ruleResult = await db.query(`
       SELECT rules.* , cards.id AS card_id, cards.header, cards.content AS content FROM rules
-      JOIN cards ON rules.id = rule_id
+      LEFT JOIN cards ON rules.id = rule_id
       ORDER BY rules.id, cards.id;`);
     return res.json(formatRuleResult(ruleResult));
   } catch (error) {
