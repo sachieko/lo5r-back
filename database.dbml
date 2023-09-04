@@ -1,6 +1,8 @@
 // Use DBML to define your database structure
 // Docs: https://dbml.dbdiagram.io/docs
 
+// Put this file into https://dbdiagram.io/d in order to view the entity relationship diagram!
+
 Table questions {
   id serial [primary key]
 
@@ -30,6 +32,7 @@ Table lore {
 Table choices {
   id serial [primary key]
   question_id integer
+
   title varchar(100) [not null]
   detail text [not null]
   image_url varchar(100) [default:null]
@@ -39,10 +42,34 @@ Table cards {
   id serial [primary key]
   rule_id integer [default: null]
   lore_id integer [default: null]
+
   title varchar(100) [not null]
   content text [not null]
+}
+
+Table techniques {
+  id serial [primary key]
+
+  name varchar(255) [not null]
+  prerequisite VARCHAR(255) [default:null]
+  rank INTEGER [not null]
+  category VARCHAR(50) [not null]
+  description TEXT [not null]
+  activation VARCHAR(255)
+  effect TEXT [default:null]
+}
+
+Table opportunities {
+  id serial [primary key]
+  technique_id INTEGER [default:null]
+
+  ring VARCHAR(30) [not null]
+  category VARCHAR(30) [not null]
+  cost VARCHAR(10) [not null]
+  effect VARCHAR(255) [not null]
 }
 
 Ref: questions.id < choices.question_id
 Ref: cards.rule_id > rules.id
 Ref: cards.lore_id > lore.id
+Ref: techniques.id - opportunities.technique_id
