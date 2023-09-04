@@ -1,46 +1,17 @@
 const db = require('../connection');
-
-const formatQuestionResult = function(questionResult) {
-  const result = [];
-    let currentQuestion = null;
-    for (const row of questionResult.rows) {
-      // If there isn't a current question or the id has changed, make a new currentRow and add to the result array
-      if (currentQuestion === null || currentQuestion.id !== row.id) {
-        currentQuestion = {
-          id: row.id,
-          title: row.title,
-          info: row.info,
-          detail: row.detail,
-          image: row.image,
-          choices: []
-        };
-        result.push(currentQuestion);
-      }
-
-      // Add choices to the choices array
-      if (row.choice_id) {
-        currentQuestion.choices.push({
-          id: row.choice_id,
-          choice: row.choice,
-          stat: row.stat,
-          choiceInfo: row.choiceinfo
-        });
-      }
-    }
-
-    return result;
-}
+const { formatQuestionResult } = require('../queryFormat');
 
 const queryQuestion = async function(id, res) {
   try {
-    const result = await db.query(`
+    const questionResult = await db.query(`
       SELECT questions.title AS title, questions.info AS info, choices.id AS id, choices.choice AS choice, 
       choices.stat AS stat, choices.info AS choiceinfo FROM questions
       JOIN choices ON questions.id = question_id
       WHERE question_id = $1
       ORDER BY choices.id;`, [id]);
     // console.log(chalk.green('Route Questions with param! Results:', result.rows.length));
-    return res.json(result.rows);
+
+    return res.json(formatQuestionResult(questionResult));
   } catch (error) {
     console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
@@ -56,7 +27,7 @@ const queryQuestions = async function(res) {
       JOIN choices ON questions.id = question_id
       ORDER BY questions.id, choices.id;`);
     
-    return res.json(result);
+    return res.json(formatQuestionResult(questionResult));
   } catch (error) {
     console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');

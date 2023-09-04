@@ -1,53 +1,5 @@
 const db = require('../connection');
-
-/*
-
-  Rule data format:
-  { 
-    id: number,
-    title: string,
-    category: string,
-    detail: string,
-    image: url string,
-    cards: [ 
-      {
-        id: number,
-        header: string,
-        content: string,
-      }, ...
-    ]
-  }
-
-*/
-
-const formatRuleResult = function(ruleResult) {
-  const result = [];
-    let currentRule = null;
-    for (const row of ruleResult.rows) {
-      // If there isn't a current rule or the id has changed, make a new currentRow and add to the result array
-      if (currentRule === null || currentRule.id !== row.id) {
-        currentRule = {
-          id: row.id,
-          title: row.title,
-          category: row.category,
-          detail: row.detail,
-          image: row.image,
-          cards: []
-        };
-        result.push(currentRule);
-      }
-
-      // Add cards to the card array
-      if (row.card_id) {
-        currentRule.cards.push({
-          id: row.card_id,
-          header: row.header,
-          content: row.content
-        });
-      }
-    }
-    return result;
-}
+const { formatRuleResult } = require('../queryFormat');
 
 const queryRule = async function(id, res) {
   try {
