@@ -1,5 +1,6 @@
 // api/rules.js
 const db = require('../../db/connection');
+const { formatRuleResult } = require('../../db/queryFormat');
 
 const HOSTURL = process.env.HOSTURL;
 const headers = {
@@ -13,13 +14,16 @@ exports.handler = async (event, context) => {
 
   if (path === '/.netlify/functions/rules') {
     try {
-      const result = await db.query(`
-        SELECT id, title, detail, image_url FROM rules`);
+      const ruleResult = await db.query(`
+      SELECT rules.* , cards.id AS card_id, cards.header, cards.content AS content FROM rules
+      JOIN cards ON rules.id = rule_id
+      ORDER BY rules.id, cards.id;`);
       
+      const result = formatRuleResult(ruleResult);
       return {
         headers,
         statusCode: 200,
-        body: JSON.stringify(result.rows)
+        body: JSON.stringify(result)
       };
     } catch (error) {
       return {
@@ -32,17 +36,18 @@ exports.handler = async (event, context) => {
 
   if (path.startsWith('/.netlify/functions/rules/')) {
     try {
-      const result = await db.query(`
-        SELECT rules.title AS title, rules.detail AS detail, rules.image_url AS image, cards.id AS id, 
-        cards.title AS header, cards.content AS content FROM rules
-        JOIN cards ON rules.id = rule_id
-        WHERE rule_id = $1
-        ORDER BY cards.id;`, [id]);
+      const ruleResult = await db.query(`
+      SELECT rules.title AS title, rules.detail AS detail, rules.image_url AS image, cards.id AS id, 
+      cards.title AS header, cards.content AS content FROM rules
+      JOIN cards ON rules.id = rule_id
+      WHERE rule_id = $1
+      ORDER BY cards.id;`, [id]);
+      const result = formatRuleResult(ruleResult);
 
       return {
         headers,
         statusCode: 200,
-        body: JSON.stringify(result.rows)
+        body: JSON.stringify(result)
       };
     } catch (error) {
       return {
