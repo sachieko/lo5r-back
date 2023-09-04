@@ -3,7 +3,7 @@
 /*
 
   Question data format:
-  { 
+  [{ 
     id: number,
     title: string,
     info: string,
@@ -17,7 +17,7 @@
         choiceInfo: string
       }, ...
     ]
-  }
+  }...]
 
 */
 
@@ -55,7 +55,7 @@ const formatQuestionResult = function(questionResult) {
 /*
 
   Rule data format:
-  { 
+  [{ 
     id: number,
     title: string,
     category: string,
@@ -68,7 +68,7 @@ const formatQuestionResult = function(questionResult) {
         content: string,
       }, ...
     ]
-  }
+  }...]
 
 */
 
@@ -104,7 +104,7 @@ const formatRuleResult = function(ruleResult) {
 /*
 
   Lore data format:
-  { 
+  [{ 
     id: number,
     title: string,
     detail: string,
@@ -116,7 +116,7 @@ const formatRuleResult = function(ruleResult) {
         content: string,
       }, ...
     ]
-  }
+  }...]
 
 */
 
@@ -150,11 +150,16 @@ const formatLoreResult = function(loreResult) {
 
 /*
   Opportunities data format:
-  
-*/
+  {
+    id: number,
+    technique_id: number,
+    ring: string,
+    category: string;
+    cost: string;
+    effect: string
+  }, ...]
 
-const formatOppResult = function(oppResult) {
-  
-};
+  There is not a format function because the data from the table does not require nesting the data
+*/
 
 module.exports = { formatQuestionResult, formatRuleResult, formatLoreResult };
