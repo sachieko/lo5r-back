@@ -9,11 +9,8 @@ const queryQuestion = async function(id, res) {
       JOIN choices ON questions.id = question_id
       WHERE question_id = $1
       ORDER BY choices.id;`, [id]);
-    // console.log(chalk.green('Route Questions with param! Results:', result.rows.length));
-
     return res.json(formatQuestionResult(questionResult));
   } catch (error) {
-    console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
   }
 };
@@ -29,7 +26,6 @@ const queryQuestions = async function(res) {
     
     return res.json(formatQuestionResult(questionResult));
   } catch (error) {
-    console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
   }
 };

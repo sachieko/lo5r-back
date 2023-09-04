@@ -11,7 +11,6 @@ const queryRule = async function(id, res) {
       ORDER BY cards.id;`, [id]);
     return res.json(formatRuleResult(ruleResult));
   } catch (error) {
-    console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
   }
 };
@@ -24,7 +23,6 @@ const queryRules = async function(res) {
       ORDER BY rules.id, cards.id;`);
     return res.json(formatRuleResult(ruleResult));
   } catch (error) {
-    console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
   }
 };

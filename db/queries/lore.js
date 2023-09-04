@@ -10,7 +10,6 @@ const queryLore = async function(id, res) {
       ORDER BY cards.id;`, [id]);
     return res.json(result.rows);
   } catch (error) {
-    console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
   }
 };
@@ -22,7 +21,6 @@ const queryAllLore = async function(res) {
     // console.log(chalk.green('Success: Route Questions without Params!'));
     return res.json(result.rows);
   } catch (error) {
-    console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
   }
 };

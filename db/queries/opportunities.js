@@ -9,11 +9,10 @@ const queryOpportunity = async function(id, res) {
       JOIN techniques ON technique_id = techniques.id
       WHERE id = $1
       LIMIT 1;`, [id]);
-    // console.log(chalk.green('Success: Route Rules with param! Results:', result.rows.length));
+    // There should only be 1 result at this point.
     const result = [...oppResult.rows[0]];
     return res.json(result);
   } catch (error) {
-    console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
   }
 };
@@ -29,7 +28,6 @@ const queryOpportunities = async function(res) {
     const result = []
     return res.json(result);
   } catch (error) {
-    console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
   }
 };
