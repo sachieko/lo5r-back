@@ -1,5 +1,6 @@
 // api/lore.js
 const db = require('../../db/connection');
+const { formatLoreResult } = require('../../db/queryFormat');
 
 const HOSTURL = process.env.HOSTURL;
 const headers = {
@@ -13,9 +14,13 @@ exports.handler = async (event, context) => {
 
   if (path === '/.netlify/functions/lore') {
     try {
-      const result = await db.query(`
-        SELECT id, title, detail, image_url FROM lore`);
-      
+      const loreResult = await db.query(`
+      SELECT lore.*, cards.id AS card_id, cards.header, 
+      cards.content FROM lore
+      LEFT JOIN cards ON lore.id = lore_id
+      ORDER BY lore.id, cards.id;`);
+      const result = formatLoreResult(loreResult);
+
       return {
         headers,
         statusCode: 200,
@@ -32,13 +37,14 @@ exports.handler = async (event, context) => {
 
   if (path.startsWith('/.netlify/functions/lore/')) {
     try {
-      const result = await db.query(`
-          SELECT lore.title AS title, lore.detail AS detail, lore.image_url AS image, cards.id AS id, 
-          cards.header, cards.content AS content FROM lore
-          JOIN cards ON lore.id = lore_id
-          WHERE lore_id = $1
-          ORDER BY cards.id;`, [id]);
-
+      const loreResult = await db.query(`
+      SELECT lore.*, cards.id AS card_id, 
+      cards.header, cards.content FROM lore
+      LEFT JOIN cards ON lore.id = lore_id
+      WHERE lore_id = $1
+      ORDER BY cards.id;`, [id]);
+      const result = formatLoreResult(loreResult);
+      
       return {
         headers,
         statusCode: 200,

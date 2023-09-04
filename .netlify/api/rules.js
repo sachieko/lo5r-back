@@ -16,10 +16,10 @@ exports.handler = async (event, context) => {
     try {
       const ruleResult = await db.query(`
       SELECT rules.* , cards.id AS card_id, cards.header, cards.content AS content FROM rules
-      JOIN cards ON rules.id = rule_id
+      LEFT JOIN cards ON rules.id = rule_id
       ORDER BY rules.id, cards.id;`);
-      
       const result = formatRuleResult(ruleResult);
+      
       return {
         headers,
         statusCode: 200,
@@ -37,9 +37,9 @@ exports.handler = async (event, context) => {
   if (path.startsWith('/.netlify/functions/rules/')) {
     try {
       const ruleResult = await db.query(`
-      SELECT rules.title AS title, rules.detail AS detail, rules.image_url AS image, cards.id AS id, 
-      cards.title AS header, cards.content AS content FROM rules
-      JOIN cards ON rules.id = rule_id
+      SELECT rules.*, cards.id AS card_id, 
+      cards.header, cards.content FROM rules
+      LEFT JOIN cards ON rules.id = rule_id
       WHERE rule_id = $1
       ORDER BY cards.id;`, [id]);
       const result = formatRuleResult(ruleResult);
