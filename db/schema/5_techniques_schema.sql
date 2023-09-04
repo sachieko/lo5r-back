@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS techniques CASCADE;
+
+CREATE TABLE techniques (
+  id SERIAL PRIMARY KEY,
+
+  name VARCHAR(100) NOT NULL,
+  prerequisite VARCHAR(255) DEFAULT NULL,
+  rank INTEGER NOT NULL,
+  category VARCHAR(50) NOT NULL,
+  description TEXT NOT NULL,
+  activation VARCHAR(255),
+  effect TEXT DEFAULT NULL
+);
