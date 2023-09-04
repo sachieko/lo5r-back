@@ -1,5 +1,5 @@
 -- For cards that relate to rules only in these seeds
-INSERT INTO cards (rule_id, title, content)
+INSERT INTO cards (rule_id, header, content)
 VALUES
 -- Rule 1: Rolling
 (1, 'Resolving Explosive Successes', 'For any explosive successes that were kept, roll another die of the same type. Then you can choose whether to keep that additional rolled die after, and if it is also an explosive success you can roll once more'),

@@ -1,5 +1,5 @@
 -- For cards that relate to lore only in these seeds
-INSERT INTO cards (lore_id, title, content)
+INSERT INTO cards (lore_id, header, content)
 VALUES
 -- 1 Lore: Bushido
 (1, 'Compassion (仁, Jin)', 'Through intense training and hard work the true warrior becomes quick and strong. They are not as most people. They develop a power that must be used for good. They have compassion. They help their fellow men at every opportunity. If an opportunity does not arise, they go out of their way to find one. 
