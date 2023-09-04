@@ -6,7 +6,7 @@ CREATE TABLE techniques (
   name VARCHAR(100) NOT NULL,
   prerequisite VARCHAR(255) DEFAULT NULL,
   rank INTEGER NOT NULL,
-  category VARCHAR(50) NOT NULL,
+  type VARCHAR(50) NOT NULL,
   description TEXT NOT NULL,
   activation VARCHAR(255),
   effect TEXT DEFAULT NULL

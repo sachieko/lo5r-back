@@ -5,6 +5,6 @@ CREATE TABLE cards (
   rule_id INTEGER REFERENCES rules(id) ON DELETE CASCADE,
   lore_id INTEGER REFERENCES lore(id) ON DELETE CASCADE,
   
-  title varchar(100) NOT NULL,
+  header varchar(100) NOT NULL,
   content text NOT NULL
 );
