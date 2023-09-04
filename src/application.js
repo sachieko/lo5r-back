@@ -21,12 +21,14 @@ const questionRoutes = require('./routes/questions');
 const rulesRoutes = require('./routes/rules');
 const loreRoutes = require('./routes/lore');
 const searchRoutes = require('./routes/search');
+const opportunityRoutes = require('./routes/opportunities');
 
 // Mount routes
 app.use('/questions', questionRoutes);
 app.use('/rules', rulesRoutes);
 app.use('/lore', loreRoutes);
 app.use('/search', searchRoutes);
+app.use ('/opp', opportunityRoutes);
 
 app.listen(PORT, () => {
   console.log(chalk.green('Server is listening on port:'), PORT);
