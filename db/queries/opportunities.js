@@ -10,7 +10,7 @@ const queryOpportunity = async function(id, res) {
       WHERE opportunities.id = $1
       LIMIT 1;`, [id]);
     // There should only be 1 result at most, so return the first result.
-    return res.json(oppResult.rows);
+    return res.json(oppResult.rows[0]);
   } catch (error) {
     res.status(500).send('Internal Server Error');
   }

@@ -11,7 +11,7 @@ const headers = {
 exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
-
+  // /lore
   if (path === '/.netlify/functions/lore') {
     try {
       const loreResult = await db.query(`
@@ -24,7 +24,7 @@ exports.handler = async (event, context) => {
       return {
         headers,
         statusCode: 200,
-        body: JSON.stringify(result.rows)
+        body: JSON.stringify(result)
       };
     } catch (error) {
       return {
@@ -34,7 +34,7 @@ exports.handler = async (event, context) => {
       };
     }
   }
-
+  // /lore/:id
   if (path.startsWith('/.netlify/functions/lore/')) {
     try {
       const loreResult = await db.query(`
@@ -43,12 +43,12 @@ exports.handler = async (event, context) => {
       LEFT JOIN cards ON lore.id = lore_id
       WHERE lore_id = $1
       ORDER BY cards.id;`, [id]);
-      const result = formatLoreResult(loreResult);
+      const result = formatLoreResult(loreResult)[0];
       
       return {
         headers,
         statusCode: 200,
-        body: JSON.stringify(result.rows)
+        body: JSON.stringify(result)
       };
     } catch (error) {
       return {

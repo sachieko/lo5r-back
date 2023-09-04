@@ -10,6 +10,7 @@ exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
 
+  // /opp
   if (path === '/.netlify/functions/opp') {
     try {
       const oppResult = await db.query(`
@@ -33,7 +34,7 @@ exports.handler = async (event, context) => {
       };
     }
   }
-
+  // opp/:id
   if (path.startsWith('/.netlify/functions/opp/')) {
     try {
       const oppResult = await db.query(`
@@ -43,7 +44,7 @@ exports.handler = async (event, context) => {
       LEFT JOIN techniques ON technique_id = techniques.id
       WHERE opportunities.id = $1
       LIMIT 1;`, [id]);
-      const result = oppResult.rows;
+      const result = oppResult.rows[0];
       
       return {
         headers,

@@ -9,7 +9,8 @@ const queryQuestion = async function(id, res) {
       WHERE question_id = $1
       ORDER BY choices.id;`, [id]);
 
-    return res.json(formatQuestionResult(questionResult));
+    const result = formatQuestionResult(questionResult)[0];
+    return res.json(result);
   } catch (error) {
     res.status(500).send('Internal Server Error');
   }
@@ -20,7 +21,7 @@ const queryQuestions = async function(res) {
 
     const questionResult = await db.query(`
       SELECT questions.*, choices.id AS choice_id, choices.choice,
-      choices.stat, choices.info FROM questions
+      choices.stat, choices.info AS choiceinfo FROM questions
       JOIN choices ON questions.id = question_id
       ORDER BY questions.id, choices.id;`);
     

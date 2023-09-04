@@ -11,7 +11,7 @@ const headers = {
 exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
-
+  // /rules
   if (path === '/.netlify/functions/rules') {
     try {
       const ruleResult = await db.query(`
@@ -33,7 +33,7 @@ exports.handler = async (event, context) => {
       };
     }
   }
-
+  // /rules/:id
   if (path.startsWith('/.netlify/functions/rules/')) {
     try {
       const ruleResult = await db.query(`
@@ -42,7 +42,7 @@ exports.handler = async (event, context) => {
       LEFT JOIN cards ON rules.id = rule_id
       WHERE rule_id = $1
       ORDER BY cards.id;`, [id]);
-      const result = formatRuleResult(ruleResult);
+      const result = formatRuleResult(ruleResult)[0];
 
       return {
         headers,

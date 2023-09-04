@@ -7,11 +7,11 @@ const headers = {
   'Access-Control-Allow-Origin': HOSTURL, 
   'Access-Control-Allow-Headers': 'Content-Type'
 };
-
 exports.handler = async (event, context) => {
   const id = event.path.split('/').pop();
   const path = event.path;
-
+  
+  // /questions
   if (path === '/.netlify/functions/questions') {
     try {
       const questionResult = await db.query(`
@@ -34,7 +34,7 @@ exports.handler = async (event, context) => {
       };
     }
   }
-
+  // /questions/:id
   if (path.startsWith('/.netlify/functions/questions/')) {
     try {
       const questionResult = await db.query(`
@@ -42,7 +42,7 @@ exports.handler = async (event, context) => {
       JOIN choices ON questions.id = question_id
       WHERE question_id = $1
       ORDER BY choices.id;`, [id]);
-      const result = formatQuestionResult(questionResult);
+      const result = formatQuestionResult(questionResult)[0];
       
       return {
         headers,

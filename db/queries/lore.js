@@ -9,10 +9,10 @@ const queryLore = async function(id, res) {
       LEFT JOIN cards ON lore.id = lore_id
       WHERE lore_id = $1
       ORDER BY cards.id;`, [id]);
-    const result = formatLoreResult(loreResult);
+    const result = formatLoreResult(loreResult)[0];
     return res.json(result);
   } catch (error) {
-    
+    console.log(error);
     res.status(500).send('Internal Server Error');
   }
 };
