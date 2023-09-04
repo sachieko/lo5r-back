@@ -19,10 +19,36 @@ const queryRule = async function(id, res) {
 
 const queryRules = async function(res) {
   try {
-    const result = await db.query(`
-      SELECT id, title, detail, image_url FROM rules`);
-    // console.log(chalk.green('Route Questions with param! Results:', result.rows.length));
-    return res.json(result.rows);
+    const result = [];
+    let currentRule = null;
+    const ruleResult = await db.query(`
+      SELECT rules.* , cards.id AS card_id, cards.title AS header, cards.content AS content FROM rules
+      JOIN cards ON rules.id = rule_id
+      ORDER BY rules.id, cards.id;`);
+    for (const row of ruleResult.rows) {
+      // If there isn't a current rule or the id has changed, make a new currentRow and add to the result array
+      if (currentRule === null || currentRule.id !== row.id) {
+        currentRule = {
+          id: row.id,
+          title: row.title,
+          category: row.category,
+          detail: row.detail,
+          image: row.image,
+          cards: []
+        };
+        result.push(currentRule);
+      }
+
+      // Add cards to the card array
+      if (row.card_id) {
+        currentRule.cards.push({
+          id: row.card_id,
+          header: row.header,
+          content: row.content
+        });
+      }
+    }
+    return res.json(result);
   } catch (error) {
     console.error(chalk.red('Error executing query:'), error);
     res.status(500).send('Internal Server Error');
