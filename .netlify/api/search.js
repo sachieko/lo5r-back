@@ -12,12 +12,15 @@ exports.handler = async (event, context) => {
 
   try {
       const result = await db.query(`
-        SELECT * FROM rules 
-        WHERE title ILIKE $1
-        UNION 
-        SELECT * FROM lore
-        WHERE title ILIKE $1;
-        `);
+      SELECT id, title, detail FROM rules 
+      WHERE title ILIKE $1 || '%'
+      UNION 
+      SELECT id, title, detail FROM lore
+      WHERE title ILIKE $1 || '%'
+      UNION
+      SELECT id, name AS title, category AS detail FROM techniques
+      WHERE name ILIKE $1 || '%';
+      `);
       
       return {
         headers,
