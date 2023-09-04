@@ -32,7 +32,7 @@ const formatQuestionResult = function(questionResult) {
           title: row.title,
           info: row.info,
           detail: row.detail,
-          image: row.image,
+          image: row.image_url,
           choices: []
         };
         result.push(currentQuestion);
@@ -83,7 +83,7 @@ const formatRuleResult = function(ruleResult) {
           title: row.title,
           category: row.category,
           detail: row.detail,
-          image: row.image,
+          image: row.image_url,
           cards: []
         };
         result.push(currentRule);
@@ -101,5 +101,60 @@ const formatRuleResult = function(ruleResult) {
     return result;
 };
 
+/*
 
-module.exports = { formatQuestionResult, formatRuleResult};
+  Lore data format:
+  { 
+    id: number,
+    title: string,
+    detail: string,
+    image: url string,
+    cards: [ 
+      {
+        id: number,
+        header: string,
+        content: string,
+      }, ...
+    ]
+  }
+
+*/
+
+const formatLoreResult = function(loreResult) {
+  const result = [];
+  let currentLore = null;
+  for (const row of loreResult.rows) {
+    // If there isn't a current lore or the id has changed, make a new currentLore and add to the result array
+    if (currentLore === null || currentLore.id !== row.id) {
+      currentLore = {
+        id: row.id, 
+        title: row.title,
+        detail: row.detail,
+        image: row.image_url,
+        cards: []
+      }
+      result.push(currentLore);
+    }
+
+    // Add cards to the card array
+    if (row.card_id) {
+      currentLore.cards.push({
+        id: row.card_id,
+        header: row.header,
+        content: row.content
+      });
+    }
+  }
+  return result;
+};
+
+/*
+  Opportunities data format:
+  
+*/
+
+const formatOppResult = function(oppResult) {
+  
+};
+
+module.exports = { formatQuestionResult, formatRuleResult, formatLoreResult };
