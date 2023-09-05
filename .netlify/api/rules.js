@@ -4,7 +4,7 @@ const { formatRuleResult } = require('../../db/queryFormat');
 
 const HOSTURL = process.env.HOSTURL;
 const headers = {
-  'Access-Control-Allow-Origin': HOSTURL, 
+  'Access-Control-Allow-Origin': '*', 
   'Access-Control-Allow-Headers': 'Content-Type'
 };
 
@@ -29,7 +29,7 @@ exports.handler = async (event, context) => {
       return {
         headers,
         statusCode: 500,
-        body: JSON.stringify({ error: 'Internal Server Error: ', error})
+        body: JSON.stringify({ error: 'Internal Server Error' })
       };
     }
   }
