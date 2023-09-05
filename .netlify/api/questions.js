@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
   const path = event.path;
   
   // /questions
-  if (path === '/.netlify/functions/questions') {
+  if (path === '/.netlify/functions/questions/') {
     try {
       const questionResult = await db.query(`
       SELECT questions.*, choices.id AS choice_id, choices.choice,
