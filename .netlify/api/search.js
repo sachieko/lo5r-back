@@ -12,13 +12,13 @@ exports.handler = async (event, context) => {
 
   try {
       const result = await db.query(`
-      SELECT id, title, detail FROM rules 
+      SELECT '/rules/' || id AS link, title, detail FROM rules 
       WHERE title ILIKE $1 || '%'
       UNION 
-      SELECT id, title, detail FROM lore
+      SELECT '/lore/' || id AS link, title, detail FROM lore
       WHERE title ILIKE $1 || '%'
       UNION
-      SELECT id, name AS title, category AS detail FROM techniques
+      SELECT '/techniques/' || id AS link, name AS title, type AS detail FROM techniques
       WHERE name ILIKE $1 || '%';
       `);
       
