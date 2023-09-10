@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
   const path = event.path;
 
   // /opp
-  if (path === '/.netlify/functions/opp') {
+  if (path === '/.netlify/functions/opp/') {
     try {
       const oppResult = await db.query(`
       SELECT opportunities.*, techniques.name, techniques.prerequisite, techniques.rank,
