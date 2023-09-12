@@ -2,7 +2,7 @@ const db = require('../../db/connection');
 
 const HOSTURL = process.env.HOSTURL;
 const headers = {
-  'Access-Control-Allow-Origin': HOSTURL, 
+  'Access-Control-Allow-Origin': '*', 
   'Access-Control-Allow-Headers': 'Content-Type'
 };
 

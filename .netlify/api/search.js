@@ -3,7 +3,7 @@ const db = require('../../db/connection');
 
 const HOSTURL = process.env.HOSTURL;
 const headers = {
-  'Access-Control-Allow-Origin': HOSTURL, 
+  'Access-Control-Allow-Origin': '*', 
   'Access-Control-Allow-Headers': 'Content-Type'
 };
 
@@ -21,8 +21,16 @@ exports.handler = async (event, context) => {
     `;
   try {
     const result = await db.query(query, [searchString]);
-    return res.json(result.rows)
+    return {
+      headers,
+      statusCode: 200,
+      body: JSON.stringify(result.rows)
+    };
   } catch (error) {
-    res.status(500).send(error);
+    return {
+      headers,
+      statusCode: 500,
+      body: JSON.stringify({ error: 'Internal Server Error' })
+    };
   }
 };
