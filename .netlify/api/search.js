@@ -20,7 +20,7 @@ exports.handler = async (event, context) => {
       UNION
       SELECT '/techniques/' || id AS link, name AS title, type AS detail FROM techniques
       WHERE name '%' || ILIKE $1 || '%';
-      `);
+      `, [searchString]);
       
       return {
         headers,
