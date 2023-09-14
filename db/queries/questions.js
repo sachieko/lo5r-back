@@ -9,7 +9,7 @@ const queryQuestion = async function(id, res) {
       WHERE question_id = $1
       ORDER BY choices.id;`, [id]);
 
-    const result = formatQuestionResult(questionResult)[0];
+    const result = formatQuestionResult(questionResult)[0]; // Still an array, return the first row.
     return res.json(result);
   } catch (error) {
     res.status(500).send('Internal Server Error');

@@ -9,7 +9,7 @@ const queryRule = async function(id, res) {
       LEFT JOIN cards ON rules.id = rule_id
       WHERE rule_id = $1
       ORDER BY cards.id;`, [id]);
-    const result = formatRuleResult(ruleResult)[0];
+    const result = formatRuleResult(ruleResult)[0]; // Still an array, return first row
     return res.json(result);
   } catch (error) {
     res.status(500).send('Internal Server Error');
