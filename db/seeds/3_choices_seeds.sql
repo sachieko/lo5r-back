@@ -103,7 +103,7 @@ School Ability: After performing an Attack action, you may change your stance. I
 Starting Outfit: Traveling clothes, ashigaru armor, daisho (katana and wakizashi), yari (spear) or yumi (bow) and quiver of arrows, knife, traveling pack, finger of jade.'),
 (3, 'Kaiu Engineer School [Artisan, Bushi]', '+1 Earth and +1 Fire Rings, Choose five from: +1 Command, +1 Design, +1 Labor, +1 Martial Arts [Ranged], +1 Medicine,+1 Smithing, +1 Theology. Honor: 40', 'Starting Techniques: [Kata] Tactical Assessment and [Shuji] Stirring the Embers, Stonewall Tactics. 
 School Ability: Once per scene when making a chest to use an item you personally crafted, you made add a number of kept ring dice set to opportunity results equal to your school rank. 
-Starting Outfit: Traveling clothes, ceremonial clothes,ashigaru armor, daisho (katana and wakizashi), club, oyumi (crossbow), quiver of bolts, traveling pack.'),
+Starting Outfit: Traveling clothes, ceremonial clothes, ashigaru armor, daisho (katana and wakizashi), club, oyumi (crossbow), quiver of bolts, traveling pack.'),
 (3, 'Kuni Purifier School [Shugenja, Bushi]', '+1 Earth and +1 Fire Rings. Choose five from: +1 Martial Arts [Melee], +1 Medicine, +1 Sentiment, +1 Skulduggery, +1 Survival, +1 Theology. Honor: 35', 
 'Starting Techniques: [Kata] Striking as Earth or Striking as Fire, [Invocations] Armor of Earth and Jade Strike, [Rituals] Commune with the Spirits and Theshold Barrier. 
 School Ability: Once per round when you make a check targeting or involving a Tainted being, you may choose a number of your kept dice up to your school rank containing strife symbols. Set each of these dice to a success result. You cannot use this ability if you are unsure if the being is tainted or not. 
