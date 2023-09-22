@@ -18,7 +18,7 @@ exports.handler = async (event, context) => {
         SELECT techniques.*, opportunities.id AS opportunity_id, opportunities.ring, opportunities.category,
         opportunities.cost, opportunities.effect AS opportunity_effect
         FROM techniques
-        JOIN opportunities ON technique_id = techniques.id
+        LEFT JOIN opportunities ON technique_id = techniques.id
         ORDER BY techniques.id;`);
       const result = formatTechniqueResult(techResult);
 
