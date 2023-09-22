@@ -14,7 +14,7 @@ const querySearch = async function(string, res) {
     `;
   try {
     const result = await db.query(query, [string]);
-    return res.json(result.rows)
+    return res.json(result.rows);
   } catch (error) {
     res.status(500).send(error);
   }
