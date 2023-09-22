@@ -1,8 +1,8 @@
 // PG database client/connection setup
-const { Pool } = require('pg');
+const { Pool } = require("pg");
 
 const pool = new Pool({
-  connectionString: process.env.DBURL
+  connectionString: process.env.DBURL,
 });
 
 module.exports = {
@@ -13,5 +13,5 @@ module.exports = {
     } finally {
       client.release();
     }
-  }
+  },
 };

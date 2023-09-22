@@ -23,19 +23,19 @@
 
 */
 
-const formatQuestionResult = function(questionResult) {
+const formatQuestionResult = function (questionResult) {
   const result = [];
   let currentQuestion = null;
   for (const row of questionResult.rows) {
     // If there isn't a current question or the id has changed, make a new currentRow and add to the result array
     if (currentQuestion === null || currentQuestion.id !== row.id) {
-        currentQuestion = {
+      currentQuestion = {
         id: row.id,
         title: row.title,
         info: row.info,
         detail: row.detail,
         image: row.image_url,
-        choices: []
+        choices: [],
       };
       result.push(currentQuestion);
     }
@@ -46,7 +46,7 @@ const formatQuestionResult = function(questionResult) {
         id: row.choice_id,
         choice: row.choice,
         stat: row.stat,
-        choiceInfo: row.choiceinfo
+        choiceInfo: row.choiceinfo,
       });
     }
   }
@@ -74,7 +74,7 @@ const formatQuestionResult = function(questionResult) {
 
 */
 
-const formatRuleResult = function(ruleResult) {
+const formatRuleResult = function (ruleResult) {
   const result = [];
   let currentRule = null;
   for (const row of ruleResult.rows) {
@@ -86,7 +86,7 @@ const formatRuleResult = function(ruleResult) {
         category: row.category,
         detail: row.detail,
         image: row.image_url,
-        cards: []
+        cards: [],
       };
       result.push(currentRule);
     }
@@ -95,11 +95,11 @@ const formatRuleResult = function(ruleResult) {
       currentRule.cards.push({
         id: row.card_id,
         header: row.header,
-        content: row.content
+        content: row.content,
       });
     }
   }
-    return result;
+  return result;
 };
 
 /*
@@ -121,19 +121,19 @@ const formatRuleResult = function(ruleResult) {
 
 */
 
-const formatLoreResult = function(loreResult) {
+const formatLoreResult = function (loreResult) {
   const result = [];
   let currentLore = null;
   for (const row of loreResult.rows) {
     // If there isn't a current lore or the id has changed, make a new currentLore and add to the result array
     if (currentLore === null || currentLore.id !== row.id) {
       currentLore = {
-        id: row.id, 
+        id: row.id,
         title: row.title,
         detail: row.detail,
         image: row.image_url,
-        cards: []
-      }
+        cards: [],
+      };
       result.push(currentLore);
     }
 
@@ -142,13 +142,12 @@ const formatLoreResult = function(loreResult) {
       currentLore.cards.push({
         id: row.card_id,
         header: row.header,
-        content: row.content
+        content: row.content,
       });
     }
   }
   return result;
 };
-
 
 /*
   Technique Data Format:
@@ -171,8 +170,8 @@ const formatLoreResult = function(loreResult) {
   }]
 
 */
-const formatTechniqueResult = function(techResult) {
-  const result = []
+const formatTechniqueResult = function (techResult) {
+  const result = [];
   let currentTechnique = null;
   for (const row of techResult.rows) {
     // If the current technique has changed or is null
@@ -186,7 +185,7 @@ const formatTechniqueResult = function(techResult) {
         description: row.description,
         activation: row.activation,
         effect: row.effect,
-        opportunities: []
+        opportunities: [],
       };
       result.push(currentTechnique);
     }
@@ -198,7 +197,7 @@ const formatTechniqueResult = function(techResult) {
         ring: row.ring,
         category: row.category,
         cost: row.cost,
-        effect: row.opportunity_effect
+        effect: row.opportunity_effect,
       });
     }
   }
@@ -219,4 +218,9 @@ const formatTechniqueResult = function(techResult) {
   There is not a format function because the data from the table does not require nesting the data
 */
 
-module.exports = { formatQuestionResult, formatRuleResult, formatLoreResult, formatTechniqueResult };
+module.exports = {
+  formatQuestionResult,
+  formatRuleResult,
+  formatLoreResult,
+  formatTechniqueResult,
+};

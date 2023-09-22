@@ -1,17 +1,17 @@
-const db = require('../../db/connection');
+const db = require("../../db/connection");
 
 const HOSTURL = process.env.HOSTURL;
 const headers = {
-  'Access-Control-Allow-Origin': '*', 
-  'Access-Control-Allow-Headers': 'Content-Type'
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
 };
 
 exports.handler = async (event, context) => {
-  const id = event.path.split('/').pop();
+  const id = event.path.split("/").pop();
   const path = event.path;
 
   // /opp
-  if (path === '/.netlify/functions/opp/') {
+  if (path === "/.netlify/functions/opp/") {
     try {
       const oppResult = await db.query(`
       SELECT opportunities.*, techniques.name, techniques.prerequisite, techniques.rank,
@@ -24,38 +24,41 @@ exports.handler = async (event, context) => {
       return {
         headers,
         statusCode: 200,
-        body: JSON.stringify(result)
+        body: JSON.stringify(result),
       };
     } catch (error) {
       return {
         headers,
         statusCode: 500,
-        body: JSON.stringify({ error: 'Internal Server Error' })
+        body: JSON.stringify({ error: "Internal Server Error" }),
       };
     }
   }
   // opp/:id
-  if (path.startsWith('/.netlify/functions/opp/')) {
+  if (path.startsWith("/.netlify/functions/opp/")) {
     try {
-      const oppResult = await db.query(`
+      const oppResult = await db.query(
+        `
       SELECT opportunities.*, techniques.name, techniques.prerequisite, techniques.rank,
       techniques.type, techniques.description, techniques.activation, techniques.effect AS technique_effect
       FROM opportunities
       LEFT JOIN techniques ON technique_id = techniques.id
       WHERE opportunities.id = $1
-      LIMIT 1;`, [id]);
+      LIMIT 1;`,
+        [id]
+      );
       const result = oppResult.rows[0];
-      
+
       return {
         headers,
         statusCode: 200,
-        body: JSON.stringify(result)
+        body: JSON.stringify(result),
       };
     } catch (error) {
       return {
         headers,
         statusCode: 500,
-        body: JSON.stringify({ error: 'Internal Server Error' })
+        body: JSON.stringify({ error: "Internal Server Error" }),
       };
     }
   }

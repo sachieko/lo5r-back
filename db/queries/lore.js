@@ -1,23 +1,26 @@
-const db = require('../connection');
-const { formatLoreResult } = require('../queryFormat');
+const db = require("../connection");
+const { formatLoreResult } = require("../queryFormat");
 
-const queryLore = async function(id, res) {
+const queryLore = async function (id, res) {
   try {
-    const loreResult = await db.query(`
+    const loreResult = await db.query(
+      `
       SELECT lore.*, cards.id AS card_id, 
       cards.header, cards.content FROM lore
       LEFT JOIN cards ON lore.id = lore_id
       WHERE lore_id = $1
-      ORDER BY cards.id;`, [id]);
+      ORDER BY cards.id;`,
+      [id]
+    );
     const result = formatLoreResult(loreResult)[0];
     return res.json(result);
   } catch (error) {
     console.log(error);
-    res.status(500).send('Internal Server Error');
+    res.status(500).send("Internal Server Error");
   }
 };
 
-const queryAllLore = async function(res) {
+const queryAllLore = async function (res) {
   try {
     const loreResult = await db.query(`
       SELECT lore.*, cards.id AS card_id, cards.header, 
@@ -28,7 +31,7 @@ const queryAllLore = async function(res) {
     return res.json(result);
   } catch (error) {
     console.log(error);
-    res.status(500).send('Internal Server Error');
+    res.status(500).send("Internal Server Error");
   }
 };
 

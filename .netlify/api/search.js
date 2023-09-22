@@ -1,10 +1,10 @@
 // api/search.js
-const db = require('../../db/connection');
+const db = require("../../db/connection");
 
 const HOSTURL = process.env.HOSTURL;
 const headers = {
-  'Access-Control-Allow-Origin': '*', 
-  'Access-Control-Allow-Headers': 'Content-Type'
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
 };
 
 exports.handler = async (event, context) => {
@@ -24,13 +24,13 @@ exports.handler = async (event, context) => {
     return {
       headers,
       statusCode: 200,
-      body: JSON.stringify(result.rows)
+      body: JSON.stringify(result.rows),
     };
   } catch (error) {
     return {
       headers,
       statusCode: 500,
-      body: JSON.stringify({ error: 'Internal Server Error' })
+      body: JSON.stringify({ error: "Internal Server Error" }),
     };
   }
 };

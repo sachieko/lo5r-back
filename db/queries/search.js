@@ -1,7 +1,7 @@
-const db = require('../connection');
+const db = require("../connection");
 
 // @Params: String is the search string to look for matches in lore, rules, techniques, etc.
-const querySearch = async function(string, res) {
+const querySearch = async function (string, res) {
   const query = `
     SELECT '/rules/' || id AS link, title, detail FROM rules 
     WHERE title ILIKE '%' || $1 || '%'
