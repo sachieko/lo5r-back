@@ -26,7 +26,7 @@ const queryOpportunities = async function (res) {
       techniques.type, techniques.description, techniques.activation, techniques.effect AS technique_effect
       FROM opportunities
       LEFT JOIN techniques ON technique_id = techniques.id
-      ORDER BY opportunities.id, opportunities.category, opportunities.ring;`);
+      ORDER BY opportunities.ring, opportunities.category, opportunities.id;`);
     // We can just return the rows because opportunities has a one to one relationship with techniques if it has a technique relation.
     return res.json(oppResult.rows);
   } catch (error) {

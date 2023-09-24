@@ -19,7 +19,7 @@ exports.handler = async (event, context) => {
         opportunities.cost, opportunities.effect AS opportunity_effect
         FROM techniques
         LEFT JOIN opportunities ON technique_id = techniques.id
-        ORDER BY techniques.id;`);
+        ORDER BY techniques.type, techniques.rank, techniques.id;`);
       const result = formatTechniqueResult(techResult);
 
       return {
@@ -47,7 +47,7 @@ exports.handler = async (event, context) => {
         FROM techniques
         LEFT JOIN opportunities ON technique_id = techniques.id
         WHERE techniques.id = $1
-        ORDER BY techniques.id;`,
+        ORDER BY techniques.type, techniques.rank, techniques.id;`,
         [id]
       );
       const result = formatTechniqueResult(techResult)[0]; // This is still an array, so return the first row.

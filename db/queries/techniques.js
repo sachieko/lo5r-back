@@ -10,7 +10,7 @@ const queryTechnique = async function (id, res) {
       FROM techniques
       LEFT JOIN opportunities ON technique_id = techniques.id
       WHERE techniques.id = $1
-      ORDER BY techniques.id;`,
+      ORDER BY techniques.type, techniques.rank, techniques.id;`,
       [id]
     );
     const result = formatTechniqueResult(techResult)[0]; // This is still an array, so return the first row.
@@ -27,7 +27,7 @@ const queryTechniques = async function (res) {
       opportunities.cost, opportunities.effect AS opportunity_effect
       FROM techniques
       LEFT JOIN opportunities ON technique_id = techniques.id
-      ORDER BY techniques.id;`);
+      ORDER BY techniques.type, techniques.rank, techniques.id;`);
     const result = formatTechniqueResult(techResult);
     return res.json(result);
   } catch (error) {
