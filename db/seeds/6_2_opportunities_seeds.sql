@@ -18,4 +18,17 @@ VALUES
 (5, 'Any', 'Technique', '💮', 'You may choose a sealed area to ward instead of a size in range bands equal to your bonus successes at most.'),
 (5, 'Any', 'Technique', '💮', 'If a being of the type you are warding against passed the warded threshold in the last day, you are aware of its passage.'),
 -- 6
-(6, 'Fire', 'Technique', '💮+', 'The next time the target would be victim to a critical strike before the end of your next turn, increase the severity of it by 1 for each opportunity spent.');
+(6, 'Fire', 'Technique', '💮+', 'The next time the target would be victim to a critical strike before the end of your next turn, increase the severity of it by 1 for each opportunity spent.'),
+(7, 'Air', 'Technique', '💮', 'The illusion can be of a living thing such as an animal or human.'),
+(7, 'Air', 'Technique', '💮+', 'Summon an additional illusion in range per opportunity.'),
+(7, 'Air', 'Technique', '💮💮', 'Objects summoned can have mass and be used as if they were that object.'),
+(8, 'Water', 'Technique', '💮', 'Anyone who partakes in the food can remove fatigue up to your water ring.'),
+(8, 'Water', 'Technique', '💮+', 'Multiply the number of people you can feed with this invocation by the opportunity spent this way instead of the usual amount.'),
+(9, 'Water', 'Technique', '💮', 'Gain broad or general knowledge of the item''s origin such as where it was made, the clan of whom owned it longest, etc.'),
+(9, 'Water', 'Technique', '💮', 'Choose a character as a target instead, and learn an invocation, kiho, maho, or supernatural ability or item they possess. This information is limited to its general qualities and name.'),
+(10, 'Air', 'Technique', '💮', 'The target does not remember what you asked about, even if probed about it.'),
+(10, 'Air', 'Technique', '💮💮💮', 'You can give a single order that is simple in nature to the target. They receive 2 strife at the end of a scene they ignore this command in, and when they become compromised they must unmask and try to follow the order for the rest of the scene.'),
+(11, 'Fire', 'Technique', '💮+', 'If you gain glory this scene, increase the amount you would gain by 1. If there is a higher status character in the scene than you, you may gain glory equal to any extra opportunity spent.'),
+(12, 'Air', 'Technique', '💮+', 'Increase the range of your weapon by 1 per opportunity spent.'),
+(13, 'Air', 'Technique', '💮+', 'Any target who failed their fitness check is pushed away 1 range band for each opportunity you spend.')
+;
