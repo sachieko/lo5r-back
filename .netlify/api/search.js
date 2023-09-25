@@ -16,7 +16,7 @@ exports.handler = async (event, context) => {
     SELECT '/lore/' || id AS link, title, detail FROM lore
     WHERE title ILIKE '%' || $1 || '%'
     UNION
-    SELECT '/techniques/' || id AS link, name AS title, type AS detail FROM techniques
+    SELECT '/techniques/?filter=&tech=' || id AS link, name AS title, type AS detail FROM techniques
     WHERE name ILIKE '%' || $1 || '%';
     `;
   try {
