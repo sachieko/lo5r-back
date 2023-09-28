@@ -8,5 +8,5 @@ CREATE TABLE opportunities (
   ring VARCHAR(30) NOT NULL,
   category VARCHAR(30) NOT NULL,
   cost VARCHAR(10) NOT NULL,
-  effect VARCHAR(255) NOT NULL
+  effect TEXT NOT NULL
 );

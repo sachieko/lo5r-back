@@ -4,10 +4,10 @@ CREATE TABLE techniques (
   id SERIAL PRIMARY KEY,
 
   name VARCHAR(100) NOT NULL,
-  prerequisite VARCHAR(255) DEFAULT NULL,
+  prerequisite VARCHAR(50) DEFAULT NULL,
   rank INTEGER NOT NULL,
   type VARCHAR(50) NOT NULL,
   description TEXT NOT NULL,
-  activation VARCHAR(255),
+  activation TEXT,
   effect TEXT DEFAULT NULL
 );

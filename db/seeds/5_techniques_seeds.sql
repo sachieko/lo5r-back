@@ -45,4 +45,113 @@ VALUES
 -- 12
 ('Hawk''s Precision', 1, 'Kata', 'You are far more accurate with ranged weapons at long range than most other samurai.', 'When making a Martial Arts [Ranged] check, gain a new way to spend opportunity.', ''),
 -- 13
-('Tempest of Air', 1, 'Invocation', 'Call on the assistance of air kami to lash out at those around you.', 'As an attack action, make a TN 3 (Air) Theology check that targets characters 2-3 range bands away.', 'Cutting winds smite each target, causing supernatural damage equal to your Air ring. Targets hit must also make a TN 4 (Earth 5, Fire 2) Fitness check or be disoriented.');
+('Tempest of Air', 1, 'Invocation', 'Call on the assistance of air kami to lash out at those around you.', 'As an attack action, make a TN 3 (Air) Theology check that targets characters 2-3 range bands away.', 'Cutting winds smite each target, causing supernatural damage equal to your Air ring. Targets hit must also make a TN 4 (Earth 5, Fire 2) Fitness check or be disoriented.'),
+-- 14
+(
+  'Battle in the Mind', -- Name
+  3,                   -- Rank
+  'Kata',               -- Type
+  'When you square off in a duel, play out how you think the battle will proceed in your mind by foreseeing your opponent''s method of attack while they react to your own.', -- Description
+  'When you make an initiative check using the void ring, gain the following opportunities.', -- Activation
+  ''                 -- Effect
+),
+-- 15
+(
+  'Breath of Wind Style', -- Name
+  4,                         -- Rank
+  'Kata',                    -- Type
+  'Attempt a quick jab at an opponent''s vulnerable spots to disorient them between your other attacks.', -- Description
+  'When you make a Martial Arts (Air) check of any type, you may spend opportunity in a new way.', -- Activation
+  ''                         -- Effect
+),
+-- 16
+(
+  'Iaijutsu Cut: Rising Blade', -- Name
+  2,                            -- Rank
+  'Kata',                       -- Type
+  'You draw your blade from the hip to catch an opponent''s sword as they strike at you, leaving them open for your own blade''s follow through.', -- Description
+  'As an attack action using one sheathed weapon that has the razor-edged quality, make a Martial Arts [Melee] check targeting a person at range 0-1. The target''s vigilance is the TN of this check. You draw and ready the sheathed weapon in a one-handed grip. On a success, you also deal fatigue to the opponent equal to the weapon''s deadliness, and they cannot defend against this damage if they are compromised.', -- Activation
+  ''                            -- Effect
+),
+-- 17
+(
+  'Crashing Wave Style', -- Name
+  4, -- Rank
+  'Kata', -- Type
+  'You follow through with your cuts much like water cuts into stone after so many years, leaving a bloody wound in your wake.', -- Desc
+  'When you make a Martial Arts check using the water ring, gain a new way to spend opportunity.', -- Activation
+  '' -- Effect
+),
+-- 18
+(
+  'Crescent Moon Style', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'Fight in a style such that you take advantage of openings your opponent creates when they strike at you while you are guarding or evading, striking at the cracks in their offense after a failed attack.', -- Desc
+  'When you perform a Guard action, you can spend opportunity in a new way.', -- Activation
+  '' -- Effect
+),
+-- 19
+(
+  'Crimson Leaves Strike', -- Name
+  3, -- Rank
+  'Kata', -- Type
+  'Land a blow to your opponent''s weapon intentionally in an attempt to force the weapon from their grip.', -- Desc
+  'During an attack action with a readied weapon, make a TN 4 (Earth) Martial Arts check of the weapon''s type targeting an opponent.', -- Activation
+  'On a success, they suffer damage equal to your Earth ring and bonus successes. The target then makes a TN 4 (Air 2, Water 5) Fitness check or you knock a weapon of your choice out of their hands 3 range bands in a direction you choose.' -- Effect
+),
+-- 20
+(
+  'Disappearing World Style', -- Name
+  4, -- Rank
+  'Kata', -- Type
+  'The rest of the world fades away as you pursue your oppponent with a flurry of strikes that intend to daze them and create an opening you can capitalize on.', -- Desc
+  'When you make a Martial Arts [Melee] check using the Fire ring, gain a new way to spend opportunity.', -- Activation
+  '' -- Effect
+),
+-- 21
+(
+  'Flowing Water Strike', -- Name
+  3, -- Rank
+  'Kata', -- Type
+  'Incorporate movement into your fighting style in order to make up for distances your weapon otherwise would not be capable of.', -- Desc
+  'Using an attack and movement action make a TN 3 (Water) Martial Arts check of a type matching your readied weapon that targets a character anywhere within 0-2 range bands of yourself.', -- Activation
+  'On a success you deal damage to that target equal to your Water ring and they gain the bleeding condition. They also must make a TN 4 (Earth 2, Fire 5) Fitness check or suffer additional damage equal to your weapon''s base damage.' -- Effect
+),
+-- 22
+(
+  'Heartpiercing Strike', -- Name
+  3, -- Rank
+  'Kata', -- Type
+  'Lunge forward with a strike meant to pierce a foe''s heart, or at the least gravely injure them.', -- Desc
+  'Using an attack and movement action with a readied weapon, make a TN 4 (Fire) Martial Arts check targeting an opponent in that weapon''s range.', -- Activation
+  'On a success, the opponent suffers a critical with severity of your weapon''s deadliness increased by bonus successes. The TN to resist this critical is 3 (Air 4, Water 1) instead. If you didn''t succeed you gain the disoriented condition.' -- Effect
+),
+-- 23
+(
+  'Soaring Slice', -- Name
+  1, -- Rank
+  'Kata', -- Type
+  'Send your weapon flying through the air towards a target in an attempt to catch them completely off guard or capitalize on an opening.', -- Desc
+  'Using an attack action with a weapon readied in one-handed grip, make a TN 2 Martial Arts check with the skill appropriate for the weapon targetting an opponent 2-3 range bands away.', -- Activation
+  'You throw your weapon. On a success, deal damage to the target equal to the weapon''s base damage plus bonus successes. If they defend the damage, your weapon lands 1 range band from the target in a direction of your choice, otherwise it embeds in them as they suffer the critical strike. On a failure, it flies the maximum distance of the technique in the direction of your target.' -- Effect
+),
+-- 24
+(
+  'By the Light of the Lord Moon', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Using the blessings of air kami, reveal hidden objects or characters in an area that would otherwise be concealed.', -- Desc
+  'Using a scheme action, make a TN 2 (Air) Theology check targeting an area within 0-2 range bands of yourself.', -- Activation
+  'On a success, scry any mundanely concealed objects or characters. Examples include trap doors, secret compartments in a room, or hidden weapons. They are revealed with an outline only the caster can perceive.' -- Effect
+),
+-- 25
+(
+  'Yari of Air', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'A swirling mass of violent winds coalesce into a weapon within your hand, weighing nearly nothing but striking with the force of typhoon winds.', -- Desc
+  'As a support action, make a TN 1 (Air) Theology check that summons a spear made of air readied in your hand.', -- Activation
+  'On a success, you have a spear readied in your hand, though it has the concealable quality as it is only visible by a faint wispy outline. Due to this, you add an extra kept ring dice set to opportunity 💮 to any attack or support actions you make with the spear. This spear lasts until you lose grip of it or at the end of the conflict.' -- Effect
+)
+;
