@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
   const id = event.path.split("/").pop();
   const path = event.path;
   // /lore
-  if (path === "/.netlify/functions/lore") {
+  if (path === "/.netlify/functions/lore/") {
     try {
       const loreResult = await db.query(`
       SELECT lore.*, cards.id AS card_id, cards.header, 
