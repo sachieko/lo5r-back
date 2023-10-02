@@ -41,4 +41,111 @@ Void: Sacrifice (give to achieve a greater end).'),
 Water: Exchange (labor or resources for others).
 Fire: Innovate (a way to get resources).
 Air: Con (to get resources for nothing).
-Void: Subsist (to get resources from the environment without disrupting it).');
+Void: Subsist (to get resources from the environment without disrupting it).'),
+(
+  4, -- Rule Id
+  'Calming Breath', -- Title
+  'As a support action, take a deep breath and remove 1 strife if above half your composure, and 1 fatigue if above half your endurance.'  -- Content
+),
+(
+  4, -- Rule Id
+  'Center', -- Title
+  'As a support action in Void stance, choose a skill and roll skill dice up to your ranks in it. You can reserve any of these dice as a result to be substituted in place of dice for your next check using that skill or Center action.'  -- Content
+),
+(
+  4, -- Rule Id
+  'Predict', -- Title
+  'As an attack and scheme action, choose a ring other than void and record it to be revealed later. When your opponent chooses a stance at the start of their turn, if they chose the stance you did they gain 4 strife and must choose a different ring for their stance. This lasts until end of your next turn.'  -- Content
+),
+(
+  4, -- Rule Id
+  'Prepare Item', -- Title
+  'Prepare an item, ready a weapon in a grip, or stow a weapon or other item as a support action.'  -- Content
+),
+(
+  4, -- Rule Id
+  'Strike', -- Title
+  'As an attack action, make a TN 2 Martial Arts check of the type for your weapon targeting an opponent in range. On a success, deal physical damage equal to base damage + bonus successes.
+  Opportunities: 💮💮 If you succeeded, you inflict a critical strike on the target of your weapon''s deadliness.'  -- Content
+),
+(
+  4, -- Rule Id
+  'Finishing Blow', -- Title
+  'This action may only be executed the first time a duel or clash opponent unmasks or becomes compromised in the duel. When this occurs, a character may interrupt all other rolls and execute a finishing blow (even before a roll has finished resolving because strife resolves before opportunity and successes).
+  To execute the finishing blow, choose any attack action and perform it against the opponent. On a success, inflict a critical strike of severity equal to your attack action or weapon''s deadliness multiplied by 2, then increase it further by bonus successes.
+  If both characters become compromised at the same time, such as when they receive strife in the staredown, the character with lower honor executes their finishing blow first. If the other character is still alive after, they may then execute their finishing blow.'  -- Content
+),
+(
+  5, -- Rule Id
+  'Assist', -- Title
+  'As an attack, scheme, and support action help a character at range 0-2 with their action to give the assistance effect (Pg. 26 of the Core Rulebook).' -- Desc
+),
+(
+  5, -- Rule Id
+  'Calming Breath', -- Title
+  'As a support action, take a deep breath and remove 1 strife if above half your composure, and 1 fatigue if above half your endurance.' -- Desc
+),
+(
+  5, -- Rule Id
+  'Guard', -- Title
+  'As a support action make a TN 1 Tactics check targeting yourself or a character you wish to guard in your weapon''s range. On a success increase the TN of attack checks against the target by 1 + 1 per 2 bonus successes.' -- Desc
+),
+(
+  5, -- Rule Id
+  'Maneuver', -- Title
+  'As a movement action, you may move one range band. If you choose to make a TN 2  Fitness check instead of move one range band, you may move 2 range bands plus a range band for every 2 bonus successes.' -- Desc
+),
+(
+  5, -- Rule Id
+  'Prepare Item', -- Title
+  'Prepare an item, ready a weapon in a grip, or stow a weapon or other item as a support action.' -- Desc
+),
+(
+  5, -- Rule Id
+  'Strike', -- Title
+  'As an attack action, make a TN 2 Martial Arts check of the type for your weapon targeting an opponent in range. On a success, deal physical damage equal to base damage + bonus successes.
+  Opportunities: 💮💮 If you succeeded, you inflict a critical strike on the target of your weapon''s deadliness.' -- Desc
+),
+(
+  5, -- Rule Id
+  'Wait', -- Title
+  'As an attack, scheme, and support action announce a condition and a non-movement action you will take upon this condition occurring. After the condition occurs before the end of the round, perform that action. This does not count as a new turn, so you cannot change your stance, but if the condition is not fulfilled before the end of the round you may perform one action of your choice before it ends.' -- Desc
+),
+(
+  5, -- Rule Id
+  'Challenge', -- Title
+  'As a scheme action, make a TN 1 Command check targeting a character within 5 rangebands in which you wish to issue a challenge for a Clash. When you issue the challenge, you stake 10 honor and 5 glory which you concede if you sabotage the clash.
+  If the target declines, they lose glory equal to your ranks in command plus bonus successes on the challenge. Each ally if theirs that has less glory than you must also gain 2 strife, and you gain a void point.
+  If the target accepts the challenge they also stake 10 honor and 5 glory which is lost if they take any attack or scheme actions before the clash begins at the end of the round.
+  When the clash begins at the end of the round, the Storyteller will determine if you both use your skirmish initiative or roll a clash initiative with a TN 1 meditation check as in a duel which is used during the clash.
+  A character can withdraw from a clash after one or more rounds of participating without it being dishonorable, as the challenge was answered. Another character can "cut in" to a clash by issuing their own challenge on a participant, which has them take the place of their target''s opponent. Any other interruption by another character has both them and the character they helped lose 10 honor.
+  When both characters have taken their turn in the clash, they may choose to extend it after if both are still able. If both choose to extend the clash, they skip their turns in the skirmish to clash at the end of the next round otherwise the clash ends and they resume their skirmish turns.
+  If a character is incapacitated, unconscious, dying, or dead then they have lost the clash and the other is the victory. The allies of the losing participant all gain 3 strife as a result.' -- Desc
+),
+(
+  5, -- Rule Id
+  'Finishing Blow', -- Title
+  'This action may only be executed the first time a clash opponent unmasks or becomes compromised in the clash started by the Challenge action. When this occurs, a character may interrupt all other rolls and execute a finishing blow (even before a roll has finished resolving because strife resolves before opportunity and successes).
+  To execute the finishing blow, choose any attack action and perform it against the opponent. On a success, inflict a critical strike of severity equal to your attack action or weapon''s deadliness multiplied by 2, then increase it further by bonus successes.
+  If both characters become compromised at the same time, such as when they receive strife in the staredown, the character with lower honor executes their finishing blow first. If the other character is still alive after, they may then execute their finishing blow.'  -- Content
+),
+(
+  6, -- Rule Id
+  'Calming Breath', -- Title
+  'As a support action, take a deep breath and remove 1 strife if above half your composure, and 1 fatigue if above half your endurance.' -- Desc
+),
+(
+  6, -- Rule Id
+  'Assist', -- Title
+  'As an attack, scheme, and support action help a character at range 0-2 with their action to give the assistance effect (Pg. 26 of the Core Rulebook).' -- Desc
+),
+(
+  6, -- Rule Id
+  'Persuade', -- Title
+  'As a scheme action, depending on the approach you are using (See Pg 151 of the Core Rulebook), attempt to have an idea, emotion, or desire take root or be dismissed by a target.
+  Make a social skill check targeting one or more characters where the TN is the highest vigilance of your targets. If you succeed, you add one momentum point toward the social objective that your check is relevant to, plus 1 more for every 2 bonus successes.
+  If using Command: If all targets have lower status rank than you, decrease the TN by 1.
+  If using Courtesy: If all targets have higher status rank than you, decrease the TN by 1.
+  If using other skills, such as Games/Performance: If all targets have equal status rank to you, decrease the TN by 1.' -- Desc
+)
+;

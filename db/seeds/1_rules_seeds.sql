@@ -21,4 +21,37 @@ Social Skills: Command, Courtesy, Games, Performance.
 Scholar Skills: Culture, Government, Medicine, Sentiment, Theology. 
 Martial Skills: Fitness, Martial Arts Melee, Martial Arts Ranged, Martial Arts Unarmed, Meditation, Tactics. 
 Trade Skills: Commerce, Labor, Seafaring, Skullduggery, Survival.',
-'rule');
+'rule'),
+--4: Duels
+(
+  'Duel', -- title
+  'Duels have a unique set of rules described below. Duels generally have terms, such as the objective or weapons permitted. Some example objectives are: Iaijutsu to first strike or first blood, A spar to incapacitation, or the Taryu-jai of Shugenja which are typically fought with invocations to incapacitation. A clash is similar to a duel and uses many of the duel rules, however there are some unique differences
+  Initiative is determined with a TN 1 Meditation check. Duels then have a staredown at the start of each round where both participants receive strife equal to the round number of the duel. After that strife, each participant may bid extra strife if they are not yet compromised in order to raise their initiative by 1 per strife bid. Both bids are revealed simultaneously to determine initiative fairly for the round.
+  Duels end when the objective has been achieved by a participant or they concede. If a character becomes compromised or unmasks for the first time during a duel, the other participant in the duel can execute a finishing blow which is described below. A finishing blow interrupts other actions and completes before other actions resolve, and a finishing blow can also be interrupted by a finishing blow as well.
+  Duels also can follow a scoring system if the victor of a duel is not obvious. Below are actions specific to duels available to anyone in one:', -- detail
+  'conflict' -- category
+),
+--5: Skirmish
+(
+  'Skirmish', -- title
+  'Skirmishes have a unique set of modifications for conflict scenes as described below. Additionally, one may enter a clash during a conflict which are a duel embedded in a skirmish and so use those rules.
+  Initiative is determined with a TN 1 Tactics check, and 💮 can be spent to gain additional information about the surroundings or undertake small preparatory tasks.
+  Skirmishes make the most use of range bands, and each character can move 1 range band before or after their action as part of their turn
+  For Clashes inside of skirmishes, refer to the Challenge action in the sample actions below.', -- detail
+  'conflict' -- category
+),
+--6: Intrigue
+(
+  'Intrigue', -- title
+  'Intrigues are a unique type of conflict scene, as they are social engagements. Social objectives are chosen by the participants in an intrigue scene, and the Storyteller sets the TN for each objective. Multiple characters may work together on one objective, or even have competing objectives hidden from other players. Examples of social objectives are on pages 255-256 of the Core Rulebook, but generally consist on how the objective is completed and what happens when it is complete.
+  Initiative for an Intrigue works differently from other conflict scenes. Intrigues flow more like narrative scenes, so initiative is determined by a TN 1 Sentiment check that represents finding the polite timings to interject in the intrigue. Characters may take their turns as they wish in an intrigue, except if two characters wish to act at the same time. In such a case, this initiative can break the tie though a character with lower status must forfeit 1 honor and glory to take their turn over someone of higher status.
+  Stances still have their affects as in other conflict scenes, and below are some examples of intrigue actions that anyone has access to. Shuji may compliment these actions as well.', -- detail
+  'conflict' -- category
+),
+--7: Mass Combat
+(
+  'Mass Battles', -- title
+  'Mass Battles have yet to be completed in terms of detail here. Tune in next week?', -- detail
+  'conflict' -- category
+)
+;

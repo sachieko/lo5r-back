@@ -68,4 +68,5 @@ VALUES
 ('Water', 'Downtime', '💮+', 'Remove 1 strife or fatigue from yourself during the downtime activity per opportunity spent.'),
 ('Water', 'Downtime', '💮💮', 'Make a new friend or acquaintance during your downtime activity, usually related to the activity but at the GM discretion.'),
 ('Void', 'Downtime', '💮+', 'Reserve a dropped die result per opportunity spent (up to a maximum of your ranks in the skill used) and add them to your next check with the same skill as a kept die.'),
-('Void', 'Downtime', '💮💮', 'Have a short premonition about a possible event that will occur in the future during your downtime action.');
+('Void', 'Downtime', '💮💮', 'Have a short premonition about a possible event that will occur in the future during your downtime action.'),
+('Any', 'Conflict', '💮💮', 'When using the Strike attack action, if you succeed on the attack you inflict a critical strike on the target equal to the weapon''s deadliness.');
