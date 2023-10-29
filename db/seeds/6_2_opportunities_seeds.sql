@@ -47,5 +47,7 @@ VALUES
 (24, 'Air', 'Technique', '💮💮+', 'Another character within 0-1 range bands of yourself can also see the outlines per 💮💮 spent.'),
 (25, 'Air', 'Technique', '💮', 'Summon any kind of melee or ranged weapon instead.'),
 (25, 'Air', 'Technique', '💮', 'Immediately perform a guard action with the spear after summoning it.'),
-(25, 'Air', 'Technique', '💮💮', 'You may summon a pair of weapons. A pair can be any two weapons that are considered a pair, such as a daisho.')
+(25, 'Air', 'Technique', '💮💮', 'You may summon a pair of weapons. A pair can be any two weapons that are considered a pair, such as a daisho.'),
+(26, 'Water', 'Technique', '💮+', 'Lower an enemy''s physical resistance by 1 per 💮 spent until the end of your next turn.'),
+(28, 'Any', 'Technique', '💮+', 'The space within reach of your polearm weapon counts as dangerous terrain for one target per 💮 spent. Until the start of your next turn these targets must succeed at a Fitness 4 (Air 2, Water 5) check in order to advance closer to you, otherwise they cannot.')
 ;

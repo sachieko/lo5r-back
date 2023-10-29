@@ -153,5 +153,32 @@ VALUES
   'A swirling mass of violent winds coalesce into a weapon within your hand, weighing nearly nothing but striking with the force of typhoon winds.', -- Desc
   'As a support action, make a TN 1 (Air) Theology check that summons a spear made of air readied in your hand.', -- Activation
   'On a success, you have a spear readied in your hand, though it has the concealable quality as it is only visible by a faint wispy outline. Due to this, you add an extra kept ring dice set to opportunity 💮 to any attack or support actions you make with the spear. This spear lasts until you lose grip of it or at the end of the conflict.' -- Effect
+),
+-- 26
+(
+  'Striking as Water', -- Name
+  1, -- Rank
+  'Kata', -- Type
+  'Adapt to your opponent''s stance and slip past their defenses to negate some of their defense.', -- Desc
+  'When making a Martial Arts check using the Water ring, spend opportunity in this new way.', -- Activation
+  '' -- Effect
+),
+-- 27
+(
+  'Warrior''s Resolve', -- Name
+  1, -- Rank
+  'Kata', -- Type
+  'Steel yourself to recover from fatigue, even in the midst of battle.', -- Desc
+  'Once per scene, you may use a support action to recover at the cost of 1 void point.', -- Activation
+  'Reduce your fatigue by an amount equal to your honor rank, to a minimum of 0.' -- Effect
+),
+-- 28
+(
+  'Iron Forest Style', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'Trained in using the length of a spear, a bushi can easily keep their opponents at a distance.', -- Desc
+  'When making a Martial Arts [Melee] check with a polearm type weapon, you can spend opportunity in this new way.', -- Activation
+  '' -- Effect
 )
 ;
