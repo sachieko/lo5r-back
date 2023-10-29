@@ -28,7 +28,7 @@ Water: Animals.
 Void: Humans.'),
 -- Kata Start
 -- 6
-('Striking as Fire', '', 1, 'Kata', 'Push the attack, trying to force an opening or a weakness that can be exploited.', 'When you make a Martial Arts (Fire) attack check, you may spend opportunity in a new way.', '');
+('Striking as Fire', '', 1, 'Kata', 'Push the attack, trying to force an opening or a weakness that can be exploited.', 'You can spend 💮 in a new way when making Martial Arts (Fire) checks.', '');
 
 INSERT INTO techniques (name, rank, type, description, activation, effect)
 VALUES
@@ -160,7 +160,7 @@ VALUES
   1, -- Rank
   'Kata', -- Type
   'Adapt to your opponent''s stance and slip past their defenses to negate some of their defense.', -- Desc
-  'When making a Martial Arts check using the Water ring, spend opportunity in this new way.', -- Activation
+  'You can spend 💮 in a new way when making Martial Arts (Water) checks.', -- Activation
   '' -- Effect
 ),
 -- 27
@@ -180,5 +180,136 @@ VALUES
   'Trained in using the length of a spear, a bushi can easily keep their opponents at a distance.', -- Desc
   'When making a Martial Arts [Melee] check with a polearm type weapon, you can spend opportunity in this new way.', -- Activation
   '' -- Effect
+),
+-- 29
+(
+  'Iron in the Mountains Style', -- Name
+  4, -- Rank
+  'Kata', -- Type
+  'Force your opponent into a prone position with overwhelming force or an unexpected leg sweep.', -- Desc
+  'When you make a Martial Arts (Earth) check, you may spend opportunity in this new way.', -- Activation
+  '' -- Effect
+);
+
+-- Clan specific required techniques
+INSERT INTO techniques (name, prerequisite, rank, type, description, activation, effect)
+VALUES 
+-- 30
+(
+  'Lord Hida''s Grip', -- Name
+  '(Crab)',
+  2, -- Rank
+  'Kata', -- Type
+  'Hold down a larger creature for others to defeat.', -- Desc
+  'Make a Fitness (Void) check on a creature with a TN equal to a creature''s silhouette for a minimum of 3 that is within 1 rangeband of you or closer.', -- Activation
+  'The creature is immobilized if you succeed, and until the beginning of your next turn you give assistance to all characters who make an attack action against that creature.' -- Effect
+),
+-- 31
+(
+  'Lord Shiba''s Valor', -- Name
+  '(Phoenix)',
+  2, -- Rank
+  'Kata', -- Type
+  'Prevent enemies from attacking anyone within your reach so long as they could hit you.', -- Desc
+  'Only once a session, use a support action with a readied weapon to make a Tactics 2 (Void) check which can target any allies in reach of your weapon.', -- Activation
+  'On a success, those who can target you with an attack or scheme action cannot target your chosen allies unless the attack or scheme action has multiple targets and you are the first target. This lasts for as many rounds as your school rank.' -- Effect
+),
+-- 32
+(
+  'Lady Doji''s Decree', -- Name
+  '(Crane)',
+  2, -- Rank
+  'Shuji', -- Type
+  'With a few chosen words, prevent others from striking you.', -- Desc
+  'Once per session you can use an action to make a Courtesy (Void) check with as many targets as your school rank. The vigilance of the target with the highest status is the TN of the check.', -- Activation
+  'On a success, the targets cannot make any attack actions which target you, and this lasts for one round plus 1 round per bonus successes, or until you attack which would break the peace.' -- Effect
+),
+-- 33
+(
+  'Lady Shinjo''s Speed', -- Name
+  '(Unicorn)',
+  2, -- Rank
+  'Shuji', -- Type
+  'Travel faster upon horseback than would reasonable be expected, allowing you to reach locations earlier.', -- Desc
+  'For a downtime activity, you may reach a destination quickly if you succeed at a Survival 2 (Void) check if you have a horse.', -- Activation
+  'You reach the destination in half the time as usual and may include one other rider on your horse.' -- Effect
+),
+-- 34
+(
+  'Lord Akodo''s Roar', -- Name
+  '(Lion)',
+  2, -- Rank
+  'Shuji', -- Type
+  'Startle enemies and rouse allies with a loud warcry.', -- Desc
+  'As a once per session action, make a Command 2 (Void) check targeting any hostile characters within range bands equal to school ranks.', -- Activation
+  'Targets gain the dazed condition if you succeed.' -- Effect
+),
+-- 35
+(
+  'Lord Bayushi''s Whispers', -- Name
+  '(Scorpion)',
+  2, -- Rank
+  'Shuji', -- Type
+  'Using the vast network of the Scorpion, find an informant in order to gather information on a topic within the area.', -- Desc
+  'As a downtime action or during a narrative scene once per session, make a Skulduggery 2 (Void) check to find an informant to speak with on a topic.', -- Activation
+  'When you succeed, an informant is created by you and the Storyteller who will be able to give you some information on the topic of your inquiry.' -- Effect
+),
+-- 36
+(
+  'Lord Togashi''s Insight', -- Name
+  '(Dragon)',
+  2, -- Rank
+  'Shuji', -- Type
+  'Gain insight regarding how to proceed with a difficult situation.', -- Desc
+  'Only once per session, use an action to make a Meditation 2 (Void) check to gain supernatural insight regarding a specific problem.', -- Activation
+  'When you succeed you get a brief vision or briefly hear what is assumed to be the voice of Togashi which gives a hint regarding how to proceed. The hint should be no more than a hint, helping formulate a plan of action but not give a complete answer.' -- Effect
 )
 ;
+
+INSERT INTO techniques (name, rank, type, description, activation, effect)
+VALUES
+-- 37
+(
+  'Soul Sunder', -- Name
+  5, -- Rank
+  'Kata', -- Type
+  'Attune yourself and your blade to your ancestors, allowing you to cut the flesh and body of supernatural beings.', -- Desc
+  'Make a Meditation 4 (Void) check as a support action to attune yourself and your blade spiritually.', -- Activation
+  'When you succeed, one readied weapon of yours is now Sacred and if you inflict a critical strike on an otherworldly being, the deadliness is increased by your bonus successes. This lasts until end of your next turn.' -- Effect
+),
+-- 38
+(
+  'Striking as Air', -- Name
+  1, -- Rank
+  'Kata', -- Type
+  'Allow your strikes to flow into each other, turning the opportunities you open up with your blade into future attacks.', -- Desc
+  'You can spend 💮 in a new way when making Martial Arts (Air) checks.', -- Activation
+  '' -- Effect
+),
+-- 39
+(
+  'Striking as Earth', -- Name
+  1, -- Rank
+  'Kata', -- Type
+  'Fight defensively, warding strikes with your blade or positioning, reducing the likelihood an attack will actually harm you.', -- Desc
+  'You can spend 💮 in a new way when making Martial Arts (Earth) checks.', -- Activation
+  '' -- Effect
+),
+-- 40
+(
+  'Striking as Void', -- Name
+  5, -- Rank
+  'Kata', -- Type
+  'You fight in a way that you can shift your current action into any potential possibility in order to seize an advantage in an instant.', -- Desc
+  'You can spend 💮 in a new way when making Martial Arts (Void) checks.', -- Activation
+  '' -- Effect
+),
+-- 41
+(
+  'Tactical Assessment', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'Battles are often decided by factors beforehand - learn some of these factors to gain an advantage in conflict.', -- Desc
+  'You can spend 💮 in a new way when making an Initiative check.', -- Activation
+  '' -- Effect
+);
