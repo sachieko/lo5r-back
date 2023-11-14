@@ -83,7 +83,7 @@ VALUES
 ('Fire', 'Invocation', '💮+', 'Choose an additional target per 💮 spent if the invocation can target others.'),
 ('Fire', 'Invocation', '💮', 'Until the end of your next turn, the TN of the next Attack action you make is reduced by 1.'),
 ('Fire', 'Invocation', '💮+', 'The TN to resist the effects of the invocation is increased by 1 per 💮 spent.'),
-('Fire', 'Invocation', '💮💮+', 'For every 💮💮 spent this way, one target of the invocation must make a Fitness 33 (Air 4, Water 1) check or gain the Burning condition.'),
+('Fire', 'Invocation', '💮💮+', 'For every 💮💮 spent this way, one target of the invocation must make a Fitness 3 (Air 4, Water 1) check or gain the Burning condition.'),
 ('Water', 'Invocation', '💮', 'Your supernatural resistance increases by 1 until your next turn starts.'),
 ('Water', 'Invocation', '💮+', 'For every 💮 spent, you may choose an additional target of your invocation if it can target others.'),
 ('Water', 'Invocation', '💮💮+', 'Increase or reduce the range of the invocation by 1 per 💮💮.'),
