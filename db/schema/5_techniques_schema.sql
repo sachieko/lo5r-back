@@ -9,5 +9,7 @@ CREATE TABLE techniques (
   type VARCHAR(50) NOT NULL,
   description TEXT NOT NULL,
   activation TEXT,
-  effect TEXT DEFAULT NULL
+  effect TEXT DEFAULT NULL,
+  book VARCHAR(100) default NULL,
+  pg INTEGER default NULL
 );

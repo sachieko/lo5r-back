@@ -147,5 +147,27 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
   If using Command: If all targets have lower status rank than you, decrease the TN by 1.
   If using Courtesy: If all targets have higher status rank than you, decrease the TN by 1.
   If using other skills, such as Games/Performance: If all targets have equal status rank to you, decrease the TN by 1.' -- Desc
+),
+(
+  7, -- Rule Id
+  'Assault', -- Title
+  'Make a TN 2 Tactics check targeting an enemy cohort as an attack and movement action. If successful, deal attrition equal to your command ranks plus bonus successes.' -- Desc
+),
+(
+  7, -- Rule Id
+  'Challenge', -- Title
+  'Make a TN 1 Command check as a movement and scheme action to challenge an enemy leader to a duel. If successful, stack 10 honor and 5 glory as though entering a clash. A clash follows the rules of a duel. If the enemy accepts the duel they stake the same glory and honor and the loser''s army gains 5 panic.
+  If they decline they lose glory equal to your Command ranks plus bonus successes as well as gaining 3 panic for their army. You also gain a void point as if they declined a clash.' -- Desc
+),
+(
+  7, -- Rule Id
+  'Rally', -- Title
+  'Make a TN 1 Command check as a support action, targeting a friendly cohort. That cohort''s leader gains assistance on their next check this scene. If the check was successful, remove 1 panic for each success.' -- Desc
+),
+(
+  7, -- Rule Id
+  'Reinforce', -- Title
+  'Make a TN 2 Tactics check as a movement and support action to reinforce a position. If you targeted an unoccupied area, your army counts as occupying it until the army vacates either narratively or via an action such as rally or assault.
+  If successful, the TN of attack actions that target your cohort increase by 1 plus 1 per two bonus successes. This lasts for one round.' -- Desc
 )
 ;
