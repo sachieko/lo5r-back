@@ -54,7 +54,13 @@ Trade Skills: Commerce, Labor, Seafaring, Skullduggery, Survival.',
 --7: Mass Combat
 (
   'Mass Battles', -- title
-  'Mass Battles have yet to be completed in terms of detail here. Tune in next week?', -- detail
+  'Below are some useful explanations of the terms and rules for mass battles.
+  Commanders: Each army in a conflict has one commander. Each round, they select the objective of the army for that round. If a commander dies then their army gains 10 panic. Commanders determine the initiative of an army with the TN 1 Command check, with those of higher initiative able to choose to go after a lower iniative.
+  Leaders and Cohorts: Each cohort in an army has a leader, chosen by the commander. Generally each PC is a leader, and the commander can choose to lead as well. Each round, commanders choose one leader to act that has not acted that round yet, and it alternates until all cohorts have taken an action chosen by the cohort leader.
+  Strength: This functions like the endurance of the army. Attrition (damage) is dealt, and fortifications reduce the damage similar to armor for individuals. Attrition not reduced to 0 is gained as casualties. Like fatigue, when casualties is higher than an army''s strength they get routed and suffer heavy losses.
+  Discipline: This functions like the composure of the army. Panic is dealt similar to strife, and if panic exceeds discipline the army can scatter or turn on its own.
+  Fortifications: This functions like armor for individuals, but are key locations that provide some measure of defense for an army. The types and attrition reduction/difficulty to capture are listed here: [Woods/Defensive Terrain:-1/4], [Outpost:-2/6], [Fortress:-3/8], [Castle:-4/10].
+  Strategic Objectives: These will be included later. Stay tuned!', -- detail
   'conflict', -- category
   'Core Rulebook', 274
 )
