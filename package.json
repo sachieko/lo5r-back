@@ -7,7 +7,6 @@
     "db:reset": "node bin/resetdb.js"
   },
   "dependencies": {
-    "@netlify/functions": "^2.0.2",
     "@types/express": "^4.17.17",
     "chalk": "^4.1.2",
     "cors": "^2.8.5",
