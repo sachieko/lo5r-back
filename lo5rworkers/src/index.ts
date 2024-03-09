@@ -71,7 +71,8 @@ router.get('/questions', async (req, env, ctx) => {
 
 router.get('/search', async (req, env, ctx) => {
 	const result = await db.query(searchQuery, { env, ctx }, [req.query.q]);
-	const resp = new Response(JSON.stringify(result), {
+	// There is no formatting on search, so must return result.rows instead
+	const resp = new Response(JSON.stringify(result.rows), {
 		...config,
 	});
 	return resp;
