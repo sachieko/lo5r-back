@@ -8,7 +8,7 @@ type TConfig = {
 }
 
 export const db = {
-  query: async (text: string, config: TConfig, params?: any[], ) => {
+  query: async (text: string, config: TConfig, params?: any[] | undefined, ) => {
     const client = new Client(config.env.DB_URL);
     await client.connect();
     try {
