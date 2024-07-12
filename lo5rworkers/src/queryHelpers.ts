@@ -62,6 +62,8 @@ type TRule = {
   detail: string;
   image: string;
   cards: TCard[];
+  book: string | null;
+  pg: number | null;
 }
 export const formatRuleResult = function (ruleResult: QueryResult) {
   const result: TRule[] = [];
@@ -76,6 +78,8 @@ export const formatRuleResult = function (ruleResult: QueryResult) {
         detail: row.detail,
         image: row.image_url,
         cards: [],
+        book: row.book,
+        pg: row.pg
       };
       result.push(currentRule);
     }
@@ -97,6 +101,8 @@ type TLore = {
   detail: string;
   image: string;
   cards: TCard[];
+  book: string | null;
+  pg: number | null;
 }
 export const formatLoreResult = function (loreResult: QueryResult) {
   const result: TLore[] = [];
@@ -110,6 +116,8 @@ export const formatLoreResult = function (loreResult: QueryResult) {
         detail: row.detail,
         image: row.image_url,
         cards: [],
+        book: row.book,
+        pg: row.pg
       };
       result.push(currentLore);
     }
@@ -143,6 +151,8 @@ type TTechnique = {
   activation: string;
   effect: string;
   opportunities: TOpportunity[];
+  book: string | null;
+  pg: number | null;
 }
 export const formatTechniqueResult = function (techResult: QueryResult) {
   const result: TTechnique[] = [];
@@ -160,6 +170,8 @@ export const formatTechniqueResult = function (techResult: QueryResult) {
         activation: row.activation,
         effect: row.effect,
         opportunities: [],
+        book: row.book,
+        pg: row.pg
       };
       result.push(currentTechnique);
     }
