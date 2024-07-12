@@ -26,7 +26,13 @@ export const searchQuery = `
   WHERE title ILIKE '%' || $1 || '%'
   UNION
   SELECT '/techniques/?filter=&tech=' || id AS link, name AS title, type AS detail FROM techniques
-  WHERE name ILIKE '%' || $1 || '%';
+  WHERE name ILIKE '%' || $1 || '%'
+  UNION
+  SELECT '/conditions/' || id AS link, title, detail FROM conditions
+  WHERE title ILIKE '%' || $1 || '%'
+  UNION
+  SELECT '/terrains/' || id AS link, title, detail FROM terrains
+  WHERE title ILIKE '%' || $1 || '%';
   `;
 
 export const questionsQuery = `
@@ -41,3 +47,13 @@ export const techniquesQuery = `
   FROM techniques
   LEFT JOIN opportunities ON technique_id = techniques.id
   ORDER BY techniques.type, techniques.rank, techniques.name;`;
+
+export const conditionsQuery = `
+  SELECT conditions.*
+  FROM conditions
+  ORDER BY conditions.title;`;
+
+export const terrainsQuery = `
+  SELECT terrains.* 
+  FROM terrains 
+  ORDER BY terrains.title;`;

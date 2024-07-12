@@ -1,5 +1,14 @@
 import { error, json, Router, IRequestStrict, createCors } from 'itty-router';
-import { opportunitiesQuery, loreQuery, rulesQuery, questionsQuery, techniquesQuery, searchQuery } from './queries';
+import {
+	opportunitiesQuery,
+	loreQuery,
+	rulesQuery,
+	questionsQuery,
+	techniquesQuery,
+	searchQuery,
+	conditionsQuery,
+	terrainsQuery,
+} from './queries';
 import { formatLoreResult, formatTechniqueResult, formatQuestionResult, formatRuleResult } from './queryHelpers';
 import { db } from './connection';
 
@@ -37,8 +46,9 @@ router.get('/lore', async (req, env, ctx) => {
 
 router.get('/opps', async (req, env, ctx) => {
 	const result = await db.query(opportunitiesQuery, { env, ctx });
-	// There is no formatting done on the opportunities from the DB, so we need to access the rows here
-	const resp = new Response(JSON.stringify(result.rows), {
+	// There is no formatting done on the opportunities from the DB, so this is done just for readability and consistency in code compared to those with formatting.
+	const opportunitiesResult = result.rows;
+	const resp = new Response(JSON.stringify(opportunitiesResult), {
 		...config,
 	});
 	return resp;
@@ -69,10 +79,29 @@ router.get('/questions', async (req, env, ctx) => {
 	return resp;
 });
 
+router.get('/conditions', async (req, env, ctx) => {
+	const result = await db.query(conditionsQuery, { env, ctx });
+	const conditionsResult = result.rows; // See comment on /opportunities route
+	const resp = new Response(JSON.stringify(conditionsResult), {
+		...config,
+	});
+	return resp;
+});
+
+router.get('/terrains', async (req, env, ctx) => {
+	const result = await db.query(terrainsQuery, { env, ctx });
+	const terrainsResult = result.rows; // See comment on /opportunities route
+	const resp = new Response(JSON.stringify(terrainsResult), {
+		...config,
+	});
+	return resp;
+});
+
 router.get('/search', async (req, env, ctx) => {
 	const result = await db.query(searchQuery, { env, ctx }, [req.query.q]);
 	// There is no formatting on search, so must return result.rows instead
-	const resp = new Response(JSON.stringify(result.rows), {
+	const searchResult = result.rows;
+	const resp = new Response(JSON.stringify(searchResult), {
 		...config,
 	});
 	return resp;
