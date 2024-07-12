@@ -33,7 +33,7 @@ Void: Humans.'),
 INSERT INTO techniques (name, rank, type, description, activation, effect)
 VALUES
 -- 7
-('Token of Memory', 1, 'Invocation', 'Conjure an illusion from the air. Also called Riddle of Agasha (Ancestral), Trick of the Air Kami (Elemental), and Ebisu''s joke (Fortunist). ', 'As a scheme action, make a Tn 2 (Air) Theology check with a target in 0-1 range bands.', 'Summon an illusion of an inanimate thing at the area targetted, with a size equal to your bonus successes. It appears real, but cannot be used and its illusory nature can be discovered with a TN 4 (Earth 5, Fire 2) Artisan, Smithing, or Design check. It lasts for the scene.'),
+('Token of Memory', 1, 'Invocation', 'Conjure an illusion from the air. Also called Riddle of Agasha (Ancestral), Trick of the Air Kami (Elemental), and Ebisu''s joke (Fortunist). ', 'As a scheme action, make a Tn 2 (Air) Theology check with a target in 0-1 range bands.', 'Summon an illusion of an inanimate thing at the area targeted, with a size equal to your bonus successes. It appears real, but cannot be used and its illusory nature can be discovered with a TN 4 (Earth 5, Fire 2) Artisan, Smithing, or Design check. It lasts for the scene.'),
 -- 8
 ('Inari''s Blessing', 1, 'Invocation', 'Beseech the water kami for food and water. Also called Miya''s Gift (Ancestral), Feast of the Water (Elemental), Oasis in the Desert (Foreign).', 'As a support action, make a TN 2 (Water) Theology check on an area 1 range band away.', 'A meal is summoned at the target location that can nourish as many people as your water ring plus any bonus successes.'),
 -- 9
@@ -105,7 +105,7 @@ VALUES
   'Disappearing World Style', -- Name
   4, -- Rank
   'Kata', -- Type
-  'The rest of the world fades away as you pursue your oppponent with a flurry of strikes that intend to daze them and create an opening you can capitalize on.', -- Desc
+  'The rest of the world fades away as you pursue your opponent with a flurry of strikes that intend to daze them and create an opening you can capitalize on.', -- Desc
   'When you make a Martial Arts [Melee] check using the Fire ring, gain a new way to spend opportunity.', -- Activation
   '' -- Effect
 ),
@@ -133,7 +133,7 @@ VALUES
   1, -- Rank
   'Kata', -- Type
   'Send your weapon flying through the air towards a target in an attempt to catch them completely off guard or capitalize on an opening.', -- Desc
-  'Using an attack action with a weapon readied in one-handed grip, make a TN 2 Martial Arts check with the skill appropriate for the weapon targetting an opponent 2-3 range bands away.', -- Activation
+  'Using an attack action with a weapon readied in one-handed grip, make a TN 2 Martial Arts check with the skill appropriate for the weapon targeting an opponent 2-3 range bands away.', -- Activation
   'You throw your weapon. On a success, deal damage to the target equal to the weapon''s base damage plus bonus successes. If they defend the damage, your weapon lands 1 range band from the target in a direction of your choice, otherwise it embeds in them as they suffer the critical strike. On a failure, it flies the maximum distance of the technique in the direction of your target.' -- Effect
 ),
 -- 24
@@ -230,7 +230,7 @@ VALUES
   '(Unicorn)',
   2, -- Rank
   'Shuji', -- Type
-  'Travel faster upon horseback than would reasonable be expected, allowing you to reach locations earlier.', -- Desc
+  'Travel faster upon horseback than would reasonably be expected, allowing you to reach locations earlier.', -- Desc
   'For a downtime activity, you may reach a destination quickly if you succeed at a Survival 2 (Void) check if you have a horse.', -- Activation
   'You reach the destination in half the time as usual and may include one other rider on your horse.' -- Effect
 ),
@@ -275,7 +275,7 @@ VALUES
   'Kata', -- Type
   'Attune yourself and your blade to your ancestors, allowing you to cut the flesh and body of supernatural beings.', -- Desc
   'Make a Meditation 4 (Void) check as a support action to attune yourself and your blade spiritually.', -- Activation
-  'When you succeed, one readied weapon of yours is now Sacred and if you inflict a critical strike on an otherworldly being, the deadliness is increased by your bonus successes. This lasts until end of your next turn.' -- Effect
+  'When you succeed, one readied weapon of yours is now Sacred and if you inflict a critical strike on an otherworldly being, the deadliness is increased by your bonus successes. This lasts until the end of your next turn.' -- Effect
 ),
 -- 38
 (

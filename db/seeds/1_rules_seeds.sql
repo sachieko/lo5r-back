@@ -6,7 +6,7 @@ VALUES
 ('Rolling', 'Legend of the Five Rings uses a roll and keep system. Dice pools are formed from D6s, representing your rings, and D12s, representing your skills. When forming a dice pool, players and the storyteller determine which ring is appropriate for how the character approaches the task as well as an associated skill. First, determine which skill applies to the task. Then, the player describes how their character would like to approach the task which determines the ring. 
 Add a number of D6s equal to the ring and a number of D12 equal to the character''s ranks in the skill. This forms the dice pool. The storyteller then selects a targer number (TN) for the task, but sometimes the storyteller may hide the TN in certain situations. 
 After rolling, apply any effects that might modify the dice. These are typically advantages or disadvantages. Distinctions and adversities cancel each other out, while passions and anxieties would cancel each other out. 
-Then choose a number of dice up to your ring to keep. After choosing the dice, resolve the symbols in order: Explosive Successes, Strife, Opportunity, Count Successes.',
+Then choose a number of dice up to your ring to keep. After choosing the dice, resolve the symbols in order: Explosive Successes, Strife, 💮 Opportunity, Count Successes.',
 'rule', 'Core Rulebook', 21),
 -- 2: Conflict Description
 ('Conflict', 'There are 4 kinds of conflict scenes: Intrigues, Duels, Skirmishes, and Mass Battles. In general, most conflicts follow a similar structure. 
