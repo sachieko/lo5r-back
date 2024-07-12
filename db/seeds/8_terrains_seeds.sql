@@ -11,10 +11,10 @@ Tainted beings reduce the TN to resist effects by 1 in this terrain type.', 'Cor
 ('Entangling', 'Terrain with this quality has hindrances to mobility in it, such as thick mud, heavy snow, undertow in a river, or even icy ground.
 Mechanics: Movement actions of any kind have their TN increased by 2 for characters in the terrain.', 'Core Rulebook', 267),
 -- 4 Hallowed
-('Hallowed', 'Terrain with this quality is very spiritual, connected to the kami, or is otherwise  closer to the spiritual realms. It has one or more ring types associated with it, and is usually found where shrines to kami of its type are made or places of particular natural beauty.
+('Hallowed', 'Terrain with this quality is very spiritual, connected to the kami, or is otherwise  closer to the spiritual realms. It has one or more ring type associated with it, and is usually found where shrines to kami of its type are made or places of particular natural beauty.
 Mechanics: The TN of any checks using Meditation or Theology of the hallowed elements are reduced by 1, while tainted beings increase the TN to resist effects by 2 unless it is a ring of a different kind than the hallowed terrain in which case it is only increased by 1.', 'Core Rulebook', 267),
 -- 5 Imbalanced
-('Imbalanced', 'Terrain with this quality has a lack of connection to the kami or spiritual realms. It has at least 1 ring types associated with it, which represent the elements out of balance. This is narratively represented by an overflowed river, sun so warm it scorches crops, sudden cold winds interspersed with stillness.
+('Imbalanced', 'Terrain with this quality has a lack of connection to the kami or spiritual realms. It has at least 1 ring type associated with it, which represent the elements out of balance. This can be narratively represented by an overflowed river, sun so warm it scorches crops, sudden cold winds interspersed with stillness.
 Mechanics: The TN of any checks using Meditation or Theology of the imbalanced elements are increased by 1, while otherworldly beings increase the TN to resist effects by 2 unless it is a ring of a different kind than the imbalance in which case it is only increased by 1.', 'Core Rulebook', 267),
 -- 6 Obscuring
 ('Obscuring', 'Terrain with this quality has limited visibility, many obstacles such as tree branches or building scaffolds, or other situational elements that make it difficult to attack others. Narratively this could be represented as heavy rain or fog, tight quarters indoors, or the many plants in a jungle or cropfield.
