@@ -40,6 +40,7 @@ const runResetDB = async () => {
 
     await runSchemaFiles();
     await runSeedFiles();
+    console.log(chalk.blueBright('postgres database successfully recreated and seeded.'))
     process.exit();
   } catch (err) {
     console.error(chalk.red(`Failed due to error: ${err}`));
