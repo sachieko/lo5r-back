@@ -184,10 +184,33 @@ export const formatTechniqueResult = function (techResult: QueryResult) {
     id: number,
     technique_id: number,
     ring: string,
-    category: string;
-    cost: string;
+    category: string,W
+    cost: string,
     effect: string
   }, ...]
 
   There is not a format function because the data from the table does not require nesting the data
+*/
+
+/*
+  Conditions data format:
+  {
+    id: number,
+    title: string,
+    detail: string,
+    book: string,
+    pg: number
+  }
+
+*/ 
+
+/*
+  Terrains data format:
+  {
+    id: number,
+    title: string,
+    detail: string,
+    book: string,
+    pg: number
+  }
 */
