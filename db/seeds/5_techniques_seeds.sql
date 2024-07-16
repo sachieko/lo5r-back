@@ -324,7 +324,7 @@ VALUES
   'Using a scheme and support action make a Theology (Air) check with a TN equal to the silhouette of the target which is one object or person.', -- Activation
   'If successful the target is rendered invisible, though it can still be interacted with if not relying on sight, lasts for 1 round + bonus successes.', -- Effect
   'Core Rulebook', -- Book
-  192, -- Pg
+  192 -- Pg
 ),
 -- 43
 (
@@ -335,7 +335,7 @@ VALUES
   'Use an attack or support action on a target at range 3-5 to make a TN 4 (Air) Theology check.', -- Activation
   'Moves the target range bands equal to air ring + bonus successes, ignoring terrain but no further than 6 range bands. If you set them down gently it is a support action, harshly it is an attack action. If used as an attack action, the target must make a TN 44 (Earth 5, Fire 2) Fitness check or suffer effects of a range 3 fall.', -- Effect
   'Core Rulebook', -- Book
-  193, -- Pg
+  193 -- Pg
 ),
 -- 44
 (
@@ -346,7 +346,7 @@ VALUES
   'Make a TN 5 (Water) Theology check as a movement action targeting yourself, and characters up to your water ring between range 1-4.', -- Activation
   'On a success you may swap the location of any target with any other target, but all targets original locations must be occupied by someone at the end of the effect. In addition all targets gain 2 strife.', -- Effect
   'Core Rulebook', -- Book
-  208, -- Pg
+  208 -- Pg
 ),
 -- 45
 (
@@ -357,7 +357,7 @@ VALUES
   'Using a support action make a TN 6 (Air) Theology check with a target of a location at range 3-5 of you.', -- Activation
   'On a success, a Manifest Air Kami (Pg. 322 of Core) is summoned onto the spot, and it obeys the shugenja for rounds equal to 2 + bonus successes. Its turn always follows the shugenja''s turn, and unless angered it will depart afterwards. If provoked heavily, it may linger and act independently though will not attack the shugenja unless given reason to.', -- Effect
   'Core Rulebook', -- Book
-  194, -- Pg
+  194 -- Pg
 ),
 -- 46
 (
@@ -369,7 +369,7 @@ VALUES
   'In a mass battle, your army functions normally if panic exceeds discipline and cannot have morale collapse, for 1 round + 1 for every 3 bonus successes. 
   In a conflict that is not a mass battle, targets ignore the compromised condition for 1 round + 1 for every 2 bonus successes.', -- Effect
   'Fields of Victory', -- Book
-  103, -- Pg
+  103 -- Pg
 ),
 -- 47
 (
@@ -380,7 +380,7 @@ VALUES
   'When you make a Martial Arts Melee check with a blunt weapon, you may spend opportunity in a new way.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
-  180, -- Pg
+  180 -- Pg
 ),
 -- 48
 (
@@ -391,7 +391,7 @@ VALUES
   'Using a ready weapon make a TN 3 (Air) Martial Arts Melee or Unarmed check as an attack action targeting all characters in range.', -- Activation
   'On a success you deal the weapons damage to all targets and they must make a TN 3 (Earth 4, Fire 1) Fitness check or be knocked back 2 range bands.', -- Effect
   'Core Rulebook', -- Book
-  180, -- Pg
+  180 -- Pg
 ),
 -- 49
 (
@@ -402,7 +402,7 @@ VALUES
   'On any Social (Fire) check targeting at least one character spend opportunity in a new way.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
-  219, -- Pg
+  219 -- Pg
 ),
 -- 50
 (
@@ -413,7 +413,7 @@ VALUES
   'For Martial Arts Ranged checks, gain a new way to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
-  181, -- Pg
+  181 -- Pg
 ),
 -- 51
 (
@@ -425,7 +425,7 @@ VALUES
   'For a skirmish, choose an area of terrain in sight. All targets can choose to move 1 range band towards it immediately as part of this shuji. In addition, the terrain counts as obscured terrain for anyone targeting your targets until end of the scene.
   In a mass battle, choose an area of terrain in sight. Your cohort can immediately move towards it, and if unoccupied they can occupy it. Attacks targeting your cohort in this terrain treat your cohort has being in obscured terrain until end of the scene.', -- Effect
   'Core Rulebook', -- Book
-  221, -- Pg
+  221 -- Pg
 ),
 -- 52
 (
@@ -436,7 +436,7 @@ VALUES
   'When making an (Air) Initiative or Attack check, gain a new way to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
-  226, -- Pg
+  226 -- Pg
 ),
 -- 53
 (
@@ -447,7 +447,7 @@ VALUES
   'Make a TN 3 (Air) Martial Arts check as an attack action using a dose of poison and a concealable weapon targeting a character in range of that weapon.', -- Activation
   'On a success apply the poison to the weapon and the target suffers damage equal to the deadliness of the weapon + bonus successes. See Pg. 244 in the Core Rulebook for the effects of poisons.', -- Effect
   'Core Rulebook', -- Book
-  226, -- Pg
+  226 -- Pg
 ),
 -- 54
 (
@@ -458,7 +458,7 @@ VALUES
   'Make a TN 2 (Air) Medicine check as an attack action targeting all others at 0-2 range bands using 2 doses of a poison.', -- Activation
   'On a success, deal 3 physical damage ignoring armor as well as the effect of the poison if it were applied to a weapon that struck them. See Pg. 244 in the Core Rulebook for effects of poisons.', -- Effect
   'Core Rulebook', -- Book
-  227, -- Pg
+  227 -- Pg
 ),
 -- 55
 (
@@ -469,7 +469,7 @@ VALUES
   'Make a TN 4 (Air) Martial Arts Check as an attack action with a readied weapon on a target in range.', -- Activation
   'On a success, deal damage equal to the weapon damage and give the target the silenced condition. Other characters further than range 2 of the target will not notice the target has been struck for 1 + bonus successes rounds.', -- Effect
   'Core Rulebook', -- Book
-  227, -- Pg
+  227 -- Pg
 ),
 -- 56
 (
@@ -481,7 +481,7 @@ VALUES
   'If not in a mass battle: Each target increases their composure temporarily by your Earth ring until end of scene.
   In a mass battle: Increase your army''s discipline by your Earth ring + bonus successes until end of scene.', -- Effect
   'Core Rulebook', -- Book
-  217, -- Pg
+  217 -- Pg
 ),
 -- 57
 (
@@ -492,7 +492,7 @@ VALUES
   'Spend 1 void point as a support action.', -- Activation
   'Remove strife equal to the glory rank of the character.', -- Effect
   'Core Rulebook', -- Book
-  223, -- Pg
+  223 -- Pg
 ),
 -- 58
 (
@@ -503,7 +503,7 @@ VALUES
   'Once per scene while in a conflict scene, make a support action in void stance. ', -- Activation
   'Remove 3 fatigue and 3 strife. If using the optional Bonds rule, remove an additional 3 fatigue and 3 strife for each character in the scene that your character shares a bond with. It is recommended that a character cannot take this as well as Warrior''s Resolve or Courtier''s Resolve, as this is intended for ronin characters or those who have been ronin for a length of time.', -- Effect
   'Path of Waves', -- Book
-  95, -- Pg
+  95 -- Pg
 ),
 -- 59
 (
@@ -514,7 +514,7 @@ VALUES
   'When making a Social (Fire) check targeting at least one character, gain new ways to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
-  219, -- Pg
+  219 -- Pg
 ),
 -- 60
 (
@@ -525,7 +525,7 @@ VALUES
   'Make a TN 1 (Water) Commerce check.', -- Activation
   'On a success, you have an item with a rarity off 1 + bonus successes at most but still must pay for this item. Narratively, you acquired this item previously - either yourself or via an attendant - but are just revealing you have the item now even if it was not in your inventory before this check.', -- Effect
   'Core Rulebook', -- Book
-  221, -- Pg
+  221 -- Pg
 ),
 -- 61
 (
@@ -536,7 +536,7 @@ VALUES
   'When making a Scholar (Fire) check to assess what another character has told you, such as a story, gain a new way to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
-  219, -- Pg
+  219 -- Pg
 ),
 -- 62
 (
@@ -547,5 +547,5 @@ VALUES
   'Make a Command or Performance (Water) check targeting up to any characters who can perceive you in the scene. The TN is equal to the highest vigilance of the targets.', -- Activation
   'On a success, the targets treat you as if your status was 10 + 10 per bonus success higher or lower until end of scene. If you do something out of place for the chosen new status, a target can make a TN 4 (Earth 2, Fire 5) Sentiment check to try and determine your actual status.', -- Effect
   'Core Rulebook', -- Book
-  219, -- Pg
+  219 -- Pg
 );
