@@ -46,7 +46,7 @@ export const techniquesQuery = `
   opportunities.cost, opportunities.effect AS opportunity_effect
   FROM techniques
   LEFT JOIN opportunities ON technique_id = techniques.id
-  ORDER BY techniques.type, techniques.rank, techniques.name;`;
+  ORDER BY techniques.type, techniques.rank, techniques.name, opportunities.id;`;
 
 export const conditionsQuery = `
   SELECT conditions.*
