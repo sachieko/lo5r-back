@@ -169,7 +169,7 @@ VALUES
   1, -- Rank
   'Kata', -- Type
   'Steel yourself to recover from fatigue, even in the midst of battle.', -- Desc
-  'Once per scene, you may use a support action to recover at the cost of 1 void point.', -- Activation
+  'Once per scene, spend 1 void point as a support action.', -- Activation
   'Reduce your fatigue by an amount equal to your honor rank, to a minimum of 0.' -- Effect
 ),
 -- 28
@@ -312,4 +312,240 @@ VALUES
   'Battles are often decided by factors beforehand - learn some of these factors to gain an advantage in conflict.', -- Desc
   'You can spend 💮 in a new way when making an Initiative check.', -- Activation
   '' -- Effect
+);
+INSERT INTO techniques (name, rank, type, description, activation, effect, book, pg)
+VALUES 
+--42
+(
+  'Cloak of Night', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Call upon the air kami to conceal someone or something.', -- Desc
+  'Using a scheme and support action make a Theology (Air) check with a TN equal to the silhouette of the target which is one object or person.', -- Activation
+  'If successful the target is rendered invisible, though it can still be interacted with if not relying on sight, lasts for 1 round + bonus successes.', -- Effect
+  'Core Rulebook', -- Book
+  192, -- Pg
+),
+-- 43
+(
+  'Grasp of the Air Dragon', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  'Whisk a target through the air a great distance, setting them down gently or harshly at your whim.', -- Desc
+  'Use an attack or support action on a target at range 3-5 to make a TN 4 (Air) Theology check.', -- Activation
+  'Moves the target range bands equal to air ring + bonus successes, ignoring terrain but no further than 6 range bands. If you set them down gently it is a support action, harshly it is an attack action. If used as an attack action, the target must make a TN 44 (Earth 5, Fire 2) Fitness check or suffer effects of a range 3 fall.', -- Effect
+  'Core Rulebook', -- Book
+  193, -- Pg
+),
+-- 44
+(
+  'Hands of the Tides', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  'Cause living beings to swap places with each other at great distances, emerging from a rush of water that overtakes each of them.', -- Desc
+  'Make a TN 5 (Water) Theology check as a movement action targeting yourself, and characters up to your water ring between range 1-4.', -- Activation
+  'On a success you may swap the location of any target with any other target, but all targets original locations must be occupied by someone at the end of the effect. In addition all targets gain 2 strife.', -- Effect
+  'Core Rulebook', -- Book
+  208, -- Pg
+),
+-- 45
+(
+  'Rise, Air', -- Name
+  4, -- Rank
+  'Invocation', -- Type
+  'Summon a manifest Air Kami to assist you.', -- Desc
+  'Using a support action make a TN 6 (Air) Theology check with a target of a location at range 3-5 of you.', -- Activation
+  'On a success, a Manifest Air Kami (Pg. 322 of Core) is summoned onto the spot, and it obeys the shugenja for rounds equal to 2 + bonus successes. Its turn always follows the shugenja''s turn, and unless angered it will depart afterwards. If provoked heavily, it may linger and act independently though will not attack the shugenja unless given reason to.', -- Effect
+  'Core Rulebook', -- Book
+  194, -- Pg
+),
+-- 46
+(
+  'Battle of No Escape', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'Despite odds being stacked against you, rouse others to fight even despite overwhelming odds.', -- Desc
+  'Once per scene make a support action TN 5 (Void) Command check targeting your cohort, or characters who can hear you up to your meditation ranks. If all targets are in confining or entangling terrain, the TN is 2 instead.', -- Activation
+  'In a mass battle, your army functions normally if panic exceeds discipline and cannot have morale collapse, for 1 round + 1 for every 3 bonus successes. 
+  In a conflict that is not a mass battle, targets ignore the compromised condition for 1 round + 1 for every 2 bonus successes.', -- Effect
+  'Fields of Victory', -- Book
+  103, -- Pg
+),
+-- 47
+(
+  'Rushing Avalanche Style', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'Strike with such recklessness that opponents dodge out of the way of strikes that would not have even landed.', -- Desc
+  'When you make a Martial Arts Melee check with a blunt weapon, you may spend opportunity in a new way.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  180, -- Pg
+),
+-- 48
+(
+  'Thunderclap Strike', -- Name
+  3, -- Rank
+  'Kata', -- Type
+  'Your weapon strikes are so wide they threaten more than just your target.', -- Desc
+  'Using a ready weapon make a TN 3 (Air) Martial Arts Melee or Unarmed check as an attack action targeting all characters in range.', -- Activation
+  'On a success you deal the weapons damage to all targets and they must make a TN 3 (Earth 4, Fire 1) Fitness check or be knocked back 2 range bands.', -- Effect
+  'Core Rulebook', -- Book
+  180, -- Pg
+),
+-- 49
+(
+  'Stirring the Embers', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'Appeal to one of an ally''s finer qualities in order to drive them to perform better.', -- Desc
+  'On any Social (Fire) check targeting at least one character spend opportunity in a new way.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  219, -- Pg
+),
+-- 50
+(
+  'Pelting Hail Style', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'You place your shots in such a way that they warrant caution from anyone else nearby.', -- Desc
+  'For Martial Arts Ranged checks, gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  181, -- Pg
+),
+-- 51
+(
+  'Slippery Maneuvers', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'take advantage of terrain by signaling a change in formation of your group or cohort.', -- Desc
+  'Make a TN 2 (Water) Command check as a movement and support action targeting either your cohort or any number of friendly characters whom you can communicate to if in a skirmish.', -- Activation
+  'For a skirmish, choose an area of terrain in sight. All targets can choose to move 1 range band towards it immediately as part of this shuji. In addition, the terrain counts as obscured terrain for anyone targeting your targets until end of the scene.
+  In a mass battle, choose an area of terrain in sight. Your cohort can immediately move towards it, and if unoccupied they can occupy it. Attacks targeting your cohort in this terrain treat your cohort has being in obscured terrain until end of the scene.', -- Effect
+  'Core Rulebook', -- Book
+  221, -- Pg
+),
+-- 52
+(
+  'Skulk', -- Name
+  1, -- Rank
+  'Ninjutsu', -- Type
+  'Hide from sight and escape notice the shinobi way by blending into crowds, sticking to shadows, or taking unconventional routes.', -- Desc
+  'When making an (Air) Initiative or Attack check, gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  226, -- Pg
+),
+-- 53
+(
+  'Deadly Sting', -- Name
+  2, -- Rank
+  'Ninjutsu', -- Type
+  'Swiftly apply a poison to a concealed blade just before striking with it.', -- Desc
+  'Make a TN 3 (Air) Martial Arts check as an attack action using a dose of poison and a concealable weapon targeting a character in range of that weapon.', -- Activation
+  'On a success apply the poison to the weapon and the target suffers damage equal to the deadliness of the weapon + bonus successes. See Pg. 244 in the Core Rulebook for the effects of poisons.', -- Effect
+  'Core Rulebook', -- Book
+  226, -- Pg
+),
+-- 54
+(
+  'Noxious Cloud', -- Name
+  3, -- Rank
+  'Ninjutsu', -- Type
+  'Use a smokebomb to either harm or cause a distraction to escape.', -- Desc
+  'Make a TN 2 (Air) Medicine check as an attack action targeting all others at 0-2 range bands using 2 doses of a poison.', -- Activation
+  'On a success, deal 3 physical damage ignoring armor as well as the effect of the poison if it were applied to a weapon that struck them. See Pg. 244 in the Core Rulebook for effects of poisons.', -- Effect
+  'Core Rulebook', -- Book
+  227, -- Pg
+),
+-- 55
+(
+  'Silencing Stroke', -- Name
+  4, -- Rank
+  'Ninjutsu', -- Type
+  'Killing someone silently is a key skill for shinobi who must eliminate a target without others knowing.', -- Desc
+  'Make a TN 4 (Air) Martial Arts Check as an attack action with a readied weapon on a target in range.', -- Activation
+  'On a success, deal damage equal to the weapon damage and give the target the silenced condition. Other characters further than range 2 of the target will not notice the target has been struck for 1 + bonus successes rounds.', -- Effect
+  'Core Rulebook', -- Book
+  227, -- Pg
+),
+-- 56
+(
+  'Touchstone of Courage', -- Name
+  3, -- Rank
+  'Shuji', -- Type
+  'As a leader, you set an example of courage and inspire others to persevere when they might give into panic.', -- Desc
+  'Make a TN 4 (Earth) Command check as a support action targeting any characters who can perceive you in some way, or just your cohort if in a mass battle.', -- Activation
+  'If not in a mass battle: Each target increases their composure temporarily by your Earth ring until end of scene.
+  In a mass battle: Increase your army''s discipline by your Earth ring + bonus successes until end of scene.', -- Effect
+  'Core Rulebook', -- Book
+  217, -- Pg
+),
+-- 57
+(
+  'Courtier''s Resolve', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'Courtiers have long since practiced maintaining their decorum at court, pulling on their mental reserves when pressed.', -- Desc
+  'Spend 1 void point as a support action.', -- Activation
+  'Remove strife equal to the glory rank of the character.', -- Effect
+  'Core Rulebook', -- Book
+  223, -- Pg
+),
+-- 58
+(
+  'Wanderer''s Resolve', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'Those used to having no lord to whom they have pledged fealty have their own reserves to draw upon.', -- Desc
+  'Once per scene while in a conflict scene, make a support action in void stance. ', -- Activation
+  'Remove 3 fatigue and 3 strife. If using the optional Bonds rule, remove an additional 3 fatigue and 3 strife for each character in the scene that your character shares a bond with. It is recommended that a character cannot take this as well as Warrior''s Resolve or Courtier''s Resolve, as this is intended for ronin characters or those who have been ronin for a length of time.', -- Effect
+  'Path of Waves', -- Book
+  95, -- Pg
+),
+-- 59
+(
+  'Fanning the Flames', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'A skilled courtier can wound another''s pride or even cause them to hestitate with nothing more than a few chosen words.', -- Desc
+  'When making a Social (Fire) check targeting at least one character, gain new ways to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  219, -- Pg
+),
+-- 60
+(
+  'Tributaries of Trade', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'A proficient courtier always has a gift on hand, whether it was originally procured for the purpose is another matter entirely however.', -- Desc
+  'Make a TN 1 (Water) Commerce check.', -- Activation
+  'On a success, you have an item with a rarity off 1 + bonus successes at most but still must pay for this item. Narratively, you acquired this item previously - either yourself or via an attendant - but are just revealing you have the item now even if it was not in your inventory before this check.', -- Effect
+  'Core Rulebook', -- Book
+  221, -- Pg
+),
+-- 61
+(
+  'Truth Burns through Lies', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'You can easily determine the quickest way to learn if someone is being truthful or not.', -- Desc
+  'When making a Scholar (Fire) check to assess what another character has told you, such as a story, gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  219, -- Pg
+),
+-- 62
+(
+  'Regal Bearing', -- Name
+  4, -- Rank
+  'Shuji', -- Type
+  'You can project a regal and composed image, or a dastardly one, no matter what you happen to be wearing, choosing a tone, words, and posture necessary to demand respect or fit in with the dregs of society.', -- Desc
+  'Make a Command or Performance (Water) check targeting up to any characters who can perceive you in the scene. The TN is equal to the highest vigilance of the targets.', -- Activation
+  'On a success, the targets treat you as if your status was 10 + 10 per bonus success higher or lower until end of scene. If you do something out of place for the chosen new status, a target can make a TN 4 (Earth 2, Fire 5) Sentiment check to try and determine your actual status.', -- Effect
+  'Core Rulebook', -- Book
+  219, -- Pg
 );
