@@ -492,7 +492,7 @@ VALUES
   'Spend 1 void point as a support action.', -- Activation
   'Remove strife equal to the glory rank of the character.', -- Effect
   'Core Rulebook', -- Book
-  223 -- Pg
+  222 -- Pg
 ),
 -- 58
 (
@@ -559,4 +559,140 @@ VALUES
   '', -- Effect
   '3rd Party (Masaki)', -- Book
   0
-);
+),
+-- 64
+(
+  'Rustling of Leaves', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'Spreading a rumor is most effective when no one knows the source of the rumor but everyone has heard it.', -- Desc
+  'During any Social (Air) check that contributes to spreading a rumor, gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  215 -- Pg
+),
+-- 65
+(
+  'Coiling Serpent Style', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'This fighting style has one practice with snaring weapons to control an opponent''s weapons or movement.', -- Desc
+  'Gain a new way to spent opportuniy when you use a Martial Arts Melee or Unarmed check with a snaring weapon.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  179 -- Pg
+),
+-- 66
+(
+  'Iaijutsu Cut: Crossing Blade', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'Draw your blade in a sudden sweep with the longest reach possible.', -- Desc
+  'Make a TN 2 Martial Arts Melee check as an attack and movement action targeting one character 1-2 range bands from you. You must have a sheathed razor-edged weapon to use this technique.', -- Activation
+  'The weapon required for this Kata becomes readied in a one-hand grip. On a success you deal physical damage to the target of the weapon''s deadliness + bonus successes.', -- Effect
+  'Core Rulebook', -- Book
+  179 -- Pg
+),
+-- 67
+(
+  'Open-Hand Style', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'A skilled martial artist can manipulate an opponent''s stance in the midst of a fight.', -- Desc
+  'Gain a new way to spend opportunity when you make a Martial Arts Unarmed check with a snaring weapon, such as a fist.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  180 -- Pg
+),
+-- 68
+(
+  'Spinning Blades Style', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'When fighting with two blades, the opponent must be wary of both at all times.', -- Desc
+  'When making Martial Arts checks using melee or unarmed and have another readied weapon not used for the check you gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  180-- Pg
+),
+-- 69
+(
+  'Veiled Menace Style', -- Name
+  2, -- Rank
+  'Kata', -- Type
+  'A distracted foe is an easily dispatched foe, while not exactly honorable to do there are techniques to quickly do away with an enemy who is distracted.', -- Desc
+  'Gain a new way to spend opportunity when you make a Martial Arts Melee or Unarmed check with a weapon in one hand if your target is Disoriented or otherwise unaware.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  181 -- Pg
+),
+-- 70
+(
+  'Pin the Fan', -- Name
+  5, -- Rank
+  'Kata', -- Type
+  'A single well aimed shot can kill, and this technique teaches an archer just how to do that with practice.', -- Desc
+  'Make a Martial Arts Ranged check as an attack and movement action using a ranged weapon, with a TN of the vigilance of your target + range bands the target is from you.', -- Activation
+  'Deal damage equal to 2 times weapon damage + bonus successes on a success.', -- Effect
+  'Core Rulebook', -- Book
+  181 -- Pg
+),
+-- 71
+(
+  'Weight of Duty', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'An experienced courtier is familiar with reading the burdens of duty that other samurai carry with a reflective gaze.', -- Desc
+  'Gain new ways to spend opportunity when making a Social (Earth) check that targets 1 person.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  217 -- Pg
+),
+-- 72
+(
+  'Whispers of Court', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'Gossip and rumor are as much an enjoyable pasttime at court as they are a professional tool of courtiers.', -- Desc
+  'Make a Courtesy (Air) check as a Scheme action targeting every other person in the scene. The TN is the lowest vigilance of people in the scene.', -- Activation
+  'On a success, you spread a rumor throughout the room. All characters come to hear this rumor, and those with a vigilance less than your bonus successes will foster some belief in it. Gain momentum points towards a social objective to spread rumors equal to your Air ring + bonus successes.', -- Effect
+  'Core Rulebook', -- Book
+  215 -- Pg
+),
+-- 73
+(
+  'Cadence', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'Communicating with an ally in court without betraying what you are saying to anyone else is vital to a courtier.', -- Desc
+  'Gain a new way to spend opportunity when you make any Social (Air) skill check.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  214 -- Pg
+),
+-- 74
+(
+  'Prey on the Weak', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'Saying the right words when someone is at their breaking point can seem polite to everyone while pushing that person over the edge.', -- Desc
+  'Make a TN 1 (Air) Courtesy check with a target who is compromised as a Scheme action.', -- Activation
+  'On a success the target chooses one option:
+  Unmask immediately in the manner of the player''s choosing that suits the circumstance.
+  Lose glory equal to your Air ring + bonus successes on the check as they leave the scene immediately.', -- Effect
+  'Core Rulebook', -- Book
+  215 -- Pg
+),
+-- 75
+(
+  'A Samurai''s Fate', -- Name
+  4, -- Rank
+  'Shuji', -- Type
+  'Inspiring your fellows to fight as if they have accepted death can allow forces to fight well past the limits of those clinging to hopes of survival.', -- Desc
+  'Make a TN 5 (Void) Command check as an action with no type targeting up to anyone who can perceive you or your cohort if you are in a mass battle.', -- Activation
+  'On a success in a skirmish: All targets ignore critical strikes that have a severity less than your Void ring + bonus successes until end of scene, then immediately suffer the effects of any critical strikes ignored this way.
+  On a success in a mass battle: The army counts as having the Fearless Army quality until end of scene. The ability granted by fearless army is: At the end of the round, remove panic from the army equal to your glory rank.', -- Effect
+  'Core Rulebook', -- Book
+  222 -- Pg
+)
+;
