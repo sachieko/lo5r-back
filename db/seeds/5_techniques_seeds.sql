@@ -548,4 +548,15 @@ VALUES
   'On a success, the targets treat you as if your status was 10 + 10 per bonus success higher or lower until end of scene. If you do something out of place for the chosen new status, a target can make a TN 4 (Earth 2, Fire 5) Sentiment check to try and determine your actual status.', -- Effect
   'Core Rulebook', -- Book
   219 -- Pg
+),
+-- 63
+(
+  'Masaki''s Striking as Air', -- Name
+  1, -- Rank
+  'Kata', -- Type
+  'With precision and feinting, a skilled bushi can strike in a way that accounts for obstacles or lower the guard on their opponent.', -- Desc
+  'You can spend 💮 in a new way when making Martial Arts (Air) checks. This replaces striking as air in the core rulebook.', -- Activation
+  '', -- Effect
+  '3rd Party (Masaki)', -- Book
+  0
 );

@@ -97,4 +97,5 @@ VALUES
 (60, 'Water', 'Technique', '💮+', 'Reduce the cost to pay for the item by a quarter, paying a minimum of 1/4 the original price you would have to pay determined by the GM.'),
 (61, 'Fire', 'Technique', '💮', 'You learn what single statement the character''s tale relies on and what would be required to prove or disprove their story.'),
 (62, 'Water', 'Technique', '💮', 'Learn whether another character in the scene has a status higher or lower than your actual status.')
+(63, 'Air', 'Technique', '💮+', 'Reduce the TN against a target by 1 per 💮 spent, to a minimum of the base TN of the action or technique you are using. This effect persists until the  beginning of your next turn.')
 ;
