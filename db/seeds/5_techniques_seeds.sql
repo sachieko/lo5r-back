@@ -170,7 +170,7 @@ VALUES
   'Kata', -- Type
   'Steel yourself to recover from fatigue, even in the midst of battle.', -- Desc
   'Once per scene, spend 1 void point as a support action.', -- Activation
-  'Reduce your fatigue by an amount equal to your honor rank, to a minimum of 0.' -- Effect
+  'Reduce your fatigue by an amount equal to your honor rank, you can''t have negative fatigue.' -- Effect
 ),
 -- 28
 (
@@ -489,7 +489,7 @@ VALUES
   1, -- Rank
   'Shuji', -- Type
   'Courtiers have long since practiced maintaining their decorum at court, pulling on their mental reserves when pressed.', -- Desc
-  'Spend 1 void point as a support action.', -- Activation
+  'Spend 1 void point as a support action once a scene at most.', -- Activation
   'Remove strife equal to the glory rank of the character.', -- Effect
   'Core Rulebook', -- Book
   222 -- Pg
