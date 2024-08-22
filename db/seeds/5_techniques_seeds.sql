@@ -70,7 +70,7 @@ VALUES
   2,                            -- Rank
   'Kata',                       -- Type
   'You draw your blade from the hip to catch an opponent''s sword as they strike at you, leaving them open for your own blade''s follow through.', -- Description
-  'As an attack action using one sheathed weapon that has the razor-edged quality, make a Martial Arts [Melee] check targeting a person at range 0-1. The target''s vigilance is the TN of this check. You draw and ready the sheathed weapon in a one-handed grip. On a success, you also deal fatigue to the opponent equal to the weapon''s deadliness, and they cannot defend against this damage if they are compromised.', -- Activation
+  'As an attack action using one sheathed weapon that has the razor-edged quality, make a Martial Arts [Melee] check targeting a person at range 0-1. The target''s vigilance is the TN of this check. You draw and ready the sheathed weapon in a one-handed grip. On a success, you also deal damage to the opponent equal to the weapon''s deadliness, and they cannot defend against this damage if they are compromised.', -- Activation
   ''                            -- Effect
 ),
 -- 17
