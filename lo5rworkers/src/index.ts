@@ -18,7 +18,7 @@ export interface Env {
 type CF = [env: Env, context: ExecutionContext];
 
 const { preflight, corsify } = createCors({
-	origins: ['*'],
+	origins: ['https://lo5r-app.pages.dev'],
 	methods: ['GET'],
 });
 const router = Router<IRequestStrict, CF>();
