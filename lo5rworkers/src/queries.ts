@@ -57,3 +57,17 @@ export const terrainsQuery = `
   SELECT terrains.* 
   FROM terrains 
   ORDER BY terrains.title;`;
+
+export const qualitiesQuery = `
+  SELECT item_qualities.*
+  FROM item_qualities
+  ORDER BY item_qualities.name;
+  `;
+
+export const weaponsQuery = `
+  SELECT weapons.*, STRING_AGG(item_qualities.name, ', ') as qualities
+  FROM weapons
+  LEFT JOIN weapon_qualities ON weapons.id = weapon_qualities.weapon_id
+  LEFT JOIN item_qualities ON item_qualities.id = weapon_qualities.quality_id
+  ORDER BY weapons.name;
+`

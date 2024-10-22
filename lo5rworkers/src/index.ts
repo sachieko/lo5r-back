@@ -8,6 +8,8 @@ import {
 	searchQuery,
 	conditionsQuery,
 	terrainsQuery,
+	qualitiesQuery,
+	weaponsQuery,
 } from './queries';
 import { formatLoreResult, formatTechniqueResult, formatQuestionResult, formatRuleResult } from './queryHelpers';
 import { db } from './connection';
@@ -46,7 +48,8 @@ router.get('/lore', async (req, env, ctx) => {
 
 router.get('/opps', async (req, env, ctx) => {
 	const result = await db.query(opportunitiesQuery, { env, ctx });
-	// There is no formatting done on the opportunities from the DB, so this is done just for readability and consistency in code compared to those with formatting.
+	// There is no formatting done on the opportunities from the DB, 
+	// so this is done just for readability and consistency in code compared to those with formatting.
 	const opportunitiesResult = result.rows;
 	const resp = new Response(JSON.stringify(opportunitiesResult), {
 		...config,
@@ -92,6 +95,24 @@ router.get('/terrains', async (req, env, ctx) => {
 	const result = await db.query(terrainsQuery, { env, ctx });
 	const terrainsResult = result.rows; // See comment on /opportunities route
 	const resp = new Response(JSON.stringify(terrainsResult), {
+		...config,
+	});
+	return resp;
+});
+
+router.get('/qualities', async (req, env, ctx) => {
+	const result = await db.query(qualitiesQuery, { env, ctx });
+	const qualitiesResult = result.rows; // See comment on /opportunities route
+	const resp = new Response(JSON.stringify(qualitiesResult), {
+		...config,
+	});
+	return resp;
+});
+
+router.get('/weapons', async (req, env, ctx) => {
+	const result = await db.query(weaponsQuery, { env, ctx });
+	const weaponsResult = result.rows; // See comment on /opportunities route
+	const resp = new Response(JSON.stringify(weaponsResult), {
 		...config,
 	});
 	return resp;
