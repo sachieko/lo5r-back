@@ -154,47 +154,12 @@ type TTechnique = {
 	book: string | null;
 	pg: number | null;
 };
-export const formatTechniqueResult = function (techResult: QueryResult) {
-	const result: TTechnique[] = [];
-	let currentTechnique: TTechnique | null = null;
-	for (const row of techResult.rows) {
-		// If the current technique has changed or is null
-		if (currentTechnique === null || currentTechnique.id !== row.id) {
-			currentTechnique = {
-				id: row.id,
-				name: row.name,
-				prerequisite: row.prerequisite,
-				rank: row.rank,
-				type: row.type,
-				description: row.description,
-				activation: row.activation,
-				effect: row.effect,
-				opportunities: [],
-				book: row.book,
-				pg: row.pg,
-			};
-			result.push(currentTechnique);
-		}
-		// We can reuse the currentTechnique because it will point to the object in the array
-		// Add opportunities to the array if they exist
-		if (row.opportunity_id) {
-			currentTechnique.opportunities.push({
-				id: row.opportunity_id,
-				ring: row.ring,
-				category: row.category,
-				cost: row.cost,
-				effect: row.opportunity_effect,
-			});
-		}
-	}
-	return result;
-};
 
 // Qualities data format
 
-type Quality = {
+export type Quality = {
 	id: number;
-	name: string;
+	title: string;
 	detail: string;
 	book: string;
 	pg: number;
@@ -202,7 +167,7 @@ type Quality = {
 
 //Weapons data format, uses a join table between item qualities and weapons.
 
-type Weapon = {
+export type Weapon = {
 	id: number;
 	name: string;
 	type: string;

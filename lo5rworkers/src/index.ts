@@ -11,7 +11,7 @@ import {
 	weaponsQuery,
 	techniqueAGGQuery,
 } from './queries';
-import { formatLoreResult, formatTechniqueResult, formatQuestionResult, formatRuleResult } from './queryHelpers';
+import { formatLoreResult, formatQuestionResult, formatRuleResult } from './queryHelpers';
 import { db } from './connection';
 
 export interface Env {
@@ -59,7 +59,6 @@ router.get('/opps', async (req, env, ctx) => {
 
 router.get('/techniques', async (req, env, ctx) => {
 	const result = await db.query(techniqueAGGQuery, { env, ctx });
-	// const techResult = formatTechniqueResult(result);
 	const techResult = result.rows;
 	const resp = new Response(JSON.stringify(techResult), {
 		...config,
