@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS weapon_qualities CASCADE;
+DROP TABLE IF EXISTS armor_qualities CASCADE;
 
-CREATE TABLE weapon_qualities (
+CREATE TABLE armor_qualities (
   id SERIAL PRIMARY KEY,
 
   armor_id INTEGER references armors(id) ON DELETE CASCADE,
