@@ -9,5 +9,6 @@ Then use `npm i` to install dependencies and `npm run dev` to start the develope
 ## Server Deploy
 
 A server solution is also deployed alongside the lo5rworkers/ cloudflare deploy, which uses express for routing alongside a postgres Pool rather than client which is used for the Cloudflare worker solution.
+You will need a postgres database, as some of the SQL syntax is specific to postgres and is slightly different for MySQL, etc.
 
 Overall I would recommend the Cloudflare worker deploy due to the code's readability and DRYness but it is included for reference if needed in basic JS. 
