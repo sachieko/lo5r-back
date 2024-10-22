@@ -1,4 +1,4 @@
-INSERT INTO item_qualities (title, detail, book, pg)
+INSERT INTO item_qualities (name, detail, book, pg)
 VALUES
 -- 1 
 (
