@@ -587,7 +587,7 @@ VALUES
 ),
 -- 46
 (
-  'Tegaki',
+  'Tekagi',
   'Special',
   'Unarmed',
   '0',

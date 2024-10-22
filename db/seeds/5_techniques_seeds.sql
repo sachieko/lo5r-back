@@ -333,7 +333,7 @@ VALUES
   'Invocation', -- Type
   'Whisk a target through the air a great distance, setting them down gently or harshly at your whim.', -- Desc
   'Use an attack or support action on a target at range 3-5 to make a TN 4 (Air) Theology check.', -- Activation
-  'Moves the target range bands equal to air ring + bonus successes, ignoring terrain but no further than 6 range bands. If you set them down gently it is a support action, harshly it is an attack action. If used as an attack action, the target must make a TN 44 (Earth 5, Fire 2) Fitness check or suffer effects of a range 3 fall.', -- Effect
+  'Moves the target range bands equal to air ring + bonus successes, ignoring terrain but no further than 6 range bands. If you set them down gently it is a support action, harshly it is an attack action. If used as an attack action, the target must make a TN 4 (Earth 5, Fire 2) Fitness check or suffer effects of a range 3 fall.', -- Effect
   'Core Rulebook', -- Book
   193 -- Pg
 ),

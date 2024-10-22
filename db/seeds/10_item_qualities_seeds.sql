@@ -56,7 +56,9 @@ VALUES
 ),
 -- 10
 (
-  'Razor Edged', 'Weapons with this quality allow the user to spend opportunity to increase the deadliness of the weapon by 1 per opportunity spent. If a weapon with this quality has its damage reduced to 0 by armor and deals no fatigue, it gains damaged.', 'Core Rulebook', 241
+  'Razor Edged',
+  'Weapons with this quality allow the user to spend opportunity to increase the deadliness of the weapon by 1 per opportunity spent. If a weapon with this quality has its damage reduced to 0 by armor and deals no fatigue, it gains damaged.',
+  'Core Rulebook', 241
 ),
 -- 11
 (
