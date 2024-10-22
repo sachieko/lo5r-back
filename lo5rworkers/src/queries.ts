@@ -37,7 +37,7 @@ export const searchQuery = `
   SELECT '/qualities/' || id AS link, title, detail FROM qualities
   WHERE title ILIKE '%' || $1 || '%'
   UNION
-  SELECT '/weapons/' || id AS link, name AS title, type AS detail FROM weapons
+  SELECT '/weapons/' AS link, name AS title, type AS detail FROM weapons
   WHERE title ILIKE '%' || $1 || '%';
   `;
 
