@@ -41,11 +41,17 @@ export const questionsQuery = `
   JOIN choices ON questions.id = question_id
   ORDER BY questions.id, choices.id;`;
 
-export const techniquesQuery = `
-  SELECT techniques.*, opportunities.id AS opportunity_id, opportunities.ring, opportunities.category,
-  opportunities.cost, opportunities.effect AS opportunity_effect
+export const techniqueAGGQuery = `
+  SELECT techniques.*, JSON_AGG(JSON_BUILD_OBJECT(
+    'opportunity_id', opportunities.id,
+    'ring', opportunities.ring,
+    'category', opportunities.category,
+    'cost', opportunities.cost,
+    'opportunity_effect', opportunities.effect
+  )) AS opportunities
   FROM techniques
   LEFT JOIN opportunities ON technique_id = techniques.id
+  GROUP BY techniques.id, opportunities.id
   ORDER BY techniques.type, techniques.rank, techniques.name, opportunities.id;`;
 
 export const conditionsQuery = `
@@ -61,7 +67,7 @@ export const terrainsQuery = `
 export const qualitiesQuery = `
   SELECT item_qualities.*
   FROM item_qualities
-  ORDER BY item_qualities.name;
+  ORDER BY item_qualities.title;
   `;
 
 export const weaponsQuery = `
@@ -71,4 +77,4 @@ export const weaponsQuery = `
   LEFT JOIN item_qualities ON item_qualities.id = weapon_qualities.quality_id
   GROUP BY weapons.id
   ORDER BY weapons.name;
-`
+`;
