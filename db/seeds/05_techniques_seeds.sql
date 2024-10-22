@@ -12,10 +12,10 @@ Elemental Gift: The kami deliver some of the element used to you in some way, su
 -- 3
 ('Divination', '', 1, 'Ritual', 'Using omens that can be read, such as the stars or tea leaves or other methods, learn something about their fate.', 'As a downtime activity, make a TN 2 (Void) Theology check targeting the person.', 'Choose an omen when you succeed:
 Omen of the Azure Dragon: The next time the character makes an Artisan skill check this session, they add a kept ring die set to "💮🔥"
-Omen of the Black Tortoise: The next time the character makes an Scholar skill check this session, they add a kept ring die set to "💮🔥"
-Omen of the White Tiger: The next time the character makes an Martial skill check this session, they add a kept ring die set to "💮🔥"
-Omen of the Vermilion Bird: The next time the character makes an Social skill check this session, they add a kept ring die set to "💮🔥"
-Omen of the Weaver and Cowherd: The next time the character makes an Trade skill check this session, they add a kept ring die set to "💮🔥"
+Omen of the Black Tortoise: The next time the character makes a Scholar skill check this session, they add a kept ring die set to "💮🔥"
+Omen of the White Tiger: The next time the character makes a Martial skill check this session, they add a kept ring die set to "💮🔥"
+Omen of the Vermilion Bird: The next time the character makes a Social skill check this session, they add a kept ring die set to "💮🔥"
+Omen of the Weaver and Cowherd: The next time the character makes a Trade skill check this session, they add a kept ring die set to "💮🔥"
 In the case of failure, the Storyteller will choose the omen instead. The character cannot have their fate divined again until next session.'),
 -- 4
 ('Tea Ceremony', '', 2, 'Ritual', 'A tea ceremony is an appreciation for tea as much as it is a spiritual ritual in rokugan. It represents the five elements and each clan has their own colloquial customs in partaking in the ceremony.', 'Once per session as a downtime action, with a tea set make a TN 2 (Void) Performance check targeting characters up to your ranks in Culture in addition to yourself. Only one other may assist with this ceremony as a support action.', 'Each target, including yourself, loses strife equal to 3 + your bonus successes.'),
