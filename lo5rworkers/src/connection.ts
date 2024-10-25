@@ -1,6 +1,8 @@
 import { Client } from 'pg';
-import { Env } from './index';
-import { IRequest, IRequestStrict } from 'itty-router';
+
+type Env = {
+	DB_URL: string;
+}
 
 type TConfig = {
   env: Env;
