@@ -1,22 +1,20 @@
 import { Client } from 'pg';
 
-type Env = {
-	DB_URL: string;
-}
+import { Env } from './index';
 
 type TConfig = {
-  env: Env;
-  ctx: ExecutionContext;
-}
+	env: Env;
+	ctx: ExecutionContext;
+};
 
 export const db = {
-  query: async (text: string, config: TConfig, params?: any[] | undefined, ) => {
-    const client = new Client(config.env.DB_URL);
-    await client.connect();
-    try {
-      return await client.query(text, params);
-    } finally {
-      config.ctx.waitUntil(client.end());
-    }
-  },
+	query: async (text: string, dbString: string, params?: string[] | undefined): Promise<any> => {
+		const client = new Client(dbString);
+		await client.connect();
+		try {
+			return await client.query(text, params);
+		} catch (error) {
+			console.error(error);
+		}
+	},
 };
