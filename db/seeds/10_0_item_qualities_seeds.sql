@@ -117,4 +117,16 @@ VALUES
   'The user has 4 physical resistance and 2 supernatural resistance while a Qamarist heavy shield is readied and can use a movement and support action to increase the TN of the next attack against the user by 3 until their next turn starts.',
   'Path of Waves',
   111
+),
+-- 20 Snaring only when used with 2 hands
+(
+  'Snaring (2H)',
+  'when used with 2 hands, weapons with this quality allow the user to immobilize a target of their attack if they spend opportunity that at least meets the vigilance of the target.',
+  'Core Rulebook', 241
+),
+-- 21  Cumbersome only when used with 1 hand
+(
+  'Cumbersome (1H)',
+  'When used with 1 Hand, this item cannot be hidden. Movement checks and similar of armor with this quality have the TN increased by 1. Weapons with this quality increase the TN of attack actions by 1 if the user has moved any range bands.', 
+  'Core Rulebook', 240
 );

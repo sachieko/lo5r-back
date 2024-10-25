@@ -34,11 +34,11 @@ export const searchQuery = `
   SELECT '/terrains/' || id AS link, title, detail FROM terrains
   WHERE title ILIKE '%' || $1 || '%'
   UNION
-  SELECT '/qualities/' || id AS link, title, detail FROM qualities
+  SELECT '/qualities/' || id AS link, title, detail FROM item_qualities
   WHERE title ILIKE '%' || $1 || '%'
   UNION
   SELECT '/weapons/' AS link, name AS title, type AS detail FROM weapons
-  WHERE title ILIKE '%' || $1 || '%';
+  WHERE name ILIKE '%' || $1 || '%';
   `;
 
 export const questionsQuery = `
