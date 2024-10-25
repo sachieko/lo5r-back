@@ -29,6 +29,7 @@ const headers = {
 	'Cache-Control': 'max-age=86400, public',
 	'X-Frame-Options': 'DENY',
 	'Referrer-Policy': 'strict-origin-when-cross-origin',
+	'Access-Control-Allow-Origin': 'https://lo5r-app.pages.dev', 
 };
 const config = { headers, status: 200 };
 
