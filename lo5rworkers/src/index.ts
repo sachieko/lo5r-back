@@ -1,4 +1,4 @@
-import { error, json, Router, IRequestStrict, createCors } from 'itty-router';
+import { error, json, Router, IRequestStrict, cors } from 'itty-router';
 import {
 	opportunitiesQuery,
 	loreQuery,
@@ -19,17 +19,22 @@ export interface Env {
 }
 type CF = [env: Env, context: ExecutionContext];
 
-const { preflight, corsify } = createCors({
-	origins: ['https://lo5r-app.pages.dev'],
-	methods: ['GET'],
+const { preflight, corsify } = cors({
+	origin: ['https://lo5r-app.pages.dev'],
+	allowMethods: ['GET'],
+	maxAge: 84600,
 });
-const router = Router<IRequestStrict, CF>();
+const router = Router<IRequestStrict, CF>({
+	before: [preflight],
+	catch: error,
+	finally: [json, corsify],
+});
 const headers = {
 	'Content-Type': 'application/json;charset=UTF-8',
 	'Cache-Control': 'max-age=86400, public',
 	'X-Frame-Options': 'DENY',
 	'Referrer-Policy': 'strict-origin-when-cross-origin',
-	'Access-Control-Allow-Origin': 'https://lo5r-app.pages.dev', 
+	'Access-Control-Allow-Origin': 'https://lo5r-app.pages.dev',
 };
 const config = { headers, status: 200 };
 
@@ -49,7 +54,7 @@ router.get('/lore', async (req, env, ctx) => {
 
 router.get('/opps', async (req, env, ctx) => {
 	const result = await db.query(opportunitiesQuery, { env, ctx });
-	// There is no formatting done on the opportunities from the DB, 
+	// There is no formatting done on the opportunities from the DB,
 	// so this is done just for readability and consistency in code compared to those with formatting.
 	const opportunitiesResult = result.rows;
 	const resp = new Response(JSON.stringify(opportunitiesResult), {
@@ -136,5 +141,10 @@ router.get('/', () => {
 router.all('*', () => new Response('404, not found!', { status: 404 }));
 
 export default {
-	fetch: (req: IRequestStrict, env: Env, ctx: ExecutionContext) => router.handle(req, env, ctx).then(json).then(corsify).catch(error),
+	fetch: (req: IRequestStrict, env: Env, ctx: ExecutionContext) =>
+		router
+			.handle(req, env, ctx)
+			.then(json)
+			.catch(error)
+			.then((req: IRequestStrict, res: Response) => corsify(res, req)),
 };
