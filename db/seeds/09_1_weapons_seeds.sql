@@ -433,7 +433,7 @@ VALUES
 (
   'Kusarigama',
   'Special',
-  'Ranged',
+  'Melee',
   '0/2-3',
   '3/3',
   '3/3',
@@ -600,7 +600,7 @@ VALUES
 ),
 -- 47
 (
-  'Tekkan',
+  'Tekken',
   'Special',
   'Unarmed',
   '0',
