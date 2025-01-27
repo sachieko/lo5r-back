@@ -156,7 +156,7 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
 (
   7, -- Rule Id
   'Challenge', -- Title
-  'Make a TN 1 Command check as a movement and scheme action to challenge an enemy leader to a duel. If successful, stack 10 honor and 5 glory as though entering a clash. A clash follows the rules of a duel. If the enemy accepts the duel they stake the same glory and honor and the loser''s army gains 5 panic.
+  'Make a TN 1 Command check as a movement and scheme action to challenge an enemy leader to a duel. If successful, stake 10 honor and 5 glory as though entering a clash. A clash follows the rules of a duel. If the enemy accepts the duel they stake the same glory and honor and the loser''s army gains 5 panic.
   If they decline they lose glory equal to your Command ranks plus bonus successes as well as gaining 3 panic for their army. You also gain a void point as if they declined a clash.' -- Desc
 ),
 (
