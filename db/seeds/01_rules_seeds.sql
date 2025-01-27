@@ -60,7 +60,7 @@ Trade Skills: Commerce, Labor, Seafaring, Skullduggery, Survival.',
   Strength: This functions like the endurance of the army. Attrition (damage) is dealt, and fortifications reduce the damage similar to armor for individuals. Attrition not reduced to 0 is gained as casualties. Like fatigue, when casualties is higher than an army''s strength they get routed and suffer heavy losses.
   Discipline: This functions like the composure of the army. Panic is dealt similar to strife, and if panic exceeds discipline the army can scatter or turn on its own.
   Fortifications: This functions like armor for individuals, but are key locations that provide some measure of defense for an army. The types and attrition reduction/difficulty to capture are listed here: [Woods/Defensive Terrain:-1/4], [Outpost:-2/6], [Fortress:-3/8], [Castle:-4/10].
-  Strategic Objectives: These will be included later. Stay tuned!', -- detail
+  Strategic Objectives: These are objectives that a commander can choose for their cohorts to pursue, completing them progresses the battle.', -- detail
   'conflict', -- category
   'Core Rulebook', 274
 )

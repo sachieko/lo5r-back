@@ -169,5 +169,11 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
   'Reinforce', -- Title
   'Make a TN 2 Tactics check as a movement and support action to reinforce a position. If you targeted an unoccupied area, your army counts as occupying it until the army vacates either narratively or via an action such as rally or assault.
   If successful, the TN of attack actions that target your cohort increase by 1 plus 1 per two bonus successes. This lasts for one round.' -- Desc
+),
+(
+  7, -- Rule Id for Mass Combat
+  'March',
+  'For moving your cohort further on the field if using the optional Battle Zones from the Fields of Victory book, command your unit to take a forced march.
+  Mechanics: Make a TN 3 Command check. You may move to 1 adjacent zone regardless of the result, and to one more adjacent zone for every 3 successes.'
 )
 ;
