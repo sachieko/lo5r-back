@@ -44,6 +44,7 @@ const runResetDB = async () => {
     process.exit();
   } catch (err) {
     console.error(chalk.red(`Failed due to error: ${err}`));
+    console.error(chalk.red(JSON.stringify(err)));
     process.exit();
   }
 };
