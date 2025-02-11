@@ -1,6 +1,6 @@
 // Use DBML to define your database structure
 // Docs: https://dbml.dbdiagram.io/docs
-
+// NOTE: OUT OF DATE 11/2/2025
 // Put this file into https://dbdiagram.io/d in order to view the entity relationship diagram!
 
 Table questions {
