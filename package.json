@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/application.js",
   "scripts": {
-    "dev": "node src/application.js",
+    "dev": "tsc && node build/application.js",
     "db:reset": "node bin/resetdb.js"
   },
   "dependencies": {
@@ -14,5 +14,8 @@
     "express": "^4.18.2",
     "pg": "^8.11.1",
     "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
   }
 }

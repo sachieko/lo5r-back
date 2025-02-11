@@ -1,5 +1,3 @@
-const express = require("express");
-const router = express.Router();
 const { queryLore, queryAllLore } = require("../../db/queries/lore");
 
 // GET /lore/id

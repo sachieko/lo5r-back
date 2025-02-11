@@ -1,5 +1,3 @@
-const express = require("express");
-const router = express.Router();
 const { queryQuestion, queryQuestions } = require("../../db/queries/questions");
 
 // GET /questions/id
