@@ -33,4 +33,4 @@ const queryQuestions = async function (res) {
   }
 };
 
-module.exports = { queryQuestion, queryQuestions };
+export default { queryQuestion, queryQuestions };
