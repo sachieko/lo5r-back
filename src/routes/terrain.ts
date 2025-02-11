@@ -1,17 +1,16 @@
 import { Request, Response, Router } from "express"
 import wolfQueryHandler from "../queries/wolfQueryHandler";
 const router = Router();
-import { techniqueAGGQuery, techniqueQuery } from "../queries/techniqueQueries";
-
-// GET /techniques/id
+import { terrainsIdQuery, terrainsQuery } from "../queries/terrainQueries";
+// GET /terrains/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, techniqueQuery, [id]);
+  wolfQueryHandler(res, terrainsIdQuery, [id])
 });
 
-// GET /techniques
+// GET /terrains
 router.get("/", async (req: Request, res: Response) => {
-  wolfQueryHandler(res, techniqueAGGQuery);
+  wolfQueryHandler(res, terrainsQuery)
 });
 
 export default router;

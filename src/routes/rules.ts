@@ -1,15 +1,17 @@
-import { Request, Response } from "express";
-const { queryRule, queryRules } = require("../../db/queries/rules");
+import { Request, Response, Router } from "express";
+import wolfQueryHandler from "../queries/wolfQueryHandler";
+const router = Router();
+import { rulesQuery, rulesIdQuery } from "../queries/ruleQueries";
 
 // GET /rules/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  queryRule(id, res);
+  wolfQueryHandler(res, rulesIdQuery, [id]);
 });
 
 // GET /rules
 router.get("/", async (req: Request, res: Response) => {
-  queryRules(res);
+  wolfQueryHandler(res, rulesQuery);
 });
 
-module.exports = router;
+export default router;

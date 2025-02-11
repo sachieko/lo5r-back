@@ -1,10 +1,12 @@
-import { Request, Response } from "express";
-const { querySearch } = require("../../db/queries/search");
+import { Request, Response, Router } from "express";
+import wolfQueryHandler from "../queries/wolfQueryHandler";
+const router = Router();
+import { searchQuery } from "../queries/searchQueries";
 
 // GET /search?q=${searchString}
 router.get("/", async (req: Request, res: Response) => {
-  const searchString = req.query.q;
-  querySearch(searchString, res);
+  const searchString = req.query.q as string;
+  wolfQueryHandler(res, searchQuery, [searchString]);
 });
 
-module.exports = router;
+export default router;

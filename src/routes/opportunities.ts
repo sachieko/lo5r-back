@@ -1,18 +1,20 @@
-import { Request, Response } from "express";
-const {
-  queryOpportunity,
-  queryOpportunities,
-} = require("../../db/queries/opportunities");
+import { Request, Response, Router } from "express";
+import wolfQueryHandler from "../queries/wolfQueryHandler";
+const router = Router();
+import {
+  opportunitiesQuery,
+  opportunityQuery,
+} from "../queries/opportunityQueries";
 
 // GET /opportunities/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  queryOpportunity(id, res);
+  wolfQueryHandler(res, opportunityQuery, [id]);
 });
 
 // GET /opportunities
 router.get("/", async (req: Request, res: Response) => {
-  queryOpportunities(res);
+  wolfQueryHandler(res, opportunitiesQuery);
 });
 
-module.exports = router;
+export default router;
