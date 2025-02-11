@@ -2,14 +2,15 @@
   "compilerOptions": {
     "outDir": "./build/",
     "target": "ES2024",
-    "module": "ES2022",
+    "module": "NodeNext",
     "useDefineForClassFields": true,
     "skipLibCheck": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
   },
   "include": ["src"]
 }

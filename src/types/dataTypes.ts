@@ -1,3 +1,5 @@
+export type apiParamtypes = (number | string)[];
+
 export type TChoices = {
   id: number;
   choice: string;
