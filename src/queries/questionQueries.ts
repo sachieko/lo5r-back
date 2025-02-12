@@ -20,4 +20,4 @@ export const questionsIdQuery = `
   WHERE questions.id = $1
   GROUP BY questions.id
   ORDER BY questions.id, choices.id
-  LIMIT 1;`;
+  LIMIT 1;`; 
