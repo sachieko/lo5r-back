@@ -12,7 +12,7 @@ const wolfQueryHandler = async (
     const result = await db.query(queryString, params);
     return res.json(result.rows);
   } catch (error) {
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Internal Server Error - @yuseiko.bsky.social");
   }
 };
 
