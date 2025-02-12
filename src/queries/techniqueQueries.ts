@@ -12,7 +12,7 @@ export const techniqueAGGQuery = `
   GROUP BY techniques.id
   ORDER BY techniques.type, techniques.rank, techniques.name;`;
 
-export const techniqueQuery = `
+export const techniqueIdQuery = `
   SELECT techniques.*, JSON_AGG(JSON_BUILD_OBJECT(
     'opportunity_id', opportunities.id,
     'ring', opportunities.ring,
@@ -21,6 +21,7 @@ export const techniqueQuery = `
   )) AS opportunities
   FROM techniques
   LEFT JOIN opportunities ON technique_id = techniques.id
+  WHERE techniques.id = $1
   GROUP BY techniques.id
-  ORDER BY techniques.type, techniques.rank, techniques.name;
-  WHERE techniques.id = id`;
+  ORDER BY techniques.type, techniques.rank, techniques.name
+  LIMIT 1;`;

@@ -1,12 +1,12 @@
 import { Request, Response, Router } from "express"
 import wolfQueryHandler from "../queries/wolfQueryHandler";
 const router = Router();
-import { techniqueAGGQuery, techniqueQuery } from "../queries/techniqueQueries";
+import { techniqueAGGQuery, techniqueIdQuery } from "../queries/techniqueQueries";
 
 // GET /techniques/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, techniqueQuery, [id]);
+  wolfQueryHandler(res, techniqueIdQuery, [id]);
 });
 
 // GET /techniques
