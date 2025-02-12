@@ -5,7 +5,7 @@ export const questionsQuery = `
   'stat', choices.stat,
   'info', choices.info
   )) AS choices FROM questions
-  JOIN choices ON questions.id = question_id
+  LEFT JOIN choices ON questions.id = question_id
   GROUP BY questions.id
   ORDER BY questions.id, choices.id;`;
 
@@ -16,7 +16,7 @@ export const questionsIdQuery = `
   'stat', choices.stat,
   'info', choices.info
   )) AS choices FROM questions
-  JOIN choices ON questions.id = question_id
+  LEFT JOIN choices ON questions.id = question_id
   WHERE questions.id = $1
   GROUP BY questions.id
   ORDER BY questions.id, choices.id

@@ -1,7 +1,7 @@
 export type apiParamtypes = (number | string)[];
 
 export type TChoices = {
-  id: number;
+  choice_id: number;
   choice: string;
   stat: string;
   choiceInfo: string;
