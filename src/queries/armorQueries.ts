@@ -5,7 +5,7 @@ export const armorsQuery = `
   LEFT JOIN armor_qualities ON armors.id = armor_qualities.armor_id
   LEFT JOIN item_qualities ON item_qualities.id = armor_qualities.quality_id
   GROUP BY armors.id
-  ORDER BY title
+  ORDER BY title;
 `;
 
 export const armorsIdQuery = `

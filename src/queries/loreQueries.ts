@@ -7,7 +7,7 @@ export const loreQuery = `
   FROM lore
   LEFT JOIN cards ON lore.id = lore_id
   GROUP BY lore.id
-  ORDER BY lore.title, lore.id`;
+  ORDER BY lore.title, lore.id;`;
 
 export const loreIdQuery = `
   SELECT lore.*, JSON_AGG(JSON_BUILD_OBJECT(
