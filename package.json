@@ -4,7 +4,8 @@
   "main": "src/application.js",
   "scripts": {
     "dev": "npx tsc && node build/application.js",
-    "db:reset": "node build/bin/resetdb.js"
+    "db:reset": "node build/bin/resetdb.js",
+    "start": "node build/application.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
