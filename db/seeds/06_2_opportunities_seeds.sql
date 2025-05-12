@@ -112,5 +112,14 @@ VALUES
 (73, 'Air', 'Technique', '💮', 'You can communicate a secret message to one person in the scene with the Cadence technique who can perceive you, this message is obscured or indiscernable for others.'),
 (73, 'Air', 'Technique', '💮💮', 'You can communicate a secret message to one person in the scene without the Cadence technique who can perceive you, this message is obscured or indiscernable for others.'),
 (74, 'Air', 'Technique', '💮+', 'If they unmasked you learn a disadvantage of the target''s choice.'),
-(74, 'Air', 'Technique', '💮💮', 'If they fled the scene, you discern where they are planning to go when they depart.')
+(74, 'Air', 'Technique', '💮💮', 'If they fled the scene, you discern where they are planning to go when they depart.'),
+(76, 'Fire', 'Technique', '💮+', 'Extend the light 1 additional rangeband.'),
+(76, 'Fire', 'Technique', '💮+', 'Target''s silhouette can be 1 additional size larger.'),
+(76, 'Fire', 'Technique', '💮💮', 'The light can keep several living beings warm in a cold environment.'),
+(76, 'Fire', 'Technique', '💮💮', 'The light negates Obscuring Terrain in its range.'),
+(77, 'Fire', 'Technique', '💮', 'Target gains resistance to physical and supernatural fire equal to your Fire Ring.'),
+(77, 'Fire', 'Technique', '💮', 'For the duration the target''s weapons are sacred.'),
+(77, 'Fire', 'Technique', '💮💮', 'The effect persists until the scene ends.'),
+(78, 'Fire', 'Technique', '💮', 'The light from the fire counts as Dangerous and Obscuring terrain for tainted beings.'),
+(78, 'Fire', 'Technique', '💮💮', 'The light from the fire counts as Hallowed (Fire) terrain and removes the Defiled terrain quality.')
 ;

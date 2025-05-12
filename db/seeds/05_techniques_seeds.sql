@@ -694,5 +694,39 @@ VALUES
   On a success in a mass battle: The army counts as having the Fearless Army quality until end of scene. The ability granted by fearless army is: At the end of the round, remove panic from the army equal to your glory rank.', -- Effect
   'Core Rulebook', -- Book
   222 -- Pg
+),
+-- 76
+(
+  'Amaterasu''s Gaze', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Ask the fire kami for a ray of sunlight.', -- Desc
+  'Support Action, TN 1 (Fire) Theology check. 1 target which is silhouette 2 or smaller within 3 rangebands of you.', -- Activation
+  'A sunbeam follows and provides the target light centered on the target out to 2 rangebands. Lasts 1 round, with 1 additional per bonus success.', -- Effect
+  'Celestial Realms', -- Book
+  108 -- Pg
+),
+-- 77
+(
+  'Fires of Purity', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Supernatural flames follow a target supportively.', -- Desc
+  'Support Action, TN 2 (Fire) Theology check. 1 target within 3 rangebands of you.', -- Activation
+  'An area extending a number of rangebands equal to your Fire Ring becomes dangerous terrain to everyone other than your target. Lasts 1 round, with 1 additional per bonus success.', -- Effect
+  'Celestial Realms', -- Book
+  108 -- Pg
+),
+-- 78
+(
+  'Heart of the Lady Sun', -- Name
+  5, -- Rank
+  'Invocation', -- Type
+  'A ball of flame that smites tainted beings while aiding the non-tainted.', -- Desc
+  'Attack and Support Action, TN 5 (Fire) Theology check. Target location within 3 rangebands of yourself.', -- Activation
+  'A ball of flame is summoned at the location and gives bright light to a range equal to your Fire Ring. At the end of each round in a conflict, tainted creatures are smited for 3 fatigue while non-tainted creatures remove 1 fatigue and 1 strife instead.
+  Lasts 1 round, with 1 additional round per bonus success.', -- Effect
+  'Celestial Realms', -- Book
+  108 -- Pg
 )
 ;
