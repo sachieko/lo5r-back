@@ -728,5 +728,282 @@ VALUES
   Lasts 1 round, with 1 additional round per bonus success.', -- Effect
   'Celestial Realms', -- Book
   108 -- Pg
+),
+-- 79
+(
+  'Cleansing Spirit', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Become more resistant to poisons, disease, and similar.', -- Desc
+  'Support Action, TN 1 (Earth) Theology Check with an optional target of another character at range 0-1.', -- Activation
+  'Enhancement: Reduce TN of any checks to resist effects of poison, disease, maho, tainted or otherworldly beings, or the defiled terrain quality by Earth Ring.
+  Burst: If you have at least 2 bonus successes you may remove one of the following: Afflicted, Bleeding, Dazed, Disoriented, Dying, Fatigued, Intoxicated.', -- Effect
+  'Core Rulebook', -- Book
+  182 -- Pg
+),
+-- 80
+(
+  'Earth Needs No Eyes', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'You do not need to rely on sight to see.', -- Desc
+  'Support Action, TN 1 (Earth) Meditation check.', -- Activation
+  'Enhancement: Increase vigilance by Earth Ring, and you can see anything in contact with the earth within a number of range bands equal to Earth Ring.
+  Burst: If you have 3 or more bonus successes, you become aware of all living creatures and objects in contact with the earth up to range bands equal to Earth Ring + Bonus Successes.', -- Effect
+  'Core Rulebook', -- Book
+  182 -- Pg
+),
+-- 81
+(
+  'Earthen Fist', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Increase your resistance and unarmed profile damage.', -- Desc
+  'Attack and Support Action, TN 1 (Earth) Martial Arts Unarmed check with an optional target of another character at range 0-1.', -- Activation
+  'Enhancement: Increase physical resistance by 1 and the damage of your punch and kick by your Earth Ring.
+  Burst: If you have at least 2 bonus successes, deal physical damage equal to your Earth Ring to the target. The target must make a TN 4 (Air 2, Water 5) Fitness check or become prone.', -- Effect
+  'Core Rulebook', -- Book
+  183 -- Pg
+),
+-- 82
+(
+  'Grasp the Earth Dragon', -- Name
+  3, -- Rank
+  'Kiho', -- Type
+  'Become difficult to be attacked physically.', -- Desc
+  'Movement and Support Action, TN 2 (Earth) Meditation check.', -- Activation
+  'Enhancement: Reduce severity of critical strikes from weapons that do physical damage by your Earth Ring. You may spend 1 void point after attacked by a character to cause them fatigue equal to your Fitness.
+  Burst: If you have at least 3 bonus successes, reduce all physical damage you would take to 1 per instance. If a character deals physical damage to you, they become prone. This burst effect lasts until the end of your next turn.', -- Effect
+  'Core Rulebook', -- Book
+  183 -- Pg
+),
+-- 83
+(
+  'Way of the Earthquake', -- Name
+  2, -- Rank
+  'Kiho', -- Type
+  'Bolster your attacks with the strength of the Earth.', -- Desc
+  'Attack and Support Action, TN 2 (Earth) Martials Arts Unarmed check with optional targets from any characters in range 0-1.', -- Activation
+  'Enhancement: After you perform an Attack or Support action or defend damage, choose a character at range 0-2. They must make a TN 4 (Air 2, Water 5) Fitness check or become prone and take damage equal to your Earth Ring.
+  Burst: If you have at least 2 bonus successes, each chosen target takes physical damage of your Earth Ring. If they are prone, they take extra damage equal to your bonus successes and become immobilized.', -- Effect
+  'Core Rulebook', -- Book
+  183 -- Pg
+),
+-- 84
+(
+  'Air Fist', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Increase the range of your attacks.', -- Desc
+  'Attack and Support Action, TN 1 (Air) Martial Arts Unarmed Check with an optional target of 1 character at range 0-1.', -- Activation
+  'Enhancement: Your punch and kick unarmed profiles have a maximum range band equal to your Air Ring.
+  Burst: If you have at least 2 bonus successes, deal physical damage equal to your Air Ring to the target. The target must make a TN 4 (Earth 5, Fire 2) Fitness check or be pushed away range bands equal to shortfall + 1.', -- Effect
+  'Core Rulebook', -- Book
+  183 -- Pg
+),
+-- 85
+(
+  'Riding the Clouds', -- Name
+  2, -- Rank
+  'Kiho', -- Type
+  'Alter your movement with the air.', -- Desc
+  'Movement and Support Action, TN 2 (Air) Meditation Check.', -- Activation
+  'Enhancement: When you move at least 1 range band, move an additional range band, and one of those range bands does not need to be made along the surface you are travelling. Ignore terrain effects while moving and falls count as a fall of only 1 range band. 
+  Burst: If you have at least 1 bonus success, you may immediately move 1 range band and 1 more for each bonus success. This movement can be vertical or horizontal.', -- Effect
+  'Core Rulebook', -- Book
+  184 -- Pg
+),
+-- 86
+(
+  'The Great Silence', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Create an area of silence by stilling air.', -- Desc
+  'Scheme and Support Action, TN 1 (Air) Theology Check.', -- Activation
+  'Enhancement: Scheme actions targeting you have their TN increased by 1 + your Command ranks.
+  Burst: If you have at least 2 bonus successes, characters within 3 range bands are Silenced and deafened. This lasts until your next turn.', -- Effect
+  'Core Rulebook', -- Book
+  184 -- Pg
+),
+-- 87
+(
+  'Way of the Willow', -- Name
+  3, -- Rank
+  'Kiho', -- Type
+  'Make yourself more difficult to strike.', -- Desc
+  'Movement and Support Action, TN 3 (Air) Meditation Check.', -- Activation
+  'Enhancement: When targeted by an attack action, reduce damage you take by 2 for each explosive success on the other character''s kept dice.
+  Burst: If you have at least 2 bonus successes, the TN of attack actions against you are increased by your ranks in meditation until your next turn.', -- Effect
+  'Core Rulebook', -- Book
+  184 -- Pg
+),
+-- 88
+(
+  'Breaking Blow', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Enhance your strikes with fiery blows against objects.', -- Desc
+  'Attack and Support Action, TN 1 (Fire) Martial Arts Unarmed Check with an optional target of an object at range 0-1.', -- Activation
+  'Enhancement: When you succeed on an attack action, choose a worn armor or readied weapon of one target to gain Damaged, which the target can negate if they choose to take 2 fatigue. 
+  Burst: If you have at least 2 bonus successes, the target gains Damaged. If the GM agrees, you can also use it to destroy a wooden or earthen object - such as a door or a tree. If you have at least 4 bonus successes, the object gains Destroyed. If the GM agrees, it can destroy an object made of metal or stone instead.', -- Effect
+  'Core Rulebook', -- Book
+  184 -- Pg
+),
+-- 89
+(
+  'Channel the Fire Dragon', -- Name
+  2, -- Rank
+  'Kiho', -- Type
+  'Become resistant to extreme temperatures.', -- Desc
+  'Attack and Support Action, TN 2 (Fire) Meditation Check with the optional target of all other characters at range 0-1.', -- Activation
+  'Enhancement: You succeed on all checks to resist extreme weather with bonus successes equal to your Fire Ring. You may spend a void point to prevent damage from fire and instead remove fatigue equal to the damage you prevented.
+  Burst: If you have at least 2 bonus successes, your targets gain the burning condition and take physical damage equal to your Fire Ring unless they succeed on a TN 4 (Air 5, Water 2) Fitness check. The GM may have this technique cause terrain to gain the Dangerous condition as it catches flame.', -- Effect
+  'Core Rulebook', -- Book
+  185 -- Pg
+),
+-- 90
+(
+  'Flame Fist', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Enhance your strikes with flame, making them more deadly.', -- Desc
+  'Attack and Support Action, TN 1 (Fire) Martial Arts Unarmed Check with an optional target of a character in range 0-1.', -- Activation
+  'Enhancement: The deadliness of kick and punch unarmed weapons are increased by your Fire Ring and do supernatural damage instead.
+  Burst: If you have at least 2 bonus successes, the target takes physical damage equal to your Fire Ring. They also gain Dazed unless they succeed on a TN 4 (Air 5, Water 2) Fitness check.', -- Effect
+  'Core Rulebook', -- Book
+  185 -- Pg
+),
+-- 91
+(
+  'The Body is an Anvil', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Counter attacks against you with a fiery expulsion of energy.', -- Desc
+  'Movement and Support Action, TN 3 (Fire) Meditation Check with an optional target of one character at range 0-2.', -- Activation
+  'Enhancement: When you defend against damage from an attack, your attacker takes supernatural damage equal to your Fire Ring and gains Dazed. 
+  Burst: If you have at least 2 bonus successes, reduce damage you would take from your target by your Fire Ring. If you defend the damage, the target gains Burning and one weapon used in the attack becomes Damaged.', -- Effect
+  'Core Rulebook', -- Book
+  186 -- Pg
+),
+-- 92
+(
+  'Way of the Falling Star', -- Name
+  3, -- Rank
+  'Kiho', -- Type
+  'Your strikes require more effort to evade from.', -- Desc
+  'Attack and Support Action, TN 3 (Fire) Martial Arts Unarmed Check with an optional target of one character at range 0-2.', -- Activation
+  'Enhancement: When you attack a Dazed target with a punch or kick profile, increase the damage by your Fire Ring.
+  Burst: If you have at least 3 bonus successes, deal supernatural damage equal to your Fire Ring + Fitness ranks to the target. Then they gain Burning and Dazed unless they succeed at a TN 5 (Air 6, Water 3) Fitness check.', -- Effect
+  'Core Rulebook', -- Book
+  186 -- Pg
+),
+-- 93
+(
+  'Freezing the Lifeblood', -- Name
+  2, -- Rank
+  'Kiho', -- Type
+  'Your attacks can cause the blood in the targets body to freeze.', -- Desc
+  'Attack and Support Action, TN 2 (Water) Martial Arts Unarmed check with an optional target of one character at range 0-1.', -- Activation
+  'Enhancement: When a character defends against damage you deal with a punch or kick profile, they gain immobilized unless they choose to gain 3 fatigue.
+  Burst: If you have at least 2 bonus successes, deal supernatural damage to the target equal to your Water Ring and ignore resistance. The target also gains immobilized. If you have at least 4 bonus successes, you deal a critical strike to the target with deadliness equal to your Water Ring + Medicine ranks instead.', -- Effect
+  'Core Rulebook', -- Book
+  186 -- Pg
+),
+-- 94
+(
+  'Ki Protection', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Help another recover by correcting the flow of their energy.', -- Desc
+  'Movement and Support Action, TN 1 (Water) Meditation Check with an optional target of one character at range 0-1.', -- Activation
+  'Enhancement: The Calming Breath action removes 1 extra fatigue (but not below half of your endurance). When you perform an action, you can spend 1 void point to reduce fatigue by your Medicine ranks from another character at range 0-1.
+  Burst: If you have at least 2 bonus successes, remove fatigue from your target equal to your Medicine ranks + bonus successes. That target cannot be affected by this burst effect again this scene.', -- Effect
+  'Core Rulebook', -- Book
+  186 -- Pg
+),
+-- 95
+(
+  'Ride the Water Dragon', -- Name
+  3, -- Rank
+  'Kiho', -- Type
+  'Mystical attacks find you much more difficult to affect.', -- Desc
+  'Movement and Support Action, TN 3 (Water) Meditation Check.', -- Activation
+  'Enhancement: The TN of invocations, maho, or kiho targeting you are increased by your Meditation ranks.
+  The GM may allow you to pass through wards or barriers without triggering effects or alerts from them in addition.
+  Burst: If you have at least 2 bonus successes, remove any other persistent effects from supernatural sources from yourself. If you have at least 4 bonus successes, remove any other persistent effects of supernatural sources from all characters in range 0-2.', -- Effect
+  'Core Rulebook', -- Book
+  187 -- Pg
+),
+-- 96
+(
+  'Water Fist', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Alter your unarmed strikes with water that slips past armor.', -- Desc
+  'Attack and Support Action, TN 1 (Water) Martial Arts Unarmed Check with an optional target of one character at range 0-3 who is touching a same surface as you.', -- Activation
+  'Enhancement: Attacks with a punch or kick profile ignore physical resistance equal to double your Water Ring. You may spend 1 void point to allow you to perform an attack with a punch or kick profile against any target that is in contact with a surface you are also in contact with, from a maximum range equal to your Water Ring.
+  Burst: If successful, deal physical damage equal to your Water Ring to the target.', -- Effect
+  'Core Rulebook', -- Book
+  187 -- Pg
+),
+-- 97
+(
+  'Way of the Seafoam', -- Name
+  1, -- Rank
+  'Kiho', -- Type
+  'Allow yourself to walk on the surface of water.', -- Desc
+  'Movement and Support Action, TN 1 (Water) Meditation Check.', -- Activation
+  'Enhancement: You can walk on water like it was a solid surface.
+  Burst: If you have at least 2 bonus successes, remove Prone and Immobilized from yourself. Then you may choose to enter a new stance before immediately moving 2 range bands.', -- Effect
+  'Core Rulebook', -- Book
+  187 -- Pg
+),
+-- 98
+(
+  'Death Touch', -- Name
+  4, -- Rank
+  'Kiho', -- Type
+  'Kill someone with a single touch, just like in your anime.', -- Desc
+  'Attack and Support Action, TN 3 (Void) Martial Arts Unarmed Check with an optional target of one character at range 0-1.', -- Activation
+  'Enhancement: When you attack with a punch or kick profile, the target cannot defend against damage dealt by you unless they spend a void point.
+  Burst: If you have at least 3 bonus successes, the optional target becomes Dazed and Disoriented. They then gain unconscious unless they succeed a TN 4 Fitness Check. If you have at least 4 bonus successes against a minion NPC, you slay them instantly.', -- Effect
+  'Core Rulebook', -- Book
+  188 -- Pg
+),
+-- 99
+(
+  'Still the Elements', -- Name
+  3, -- Rank
+  'Kiho', -- Type
+  'Use the stillness of the Void to take away another''s strength.', -- Desc
+  'Scheme and Support Action, TN 4 (Void) Meditation Check. Choose a Ring other than Void.', -- Activation
+  'Enhancement: When a check with the chosen Ring targets you, after they choose kept dice change one die to a blank face. You may spend a void point to choose additional dice to change to blank faces up to your Meditation ranks.
+  Burst: If you have at least 2 bonus successes, the terrain within 3 range bands becomes Imbalanced in the chosen Ring until the scene ends.', -- Effect
+  'Core Rulebook', -- Book
+  188 -- Pg
+),
+-- 100
+(
+  'Touch the Void Dragon', -- Name
+  5, -- Rank
+  'Kiho', -- Type
+  'Use the void to shape your actions in any approach.', -- Desc
+  'Support Action, TN 4 (Void) Meditation Check.', -- Activation
+  'Enhancement: You may spend 💮 in Void as if you were in any elemental approach. You may spend 💮 in rings other than Void as if you were using a Void approach.
+  Burst: If you have at least 2 bonus successes, gain a void point. You cannot benefit from this effect again this scene.', -- Effect
+  'Core Rulebook', -- Book
+  188 -- Pg
+),
+-- 101
+(
+  'Way of the Edgeless Sword', -- Name
+  5, -- Rank
+  'Kiho', -- Type
+  'Any master of the void knows that by mastering their energy they can turn anything into a deadly weapon.', -- Desc
+  'Attack and Support Action, TN 3 Meditation Check with an optional target of any characters you choose within range 0-1. ', -- Activation
+  'Enhancement: The base damage and deadliness of any unarmed or improvised weapon profiles are equal to your Martial Arts Unarmed ranks + Void Ring. While wielding them they have the Durable and Razor-edged qualities.
+  Burst: If you have at least 2 bonus successes, chosen targets suffer a critical strike with severity of your Void Ring + Martial Arts Unarmed ranks.', -- Effect
+  'Core Rulebook', -- Book
+  188 -- Pg
 )
 ;
