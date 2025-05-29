@@ -17,7 +17,7 @@ export const searchQuery = `
   SELECT '/qualities/' || id AS link, title, detail FROM item_qualities
   WHERE title ILIKE '%' || $1 || '%'
   UNION
-  SELECT '/weapons/' AS link, name AS title, type AS detail FROM weapons
+  SELECT '/weapons/' || id AS link, name AS title, type AS detail FROM weapons
   WHERE name ILIKE '%' || $1 || '%'
   LIMIT 20;
   `;
