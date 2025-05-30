@@ -1122,5 +1122,334 @@ VALUES
   Burst: If you have at least 2 bonus successes, chosen targets suffer a critical strike with severity of your Void Ring + Martial Arts Unarmed ranks.', -- Effect
   'Core Rulebook', -- Book
   188 -- Pg
+),
+-- 102
+(
+  'Blessed Wind', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Obscure another with a powerful wind.', -- Desc
+  'Support Action, TN 2 (Air) Theology Check with one target within 3 rangebands.', -- Activation
+  'Summon wind that grants obscuring terrain to the area within 2 rangebands for only attacks targeting within the wind. Lasts 1 + bonus successes rounds.', -- Effect
+  'Core Rulebook', -- Book
+  192 -- Pg
+),
+-- 103
+(
+  'Call Upon the Wind', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Augmemnt your movement with the wind.', -- Desc
+  'Movement Action, TN 4 (Air) Theology Check with a target of yourself.', -- Activation
+  'You can move vertically and ignore terrain effects.', -- Effect
+  'Core Rulebook', -- Book
+  192 -- Pg
+),
+-- 104
+(
+  'False Realm of the Fox Spirits', -- Name
+  4, -- Rank
+  'Invocation', -- Type
+  'Create illusory terrain.', -- Desc
+  'Scheme Action,  TN 5 (Air) Theology Check with a target of a position within 4 rangebands.', -- Activation
+  'Summon a deceptive vision of terrain that is as large as your Air Ring in range. To realize it is an illusion from far away, a character must pass a TN 4 (Earth 5, Fire 2) Survival Check. Touching the illusion makes it obvious that it is fake. 
+  Lasts for Air Ring + bonus successes rounds in a conflict or that many minutes narratively.', -- Effect
+  'Core Rulebook', -- Book
+  193 -- Pg
+),
+-- 105
+(
+  'Mask of Wind', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Disguise your face and voice.', -- Desc
+  'Scheme and Support Action, TN 3 (Air) Theology Check with a target of yourself.', -- Activation
+  'You look like someone else unless an observer passes a TN 4 (Earth 5, Fire 2) Sentiment Check. If they pass the check they can spend 💮 to recognize you beneath the mask. Lasts the scene.', -- Effect
+  'Core Rulebook', -- Book
+  193 -- Pg
+),
+-- 106
+(
+  'Nature''s Touch', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Communicate with animals.', -- Desc
+  'Support Action,  TN 1 (Air) Theology Check with a target of yourself.', -- Activation
+  'You are augmented with the ability to talk to untainted natural animals but not understand them, and they will not understand human concepts, your duty, etc. 
+  Lasts for a scene.', -- Effect
+  'Core Rulebook', -- Book
+  194 -- Pg
+),
+-- 107
+(
+  'Secrets on the Wind', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Ask the Air Kami to listen in on some juicy gossip.', -- Desc
+  'Scheme Action, TN 3 (Air) Theology Check with a target location within 0 rangebands.', -- Activation
+  'For 24 hours, anything said within your Air Ring as rangebands will be overheard by Air Kami. You can spend an action to hear what is being said there at the time. You can only benefit from one instance of this invocation.', -- Effect
+  'Core Rulebook', -- Book
+  194 -- Pg
+),
+-- 108
+(
+  'Summon Fog', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Create an obscuring fog.', -- Desc
+  'Support Action, TN 2 (Air) Theology Check with a target of a position within 4 rangebands.', -- Activation
+  'Create fog with the obscuring terrain quality within 1 range band of the position.', -- Effect
+  'Core Rulebook', -- Book
+  195 -- Pg
+),
+-- 109
+(
+  'Vapor of Nightmares', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  'Use an illusion to prey on someone''s fear.', -- Desc
+  'Attack Action, TN 4 (Air) Theology Check targetting a character at 2-3 rangebands.', -- Activation
+  'Summon an illusion of their worst fear. Target must resist with a TN 4 (Earth 5, Fire 2) Meditation Check or gain strife equal to your Air Ring + bonus successes. If this compromises the target, they unmask and must either attack, flee from, or yell at the illusion as long as they see it. 
+  Lasts for your Air Ring rounds.', -- Effect
+  'Core Rulebook', -- Book
+  195 -- Pg
+),
+-- 110
+(
+  'Wrath of Kaze no Kami', -- Name
+  5, -- Rank
+  'Invocation', -- Type
+  'Conjure the Wrath of the Wind Kami', -- Desc
+  'Attack Action, TN 5 (Air) Theology Check that targets everyone within rangebands 2-4.', -- Activation
+  'You summon a hurricane. When your turn ends, targets in range must make a TN 4 (Earth 5, Fire 2) Fitness Check or take your Air Ring as supernatural damage and become Disoriented. 
+  Lasts for your Air Ring rounds, and may destroy objects if the GM wishes.', -- Effect
+  'Core Rulebook', -- Book
+  196 -- Pg
+),
+-- 111
+(
+  'Armor of Earth', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Cover yourself with stone armor.', -- Desc
+  'Support Action, TN 2 (Earth) Theology Check with a target of yourself.', -- Activation
+  'Summon and equip stone with your Earth Ring + bonus successes physical resistance. It has Cumbersome and Wargear. 
+  Lasts for your Earth Ring rounds.', -- Effect
+  'Core Rulebook', -- Book
+  197 -- Pg
+),
+-- 112
+(
+  'Bind the Shadow', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Immobilize an unnatural being.', -- Desc
+  'Attack Action, TN 3 (Earth) Theology Check with a target of one Otherworldly character within 2 rangebands.', -- Activation
+  'Smite and purify the target which it resists with a TN 4 (Air 2, Water 5) Fitness Check or gains Silenced and Immobilized. 
+  Lasts for your Earth Ring rounds.', -- Effect
+  'Core Rulebook', -- Book
+  197 -- Pg
+),
+-- 113
+(
+  'Caress of Earth', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Repair broken objects with the assistance of Earth kami', -- Desc
+  'Support Action, TN 3 (Earth) Theology Check with a target of an object within 1 rangeband that is damaged or destroyed.', -- Activation
+  'Mend the item and remove damaged or destroyed.', -- Effect
+  'Core Rulebook', -- Book
+  197 -- Pg
+),
+-- 114
+(
+  'Courage of Seven Thunders', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Give the fortitude of the Earth kami to the resolve of your allies.', -- Desc
+  'Support Action, TN 2 (Earth) Theology Check with targets up to your Earth Ring within 2 rangebands.', -- Activation
+  'Targets increase their composure by your Earth Ring. Effect lasts for the scene.', -- Effect
+  'Core Rulebook', -- Book
+  197 -- Pg
+),
+-- 115
+(
+  'Earthquake', -- Name
+  4, -- Rank
+  'Invocation', -- Type
+  'Split the ground asunder.', -- Desc
+  'Attack Action, TN 5 (Earth) Theology Check that targets all other characters within 3 rangebands of you.', -- Activation
+  'Summon an earthquake centered on your position and 3 rangebands in size. When your turns end, others must resist with a TN 5 (Air 3, Water 6) Fitness Check or become prone and suffer twice your Earth Ring as supernatural damage. 
+  Lasts for your Earth Ring rounds.', -- Effect
+  'Core Rulebook', -- Book
+  198 -- Pg
+),
+-- 116
+(
+  'Earth Becomes Sky', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  'Launch the earth itself at your enemy.', -- Desc
+  'Attack Action, TN 3 (Earth) Theology Check with a target of a character within 3 rangebands.', -- Activation
+  'A bolder or similar smites the target for supernatural damage equal to your Earth Ring + bonus successes. The target must pass a TN 3 (Air 1, Water 4) Fitness Check or become Prone. Double the damage if the target is already Prone.', -- Effect
+  'Core Rulebook', -- Book 
+  198 -- Pg
+),
+-- 117
+(
+  'Embrace of Kenro Ji Jin', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Travel along the surface of any stone or earthen soil.', -- Desc
+  'Support Action, TN 2 (Earth) Theology Check with a target of yourself.', -- Activation
+  'You can travel along surfaces made of stone and solid earth even if it is vertical. 
+  Lasts for 1 + bonus successes rounds or a minute narratively.', -- Effect
+  'Core Rulebook', -- Book
+  198 -- Pg
+),
+-- 118
+(
+  'Grasp of Earth', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Rip the ground apart beneath a foe''s feet.', -- Desc
+  'Attack Action, TN 2 (Earth) Theology Check targeting one character within 2 rangebands.', -- Activation
+  'Summon a small chasm in the ground and deal your Earth Ring as supernatural damage to the target. The target must pass a TN 4 (Air 2, Water 5) Fitness Check or become Prone.', -- Effect
+  'Core Rulebook', -- Book
+  199 -- Pg
+),
+-- 119
+(
+  'Jade Strike', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Strike an evil with the power of Earth kami mimicking jade.', -- Desc
+  'Attack Action, TN 2 (Earth) Theology Check with a target of 1 character within 3 rangebands. You must reasonably believe the target is tainted or otherworldly.', -- Activation
+  'If the target is tainted or otherworldy, smite the target with a critical strike equal to your Earth Ring + bonus successes in deadliness. If the target spends 💮💮 it hides whether it was affected. Nothing happens if the target is not tainted or otherworldly.', -- Effect
+  'Core Rulebook', -- Book
+  199 -- Pg
+),
+-- 120
+(
+  'Jurojin''s Balm', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Strengthen someone against poison and toxins.', -- Desc
+  'Support Action, TN 1 (Earth) Theology Check targeting a character within 1 rangeband.', -- Activation
+  'The character is augmented, reduce the TN of any resist checks against poison or disease by 2, but not lower than 1. They cannot gain intoxicated by drinking. 
+  Lasts for the scene.', -- Effect
+  'Core Rulebook', -- Book
+  199 -- Pg
+),
+-- 121
+(
+  'Power of the Earth Dragon', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  'Lend the strength of the Earth to someone''s endurance.', -- Desc
+  'Support Action, TN 4 (Earth) Theology Check targeting a character within 2 rangebands.', -- Activation
+  'Augment the target, increasing endurance by your Earth Ring + bonus successes. This lasts 1 + bonus successes rounds. A target can only benefit from this invocation once per scene.', -- Effect
+  'Core Rulebook', -- Book
+  199 -- Pg
+),
+-- 122
+(
+  'Rise, Earth', -- Name
+  4, -- Rank
+  'Invocation', -- Type
+  'Call upon an Earth Kami to manifest.', -- Desc
+  'Support Action, TN 6 (Earth) Theology Check targeting a location that contains stone, clay, or dirt within 3 rangebands.', -- Activation
+  'Summon a Manifest Earth Kami (Core Rulebook pg. 323). Obeys for 3 + bonus successes rounds and acts immediately after you. After the duration, it may leave or at GM directive pursue its own goals.', -- Effect
+  'Core Rulebook', -- Book
+  200 -- Pg
+),
+-- 123
+(
+  'Symbol of Earth', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Ward an area with the help of Earth kami', -- Desc
+  'Support Action, TN 3 (Earth) Theology Check with a  target of a location within 1 rangeband.', -- Activation
+  'Summon a symbol that purifies the area. If an Otherworldly being tries to approach in the direction of the symbol, they take your Earth Ring in supernatural damage and make a TN 4 (Air 2, Water 5) Fitness Check or become prone. Lasts 1 + bonus successes rounds.', -- Effect
+  'Core Rulebook', -- Book
+  200 -- Pg
+),
+-- 124
+(
+  'Tetsubo of Earth', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Create a stone pillar the shugenja can use as a weapon.', -- Desc
+  'Support Action, TN 1 (Earth) Theology Check with a target of a position within 1 rangeband that contains clay, stone, or dirt.', -- Activation
+  'Summon and ready a stone tetsubo. If you deal damage to a prone target with this tetsubo, you deal additional damage equal to your Earth Ring. Lasts until end of scene or at the end of a turn it left your grip.', -- Effect
+  'Core Rulebook', -- Book
+  200 -- Pg
+),
+-- 125
+(
+  'Tomb of Jade', -- Name
+  5, -- Rank
+  'Invocation', -- Type
+  'Trap an evil spirit within a tomb made of jade.', -- Desc
+  'Attack Action, TN 6 (Earth) Theology Check targeting one character within 1 rangeband.', -- Activation
+  'If the target is tainted, purify it by turning it to jade over time. On the targets turn, reduce all of its rings by 1. This lasts for your Earth Ring + bonus successes rounds. If the target has a ring of 0, it turns to jade and the terrain within 2 rangebands are Hallowed (Earth) terrain. If the jade is damaged or destroyed, the target can be freed.', -- Effect
+  'Core Rulebook', -- Book
+  201 -- Pg
+),
+-- 126
+(
+  'Wall of Earth', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'A shugenja who can entreat the Earth Kami can erect a structure anywhere.', -- Desc
+  'Support Action, TN 2 (Earth) Theology Check targeting two different locations within 2 rangebands.', -- Activation
+  'A literal wall of earth is summoned between the two locations. The wall is 1 rangeband thick, and 3 rangebands tall. Characters standing where the wall is summoned must pass a TN 2 (Air 1, Water 3) Fitness Check or become prone and take your Earth Ring as physical damage.', -- Effect
+  'Core Rulebook', -- Book
+  201 -- Pg
+),
+-- 127
+(
+  'Armor of Radiance', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Support Action, TN 2 (Fire) Theology Check targeting a set of armor within 1 rangeband.', -- Activation
+  'Augment the armor, causing any character within 1 rangeband of the wearer to gain Burning and Dazed when their turn begins. This does not affect the caster. 
+  Lasts for 1 + bonus successes rounds.', -- Effect
+  'Core Rulebook', -- Book
+  202 -- Pg
+),
+-- 128
+(
+  'Biting Steel', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Support Action, TN 2 (Fire) Theology Check targeting a weapon within 1 rangeband.', -- Activation
+  'Augment the weapon, increasing its damage by your Fire Ring. Effect lasts for 1 + bonus successes rounds.', -- Effect
+  'Core Rulebook', -- Book
+  202 -- Pg
+),
+-- 129
+(
+  'Breath of the Fire Dragon', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Attack Action, TN 4 (Fire) Theology Check targeting a character within 3 rangebands.', -- Activation
+  'Smite the target with flame, dealing supernatural damage to them equal to your Fire Ring + double the bonus successes. The target also gains the burning condition. All characters within 1 rangeband of the target must pass a TN 3 (Air 4, Water 1) Fitness check or take your Fire Ring as supernatural damage.', -- Effect
+  'Core Rulebook', -- Book
+  202 -- Pg
+),
+-- 130
+(
+  'Extinguish', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'You know how to quiet the Fire Kami', -- Desc
+  'Support Action, TN 3 (Fire) Theology Check with up to 3 targets of mundane fire sources.', -- Activation
+  'Summon the will of the Fire Kami, extinguishing the targets and losing 1 fatigue for each target.', -- Effect
+  'Core Rulebook', -- Book
+  202 -- Pg
 )
 ;
