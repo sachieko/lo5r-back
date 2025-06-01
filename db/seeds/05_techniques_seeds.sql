@@ -162,7 +162,7 @@ VALUES
   2,                            -- Rank
   'Kata',                       -- Type
   'You draw your blade from the hip to catch an opponent''s sword as they strike at you, leaving them open for your own blade''s follow through.', -- Description
-  'Attack Action, Martial Arts [Melee] Check targeting a person at range 0-1 using a sheathed weapon with razor-edged. The TN is their vigilance. You draw and ready the sheathed weapon in a one-handed grip. On a success, you deal damage to the opponent equal to the weapon''s deadliness, and they cannot defend against this damage if they are compromised.', -- Activation
+  'Attack Action, TN [Vigilance of Target] Martial Arts Melee Check targeting a person at range 0-1 using a sheathed weapon with razor-edged. You draw and ready the sheathed weapon in a one-handed grip. On a success, you deal damage to the opponent equal to the weapon''s deadliness, and they cannot defend against this damage if they are compromised.', -- Activation
   '',                 -- Effect 
   'Core Rulebook',
    179),
@@ -1451,5 +1451,106 @@ VALUES
   'Summon the will of the Fire Kami, extinguishing the targets and losing 1 fatigue for each target.', -- Effect
   'Core Rulebook', -- Book
   202 -- Pg
+),
+-- 131
+(
+  'Fukurokujin''s Wit', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Support Action, TN 1 (Fire) Theology Check with a target of yourself.', -- Activation
+  'Augment  yourself by adding a kept ring die set to strife and opportunity to your checks. Lasts for 1 round  + bonus successes.', -- Effect
+  'Core Rulebook', -- Book
+  203 -- Pg
+),
+-- 132
+(
+  'Fury of Osano-wo', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Attack Action, TN 5 (Fire) Theology Check targeting a character within 4 rangebands. Must be outside. TN 4 (Fire) if it is storming.', -- Activation
+  'Smite the target for supernatural damage equal to Fire Ring + triple bonus successes. If incapacitated by this damage, deal a critical strike of deadliness 8.', -- Effect
+  'Core Rulebook', -- Book
+  203 -- Pg
+),
+-- 133
+(
+  'Katana of Fire', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Create a blade of pure flame.', -- Desc
+  'Support Action, TN 1 (Fire) Theology Check.', -- Activation
+  'Summon a Katana of flame readied in a grip of your choice.  It has the Wargear quality and deals supernatural damage. Lasts the scene or until the end of a turn it left your grip.', -- Effect
+  'Core Rulebook', -- Book
+  203 -- Pg
+),
+-- 134
+(
+  'Matsu''s Battlecry', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Scheme Action, TN [Highest Vigilance of Targets] (Fire) Theology Check with up to your Fire Ring targets within 2 rangebands.', -- Activation
+  'Summon an illusion your targets see, giving them 1 + bonus successes strife. They must pass a TN 3 (Air 4, Water 1) Meditation Check or become Enraged.', -- Effect
+  'Core Rulebook', -- Book
+  204 -- Pg
+),
+-- 135
+(
+  'Ravenous Swarms', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Support Action, TN 3 (Fire) Theology Check with a target of one position within 1 rangeband that is flammable.', -- Activation
+  'Summon fire motes equal to Fire Ring + Silhouette of the target that follow you. They set fire to objects close by occasionally.
+  When you make an Attack Action and succeed, you may spend motes up to school rank to add a bonus success per mote. Gain another mote if you cast a fire invocation.
+  Lasts for the scene.', -- Effect
+  'Core Rulebook', -- Book
+  204 -- Pg
+),
+-- 136
+(
+  'Rise, Flame', -- Name
+  4, -- Rank
+  'Invocation', -- Type
+  'Entreat a Fire Kami to manifest.', -- Desc
+  'Support Action, TN 6 (Fire) Theology Check with a target location within 3 rangebands that has flammable material.', -- Activation
+  'Summon a Manifest Fire Kami (Pg. 324 of Core Rulebook) burning up the material at the location. It will follow your orders for 2 + bonus successes rounds, before departing or pursuing its own goals at GM discretion. It acts after you each turn.', -- Effect
+  'Core Rulebook', -- Book
+  204 -- Pg
+),
+-- 137
+(
+  'The Cleansing Fire', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Attack Action, TN 1 (Fire) Theology Check targeting all other  characters within 2 rangebands.', -- Activation
+  'Smite each target, giving them Dazed and forcing a TN 3 (Air 4, Water 1) Fitness Check or take your Fire Ring + Shortfall supernatural damage and gain Burning.', -- Effect
+  'Core Rulebook', -- Book
+  204 -- Pg
+),
+-- 138
+(
+  'The Fires from Within', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Attack Action, TN 3 (Fire) Theology Check with targets up to your Fire Ring in 1-3 rangebands.', -- Activation
+  'Smite each target, dealing your Fire Ring + bonus successes as supernatural damage.', -- Effect
+  'Core Rulebook', -- Book
+  205 -- Pg
+),
+-- 139
+(
+  'The Soul''s Blade', -- Name
+  5, -- Rank
+  'Invocation', -- Type
+  '', -- Desc
+  'Support Action, TN 4 (Fire) Theology Check.', -- Activation
+  'Summon a katana or naginata readied in a valid grip. It deals supernatural damage, and ignores resistances. Lasts the scene or until the end of a turn it leaves your turn.', -- Effect
+  'Core Rulebook', -- Book
+  205 -- Pg
 )
 ;
