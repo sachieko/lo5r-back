@@ -96,7 +96,7 @@ VALUES
 1, 
 'Invocation', 
 'Submerge an item in water to beseech water kami to give information about the item.', 
-'Scheme Action, TN 2 (Water) Theology check targeting an item at 1-0 range.', 
+'Scheme Action, TN 2 (Water) Theology check targeting an item within 1 rangebands', 
 'If successful the water kami reveal via scrying all properties the item has, including its name, creator, qualities, magical properties, any curses or nemuranai.', 
 'Core Rulebook',
  209),
@@ -1552,5 +1552,281 @@ VALUES
   'Summon a katana or naginata readied in a valid grip. It deals supernatural damage, and ignores resistances. Lasts the scene or until the end of a turn it leaves your turn.', -- Effect
   'Core Rulebook', -- Book
   205 -- Pg
+),
+-- 140
+(
+  'Wall of Fire', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Create a wall of flames.', -- Desc
+  'Attack and Support Action, TN 4 (Fire) Theology Check with a target of two locations within 2-4 rangebands.', -- Activation
+  'Summon a wall of fire between the locations. It is 1 rangeband wide, and 3 rangebands tall. It has the Dangerous terrain quality. Characters in the wall''s area gain Dazed and if they fail a TN 4 (Air 3, Water 1) Fitness Check they take your Fire Ring supernatural damage and gain Burning.
+  Lasts for 1 + bonus successes rounds.', -- Effect
+  'Core Rulebook', -- Book
+  205 -- Pg
+),
+-- 141
+(
+  'Wings of the Phoenix', -- Name
+  4, -- Rank
+  'Invocation', -- Type
+  'Be the best fiery bird you can.', -- Desc
+  'Support Action, TN 4 (Fire) Theology Check with a target of yourself.', -- Activation
+  'Augment yourself with wings of flame. Ignore effects of terrain, and can move in any direction. 
+  Terrain you are flying over within 3 rangebands becomes Dangerous until your next turn. If a character is in the area, they gain Dazed and must pass a TN 2 (Air 3, Water 1) Fitness Check or take your Fire Ring supernatural damage and gain Burning.
+  Lasts for 1 + bonus successes rounds.', -- Effect
+  'Core Rulebook', -- Book
+  206 -- Pg
+),
+-- 142
+(
+  'Bo of Water', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Create a staff made out of surging water.', -- Desc
+  'Support Action, TN 1 (Water) Theology Check.', -- Activation
+  'Summon a Bo staff from a source of water or water vapour that has Snaring. When a round ends, you may transform it into another melee weapon instead.
+  Lasts for the scene or until the end of a turn if it left your grip.', -- Effect
+  'Core Rulebook', -- Book
+  207 -- Pg
+),
+-- 143
+(
+  'Dance of Seasons', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Use the adaptability of water and transform it.', -- Desc
+  'Movement and Support Action, TN 3 (Water) Theology Check with a target location that contains a source of water in 1-3 rangebands.', -- Activation
+  'Summon water within 1 rangebands of the location to change state such as evaporating, freezing, condensing, or thawing it. Ice is Dangerous terrain, mist is Obscuring, mud is Entangling, and so on. You cannot affect the water in bodies this way.', -- Effect
+  'Core Rulebook', -- Book
+  207 -- Pg
+),
+-- 144
+(
+  'Dominion of Suijin', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Scry through different bodies of water.', -- Desc
+  'Movement and Scheme Action, TN 2 (Water) Theology Check with a target of a body of water within 1 rangeband and know of another body of water within 6 rangebands that you have solid knowledge of.', -- Activation
+  'You can scry through the surface of the target water as though looking out from under the other body of water''s surface.', -- Effect
+  'Core Rulebook', -- Book
+  207 -- Pg
+),
+-- 145
+(
+  'Ever Changing Waves', -- Name
+  5, -- Rank
+  'Invocation', -- Type
+  'Change shape into an animal, while retaining your mental capabilities.', -- Desc
+  'Support Action, TN 4 (Water) Theology Check with a target of yourself.', -- Activation
+  'Augment yourself into an animal of silhouette 2 (Pg. 325 of Core Rulebook, or other book with GM approval.), keeping your skill ranks and any mental or spiritual advantages. You use the rings, derived attributes, abilities, and physical or social advantages.
+  Lasts until you are unconscious or choose to end it. Any fatigue or strife you suffered is kept when it ends, which may compromise or incapacitate you. If incapacitated this way, you take a critical strike with 5 deadliness.', -- Effect
+  'Core Rulebook', -- Book
+  208 -- Pg
+),
+-- 146
+(
+  'Heart of the Water Dragon', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Entreat the protective healing powers of water.', -- Desc
+  'Support Action, TN 3 (Water) Theology Check targeting a character within 2 rangebands.', -- Activation
+  'Augment the target character, giving them supernatural resistance equal to your Water Ring. At the end of each round of a conflict, they also recover 1 fatigue.
+  Lasts 1 + bonus successes rounds. A character can only be a target of this once per scene.', -- Effect
+  'Core Rulebook', -- Book
+  208 -- Pg
+),
+-- 147
+(
+  'Path to Inner Peace', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Soothe the body and muscles.', -- Desc
+  'Support Action, TN 2 (Water) Theology Check with one target character within 2 rangebands or yourself.', -- Activation
+  'Mend your target, removing fatigue up to your Water Ring + bonus successes. 
+  A character can only benefit from this once per scene.', -- Effect
+  'Core Rulebook', -- Book
+  209 -- Pg
+),
+-- 148
+(
+  'Rise, Water', -- Name
+  4, -- Rank
+  'Invocation', -- Type
+  'Entreat a Water Kami to manifest.', -- Desc
+  'Support Action, TN 6 (Water) Theology Check with a target location within 3 rangebands that contains a lot of water.', -- Activation
+  'Summon a Manifest Water Kami (Pg. 324 of Core Rulebook) at the location. It follows your direction for 2 + bonus successes rounds before leaving or following its own goals at GM discretion. It acts immediately after your turn.', -- Effect
+  'Core Rulebook', -- Book
+  210 -- Pg
+),
+-- 149
+(
+  'Stride the Waves', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Glide along a torrent of water.', -- Desc
+  'Support Action, TN 2 (Water) Theology Check with a target of a character within 2 rangebands.', -- Activation
+  'Summon a torrent of water that the target can move along or within by will regardless of swimming ability. They ignore terrain effects and do not suffocate from water.
+  Effect lasts for the scene.', -- Effect
+  'Core Rulebook', -- Book
+  211 -- Pg
+),
+-- 150
+(
+  'Strike the Tsunami', -- Name
+  3, -- Rank
+  'Invocation', -- Type
+  'Strike an enemy with a sudden rush of water.', -- Desc
+  'Attack Action, TN 4 (Water) Theology Check with target characters up to your Water Ring within 3 rangebands and near a source of liquid water.', -- Activation
+  'Smite the targets with supernatural damage of your Water Ring + bonus successes. Targets then must pass a TN 3 (Earth 1, Fire 4) Fitness Check or you may move them their shortfall in rangebands in a direction of your choice.', -- Effect
+  'Core Rulebook', -- Book
+  211 -- Pg
+),
+-- 151
+(
+  'Suijin''s Embrace', -- Name
+  4, -- Rank
+  'Invocation', -- Type
+  'Inflict drowning on a foe.', -- Desc
+  'Attack Action, TN 4 (Water) Theology Check with a target of a character between rangebands 1-3.', -- Activation
+  'Smite your target, dealing your Water Ring + Double the bonus successes supernatural damage. 
+  If they become incapacitated this way, they suffocate (Pg. 269 Core Rulebook) for your Water Ring + bonus successes rounds. You can end this as a Support Action', -- Effect
+  'Core Rulebook', -- Book
+  211 -- Pg
+),
+-- 152
+(
+  'Sympathetic Energies', -- Name
+  2, -- Rank
+  'Invocation', -- Type
+  'Spread an invocation effect between individuals.', -- Desc
+  'Support Action, TN 2 (Water) Theology Check with target characters up to your Water Ring within 1 rangeband.', -- Activation
+  'Choose a persistent invocation effect to augment which is already affecting one of the characters. This effect spreads to the other characters and remains for as long as the original character has the effect.', -- Effect
+  'Core Rulebook', -- Book
+  211 -- Pg
+),
+-- 153
+(
+  'The Rushing Wave', -- Name
+  1, -- Rank
+  'Invocation', -- Type
+  'Entreat the Water Kami for the fluid movement of water.', -- Desc
+  'Movement Action, TN 2 (Water) Theology Check with a target of a character within 1 rangeband. Requires a large amount of water close by.', -- Activation
+  'During a skirmish: Summon a wave of water, allowing the character to move 1 + bonus successes range bands immediately.
+  During a narrative or downtime scene: Summon a gentle wave. For the rest of the scene the character moves twice as fast on or in the water, whether on foot or by boat.', -- Effect
+  'Core Rulebook', -- Book
+  211 -- Pg
+),
+-- 154
+(
+  'Artisan''s  Appraisal', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'Learn about the creator of an object or performance.', -- Desc
+  'When making an (Air) Artisan Skill, (Air) Performance, or (Air) Games check; gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  214 -- Pg
+),
+-- 155
+(
+  'Bend with the Storm', -- Name
+  5, -- Rank
+  'Shuji', -- Type
+  'You can mislead someone to believe you have a quality you don''t.', -- Desc
+  'When making an (Air) Social Skill Check that targets a character; gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  214 -- Pg
+),
+-- 156
+(
+  'Feigned Opening', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'Lure an enemy into a false opening which you can take advantage of.', -- Desc
+  'Movement and Scheme Action, TN [Vigilance of target character] (Air) Performance Check that targets a character in the scene watching you. The scene must be a skirmish or mass battle.', -- Activation
+  'Reduce the TN of the next Attack action against the target or their cohort by 1 + bonus successes. This lasts until end of next turn.', -- Effect
+  'Core Rulebook', -- Book
+  214 -- Pg
+),
+-- 157
+(
+  'The Wind Blows Both Ways', -- Name
+  3, -- Rank
+  'Shuji', -- Type
+  'You know how to subtly inflate or deflate the accomplishments of others.', -- Desc
+  'When making an (Air) Courtesy or (Air) Performance Check that targets another character; gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  215 -- Pg
+),
+-- 158
+(
+  'Wolf''s Proposal', -- Name
+  4, -- Rank
+  'Shuji', -- Type
+  'You know how to act like a true samurai, and a true scoundrel, wearing what suits you best at the time.', -- Desc
+  'Scheme Action, TN [Highest vigilance of targets] (Air) Courtesy or Performance Check targeting up to all characters in the scene.', -- Activation
+  'Each target treats you as though your honor is 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 5, Fire 2) Sentiment Check to learn your actual honor.
+  Effect lasts for the scene.', -- Effect
+  'Core Rulebook', -- Book
+  215 -- Pg
+),
+-- 159
+(
+  'Ancestry Unearthed', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'You make note of the history of other samurai''s families and recall it in useful moments.', -- Desc
+  'When making an (Earth) Scholar Skill, or (Earth) Social Skill Check that targets a character; gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  216 -- Pg
+),
+-- 160
+(
+  'Civility Foremost', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'Vouch for why a particular person should not be harmed.', -- Desc
+  'Scheme Action, TN [Vigilance of target character] (Earth) Command or Courtesy Check with a target of one character in the scene, and one character you wish to defend in the scene.', -- Activation
+  'Target character must forfeit your Earth Ring + bonus successes honor and gain as much strife to make an Attack or Scheme Action that targets the character you argue should be protected from harm.
+  Effect lasts for the scene, or until the target character uses an Attack or Scheme Action.', -- Effect
+  'Core Rulebook', -- Book
+  216 -- Pg
+),
+-- 161
+(
+  'Honest Assessment', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'You can make an ally less conscious of their disadvantages by clearing the air about it.', -- Desc
+  'Support Action, TN 2 (Earth) Courtesy Check with a target of one other character in the scene.', -- Activation
+  'Choose one known disadvantage of the target to not apply until the scene ends.', -- Effect
+  'Core Rulebook', -- Book
+  216 -- Pg
+),
+-- 162
+(
+  'Pillar of Calm', -- Name
+  4, -- Rank
+  'Shuji', -- Type
+  'You know how to make calmer heads prevail in a way that will quell the need for more violence than necessary.', -- Desc
+  'Scheme and Support Action, TN [Highest strife of targets] (Earth) Command Check with targets of all leaders involved in a conflict. You may only target characters up to your Earth Ring times your School Ranks.', -- Activation
+  'You may de-escalate the conflict by one step. The steps from most escalated to least are: Mass Battle, Skirmish, Duel, Intrigue.', -- Effect
+  'Core Rulebook', -- Book
+  216 -- Pg
+),
+-- 163
+(
+  'Stonewall Tactics', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'You know how to prevent someone from getting to who they really want to.', -- Desc
+  'When making an (Earth) Social Skill or (Earth) Martial Skill Check that targets a character; gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  216 -- Pg
 )
 ;
