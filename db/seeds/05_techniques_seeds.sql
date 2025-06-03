@@ -104,9 +104,10 @@ VALUES
 ('Sinful Whispers', 
 1,
  'Maho', 
-'Kansen, twisted kami, assault a person''s mind and make them more likely to answer a maho-tsukai while they cannot think clearly.', 
-'Attack and Scheme Action, Theology (Air) Check targeting one character with the Afflicted condition at up to 4 range bands. The TN of this check is their vigilance.', 
-'Curse the target, during which they must answer any questions you ask honestly and do not find it questionable to do so during this time. This lasts only a number of rounds equal to your Air ring.', 
+'A Kansen knows how to wear down the mental barriers that an otherwise upstanding person might keep against them, to the point even their darkest secrets can be uncovered.', 
+'Attack and Scheme Action, TN [Vigilance of Target] Theology (Air) Check targeting one character with the Afflicted condition at up to 4 range bands. This requires a sacrifice.', 
+'Curse the target, during which they must answer any questions you ask honestly and do not find it questionable to do so during this time. 
+This lasts your Air Ring rounds.', 
 'Core Rulebook',
  225),
 -- 11
@@ -1723,7 +1724,7 @@ VALUES
   2, -- Rank
   'Shuji', -- Type
   'Learn about the creator of an object or performance.', -- Desc
-  'When making an (Air) Artisan Skill, (Air) Performance, or (Air) Games check; gain a new way to spend opportunity.', -- Activation
+  'When making an (Air) Artisan Skill, (Air) Performance, or (Air) Games check gain a new way to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
   214 -- Pg
@@ -1734,7 +1735,7 @@ VALUES
   5, -- Rank
   'Shuji', -- Type
   'You can mislead someone to believe you have a quality you don''t.', -- Desc
-  'When making an (Air) Social Skill Check that targets a character; gain a new way to spend opportunity.', -- Activation
+  'When making an (Air) Social Skill Check that targets a character gain a new way to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
   214 -- Pg
@@ -1745,7 +1746,7 @@ VALUES
   2, -- Rank
   'Shuji', -- Type
   'Lure an enemy into a false opening which you can take advantage of.', -- Desc
-  'Movement and Scheme Action, TN [Vigilance of target character] (Air) Performance Check that targets a character in the scene watching you. The scene must be a skirmish or mass battle.', -- Activation
+  'Movement and Scheme Action, TN [Vigilance of Target] (Air) Performance Check that targets a character in the scene watching you. The scene must be a skirmish or mass battle.', -- Activation
   'Reduce the TN of the next Attack action against the target or their cohort by 1 + bonus successes. This lasts until end of next turn.', -- Effect
   'Core Rulebook', -- Book
   214 -- Pg
@@ -1756,7 +1757,7 @@ VALUES
   3, -- Rank
   'Shuji', -- Type
   'You know how to subtly inflate or deflate the accomplishments of others.', -- Desc
-  'When making an (Air) Courtesy or (Air) Performance Check that targets another character; gain a new way to spend opportunity.', -- Activation
+  'When making an (Air) Courtesy or (Air) Performance Check that targets another character gain a new way to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
   215 -- Pg
@@ -1767,8 +1768,8 @@ VALUES
   4, -- Rank
   'Shuji', -- Type
   'You know how to act like a true samurai, and a true scoundrel, wearing what suits you best at the time.', -- Desc
-  'Scheme Action, TN [Highest vigilance of targets] (Air) Courtesy or Performance Check targeting up to all characters in the scene.', -- Activation
-  'Each target treats you as though your honor is 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 5, Fire 2) Sentiment Check to learn your actual honor.
+  'Scheme Action, TN [Highest Vigilance of Targets] (Air) Courtesy or Performance Check targeting up to all characters in the scene.', -- Activation
+  'Targeted Characters treat you as though your honor is 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 5, Fire 2) Sentiment Check to learn your actual honor.
   Effect lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   215 -- Pg
@@ -1779,7 +1780,7 @@ VALUES
   1, -- Rank
   'Shuji', -- Type
   'You make note of the history of other samurai''s families and recall it in useful moments.', -- Desc
-  'When making an (Earth) Scholar Skill, or (Earth) Social Skill Check that targets a character; gain a new way to spend opportunity.', -- Activation
+  'When making an (Earth) Scholar Skill, or (Earth) Social Skill Check that targets a character gain a new way to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
   216 -- Pg
@@ -1790,7 +1791,7 @@ VALUES
   2, -- Rank
   'Shuji', -- Type
   'Vouch for why a particular person should not be harmed.', -- Desc
-  'Scheme Action, TN [Vigilance of target character] (Earth) Command or Courtesy Check with a target of one character in the scene, and one character you wish to defend in the scene.', -- Activation
+  'Scheme Action, TN [Vigilance of Target] (Earth) Command or Courtesy Check with a target of one character in the scene, and one character you wish to defend in the scene.', -- Activation
   'Target character must forfeit your Earth Ring + bonus successes honor and gain as much strife to make an Attack or Scheme Action that targets the character you argue should be protected from harm.
   Effect lasts for the scene, or until the target character uses an Attack or Scheme Action.', -- Effect
   'Core Rulebook', -- Book
@@ -1813,7 +1814,7 @@ VALUES
   4, -- Rank
   'Shuji', -- Type
   'You know how to make calmer heads prevail in a way that will quell the need for more violence than necessary.', -- Desc
-  'Scheme and Support Action, TN [Highest strife of targets] (Earth) Command Check with targets of all leaders involved in a conflict. You may only target characters up to your Earth Ring times your School Ranks.', -- Activation
+  'Scheme and Support Action, TN [Highest Strife of Targets] (Earth) Command Check with targets of all leaders involved in a conflict. You may only target characters up to your Earth Ring times your School Ranks.', -- Activation
   'You may de-escalate the conflict by one step. The steps from most escalated to least are: Mass Battle, Skirmish, Duel, Intrigue.', -- Effect
   'Core Rulebook', -- Book
   216 -- Pg
@@ -1824,9 +1825,214 @@ VALUES
   1, -- Rank
   'Shuji', -- Type
   'You know how to prevent someone from getting to who they really want to.', -- Desc
-  'When making an (Earth) Social Skill or (Earth) Martial Skill Check that targets a character; gain a new way to spend opportunity.', -- Activation
+  'When making an (Earth) Social Skill or (Earth) Martial Skill Check that targets a character gain a new way to spend opportunity.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
   216 -- Pg
+),
+-- 164
+(
+  'The Immovable Hand of Peace', -- Name
+  5, -- Rank
+  'Shuji', -- Type
+  'Sometimes the right words can stop swords and find a resolution that suits both sides of a conflict.', -- Desc
+  'Scheme Action, TN 5 (Earth) Command Check that targets all characters in the scene. This can be used once per session during a duel or skirmish only.', -- Activation
+  'The scene becomes an Intrigue between you and important characters, ie: generally not minions. If a peaceful agreement is reached during this effect, it does not return to the original state.
+  Effect lasts 1 + bonus successes rounds. ', -- Effect
+  'Core Rulebook', -- Book
+  217 -- Pg
+),
+-- 165
+(
+  'Bravado', -- Name
+  4, -- Rank
+  'Shuji', -- Type
+  'You can carry yourself as a well decorated samurai, or a worthless disappointment, to get the reaction from others you want.', -- Desc
+  'Scheme Action, TN [Highest Vigilance of Targets] (Fire) Games or Performance Check with targets up to all characters in the scene.', -- Activation
+  'Targeted Characters treat your glory as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Air 5, Water 2) Sentiment Check to learn your actual glory.
+  Effect lasts for the scene.', -- Effect
+  'Core Rulebook', -- Book
+  218 -- Pg
+),
+-- 166
+(
+  'Lightning Raid', -- Name
+  2, -- Rank
+  'Shuji', -- Type
+  'You know how to mobilize people in order to shock your enemies with a sudden charge to overwhelm enemy forces.', -- Desc
+  'Attack and Movement Action, TN 3 (Fire) Command Check with targets up to all characters in the scene or a cohort if in a Mass Battle. This can be used only once per scene.', -- Activation
+  'Target characters increase their initiative by your Fire Ring + bonus successes at the start of next round. 
+  If in a Mass Battle, give the target cohort your Fire Ring + bonus successes panic instead.', -- Effect
+  'Core Rulebook', -- Book
+  218 -- Pg
+),
+-- 167
+(
+  'Rallying Cry', -- Name
+  3, -- Rank
+  'Shuji', -- Type
+  'You know how to rouse the spirits of your soldiers to seize opportunity at any cost.', -- Desc
+  'Support Action, TN 2 (Fire) Command or Performance Check with targets up to all characters in the scene or a cohort if in a Mass Battle.', -- Activation
+  'After target characters choose kept dice for a check, they add a ring dice set to opportunity strife to their kept dice.
+  Effect lasts until your next turn ends.', -- Effect
+  'Core Rulebook', -- Book
+  219 -- Pg
+),
+-- 168
+(
+  'Sear the Wound', -- Name
+  5, -- Rank
+  'Shuji', -- Type
+  'You know how to expose an enemy''s weaknesses in a way that others can''t help but capitalize on.', -- Desc
+  'When making a (Fire) Social Skill Check that targets other characters gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  219 -- Pg
+),
+-- 169
+(
+  'Sensational Distraction', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'You know how to get someone to be wary of you at the cost of lowering their guard to others.', -- Desc
+  'When making a (Fire) Social Skill Check that targets other characters gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  219 -- Pg
+),
+-- 170
+(
+  'All in Jest', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'You know how to soften a discourteous phrase or come off as too eager to please such that the gravity of your breach of custom is less severe.', -- Desc
+  'When making a (Water) Commerce, (Water) Courtesy, or (Water) Performance Check gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  220 -- Pg
+),
+-- 171
+(
+  'Buoyant Arrival', -- Name
+  5, -- Rank
+  'Shuji', -- Type
+  'You so casually fit in with any kind of company, such that others welcome your presence and forgive your missteps.', -- Desc
+  'Scheme Action,  TN [Vigilance of Highest Status Target] (Water) Courtesy Check with target characters up to your Water Ring in the scene.', -- Activation
+  'You no longer forfeit honor or glory for interrupting others, suddenly leaving, abruptly entering the conversation, or acting before someone else; even if it would be rude due to status. This effect only works with the target characters.', -- Effect
+  'Core Rulebook', -- Book
+  220 -- Pg
+),
+-- 172
+(
+  'Ebb and Flow', -- Name
+  3, -- Rank
+  'Shuji', -- Type
+  'You coax your allies so they excel in spite of their weaknesses, while causing foes to lose confidence in their strengths.', -- Desc
+  'Scheme or Support Action, TN [Vigilance of Target] (Water) Courtesy, Games or Command Check with one target character.', -- Activation
+  'For a Scheme Action, choose an advantage of the character you know to invert every time it applies this scene.
+  For a Support Action, choose a disadvantage of the character you know to invert every time it applies this scene.', -- Effect
+  'Core Rulebook', -- Book
+  220 -- Pg
+),
+-- 173
+(
+  'Regal Bearing', -- Name
+  4, -- Rank
+  'Shuji', -- Type
+  'You know how those of great status treat others, as well as how those of low station maneuver in social situations; with ease you can wear the posture and mannerisms of either.', -- Desc
+  'Scheme Action, TN [Highest Vigilance of Targets] (Water) Command or Performance Check with targets up to all characters in the scene.', -- Activation
+  'Targeted Characters treat your status as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 2, Fire 5) Sentiment Check to learn your actual status.
+  Effect lasts for the scene.', -- Effect
+  'Core Rulebook', -- Book
+  220 -- Pg
+),
+-- 174
+(
+  'Shallow Waters', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'When one is experienced in charming others, one gets a knack for knowing just what others are looking for from the smallest of hints.', -- Desc
+  'When making (Water) Social Skill Checks that target a character gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  220 -- Pg
+),
+-- 175
+(
+  'Well of Desire', -- Name
+  1, -- Rank
+  'Shuji', -- Type
+  'Making an offer of a gift that can''t be refused is the sign of someone who truly understands the nature of gift giving in Rokugan.', -- Desc
+  'When making (Water) Courtesy Checks that involve giving a gift to a target character gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  221 -- Pg
+),
+-- 176
+(
+  'All Arts Are One', -- Name
+  3, -- Rank
+  'Shuji', -- Type
+  'All samurai are trained to know that just as a Haiku captures more than the words chosen, wielding a new blade teaches more than just swordplay and performing a new dance teaches more than just choreography.', -- Desc
+  'Support Action, TN 4 (Void) Martial Skill, Games, or Performance Check when doing something new to your character.', -- Activation
+  'The TN of actions related to the check is not increased due to being unfamiliar with the action, tool, or weapon that is new to you.', -- Effect
+  'Core Rulebook', -- Book
+  222 -- Pg
+),
+-- 177
+(
+  'Rouse the Soul', -- Name
+  5, -- Rank
+  'Shuji', -- Type
+  'Sometimes, words contain the wisdom that allow others to shrug off worldly baggage that would otherwise hold them back.', -- Desc
+  'When making (Void) Social Skill or (Void) Theology Checks that target other characters gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Core Rulebook', -- Book
+  223 -- Pg
+),
+-- 178
+(
+  'Incite Haunting', -- Name
+  1, -- Rank
+  'Maho', -- Type
+  'The taint of Fu-Leng can be subtly spread to someone, clinging to their spirit and trying to drag them towards darker ends, if you are willing to pay kansen a small price.', -- Desc
+  'Attack and Scheme Action, TN [Vigilance of Target] (Any) Theology Check with a target of one character within 1 rangeband.', -- Activation
+  'Curse the target with Affliction.
+  If you failed with at least 2 shortfall, the character is aware you attempted to curse them.', -- Effect
+  'Core Rulebook', -- Book
+  224 -- Pg
+),
+-- 179
+(
+  'Grip of Anguish', -- Name
+  1, -- Rank
+  'Maho', -- Type
+  'When a malevolent kansen is given a sufficient offering, they can wrack those they haunt with stinging pain, distracting visions, and sudden sickness.', -- Desc
+  'Attack Action, TN [Vigilance of Target] (Water) Theology Check with a target of one living character within 2 rangebands. This requires a sacrifice.', -- Activation
+  'Curse your target, dealing your Water Ring + Number of your Tainted Rings supernatural damage to the target.', -- Effect
+  'Core Rulebook', -- Book
+  224 -- Pg
+),
+-- 180
+(
+  'Mark of Desecration', -- Name
+  1, -- Rank
+  'Maho', -- Type
+  'The kansen can be entreated to make the dead walk and spread the taint of Fu-Leng as a putrid servant.', -- Desc
+  'Support Action, TN 2 (Earth) Theology Check with target corpses up to your Earth Ring within 3 rangebands. This requires a sacrifice.', -- Activation
+  'Summon a Zombie Peasant (Pg. 321 Core Rulebook) from each corpse. An area of 1 rangeband around each corpse is cursed and becomes Defiled.', -- Effect
+  'Core Rulebook', -- Book
+  225 -- Pg
+),
+-- 181
+(
+  'Unholy Fervor', -- Name
+  1, -- Rank
+  'Maho', -- Type
+  'The kansen know best how to incite one into a blinded rage, a maho-tsukai just need pay the price.', -- Desc
+  'Support Action, TN [Vigilance of Target] (Fire) Theology Check with one target character within 3 rangebands. This requires a sacrifice.', -- Activation
+  'Curse the target to become Enraged. If they have any Taint disadvantages, it is augmented and applies as an advantage to all checks in the Ring of the disadvantage for the scene.', -- Effect
+  'Core Rulebook', -- Book
+  225 -- Pg
 )
 ;
