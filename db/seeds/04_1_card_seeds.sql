@@ -179,44 +179,52 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
 (
   8, -- Rule for Critical Strikes
   '0-2 Severity - Close Call', -- Title
-  'Worn armor becomes Damaged. This means the blow struck their person, but failed to leave an injury.' -- Text
+  'Worn armor becomes Damaged. 
+  This means the blow struck their person, but failed to leave an injury.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '3-4 Severity - Flesh Wound', -- Title
-  'Gain Lightly Wounded in the ring from the resist check. If received by a razor-edged weapon profile, gain Bleeding. This means a painful bruise or shallow cut was inflicted.' -- Text
+  'Gain Lightly Wounded in the ring from the resist check. If received by a razor-edged weapon profile, gain Bleeding. 
+  This means a painful bruise or shallow cut was inflicted.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '5-6 Severity - Debilitating Gash', -- Title
-  'Gain Severely Wounded in the ring from the resist check. If received by a razor-edged weapon profile, gain Bleeding. This means a bone or muscle was damaged, or the cut was deep.' -- Text
+  'Gain Severely Wounded in the ring from the resist check. If received by a razor-edged weapon profile, gain Bleeding. 
+  This means a bone or muscle was damaged, or the cut was deep.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '7-8 Severity - Permanent Injury', -- Title
-  'Gain Bleeding and one Scar type disadvantage below of the ring from the resist check. This means a permanent wound was inflicted on the character.
+  'Gain Bleeding and one Scar type disadvantage below of the ring from the resist check. 
+  This means a permanent wound was inflicted on the character.
   Earth: Damaged Organ, Fractured Spine. Air: Nerve Damage, Maimed Visage. Water: Lost Eye, Lost Foot. Fire: Lost Fingers, Maimed Arm. Void: Lost Memories.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '9-11 Severity - Maiming Blow', -- Title
-  'Gain Bleeding and one Scar type disadvantage below of the ring from the resist check. This means a very serious permanent wound was inflicted on the character.
+  'Gain Bleeding and one Scar type disadvantage below of the ring from the resist check. 
+  This means a very serious permanent wound was inflicted on the character.
   Earth: Damaged Heart, Damaged Organ. Air: Deafness, Muteness. Water: Blindness, Lost Leg. Fire: Lost Arm, Lost Hand. Void: Cognitive Lapses.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '12-13 Severity - Agonizing Death', -- Title
-  'Gain Bleeding, Dying (3), and Severely Wounded in the ring from the resist check. This means the character was dealt a mortal wound and will likely die a slow and drawn out death.' -- Text
+  'Gain Bleeding, Dying (3), and Severely Wounded in the ring from the resist check. 
+  This means the character was dealt a mortal wound and will likely die a slow and drawn out death.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '14-15 Severity - Swift Death', -- Title
-  'Gain Bleeding, Dying (1), and Severely Wounded in the ring from the resist check. This means the character was dealt serious mortal wound and will die a fast death, lingering only a moment before.' -- Text
+  'Gain Bleeding, Dying (1), and Severely Wounded in the ring from the resist check. 
+  This means the character was dealt serious mortal wound and will die a fast death, lingering only a moment before.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '16+ Severity - Instant Death', -- Title
-  'The character dies instantaneously. This means such a deadly mortal wound was dealt that the character did not even have a chance to react. This could possibly be from decapitation, a serious strike to the head, their whole body being incinerated, or their body is severely crushed.' -- Text
+  'The character dies instantaneously. 
+  This means such a deadly mortal wound was dealt that the character did not even have a chance to react. This could possibly be from decapitation, a serious strike to the head, their whole body being incinerated, or their body is severely crushed.' -- Text
 )
 ;
 -- (

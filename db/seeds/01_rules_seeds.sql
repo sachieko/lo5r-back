@@ -68,7 +68,8 @@ Trade Skills: Commerce, Labor, Seafaring, Skullduggery, Survival.',
 (
   'Critical Strikes', -- Title
   'When a character is struck meaningfully, they suffer a critical strike which carries certain effects.
-  Adversaries and characters that take a critical strike must resist with a TN 1 Fitness Check in the ring they are in, or an approach determined by the GM. The severity of the critical strike is reduced by 1 + bonus successes, then the character suffers the effects of that severity below. Severity cannot be reduced below 0. It is recommended that if a character cannot suffer the effects of the severity received, then treat the severity received as the next step up. For example, if they have no armor anymore since it was destroyed, they take a flesh wound instead. If they cannot take a flesh wound, use the next step instead, etc.
+  Adversaries and characters that take a critical strike must resist with a TN 1 Fitness Check in the ring they are in, or an approach determined by the GM. The severity of the critical strike is reduced by 1 + bonus successes, then the character suffers the effects of that severity below. Severity cannot be reduced below 0. 
+  It is recommended that if a character cannot suffer the effects of the severity received, then treat the severity received as the next step up. For example, if they have no armor anymore since it was destroyed, they take a flesh wound instead. If they cannot take a flesh wound, use the next step instead, etc.
   Minions do not make this check, and take fatigue equal to the severity instantly.', -- Detail
   'rule', -- Category
   'Core Rulebook', -- Book
