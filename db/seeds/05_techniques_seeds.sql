@@ -273,7 +273,7 @@ This lasts your Air Ring rounds.',
   1, -- Rank
   'Kata', -- Type
   'Steel yourself to recover from fatigue, even in the midst of battle.', -- Desc
-  'Support Action, spend 1 void point. ou can only use this once per scene.', -- Activation
+  'Support Action, spend 1 void point. You can only use this once per scene.', -- Activation
   'Reduce your fatigue by an amount equal to your honor rank, you can''t have negative fatigue.',  -- Effect 
   'Core Rulebook',
    178),
