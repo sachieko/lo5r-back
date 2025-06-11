@@ -96,7 +96,7 @@ VALUES
 (59, 'Fire', 'Technique', '💮💮+', 'Give one target the enraged condition.'),
 (60, 'Water', 'Technique', '💮+', 'Reduce the cost to pay for the item by a quarter, paying a minimum of 1/4 the original price you would have to pay determined by the GM.'),
 (61, 'Fire', 'Technique', '💮', 'You learn what single statement the character''s tale relies on and what would be required to prove or disprove their story.'),
-(62, 'Water', 'Technique', '💮', 'Learn whether another character in the scene has a status higher or lower than your actual status.'),
+(62, 'Any', 'Technique', '💮+', 'Characters observing you make a lethal strike believe it was not meant to be lethal if their vigilance is less than 1 + 💮 spent this way.'),
 (63, 'Air', 'Technique', '💮+', 'Reduce the TN against a target by 1 per 💮 spent, to a minimum of the base TN of the action or technique you are using. This effect persists until the  beginning of your next turn.'),
 (64, 'Air', 'Technique', '💮+', 'The TN of any check made towards tracing the source of the rumor to you is increased by 2.'),
 (65, 'Any', 'Technique', '💮+', 'One readied weapon of the target character cannot be used for attack actions until the end of your next turn.'),

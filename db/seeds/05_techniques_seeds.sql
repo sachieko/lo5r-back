@@ -658,14 +658,14 @@ VALUES
 ),
 -- 62
 (
-  'Regal Bearing', -- Name
-  4, -- Rank
-  'Shuji', -- Type
-  'You can project a regal and composed image, or a dastardly one, no matter what you happen to be wearing, choosing a tone, words, and posture necessary to demand respect or fit in with the dregs of society.', -- Desc
-  'Scheme Action, (Water) Command or Performance Check targeting up to any characters who can perceive you in the scene. The TN is equal to the highest vigilance of targets.', -- Activation
-  'On a success, the targets treat you as if your status was 10 + 10 per bonus success higher or lower until end of scene. If you do something out of place for the chosen new status, a target can make a TN 4 (Earth 2, Fire 5) Sentiment Check to try and determine your actual status.', -- Effect
-  'Core Rulebook', -- Book
-  220 -- Pg
+  'Deceitful Strike', -- Name
+  1, -- Rank
+  'Ninjutsu', -- Type
+  'Only the keenest judges of character can tell if you truly meant to kill someone.', -- Desc
+  'When you make a Martial Arts Check during duels or clashes gain a new way to spend opportunity.', -- Activation
+  '', -- Effect
+  'Courts of Stone', -- Book
+  114 -- Pg
 ),
 -- 63
 (
