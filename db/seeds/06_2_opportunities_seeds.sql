@@ -99,7 +99,7 @@ VALUES
 (62, 'Water', 'Technique', '💮', 'Learn whether another character in the scene has a status higher or lower than your actual status.'),
 (63, 'Air', 'Technique', '💮+', 'Reduce the TN against a target by 1 per 💮 spent, to a minimum of the base TN of the action or technique you are using. This effect persists until the  beginning of your next turn.'),
 (64, 'Air', 'Technique', '💮+', 'The TN of any check made towards tracing the source of the rumor to you is increased by 2.'),
-(65, 'Any', 'Technique', '💮+', 'One readied weapon a target of the attack has cannot be used for attack actions until the end of your next turn.'),
+(65, 'Any', 'Technique', '💮+', 'One readied weapon of the target character cannot be used for attack actions until the end of your next turn.'),
 (65, 'Any', 'Technique', '💮💮+', 'A target gains the immobilized condition.'),
 (66, 'Any', 'Technique', '💮', 'You may ready another sheathed weapon in a one-handed grip if it has the razor-edged quality.'),
 (67, 'Any', 'Technique', '💮💮+', 'Choose a different stance than their current one for one target of your attack to enter. If the target has a silhouette of at least 3, they can resist this with a TN 3 Fitness check.'),
