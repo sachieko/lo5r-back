@@ -1504,7 +1504,7 @@ VALUES
   'Invocation', -- Type
   '', -- Desc
   'Support Action, TN 3 (Fire) Theology Check with a target of one position within 1 rangeband that is flammable.', -- Activation
-  'Summon fire motes equal to Fire Ring + Silhouette of the target that follow you. They set fire to objects close by occasionally.
+  'Summon fire motes equal to Fire Ring + [Silhouette of the flammable target/object] that follow you. They set fire to objects close by occasionally.
   When you make an Attack Action and succeed, you may spend motes up to school rank to add a bonus success per mote. Gain another mote if you cast a fire invocation.
   Lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
@@ -1550,7 +1550,7 @@ VALUES
   'Invocation', -- Type
   '', -- Desc
   'Support Action, TN 4 (Fire) Theology Check.', -- Activation
-  'Summon a katana or naginata readied in a valid grip. It deals supernatural damage, and ignores resistances. Lasts the scene or until the end of a turn it leaves your turn.', -- Effect
+  'Summon a katana or naginata readied in a valid grip. It deals supernatural damage, and ignores resistances. Lasts the scene or until the end of a turn it leaves your grip (or another designated character''s grip via opportunity).', -- Effect
   'Core Rulebook', -- Book
   205 -- Pg
 ),
