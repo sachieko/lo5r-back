@@ -163,8 +163,8 @@ This lasts your Air Ring rounds.',
   2,                            -- Rank
   'Kata',                       -- Type
   'You draw your blade from the hip to catch an opponent''s sword as they strike at you, leaving them open for your own blade''s follow through.', -- Description
-  'Attack Action, TN [Vigilance of Target] Martial Arts Melee Check targeting a person at range 0-1 using a sheathed weapon with razor-edged. You draw and ready the sheathed weapon in a one-handed grip. On a success, you deal damage to the opponent equal to the weapon''s deadliness, and they cannot defend against this damage if they are compromised.', -- Activation
-  '',                 -- Effect 
+  'Attack Action, TN [Vigilance of Target] Martial Arts Melee Check targeting a person at range 0-1 using a sheathed weapon with razor-edged. ', -- Activation
+  'You draw and ready the sheathed weapon in a one-handed grip. On a success, you deal damage to the opponent equal to the weapon''s deadliness, and they cannot defend against this damage if they are compromised.',                 -- Effect 
   'Core Rulebook',
    179),
 -- 17
