@@ -796,7 +796,7 @@ VALUES
   'Saying the right words when someone is at their breaking point can seem polite to everyone while pushing that person over the edge.', -- Desc
   'Scheme Action, TN 1 (Air) Courtesy Check with a target who is compromised.', -- Activation
   'On a success the target chooses one option:
-  1. Unmask immediately in the manner of the player''s choosing that suits the circumstance.
+  1. Unmask immediately in the manner of the target''s choosing that suits the circumstance.
   2. Lose glory equal to your Air ring + bonus successes on the check as they leave the scene immediately.', -- Effect
   'Core Rulebook', -- Book
   215 -- Pg
