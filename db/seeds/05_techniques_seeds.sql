@@ -541,7 +541,7 @@ VALUES
   'take advantage of terrain by signaling a change in formation of your group or cohort.', -- Desc
   'Movement and Support Action, TN 2 (Water) Command Check targeting your cohort or any friendly characters whom you can communicate to if in a skirmish.', -- Activation
   'For a skirmish, choose an area of terrain in sight. All targets can choose to move 1 range band towards it immediately as part of this shuji. In addition, the terrain counts as obscured terrain for anyone targeting your targets until end of the scene.
-  In a mass battle, choose an area of terrain in sight. Your cohort can immediately move towards it, and if unoccupied they can occupy it. Attacks targeting your cohort in this terrain treat your cohort has being in obscured terrain until end of the scene.', -- Effect
+  In a mass battle, choose an area of terrain in sight. Your cohort can immediately move towards it, and if unoccupied they can occupy it. Attacks targeting your cohort in this terrain treat your cohort as being in obscured terrain until end of the scene.', -- Effect
   'Core Rulebook', -- Book
   221 -- Pg
 ),
