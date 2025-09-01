@@ -111,7 +111,7 @@ This lasts your Air Ring rounds.',
 'Core Rulebook',
  225),
 -- 11
-('Dazzling [Performance]', 
+('Dazzling Performance', 
 3,
  'Shuji', 
 'Capture the attention of others even more so when accomplishing a great feat in certain competitions.', 
@@ -1377,7 +1377,7 @@ VALUES
 ),
 -- 124
 (
-  '[Tetsubo] of Earth', -- Name
+  'Tetsubo of Earth', -- Name
   1, -- Rank
   'Invocation', -- Type
   'Create a stone pillar the shugenja can use as a weapon.', -- Desc
@@ -1720,7 +1720,7 @@ VALUES
 ),
 -- 154
 (
-  '[Artisan]''s  Appraisal', -- Name
+  'Artisan''s  Appraisal', -- Name
   2, -- Rank
   'Shuji', -- Type
   'Learn about the creator of an object or [performance].', -- Desc
@@ -1821,7 +1821,7 @@ VALUES
 ),
 -- 163
 (
-  'Stonewall [Tactics]', -- Name
+  'Stonewall Tactics', -- Name
   1, -- Rank
   'Shuji', -- Type
   'You know how to prevent someone from getting to who they really want to.', -- Desc
