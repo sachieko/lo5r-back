@@ -30,6 +30,7 @@ import terrainRoutes from "./routes/terrain";
 import conditionRoutes from "./routes/conditions";
 import qualityRoutes from "./routes/qualities";
 import armorRoutes from "./routes/armors";
+import pageRoutes from "./routes/pageLinks";
 
 // Mount routes
 app.use("/questions", questionRoutes);
@@ -43,6 +44,7 @@ app.use("/terrains", terrainRoutes);
 app.use("/conditions", conditionRoutes);
 app.use("/qualities", qualityRoutes);
 app.use("/armors", armorRoutes);
+app.use("/pagelinks", pageRoutes);
 
 app.listen(PORT, () => {
   console.log(chalk.green("Server is listening on port:"), PORT);
