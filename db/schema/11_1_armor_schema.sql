@@ -7,7 +7,7 @@ CREATE TABLE armors (
   physical_resistance INTEGER NOT NULL,
   supernatural_resistance INTEGER NOT NULL,
   rarity INTEGER NOT NULL,
-  cost VARCHAR(25) NOT NULL,
-  book VARCHAR(100) default NULL,
+  cost VARCHAR(10) NOT NULL,
+  book VARCHAR(50) default NULL,
   pg INTEGER NOT NULL
 );

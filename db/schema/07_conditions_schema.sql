@@ -5,6 +5,6 @@ CREATE TABLE conditions (
 
   title VARCHAR(100) NOT NULL,
   detail TEXT NOT NULL,
-  book VARCHAR(100) default NULL,
+  book VARCHAR(50) default NULL,
   pg INTEGER NOT NULL
 );
