@@ -18,7 +18,7 @@ SELECT title AS key, '/terrains/' || id AS link
 FROM terrains
 UNION 
 SELECT title AS key, '/qualities/' || id AS link
-FROM qualities
+FROM item_qualities
 UNION
 SELECT name AS key, '/weapons/' || id AS link
 FROM weapons
