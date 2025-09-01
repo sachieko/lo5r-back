@@ -57,7 +57,7 @@ VALUES
 -- 10
 (
   'Razor Edged',
-  'Weapons with this quality allow the user to spend opportunity to increase the deadliness of the weapon by 1 per opportunity spent. If a weapon with this quality has its damage reduced to 0 by armor and deals no fatigue, it gains damaged.',
+  'Weapon gains the following opportunity spend 💮+: Increase deadliness by 1. If a weapon with this quality has its damage reduced to 0 by armor and deals no fatigue, it gains damaged.',
   'Core Rulebook', 241
 ),
 -- 11
@@ -100,21 +100,21 @@ VALUES
 -- 17 Yoroi-doshi Piercing Effect
 (
   'Piercing',
-  'The user can spend 1 opportunity during an attack with the Yoroi-doshi to reduce the physical resistance of a target by 2 until the users next turn ends.',
+  'The user can spend 1 opportunity during an attack with the Yoroi-doshi to reduce the physical resistance of a target by 2 until the users next turn ends. Only exists on [Yoroi-doshi].',
   'Fields of Victory',
   89
 ),
 -- 18 Buckler Shielding
 (
-  'Shielding',
-  'The user has 3 physical resistance while a buckler is readied and can use a movement and support action to raise the TN of the next attack against the user by 1 until their next turn ends.',
+  'Buckler Shielding',
+  'The user has 3 physical resistance while a buckler is readied and can use a movement and support action to raise the TN of the next attack against the user by 1 until their next turn ends. Only exists on [Buckler]',
   'Path of Waves',
   111
 ),
 -- 19 Qamarist Shielding
 (
-  'Shielding',
-  'The user has 4 physical resistance and 2 supernatural resistance while a Qamarist heavy shield is readied and can use a movement and support action to increase the TN of the next attack against the user by 3 until their next turn starts.',
+  'Qamarist Shielding',
+  'The user has 4 physical resistance and 2 supernatural resistance while a Qamarist heavy shield is readied and can use a movement and support action to increase the TN of the next attack against the user by 3 until their next turn starts. Only exists on [Qamarist Heavy Shield].',
   'Path of Waves',
   111
 ),
@@ -129,4 +129,110 @@ VALUES
   'Cumbersome (1H)',
   'When used with 1 Hand, this item cannot be hidden. Movement checks and similar of armor with this quality have the TN increased by 1. Weapons with this quality increase the TN of attack actions by 1 if the user has moved any range bands.', 
   'Core Rulebook', 240
-);
+),
+-- 22 O-yoroi special quality
+(
+  'O-yoroi weakness',
+  'When disoriented, dazed, or immobilized the user only gets 3 physical resistance from this armor. Only exists on [O-yoroi].',
+  'Shadowlands',
+  105
+),
+-- 23 Tosei-gusoku special quality
+(
+  'Tosei-gusoku plating',
+  'Physical resistance is 2 higher against projectile attacks, usually caused by [Martial Arts (Ranged)] checks. Only exists on [Tosei-gusoku].',
+  'Shadowlands',
+  106
+),
+-- 24 Firefighter's coat special quality
+(
+  'Fire Resistant',
+  'Ignore dangerous terrain caused by fire effects and both resistance types are 4 against fire sources. Exists on [Firefighter''s Coat], but with GM fiat can be added to crafted armor.',
+  'Courts of Stone',
+  112
+),
+-- 25 Stealth Clothing special quality
+(
+  'Adaptably Stealthy',
+  'Clothing has two sides, one for darkness and one for the environment. If wearing the side of this clothing matches the environment and the character is in obscuring terrain, attack checks have a +1 TN in addition to obscuring. Exists on [Stealth Clothing] but can be added to certain ceremonial robes with GM fiat.',
+  'Courts of Stone',
+  112
+),
+-- 26 Charging Lance special quality
+(
+  'Charging',
+  'After a move action on horseback, gain +3 to damage and treat deadliness as 7. Also gain [Hewing]. If using a Ranged',
+  'Children of the Five Winds',
+  100
+),
+-- 27 Parasol shield quality
+(
+  'Parasol Shielding', 
+  'When extended and readied, you have 3 physical resistance. Move and Support Action: Increase TN of next Attack action targeting you by 1 until end of next turn.', 
+  'Children of the Five Winds', 
+  101
+),
+-- 28 Standing shield quality
+(
+  'Stand Shielding', 
+  'If readied or deployed in front of you, you have 6 physical resistance. Move and Support Action: While shield is readied or deployed, a character may use this action to increase the TN to target them with Attacks by 2 until end of next turn or not behind the shield anymore.', 
+  'Children of the Five Winds', 
+  102
+),
+-- 29 Piercing Arrow Quality
+(
+  'Arrow - Piercing',
+  'Ignore 2 physical resistance on target.',
+  'Core Rulebook',
+  236
+),
+-- 30 Humming arrow quality
+(
+  'Arrow - Humming',
+  'Produces a loud sound 4 rangebands of the archer and arrow''s path.',
+  'Core Rulebook',
+  236
+),
+-- 31 Fireblossom arrow quality
+(
+  'Arrow - Firework',
+  'Produces bright light in an area of 4 rangebands from its position.',
+  'Celestial Realms',
+  97
+),
+-- 32 Hamaya arrow quality
+(
+  'Arrow - Hamaya',
+  '+3 Damage and Deadliness if target is otherworldly.',
+  'Celestial Realms',
+  97
+),
+-- 33 Soul-Star arrow qualities
+(
+  'Arrow - Element',
+  'This arrow has different effects based on its element. 
+  Air: 3 rangebands of area from its point of impact is now [Obscuring] until end of character''s next turn.
+  Earth: Otherworldly beings make a TN 3 Fitness (Air 2, Water 4) Check or gain 4 strife and [Immobilized] and [Silenced] until end of character''s next turn.
+  Water: 3 rangebands of area from its point of impact is now [Entangling] until end of character''s next turn. 
+  Fire: 3 rangebands of area from its point of impact is now [Dangerous], and gives [Burning] to Otherworldly targets on critical hits.',
+  'Celestial Realms',
+  97
+),
+-- 34 Saddle cutter special opportunity
+( 
+  'Dismounting',
+  'Attacks with this weapon gain an opportunity spend.
+  (Any)💮+: Cut the target''s barding or stirrups to dismount them unless they can make a TN 2 Fitness Check in Water or Earth Ring. If they cannot or fail the check, they are dismounted.'
+  'Children of the Five Winds',
+  101
+),
+-- 35 Hewing
+(
+  'Hewing',
+  'Attacks with this weapon gain opportunity spends.
+  (Any)💮: Ignore TN increases from shields on the target.
+  (Any)💮+: Decrease target''s physical resistance by 1.',
+  'Children of the Five Winds',
+  116
+)
+;
