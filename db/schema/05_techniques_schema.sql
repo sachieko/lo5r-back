@@ -10,6 +10,6 @@ CREATE TABLE techniques (
   description TEXT NOT NULL,
   activation TEXT,
   effect TEXT DEFAULT NULL,
-  book VARCHAR(100) default NULL,
+  book VARCHAR(50) default NULL,
   pg INTEGER default NULL
 );

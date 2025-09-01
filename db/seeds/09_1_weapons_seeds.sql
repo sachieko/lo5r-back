@@ -665,7 +665,7 @@ VALUES
 ),
 -- 52
 (
-  'Yoroi-Doshi',
+  'Yoroi-doshi',
   'Hand',
   'Melee',
   '0',
@@ -805,4 +805,278 @@ VALUES
   '2 koku',
   'Path of Waves',
   113
-); 
+),
+-- 63
+(
+  'Ganzu Ring Axe',
+  'Axe',
+  'Melee',
+  '1-2',
+  '-/4',
+  '-/7',
+  9,
+  '35 koku',
+  'Children of the Five Winds',
+  100
+),
+-- 64
+(
+  'Katar',
+  'Hand',
+  'Melee',
+  '0-1',
+  '3/-',
+  '5/-',
+  8,
+  '10 koku',
+  'Children of the Five Winds',
+  100
+),
+-- 65
+(
+  'Ide Parasol Shield',
+  'Shield',
+  'Melee',
+  '0',
+  '-/2',
+  '-/3',
+  9,
+  '8 koku',
+  'Children of the Five Winds',
+  100
+), 
+-- 66
+(
+  'Standing Shield',
+  'Shield',
+  'Melee',
+  '0',
+  '-/2',
+  '-/2',
+  8,
+  '12 koku',
+  'Children of the Five Winds',
+  100
+),
+-- 67
+(
+  'Charging Lance',
+  'Polearm',
+  'Melee/Ranged',
+  '1-2/2-3',
+  '-/4',
+  '-/3',
+  6,
+  '7 koku',
+  'Children of the Five Winds',
+  100
+),
+-- 68
+(
+  'Saddle Cutter',
+  'Polearm',
+  'Melee',
+  '0-1',
+  '4/-',
+  '6/-',
+  8,
+  '15 koku',
+  'Children of the Five Winds',
+  100
+),
+-- 69
+(
+  'Repeating Crossbow',
+  'Crossbow',
+  'Ranged',
+  '2-4',
+  '-/5',
+  '-/3',
+  8,
+  '50 koku',
+  'Children of the Five Winds',
+  100
+),
+-- 70
+(
+  'Catalpia Bow',
+  'Bow',
+  'Ranged',
+  '2-5',
+  '-/5',
+  '-/3',
+  7,
+  '25 koku',
+  'Children of the Five Winds',
+  100
+),
+-- 71
+(
+  'Fire Lance',
+  'Polearm',
+  'Melee',
+  '2/3-5',
+  '-/4 or -/7',
+  '-/3 or -/9',
+  9,
+  '40 koku',
+  'Children of the Five Winds',
+  100
+),
+-- 72
+(
+  'Willow-leaf',
+  'Arrow',
+  'Ranged',
+  '-',
+  '-',
+  '-',
+  1,
+  'N/A',
+  'Core Rulebook',
+  236
+),
+-- 73
+(
+  'Armor-Piercing',
+  'Arrow',
+  'Ranged',
+  '-',
+  '-',
+  '-',
+  2,
+  '?',
+  'Core Rulebook',
+  236
+),
+-- 74
+(
+  'Flesh-Cutter',
+  'Arrow',
+  'Ranged',
+  '-',
+  '-',
+  '+2',
+  2,
+  '?',
+  'Core Rulebook',
+  236
+),
+-- 75
+(
+  'Humming-Bulb',
+  'Arrow',
+  'Ranged',
+  '-',
+  '-2',
+  '-2',
+  1,
+  '?',
+  'Core Rulebook',
+  236
+),
+--76
+(
+  'Fire-blossom',
+  'Arrow',
+  'Ranged',
+  '-',
+  '-1',
+  '-',
+  6,
+  '5 bu',
+  'Celestial Realms',
+  97
+),
+-- 77
+(
+  'Hamaya',
+  'Arrow',
+  'Ranged',
+  '-',
+  'See Quality',
+  'See Quality',
+  8,
+  '1 koku',
+  'Celestial Realms',
+  97
+),
+-- 78
+(
+  'Soul-Star',
+  'Arrow',
+  'Ranged',
+  '-',
+  'See Quality',
+  'See Quality',
+  8,
+  '2 koku',
+  'Celestial Realms',
+  97
+),
+-- 79
+(
+  'Moshi Sun Axe',
+  'Axe',
+  'Melee',
+  '1-2',
+  '3/6',
+  '5/5',
+  8,
+  '20 koku',
+  'Celestial Realms',
+  98
+),
+-- 80
+(
+  'Shakujo',
+  'Polearm',
+  'Melee',
+  '1',
+  '4/5',
+  '1/1',
+  4,
+  '5 bu',
+  'Celestial Realms',
+  98
+),
+-- 81
+(
+  'Tachi',
+  'Sword',
+  'Melee',
+  '1',
+  '5/5',
+  '5/6',
+  8,
+  '25 koku',
+  'Celestial Realms',
+  98
+),
+-- 82
+(
+  'Uchigatana',
+  'Sword',
+  'Melee',
+  '1',
+  '3/-',
+  '6/-',
+  8,
+  '16 koku',
+  'Celestial Realms',
+  98
+),
+-- 83
+(
+  'Whip',
+  'Special',
+  'Melee',
+  '2',
+  '3/-',
+  '2/-',
+  2,
+  '4 bu',
+  'Celestial Realms',
+  98
+)
+; 

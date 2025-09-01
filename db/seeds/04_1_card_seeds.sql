@@ -7,7 +7,7 @@ VALUES
 (1, 'Resolving Opportunities', 'Players will often have techniques as well as default options to spend opportunity on a check. This often prompts players and the Storyteller to create more narrative effects in a scene or add additional details for the players. Some techniques use it to alter the effects of the technique as well.'),
 (1, 'Resolving Successes', 'If the total number of successes meets the TN (Target number) of the check, the character succeeds. Successes that exceed the TN are bonus successes and may increase the degree of success.'),
 -- Rule 2: Conflict
-(2, 'Duels', 'Duels are one on one conflicts, and can happen in the middle of skirmishes as a clash.'),
+(2, 'Duels', 'Duels are one on one conflicts, and can happen in the middle of [Skirmish]es as a clash.'),
 (2, 'Skirmishes', 'A skirmish is a conflict in which there are multiple participants, but still between individuals.'),
 (2, 'Mass Battles', 'A mass battle is a conflict between commanders and groups of soldiers rather than individuals.'),
 (2, 'Intrigue', 'An intrigue is a social conflict, where players are trying to achieve goals and turn order matters.'),
@@ -66,19 +66,19 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
   4, -- Rule Id
   'Strike', -- Title
   'As an attack action, make a TN 2 Martial Arts check of the type for your weapon targeting an opponent in range. On a success, deal physical damage equal to base damage + bonus successes.
-  Opportunities: 💮💮 If you succeeded, you inflict a critical strike on the target of your weapon''s deadliness.'  -- Content
+  Opportunities: 💮💮 If you succeeded, you inflict a [Critical Strike] on the target of your weapon''s deadliness.'  -- Content
 ),
 (
   4, -- Rule Id
   'Finishing Blow', -- Title
   'This action may only be executed the first time a duel or clash opponent unmasks or becomes compromised in the duel. When this occurs, a character may interrupt all other rolls and execute a finishing blow (even before a roll has finished resolving because strife resolves before opportunity and successes).
-  To execute the finishing blow, choose any attack action and perform it against the opponent. On a success, inflict a critical strike of severity equal to your attack action or weapon''s deadliness multiplied by 2, then increase it further by bonus successes.
-  If both characters become compromised at the same time, such as when they receive strife in the staredown, the character with lower honor executes their finishing blow first. If the other character is still alive after, they may then execute their finishing blow.'  -- Content
+  To execute the finishing blow, choose any attack action and perform it against the opponent. On a success, inflict a [Critical Strike] of severity equal to your attack action or weapon''s deadliness multiplied by 2, then increase it further by bonus successes.
+  If both characters become [Compromised] at the same time, such as when they receive strife in the staredown, the character with lower honor executes their finishing blow first. If the other character is still alive after, they may then execute their finishing blow.'  -- Content
 ),
 (
   5, -- Rule Id
   'Assist', -- Title
-  'As an attack, scheme, and support action help a character at range 0-2 with their action to give the assistance effect (Pg. 26 of the Core Rulebook).' -- Desc
+  'As an attack, scheme, and support action help a character at range 0-2 with their action to give the [Assistance] effect (Pg. 26 of the Core Rulebook).' -- Desc
 ),
 (
   5, -- Rule Id
@@ -93,7 +93,7 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
 (
   5, -- Rule Id
   'Maneuver', -- Title
-  'As a movement action, you may move one range band. If you choose to make a TN 2  Fitness check instead of move one range band, you may move 2 range bands plus a range band for every 2 bonus successes.' -- Desc
+  'As a movement action, you may move one range band. If you choose to make a TN 2 Fitness check instead of move one range band, you may move 2 range bands plus a range band for every 2 bonus successes.' -- Desc
 ),
 (
   5, -- Rule Id
@@ -104,7 +104,7 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
   5, -- Rule Id
   'Strike', -- Title
   'As an attack action, make a TN 2 Martial Arts check of the type for your weapon targeting an opponent in range. On a success, deal physical damage equal to base damage + bonus successes.
-  Opportunities: 💮💮 If you succeeded, you inflict a critical strike on the target of your weapon''s deadliness.' -- Desc
+  Opportunities: 💮💮 If you succeeded, you inflict a [Critical Strike] on the target of your weapon''s deadliness.' -- Desc
 ),
 (
   5, -- Rule Id
@@ -114,19 +114,19 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
 (
   5, -- Rule Id
   'Challenge', -- Title
-  'As a scheme action, make a TN 1 Command check targeting a character within 5 rangebands in which you wish to issue a challenge for a Clash. When you issue the challenge, you stake 10 honor and 5 glory which you concede if you sabotage the clash.
-  If the target declines, they lose glory equal to your ranks in command plus bonus successes on the challenge. Each ally if theirs that has less glory than you must also gain 2 strife, and you gain a void point.
+  'As a scheme action, make a TN 1 Command check targeting a character within 5 rangebands in which you wish to issue a challenge for a [Clash]. When you issue the challenge, you stake 10 honor and 5 glory which you concede if you sabotage the clash.
+  If the target declines, they lose glory equal to your ranks in [Command] plus bonus successes on the challenge. Each ally if theirs that has less glory than you must also gain 2 strife, and you gain a void point.
   If the target accepts the challenge they also stake 10 honor and 5 glory which is lost if they take any attack or scheme actions before the clash begins at the end of the round.
-  When the clash begins at the end of the round, the Storyteller will determine if you both use your skirmish initiative or roll a clash initiative with a TN 1 meditation check as in a duel which is used during the clash.
+  When the clash begins at the end of the round, the Storyteller will determine if you both use your skirmish initiative or roll a clash initiative with a TN 1 [Meditation] check as in a [Duel] which is used during the clash.
   A character can withdraw from a clash after one or more rounds of participating without it being dishonorable, as the challenge was answered. Another character can "cut in" to a clash by issuing their own challenge on a participant, which has them take the place of their target''s opponent. Any other interruption by another character has both them and the character they helped lose 10 honor.
   When both characters have taken their turn in the clash, they may choose to extend it after if both are still able. If both choose to extend the clash, they skip their turns in the skirmish to clash at the end of the next round otherwise the clash ends and they resume their skirmish turns.
-  If a character is incapacitated, unconscious, dying, or dead then they have lost the clash and the other is the victory. The allies of the losing participant all gain 3 strife as a result.' -- Desc
+  If a character is [Incapacitated], [Unconscious], [Dying], or dead then they have lost the clash and the other is the victory. The allies of the losing participant all gain 3 strife as a result.' -- Desc
 ),
 (
   5, -- Rule Id
   'Finishing Blow', -- Title
   'This action may only be executed the first time a clash opponent unmasks or becomes compromised in the clash started by the Challenge action. When this occurs, a character may interrupt all other rolls and execute a finishing blow (even before a roll has finished resolving because strife resolves before opportunity and successes).
-  To execute the finishing blow, choose any attack action and perform it against the opponent. On a success, inflict a critical strike of severity equal to your attack action or weapon''s deadliness multiplied by 2, then increase it further by bonus successes.
+  To execute the finishing blow, choose any attack action and perform it against the opponent. On a success, inflict a [Critical Strike] of severity equal to your attack action or weapon''s deadliness multiplied by 2, then increase it further by bonus successes.
   If both characters become compromised at the same time, such as when they receive strife in the staredown, the character with lower honor executes their finishing blow first. If the other character is still alive after, they may then execute their finishing blow.'  -- Content
 ),
 (
@@ -137,16 +137,16 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
 (
   6, -- Rule Id
   'Assist', -- Title
-  'As an attack, scheme, and support action help a character at range 0-2 with their action to give the assistance effect (Pg. 26 of the Core Rulebook).' -- Desc
+  'As an attack, scheme, and support action help a character at range 0-2 with their action to give the [Assistance] effect (Pg. 26 of the Core Rulebook).' -- Desc
 ),
 (
   6, -- Rule Id
   'Persuade', -- Title
   'As a scheme action, depending on the approach you are using (See Pg 151 of the Core Rulebook), attempt to have an idea, emotion, or desire take root or be dismissed by a target.
   Make a social skill check targeting one or more characters where the TN is the highest vigilance of your targets. If you succeed, you add one momentum point toward the social objective that your check is relevant to, plus 1 more for every 2 bonus successes.
-  If using Command: If all targets have lower status rank than you, decrease the TN by 1.
-  If using Courtesy: If all targets have higher status rank than you, decrease the TN by 1.
-  If using other skills, such as Games/Performance: If all targets have equal status rank to you, decrease the TN by 1.' -- Desc
+  If using [Command]: If all targets have lower status rank than you, decrease the TN by 1.
+  If using [Courtesy]: If all targets have higher status rank than you, decrease the TN by 1.
+  If using other skills, such as [Games]/[Performance]: If all targets have equal status rank to you, decrease the TN by 1.' -- Desc
 ),
 (
   7, -- Rule Id
@@ -157,7 +157,7 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
   7, -- Rule Id
   'Challenge', -- Title
   'Make a TN 1 Command check as a movement and scheme action to challenge an enemy leader to a duel. If successful, stake 10 honor and 5 glory as though entering a clash. A clash follows the rules of a duel. If the enemy accepts the duel they stake the same glory and honor and the loser''s army gains 5 panic.
-  If they decline they lose glory equal to your Command ranks plus bonus successes as well as gaining 3 panic for their army. You also gain a void point as if they declined a clash.' -- Desc
+  If they decline they lose glory equal to your [Command] ranks plus bonus successes as well as gaining 3 panic for their army. You also gain a void point as if they declined a clash.' -- Desc
 ),
 (
   7, -- Rule Id
@@ -179,45 +179,45 @@ Void: Subsist (to get resources from the environment without disrupting it).'),
 (
   8, -- Rule for Critical Strikes
   '0-2 Severity - Close Call', -- Title
-  'Worn armor becomes Damaged. 
+  'Worn armor becomes [Damaged]. 
   This means the blow struck their person, but failed to leave an injury.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '3-4 Severity - Flesh Wound', -- Title
-  'Gain Lightly Wounded in the ring from the resist check. If received by a razor-edged weapon profile, gain Bleeding. 
+  'Gain Lightly [Wounded] in the ring from the resist check. If received by a [Razor edged] weapon profile, gain [Bleeding]. 
   This means a painful bruise or shallow cut was inflicted.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '5-6 Severity - Debilitating Gash', -- Title
-  'Gain Severely Wounded in the ring from the resist check. If received by a razor-edged weapon profile, gain Bleeding. 
+  'Gain Severely [Wounded] in the ring from the resist check. If received by a [Razor edged] weapon profile, gain [Bleeding]. 
   This means a bone or muscle was damaged, or the cut was deep.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '7-8 Severity - Permanent Injury', -- Title
-  'Gain Bleeding and one Scar type disadvantage below of the ring from the resist check. 
+  'Gain [Bleeding] and one Scar type [Disadvantage] below of the ring from the resist check. 
   This means a permanent wound was inflicted on the character.
   Earth: Damaged Organ, Fractured Spine. Air: Nerve Damage, Maimed Visage. Water: Lost Eye, Lost Foot. Fire: Lost Fingers, Maimed Arm. Void: Lost Memories.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '9-11 Severity - Maiming Blow', -- Title
-  'Gain Bleeding and one Scar type disadvantage below of the ring from the resist check. 
+  'Gain [Bleeding] and one Scar type [Disadvantage] below of the ring from the resist check. 
   This means a very serious permanent wound was inflicted on the character.
   Earth: Damaged Heart, Damaged Organ. Air: Deafness, Muteness. Water: Blindness, Lost Leg. Fire: Lost Arm, Lost Hand. Void: Cognitive Lapses.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '12-13 Severity - Agonizing Death', -- Title
-  'Gain Bleeding, Dying (3), and Severely Wounded in the ring from the resist check. 
+  'Gain [Bleeding], [Dying] (3), and Severely [Wounded] in the ring from the resist check. 
   This means the character was dealt a mortal wound and will likely die a slow and drawn out death.' -- Text
 ),
 (
   8, -- Rule for Critical Strikes
   '14-15 Severity - Swift Death', -- Title
-  'Gain Bleeding, Dying (1), and Severely Wounded in the ring from the resist check. 
+  'Gain [Bleeding], [Dying] (1), and Severely [Wounded] in the ring from the resist check. 
   This means the character was dealt serious mortal wound and will die a fast death, lingering only a moment before.' -- Text
 ),
 (

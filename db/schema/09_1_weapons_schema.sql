@@ -10,7 +10,7 @@ CREATE TABLE weapons (
   damage VARCHAR(15) NOT NULL,
   deadliness VARCHAR(15) NOT NULL,
   rarity INTEGER NOT NULL,
-  cost VARCHAR(25) NOT NULL,
-  book VARCHAR(100) default NULL,
+  cost VARCHAR(15) NOT NULL,
+  book VARCHAR(50) default NULL,
   pg INTEGER NOT NULL
 );
