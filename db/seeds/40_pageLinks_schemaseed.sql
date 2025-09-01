@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS pagelinks;
--- This table must be created after ALL other tables, as its schema depends explicitly on ALL other tables
+-- This table must be created after ALL other tables, as its schema and seeds depends explicitly on ALL other tables
 -- Rename file if file order is incorrect and this causes issues in the DB!
 CREATE TABLE pagelinks AS 
 SELECT title AS key, '/rules/' || id AS link 

@@ -89,7 +89,7 @@ VALUES
 (
   10,
   22
-)
+),
 -- Tatami Gusoku 11
 ( 
   11,

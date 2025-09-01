@@ -15,13 +15,13 @@ VALUES
 -- 3
 (
   'Cumbersome',
-  'This item cannot be hidden. Movement checks and similar of [Armor] with this quality have the TN increased by 1. [Weapons] with this quality increase the TN of attack actions by 1 if the user has moved any range bands.', 
+  'This item cannot be hidden. Movement checks and similar of [Armors] with this quality have the TN increased by 1. [Weapons] with this quality increase the TN of attack actions by 1 if the user has moved any range bands.', 
   'Core Rulebook', 240
 ),
 -- 4
 (
   'Damaged',
-  'Items with this quality increase the TN of any checks to use them by 1. [Armor] with this quality reduces the resistances it has by 2, but not negative. If a damaged item is damaged or [Destroyed], it has the [Destroyed] quality instead.',
+  'Items with this quality increase the TN of any checks to use them by 1. [Armors] with this quality reduces the resistances it has by 2, but not negative. If a damaged item is damaged or [Destroyed], it has the [Destroyed] quality instead.',
   'Core Rulebook', 240
 ),
 -- 5
@@ -122,13 +122,15 @@ VALUES
 (
   'Snaring (2H)',
   'When used with 2 hands, weapons with this quality allow the user to give a target [Immobilized] if they spend opportunity that at least meets the vigilance of the target.',
-  'Core Rulebook', 241
+  'Core Rulebook', 
+  241
 ),
 -- 21  Cumbersome only when used with 1 hand
 (
   'Cumbersome (1H)',
   'When used with 1 Hand, this item cannot be hidden. Movement checks and similar of armor with this quality have the TN increased by 1. Weapons with this quality increase the TN of attack actions by 1 if the user has moved any range bands.', 
-  'Core Rulebook', 240
+  'Core Rulebook', 
+  240
 ),
 -- 22 O-yoroi special quality
 (
@@ -218,20 +220,17 @@ VALUES
   'Celestial Realms',
   97
 ),
--- 34 Saddle cutter special opportunity
-( 
+-- 34 Saddle cutter qualities
+(
   'Dismounting',
-  'Attacks with this weapon gain an opportunity spend.
-  (Any)💮+: Cut the target''s barding or stirrups to dismount them unless they can make a TN 2 [Fitness] Check in Water or Earth Ring. If they cannot or fail the check, they are dismounted.'
+  'Attacks with this weapon gain an opportunity spend. (Any)💮+: Cut the target''s barding or stirrups to dismount them unless they can make a TN 2 [Fitness] Check in Water or Earth Ring. If they cannot or fail the check, they are dismounted.',
   'Children of the Five Winds',
   101
 ),
 -- 35 Hewing
 (
   'Hewing',
-  'Attacks with this weapon gain opportunity spends.
-  (Any)💮: Ignore TN increases from shields on the target.
-  (Any)💮+: Decrease target''s physical resistance by 1.',
+  'Attacks with this weapon gain opportunity spends. (Any)💮: Ignore TN increases from shields on the target. (Any)💮+: Decrease target''s physical resistance by 1.',
   'Children of the Five Winds',
   116
 )

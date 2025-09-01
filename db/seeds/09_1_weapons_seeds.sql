@@ -1052,7 +1052,7 @@ VALUES
   '25 koku',
   'Celestial Realms',
   98
-)
+),
 -- 82
 (
   'Uchigatana',
