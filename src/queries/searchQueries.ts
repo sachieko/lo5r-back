@@ -21,5 +21,6 @@ export const searchQuery = `
   WHERE name ILIKE '%' || $1 || '%'
   UNION
   SELECT '/armors/' || id AS link, name AS title, book AS detail FROM armors
+  WHERE name ILIKE '%' || $1 || '%'
   LIMIT 20;
   `;
