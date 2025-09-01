@@ -1,4 +1,4 @@
-# LO5R Backend Server
+# LO5R Backend Server v1.3.1
 
 This navigates the backend interactions with the database for the [lo5r-app front end](https://github.com/sachieko/lo5r-app) using Typescript and an Express server with Postgres SQL.
 
