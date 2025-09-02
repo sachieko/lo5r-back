@@ -45,8 +45,10 @@ INSERT INTO pagelinks (key, link) VALUES
 (  'Rituals', '/techniques/1?filter=ritual' ),
 (  'Weapons', '/weapons/1'),
 (  'Item Qualities', '/qualities/1' ),
+(  'Qualities', '/qualities/1' ),
 (  'Conditions', '/conditions/1' ),
 (  'Skills', '/rules/3' )
+(  'Armors', '/Armors/1' )
 ;
 
 
