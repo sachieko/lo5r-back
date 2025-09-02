@@ -47,7 +47,7 @@ INSERT INTO pagelinks (key, link) VALUES
 (  'Item Qualities', '/qualities/1' ),
 (  'Qualities', '/qualities/1' ),
 (  'Conditions', '/conditions/1' ),
-(  'Skills', '/rules/3' )
+(  'Skills', '/rules/3' ),
 (  'Armors', '/Armors/1' )
 ;
 
