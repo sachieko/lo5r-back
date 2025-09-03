@@ -21,7 +21,7 @@ This can be removed by anyone within 0-1 range using a movement and support acti
 -- 4 Compromised
 ('Compromised', 'The character is either very agitated, stressed, or in an elevated state of excitement and their emotions are hard to conceal.
 Mechanics: No dice containing strife symbols can be kept during a check, and their vigilance is treated as 1.
-Reducing strife so it is no longer higher than their endurance will cause the effect to be removed.', 'Core Rulebook', 272),
+Reducing strife so it is no longer higher than their composure will cause the effect to be removed.', 'Core Rulebook', 272),
 -- 5 Dazed
 ('Dazed', 'The character has impaired vision or other senses are trying to recover after a particularly stunning blow or similar.
 Mechanics: All Attack and Scheme actions have their TN increased by 2. 

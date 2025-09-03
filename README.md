@@ -1,6 +1,6 @@
 # LO5R Backend Server v1.3.1
 
-This navigates the backend interactions with the database for the [lo5r-app front end](https://github.com/sachieko/lo5r-app) using Typescript and an Express server with Postgres SQL.
+This navigates the backend interactions with the database for the [L5RSRD front end](https://github.com/sachieko/lo5r-app) using Typescript and an Express server with Postgres SQL.
 
 To install and run, make sure you are using node v23.6.1 which is the current version as of developing this app. 
 
@@ -11,7 +11,7 @@ Then use `npm i` to install dependencies and `npm run dev` to start the server. 
 You will need a postgres database, as some of the SQL syntax is specific to postgres and is slightly different for MySQL, etc.
 
 
-## DB Schema
+## DB Schema - Out of Date
 
 The `database.dbml` file included is out of date ever since the emergency migration of the backend and it's a very low priority to update it right now. 
 
