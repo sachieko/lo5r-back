@@ -8,5 +8,5 @@ CREATE TABLE rules (
   category VARCHAR(50) NOT NULL,
   image_url VARCHAR(100) default NULL,
   book VARCHAR(50) default NULL,
-  pg INTEGER NOT NULL
+  pg INTEGER default NULL
 );

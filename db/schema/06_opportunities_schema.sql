@@ -5,7 +5,7 @@ CREATE TABLE opportunities (
   technique_id INTEGER NULL,
   FOREIGN KEY (technique_id) REFERENCES techniques(id) ON DELETE CASCADE,
 
-  ring VARCHAR(30) NOT NULL,
+  ring VARCHAR(10) NOT NULL,
   category VARCHAR(30) NOT NULL,
   cost VARCHAR(10) NOT NULL,
   effect TEXT NOT NULL
