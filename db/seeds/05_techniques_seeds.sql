@@ -619,7 +619,7 @@ VALUES
   'Shuji', -- Type
   'Those used to having no lord to whom they have pledged fealty have their own reserves to draw upon.', -- Desc
   'Support Action, in void stance. You can only use this once per scene.', -- Activation
-  'Remove 3 fatigue and 3 strife. If using the optional [Bonds] rule, remove an additional 3 fatigue and 3 strife for each character in the scene that your character shares a bond with. It is recommended that a character cannot take this as well as [Warrior''s Resolve] or [Courtier''s Resolve], as this is intended for ronin characters or those who have been ronin for a length of time.', -- Effect
+  'Remove 3 fatigue and 3 strife. If using the optional [Bonds] rule, remove an additional 3 fatigue and 3 strife for each [Compromised] or [Incapacitated] character in the scene that your character shares a bond with. It is recommended that a character cannot take this as well as [Warrior''s Resolve] or [Courtier''s Resolve], as this is intended for ronin characters or similar.', -- Effect
   'Path of Waves', -- Book
   95 -- Pg
 ),
