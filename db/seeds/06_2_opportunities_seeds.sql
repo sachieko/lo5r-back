@@ -6,7 +6,7 @@ VALUES
 (1, 'Void', 'Technique', '💮+', 'Choose additional targets per opportunity.'),
 (1, 'Void', 'Technique', '💮+', 'Target an area of range bands equal to opportunity spent this way instead of people, and remove the [Defiled] quality from it. If the land is corrupt this will last days equal to 1 + bonus successes before becoming [Defiled] again.'),
 -- 2
-(2, 'Any', 'Technique', '💮+', 'Choose another of the effects that doesn''t apply yet per opportunity to apply to a success.'),
+(2, 'Any', 'Technique', '💮+', 'Choose another of the effects that doesn''t apply yet per opportunity spent to apply to a success.'),
 (2, 'Any', 'Technique', '💮', 'Reduce the TN of your next check that interacts with kami or spirits chosen by the ring approach by 1. This includes [Invocations]'),
 -- 3
 (3, 'Any', 'Technique', '💮', 'If you failed, you may spend opportunity to choose an omen to apply in addition to the Storyteller chosen omen. They do not stack.'),
@@ -33,7 +33,7 @@ VALUES
 (13, 'Air', 'Technique', '💮+', 'Any target who failed their [Fitness] check is pushed away 1 range band for each opportunity you spend.'),
 (14, 'Void', 'Technique', '💮💮', 'Name two rings, your [Duel] opponent chooses one of those two. During the first turn of the [Duel], your opponent cannot choose to enter that stance.'),
 (14, 'Void', 'Technique', '💮+', 'Choose a category of techniques, then learn one technique that your opponent possesses of that type. It is the opponent''s choice of which technique they reveal if there are multiple options.'),
-(15, 'Air', 'Technique', '💮+', 'One target of your action must resist a TN 3 (Earth 4, Fire 1) [Fitness] check or become [Disoriented] and suffer fatigue of the shortfall. Additional opportunity raises the TN by 1 per opportunity spent.'),
+(15, 'Air', 'Technique', '💮+', 'One target of your action must resist a TN 3 (Earth 4, Fire 1) [Fitness] check or become [Disoriented] and suffer fatigue of the shortfall. Increase this TN by 1 per opportunity spent this way.'),
 (16, 'Any', 'Technique', '💮', 'You may ready another sheathed weapon in a one-handed grip if it has the [Razor Edged] quality.'),
 (17, 'Water', 'Technique', '💮+', 'A target of your martial arts check must make a TN 3 (Earth 1, Fire 4) [Fitness] check or gain the [Bleeding] condition and lose fatigue equal to the shortfall. Extra opportunity spent increases the TN.'),
 (18, 'Any', 'Technique', '💮', 'After someone within 1-2 range bands uses an attack action targeting you or someone you are guarding, you can make a strike action in return with a readied melee or unarmed weapon within range of your readied weapon. This can only trigger once and you lose the effect at the start of your next turn.'),
