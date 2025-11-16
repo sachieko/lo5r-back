@@ -2806,6 +2806,7 @@ VALUES
   114 -- pg
 );
 INSERT INTO techniques (name, prerequisite, rings, rank, type, description, activation, effect, book, pg)
+VALUES
 -- 230
 (
   'Craft Shikigami', -- Name.
