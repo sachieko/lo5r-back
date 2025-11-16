@@ -5,6 +5,7 @@ CREATE TABLE techniques (
 
   name VARCHAR(100) NOT NULL,
   prerequisite VARCHAR(50) DEFAULT NULL,
+  rings VARCHAR(50) NOT NULL,
   rank INTEGER NOT NULL,
   type VARCHAR(50) NOT NULL,
   description TEXT NOT NULL,
