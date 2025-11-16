@@ -53,6 +53,7 @@ export type TTechnique = {
   id: number;
   name: string;
   prerequisite: string;
+  rings: string;
   rank: number;
   type: string;
   description: string;
