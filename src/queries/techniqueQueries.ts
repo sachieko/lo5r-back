@@ -10,7 +10,7 @@ export const techniqueAGGQuery = `
   FROM techniques
   LEFT JOIN opportunities ON technique_id = techniques.id
   GROUP BY techniques.id
-  ORDER BY techniques.pg, techniques.ring, techniques.type,
+  ORDER BY techniques.pg, techniques.rings, techniques.type,
   techniques.rank, techniques.name;`;
 
 export const techniqueIdQuery = `
@@ -24,5 +24,6 @@ export const techniqueIdQuery = `
   LEFT JOIN opportunities ON technique_id = techniques.id
   WHERE techniques.id = $1
   GROUP BY techniques.id
-  ORDER BY techniques.type, techniques.rank, techniques.name
+  ORDER BY techniques.type, techniques.rings, 
+  techniques.rank, techniques.name
   LIMIT 1;`;
