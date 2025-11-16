@@ -92,6 +92,7 @@ Lore is very freeflow and the easiest to contribute to as you
 (
   'name', -- Must have.
   'Prerequisite', -- delete this entry if there is no prereq like clan, role, etc.
+  'rings', -- Any rings the technique is restricted to. ie: `Any` or `Earth, Water` etc.
   rank, -- Number. Rank of the technique
   'type', -- Text, must be one of: Kata, Kiho, Invocation, Shuji, Ritual, Maho
   'description', -- Short narrative example of what the technique does. Original work only.

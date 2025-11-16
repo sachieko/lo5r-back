@@ -1,9 +1,9 @@
 -- techniques may have opportunities attached, insert opportunities in 6_2_opportunities_seeds.sql
-INSERT INTO techniques (name, prerequisite, rank, type, description, activation, effect, book, pg)
+INSERT INTO techniques (name, prerequisite, rings, rank, type, description, activation, effect, book, pg)
 VALUES 
 -- Rituals Start
 -- 1
-('Cleansing Rite', '',
+('Cleansing Rite', '', 'Void',
  1, 
  'Ritual', 
  'Sanctify a person or group of people against corruption of a spiritual nature.', 
@@ -12,7 +12,7 @@ VALUES
  'Core Rulebook',
  212),
 -- 2
-('Commune with the Spirits', '',
+('Commune with the Spirits', '', 'Any',
  1, 
  'Ritual', 
  'The ritualist aligns themself with an element so they may appeal to the kami in their environment for aid.', 
@@ -24,7 +24,7 @@ Elemental Gift: The kami deliver some of the element used to you in some way, su
 'Core Rulebook',
  212),
 -- 3
-('Divination', '', 
+('Divination', '', 'Void',
 1, 
 'Ritual', 
 'Using omens that can be read, such as the stars or tea leaves or other methods, learn something about a person''s fate.', 
@@ -39,7 +39,7 @@ In the case of failure, the Storyteller choosen an omen. The character cannot ha
 'Core Rulebook',
  212),
 -- 4
-('Tea Ceremony', '', 
+('Tea Ceremony', '', 'Void',
 2, 
 'Ritual', 
 'A tea ceremony is an appreciation for tea as much as it is a spiritual ritual in rokugan. It represents the five elements and each clan has their own colloquial customs in partaking in the ceremony.', 
@@ -48,7 +48,7 @@ In the case of failure, the Storyteller choosen an omen. The character cannot ha
 'Core Rulebook',
  213),
 -- 5
-('Threshold Barrier', '', 
+('Threshold Barrier', '', 'Any',
 1, 
 'Ritual', 
 'Ward a threshold or entrance against a certain kind of being, either causing them not to notice its presence or repelled mentally at trying to pass through.', 
@@ -63,7 +63,7 @@ Void: Humans.',
  213),
 -- Kata Start
 -- 6
-('Striking as Fire', '',
+('Striking as Fire', '', 'Fire',
  1, 
  'Kata', 
  'Push the attack, trying to force an opening or a weakness that can be exploited.', 
@@ -71,10 +71,11 @@ Void: Humans.',
 'Core Rulebook',
  178);
 
-INSERT INTO techniques (name, rank, type, description, activation, effect, book, pg)
+INSERT INTO techniques (name, rings, rank, type, description, activation, effect, book, pg)
 VALUES
 -- 7
 ('Token of Memory', 
+'Air',
 1, 
 'Invocation', 
 'Conjure an illusion from the air. Also called Riddle of Agasha (Ancestral), Trick of the Air Kami (Elemental), and Ebisu''s joke (Fortunist).', 
@@ -84,6 +85,7 @@ VALUES
  195),
 -- 8
 ('Inari''s Blessing', 
+'Water',
 1, 
 'Invocation', 
 'Beseech the water kami for food and water. Also called Miya''s Gift (Ancestral), Feast of the Water (Elemental), Oasis in the Desert (Foreign).', 
@@ -93,6 +95,7 @@ VALUES
  209),
 -- 9
 ('Reflection''s of P''an Ku', 
+'Water',
 1, 
 'Invocation', 
 'Submerge an item in water to beseech water kami to give information about the item.', 
@@ -102,6 +105,7 @@ VALUES
  209),
 -- 10
 ('Sinful Whispers', 
+'Air',
 1,
  'Maho', 
 'A Kansen knows how to wear down the mental barriers that an otherwise upstanding person might keep against them, to the point even their darkest secrets can be uncovered.', 
@@ -112,6 +116,7 @@ This lasts your Air Ring rounds.',
  225),
 -- 11
 ('Dazzling Performance', 
+'Fire',
 3,
  'Shuji', 
 'Capture the attention of others even more so when accomplishing a great feat in certain competitions.', 
@@ -121,15 +126,17 @@ This lasts your Air Ring rounds.',
  218),
 -- 12
 ('Hawk''s Precision', 
+'Air',
 1, 
 'Kata', 
 'You are far more accurate with ranged weapons at long range than most other samurai.', 
-'When making a [Martial Arts Ranged] check, gain a new way to spend [Opportunity].', 
+'When making a [Martial Arts Ranged] (Air) Check, gain a new way to spend [Opportunity].', 
 '', 
 'Core Rulebook',
  181),
 -- 13
 ('Tempest of Air', 
+'Air',
 1,
 'Invocation', 
 'Call on the assistance of air kami to lash out at those around you.', 
@@ -140,6 +147,7 @@ This lasts your Air Ring rounds.',
 -- 14
 (
   'Battle in the Mind', -- Name
+  'Void',
   3,                   -- Rank
   'Kata',               -- Type
   'When you square off in a [duel], play out how you think the battle will proceed in your mind by foreseeing your opponent''s method of attack while they react to your own.', -- Description
@@ -150,6 +158,7 @@ This lasts your Air Ring rounds.',
 -- 15
 (
   'Breath of Wind Style', -- Name
+  'Air',
   4,                         -- Rank
   'Kata',                    -- Type
   'Attempt a quick jab at an opponent''s vulnerable spots to disorient them between your other attacks.', -- Description
@@ -160,6 +169,7 @@ This lasts your Air Ring rounds.',
 -- 16
 (
   'Iaijutsu Cut: Rising Blade', -- Name
+  'Air',
   2,                            -- Rank
   'Kata',                       -- Type
   'You draw your blade from the hip to catch an opponent''s sword as they strike at you, leaving them open for your own blade''s follow through.', -- Description
@@ -170,16 +180,18 @@ This lasts your Air Ring rounds.',
 -- 17
 (
   'Crashing Wave Style', -- Name
+  'Water',
   4, -- Rank
   'Kata', -- Type
   'You follow through with your cuts much like water cuts into stone after so many years, leaving a bloody wound in your wake.', -- Desc
-  'When you make a Martial Arts Check using the water ring, gain a new way to spend [Opportunity].', -- Activation
+  'When you make a Martial Arts Check using [Water], gain a new way to spend [Opportunity].', -- Activation
   '',                 -- Effect 
   'Core Rulebook',
    175),
 -- 18
 (
   'Crescent Moon Style', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'Fight in a style such that you take advantage of openings your opponent creates when they strike at you while you are guarding or evading, striking at the cracks in their offense after a failed attack.', -- Desc
@@ -190,6 +202,7 @@ This lasts your Air Ring rounds.',
 -- 19
 (
   'Crimson Leaves Strike', -- Name
+  'Earth',
   3, -- Rank
   'Kata', -- Type
   'Land a blow to your opponent''s weapon intentionally in an attempt to force the weapon from their grip.', -- Desc
@@ -200,16 +213,18 @@ This lasts your Air Ring rounds.',
 -- 20
 (
   'Disappearing World Style', -- Name
+  'Fire',
   4, -- Rank
   'Kata', -- Type
   'The rest of the world fades away as you pursue your opponent with a flurry of strikes that intend to daze them and create an opening you can capitalize on.', -- Desc
-  'When you make a [Martial Arts Melee] check using the Fire ring, gain a new way to spend [Opportunity].', -- Activation
+  'When you make a [Martial Arts Melee] check using [Fire] ring, gain a new way to spend [Opportunity].', -- Activation
   '',                 -- Effect 
   'Core Rulebook',
    175),
 -- 21
 (
   'Flowing Water Strike', -- Name
+  'Water',
   3, -- Rank
   'Kata', -- Type
   'Incorporate movement into your fighting style in order to make up for distances your weapon otherwise would not be capable of.', -- Desc
@@ -220,6 +235,7 @@ This lasts your Air Ring rounds.',
 -- 22
 (
   'Heartpiercing Strike', -- Name
+  'Fire',
   3, -- Rank
   'Kata', -- Type
   'Lunge forward with a strike meant to pierce a foe''s heart, or at the least gravely injure them.', -- Desc
@@ -230,6 +246,7 @@ This lasts your Air Ring rounds.',
 -- 23
 (
   'Soaring Slice', -- Name
+  'Any',
   1, -- Rank
   'Kata', -- Type
   'Send your weapon flying through the air towards a target in an attempt to catch them completely off guard or capitalize on an opening.', -- Desc
@@ -240,6 +257,7 @@ This lasts your Air Ring rounds.',
 -- 24
 (
   'By the Light of the Lord Moon', -- Name
+  'Air',
   1, -- Rank
   'Invocation', -- Type
   'Using the blessings of air kami, reveal hidden objects or characters in an area that would otherwise be concealed.', -- Desc
@@ -250,6 +268,7 @@ This lasts your Air Ring rounds.',
 -- 25
 (
   'Yari of Air', -- Name
+  'Air',
   1, -- Rank
   'Invocation', -- Type
   'A swirling mass of violent winds coalesce into a weapon within your hand, weighing nearly nothing but striking with the force of typhoon winds.', -- Desc
@@ -260,6 +279,7 @@ This lasts your Air Ring rounds.',
 -- 26
 (
   'Striking as Water', -- Name
+  'Water',
   1, -- Rank
   'Kata', -- Type
   'Adapt to your opponent''s stance and slip past their defenses to negate some of their defense.', -- Desc
@@ -270,6 +290,7 @@ This lasts your Air Ring rounds.',
 -- 27
 (
   'Warrior''s Resolve', -- Name
+  'Any',
   1, -- Rank
   'Kata', -- Type
   'Steel yourself to recover from fatigue, even in the midst of battle.', -- Desc
@@ -280,6 +301,7 @@ This lasts your Air Ring rounds.',
 -- 28
 (
   'Iron Forest Style', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'Trained in using the length of a spear, a bushi can easily keep their opponents at a distance.', -- Desc
@@ -290,6 +312,7 @@ This lasts your Air Ring rounds.',
 -- 29
 (
   'Iron in the Mountains Style', -- Name
+  'Earth',
   4, -- Rank
   'Kata', -- Type
   'Force your opponent into a [Prone] position with overwhelming force or an unexpected leg sweep.', -- Desc
@@ -299,12 +322,13 @@ This lasts your Air Ring rounds.',
    180);
 
 -- Clan specific required techniques
-INSERT INTO techniques (name, prerequisite, rank, type, description, activation, effect, book, pg)
+INSERT INTO techniques (name, prerequisite, rings, rank, type, description, activation, effect, book, pg)
 VALUES 
 -- 30
 (
   'Lord Hida''s Grip', -- Name
   '(Crab)',
+  'Void',
   2, -- Rank
   'Kata', -- Type
   'Hold down a larger creature for others to defeat.', -- Desc
@@ -316,6 +340,7 @@ VALUES
 (
   'Lord Shiba''s Valor', -- Name
   '(Phoenix)',
+  'Void',
   2, -- Rank
   'Kata', -- Type
   'Prevent enemies from attacking anyone within your reach so long as they could hit you.', -- Desc
@@ -327,6 +352,7 @@ VALUES
 (
   'Lady Doji''s Decree', -- Name
   '(Crane)',
+  'Void',
   2, -- Rank
   'Shuji', -- Type
   'With a few chosen words, prevent others from striking you.', -- Desc
@@ -338,6 +364,7 @@ VALUES
 (
   'Lady Shinjo''s Speed', -- Name
   '(Unicorn)',
+  'Void',
   2, -- Rank
   'Shuji', -- Type
   'Travel faster upon horseback than would reasonably be expected, allowing you to reach locations earlier.', -- Desc
@@ -349,6 +376,7 @@ VALUES
 (
   'Lord Akodo''s Roar', -- Name
   '(Lion)',
+  'Void',
   2, -- Rank
   'Shuji', -- Type
   'Startle enemies and rouse allies with a loud warcry.', -- Desc
@@ -360,6 +388,7 @@ VALUES
 (
   'Lord Bayushi''s Whispers', -- Name
   '(Scorpion)',
+  'Void',
   2, -- Rank
   'Shuji', -- Type
   'Using the vast network of the Scorpion, find an informant in order to gather information on a topic within the area.', -- Desc
@@ -371,6 +400,7 @@ VALUES
 (
   'Lord Togashi''s Insight', -- Name
   '(Dragon)',
+  'Void',
   2, -- Rank
   'Shuji', -- Type
   'Gain insight regarding how to proceed with a difficult situation.', -- Desc
@@ -379,11 +409,12 @@ VALUES
   'Core Rulebook',
    223);
 
-INSERT INTO techniques (name, rank, type, description, activation, effect, book, pg)
+INSERT INTO techniques (name, rings, rank, type, description, activation, effect, book, pg)
 VALUES
 -- 37
 (
   'Soul Sunder', -- Name
+  'Void',
   5, -- Rank
   'Kata', -- Type
   'Attune yourself and your blade to your ancestors, allowing you to cut the flesh and body of supernatural beings.', -- Desc
@@ -394,6 +425,7 @@ VALUES
 -- 38
 (
   'Striking as Air', -- Name
+  'Air',
   1, -- Rank
   'Kata', -- Type
   'Allow your strikes to flow into each other, turning the opportunities you open up with your blade into future attacks.', -- Desc
@@ -404,6 +436,7 @@ VALUES
 -- 39
 (
   'Striking as Earth', -- Name
+  'Earth',
   1, -- Rank
   'Kata', -- Type
   'Fight defensively, warding strikes with your blade or positioning, reducing the likelihood an attack will actually harm you.', -- Desc
@@ -414,6 +447,7 @@ VALUES
 -- 40
 (
   'Striking as Void', -- Name
+  'Void',
   5, -- Rank
   'Kata', -- Type
   'You fight in a way that you can shift your current action into any potential possibility in order to seize an advantage in an instant.', -- Desc
@@ -424,6 +458,7 @@ VALUES
 -- 41
 (
   'Tactical Assessment', -- Name
+  'Air, Earth, Water, Fire',
   2, -- Rank
   'Kata', -- Type
   'Battles are often decided by factors beforehand - learn some of these factors to gain an advantage in conflict.', -- Desc
@@ -431,11 +466,12 @@ VALUES
   '',                 -- Effect 
   'Core Rulebook',
    178);
-INSERT INTO techniques (name, rank, type, description, activation, effect, book, pg)
+INSERT INTO techniques (name, rings, rank, type, description, activation, effect, book, pg)
 VALUES 
 --42
 (
   'Cloak of Night', -- Name
+  'Air',
   1, -- Rank
   'Invocation', -- Type
   'Call upon the air kami to conceal someone or something.', -- Desc
@@ -447,6 +483,7 @@ VALUES
 -- 43
 (
   'Grasp of the Air Dragon', -- Name
+  'Air',
   3, -- Rank
   'Invocation', -- Type
   'Whisk a target through the air a great distance, setting them down gently or harshly at your whim.', -- Desc
@@ -458,6 +495,7 @@ VALUES
 -- 44
 (
   'Hands of the Tides', -- Name
+  'Water',
   3, -- Rank
   'Invocation', -- Type
   'Cause living beings to swap places with each other at great distances, emerging from a rush of water that overtakes each of them.', -- Desc
@@ -469,6 +507,7 @@ VALUES
 -- 45
 (
   'Rise, Air', -- Name
+  'Air',
   4, -- Rank
   'Invocation', -- Type
   'Summon a manifest Air Kami to assist you.', -- Desc
@@ -480,6 +519,7 @@ VALUES
 -- 46
 (
   'Battle of No Escape', -- Name
+  'Void',
   2, -- Rank
   'Shuji', -- Type
   'Despite odds being stacked against you, rouse others to fight even despite overwhelming odds.', -- Desc
@@ -492,6 +532,7 @@ VALUES
 -- 47
 (
   'Rushing Avalanche Style', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'Strike with such recklessness that opponents dodge out of the way of strikes that would not have even landed.', -- Desc
@@ -503,6 +544,7 @@ VALUES
 -- 48
 (
   'Thunderclap Strike', -- Name
+  'Air',
   3, -- Rank
   'Kata', -- Type
   'Your weapon strikes are so wide they threaten more than just your target.', -- Desc
@@ -514,6 +556,7 @@ VALUES
 -- 49
 (
   'Stirring the Embers', -- Name
+  'Fire',
   1, -- Rank
   'Shuji', -- Type
   'Appeal to one of an ally''s finer qualities in order to drive them to perform better.', -- Desc
@@ -525,6 +568,7 @@ VALUES
 -- 50
 (
   'Pelting Hail Style', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'You place your shots in such a way that they warrant caution from anyone else nearby.', -- Desc
@@ -536,6 +580,7 @@ VALUES
 -- 51
 (
   'Slippery Maneuvers', -- Name
+  'Water',
   2, -- Rank
   'Shuji', -- Type
   'Take advantage of terrain by signaling a change in formation of your group or cohort.', -- Desc
@@ -548,6 +593,7 @@ VALUES
 -- 52
 (
   'Skulk', -- Name
+  'Air',
   1, -- Rank
   'Ninjutsu', -- Type
   'Hide from sight and escape notice the shinobi way by blending into crowds, sticking to shadows, or taking unconventional routes.', -- Desc
@@ -559,6 +605,7 @@ VALUES
 -- 53
 (
   'Deadly Sting', -- Name
+  'Air',
   2, -- Rank
   'Ninjutsu', -- Type
   'Swiftly apply a poison to a concealed blade just before striking with it.', -- Desc
@@ -570,6 +617,7 @@ VALUES
 -- 54
 (
   'Noxious Cloud', -- Name
+  'Air',
   3, -- Rank
   'Ninjutsu', -- Type
   'Use a smokebomb to either harm or cause a distraction to escape.', -- Desc
@@ -581,6 +629,7 @@ VALUES
 -- 55
 (
   'Silencing Stroke', -- Name
+  'Air',
   4, -- Rank
   'Ninjutsu', -- Type
   'Killing someone silently is a key skill for shinobi who must eliminate a target without others knowing.', -- Desc
@@ -592,6 +641,7 @@ VALUES
 -- 56
 (
   'Touchstone of Courage', -- Name
+  'Earth',
   3, -- Rank
   'Shuji', -- Type
   'As a leader, you set an example of courage and inspire others to persevere when they might give into panic.', -- Desc
@@ -604,6 +654,7 @@ VALUES
 -- 57
 (
   'Courtier''s Resolve', -- Name
+  'Any',
   1, -- Rank
   'Shuji', -- Type
   'Courtiers have long since practiced maintaining their decorum at court, pulling on their mental reserves when pressed.', -- Desc
@@ -615,6 +666,7 @@ VALUES
 -- 58
 (
   'Wanderer''s Resolve', -- Name
+  'Void',
   1, -- Rank
   'Shuji', -- Type
   'Those used to having no lord to whom they have pledged fealty have their own reserves to draw upon.', -- Desc
@@ -626,6 +678,7 @@ VALUES
 -- 59
 (
   'Fanning the Flames', -- Name
+  'Fire',
   2, -- Rank
   'Shuji', -- Type
   'A skilled courtier can wound another''s pride or even cause them to hestitate with nothing more than a few chosen words.', -- Desc
@@ -637,6 +690,7 @@ VALUES
 -- 60
 (
   'Tributaries of Trade', -- Name
+  'Water',
   2, -- Rank
   'Shuji', -- Type
   'A proficient courtier always has a gift on hand, whether it was originally procured for the purpose is another matter entirely however.', -- Desc
@@ -648,6 +702,7 @@ VALUES
 -- 61
 (
   'Truth Burns through Lies', -- Name
+  'Fire',
   1, -- Rank
   'Shuji', -- Type
   'You can easily determine the quickest way to learn if someone is being truthful or not.', -- Desc
@@ -659,6 +714,7 @@ VALUES
 -- 62
 (
   'Deceitful Strike', -- Name
+  'Any',
   1, -- Rank
   'Ninjutsu', -- Type
   'Only the keenest judges of character can tell if you truly meant to kill someone.', -- Desc
@@ -670,6 +726,7 @@ VALUES
 -- 63
 (
   'Masaki''s Striking as Air', -- Name
+  'Air',
   1, -- Rank
   'Kata', -- Type
   'With precision and feinting, a skilled bushi can strike in a way that accounts for obstacles or lower the guard on their opponent.', -- Desc
@@ -681,6 +738,7 @@ VALUES
 -- 64
 (
   'Rustling of Leaves', -- Name
+  'Air',
   1, -- Rank
   'Shuji', -- Type
   'Spreading a rumor is most effective when no one knows the source of the rumor but everyone has heard it.', -- Desc
@@ -692,6 +750,7 @@ VALUES
 -- 65
 (
   'Coiling Serpent Style', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'This fighting style has one practice with [Snaring] weapons to control an opponent''s weapons or movement.', -- Desc
@@ -703,6 +762,7 @@ VALUES
 -- 66
 (
   'Iaijutsu Cut: Crossing Blade', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'Draw your blade in a sudden sweep with the longest reach possible.', -- Desc
@@ -714,6 +774,7 @@ VALUES
 -- 67
 (
   'Open-Hand Style', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'A skilled martial artist can manipulate an opponent''s stance in the midst of a fight.', -- Desc
@@ -725,6 +786,7 @@ VALUES
 -- 68
 (
   'Spinning Blades Style', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'When fighting with two blades, the opponent must be wary of both at all times.', -- Desc
@@ -736,6 +798,7 @@ VALUES
 -- 69
 (
   'Veiled Menace Style', -- Name
+  'Any',
   2, -- Rank
   'Kata', -- Type
   'A distracted foe is an easily dispatched foe, while not exactly honorable to do there are techniques to quickly do away with an enemy who is distracted.', -- Desc
@@ -747,6 +810,7 @@ VALUES
 -- 70
 (
   'Pin the Fan', -- Name
+  'Any',
   5, -- Rank
   'Kata', -- Type
   'A single well aimed shot can kill, and this technique teaches an archer just how to do that with practice.', -- Desc
@@ -758,6 +822,7 @@ VALUES
 -- 71
 (
   'Weight of Duty', -- Name
+  'Earth',
   1, -- Rank
   'Shuji', -- Type
   'An experienced courtier is familiar with reading the burdens of duty that other samurai carry with a reflective gaze.', -- Desc
@@ -769,6 +834,7 @@ VALUES
 -- 72
 (
   'Whispers of Court', -- Name
+  'Air',
   1, -- Rank
   'Shuji', -- Type
   'Gossip and rumor are as much an enjoyable pasttime at court as they are a professional tool of courtiers.', -- Desc
@@ -780,6 +846,7 @@ VALUES
 -- 73
 (
   'Cadence', -- Name
+  'Air',
   1, -- Rank
   'Shuji', -- Type
   'Communicating with an ally in court without betraying what you are saying to anyone else is vital to a courtier.', -- Desc
@@ -791,6 +858,7 @@ VALUES
 -- 74
 (
   'Prey on the Weak', -- Name
+  'Air',
   2, -- Rank
   'Shuji', -- Type
   'Saying the right words when someone is at their breaking point can seem polite to everyone while pushing that person over the edge.', -- Desc
@@ -804,6 +872,7 @@ VALUES
 -- 75
 (
   'A Samurai''s Fate', -- Name
+  'Void',
   4, -- Rank
   'Shuji', -- Type
   'Inspiring your fellows to fight as if they have accepted death can allow forces to fight well past the limits of those clinging to hopes of [survival].', -- Desc
@@ -816,6 +885,7 @@ VALUES
 -- 76
 (
   'Amaterasu''s Gaze', -- Name
+  'Fire',
   1, -- Rank
   'Invocation', -- Type
   'Ask the fire kami for a ray of sunlight.', -- Desc
@@ -827,6 +897,7 @@ VALUES
 -- 77
 (
   'Fires of Purity', -- Name
+  'Fire',
   2, -- Rank
   'Invocation', -- Type
   'Supernatural flames follow a target supportively.', -- Desc
@@ -838,6 +909,7 @@ VALUES
 -- 78
 (
   'Heart of the Lady Sun', -- Name
+  'Fire',
   5, -- Rank
   'Invocation', -- Type
   'A ball of flame that smites tainted beings while aiding the non-tainted.', -- Desc
@@ -850,6 +922,7 @@ VALUES
 -- 79
 (
   'Cleansing Spirit', -- Name
+  'Earth',
   1, -- Rank
   'Kiho', -- Type
   'Become more resistant to poisons, disease, and similar.', -- Desc
@@ -862,6 +935,7 @@ VALUES
 -- 80
 (
   'Earth Needs No Eyes', -- Name
+  'Earth',
   1, -- Rank
   'Kiho', -- Type
   'You do not need to rely on sight to see.', -- Desc
@@ -874,6 +948,7 @@ VALUES
 -- 81
 (
   'Earthen Fist', -- Name
+  'Earth',
   1, -- Rank
   'Kiho', -- Type
   'Increase your resistance and unarmed profile damage.', -- Desc
@@ -886,6 +961,7 @@ VALUES
 -- 82
 (
   'Grasp the Earth Dragon', -- Name
+  'Earth',
   3, -- Rank
   'Kiho', -- Type
   'Become difficult to be attacked physically.', -- Desc
@@ -898,6 +974,7 @@ VALUES
 -- 83
 (
   'Way of the Earthquake', -- Name
+  'Earth',
   2, -- Rank
   'Kiho', -- Type
   'Bolster your attacks with the strength of the Earth.', -- Desc
@@ -910,6 +987,7 @@ VALUES
 -- 84
 (
   'Air Fist', -- Name
+  'Air',
   1, -- Rank
   'Kiho', -- Type
   'Increase the range of your attacks.', -- Desc
@@ -922,6 +1000,7 @@ VALUES
 -- 85
 (
   'Riding the Clouds', -- Name
+  'Air',
   2, -- Rank
   'Kiho', -- Type
   'Alter your movement with the air.', -- Desc
@@ -934,6 +1013,7 @@ VALUES
 -- 86
 (
   'The Great Silence', -- Name
+  'Air',
   1, -- Rank
   'Kiho', -- Type
   'Create an area of silence by stilling air.', -- Desc
@@ -946,6 +1026,7 @@ VALUES
 -- 87
 (
   'Way of the Willow', -- Name
+  'Air',
   3, -- Rank
   'Kiho', -- Type
   'Make yourself more difficult to strike.', -- Desc
@@ -958,6 +1039,7 @@ VALUES
 -- 88
 (
   'Breaking Blow', -- Name
+  'Fire',
   1, -- Rank
   'Kiho', -- Type
   'Enhance your strikes with fiery blows against objects.', -- Desc
@@ -970,6 +1052,7 @@ VALUES
 -- 89
 (
   'Channel the Fire Dragon', -- Name
+  'Fire',
   2, -- Rank
   'Kiho', -- Type
   'Become resistant to extreme temperatures.', -- Desc
@@ -982,6 +1065,7 @@ VALUES
 -- 90
 (
   'Flame Fist', -- Name
+  'Fire',
   1, -- Rank
   'Kiho', -- Type
   'Enhance your strikes with flame, making them more deadly.', -- Desc
@@ -994,6 +1078,7 @@ VALUES
 -- 91
 (
   'The Body is an Anvil', -- Name
+  'Fire',
   1, -- Rank
   'Kiho', -- Type
   'Counter attacks against you with a fiery expulsion of energy.', -- Desc
@@ -1006,6 +1091,7 @@ VALUES
 -- 92
 (
   'Way of the Falling Star', -- Name
+  'Fire',
   3, -- Rank
   'Kiho', -- Type
   'Your strikes require more effort to evade from.', -- Desc
@@ -1018,6 +1104,7 @@ VALUES
 -- 93
 (
   'Freezing the Lifeblood', -- Name
+  'Water',
   2, -- Rank
   'Kiho', -- Type
   'Your attacks can cause the blood in the targets body to freeze.', -- Desc
@@ -1030,6 +1117,7 @@ VALUES
 -- 94
 (
   'Ki Protection', -- Name
+  'Water',
   1, -- Rank
   'Kiho', -- Type
   'Help another recover by correcting the flow of their energy.', -- Desc
@@ -1042,6 +1130,7 @@ VALUES
 -- 95
 (
   'Ride the Water Dragon', -- Name
+  'Water',
   3, -- Rank
   'Kiho', -- Type
   'Mystical attacks find you much more difficult to affect.', -- Desc
@@ -1055,6 +1144,7 @@ VALUES
 -- 96
 (
   'Water Fist', -- Name
+  'Water',
   1, -- Rank
   'Kiho', -- Type
   'Alter your unarmed strikes with water that slips past armor.', -- Desc
@@ -1067,6 +1157,7 @@ VALUES
 -- 97
 (
   'Way of the Seafoam', -- Name
+  'Water',
   1, -- Rank
   'Kiho', -- Type
   'Allow yourself to walk on the surface of water.', -- Desc
@@ -1079,6 +1170,7 @@ VALUES
 -- 98
 (
   'Death Touch', -- Name
+  'Void',
   4, -- Rank
   'Kiho', -- Type
   'Kill someone with a single touch, just like in your anime.', -- Desc
@@ -1091,6 +1183,7 @@ VALUES
 -- 99
 (
   'Still the Elements', -- Name
+  'Void',
   3, -- Rank
   'Kiho', -- Type
   'Use the stillness of the Void to take away another''s strength.', -- Desc
@@ -1103,6 +1196,7 @@ VALUES
 -- 100
 (
   'Touch the Void Dragon', -- Name
+  'Void',
   5, -- Rank
   'Kiho', -- Type
   'Use the void to shape your actions in any approach.', -- Desc
@@ -1115,6 +1209,7 @@ VALUES
 -- 101
 (
   'Way of the Edgeless Sword', -- Name
+  'Void',
   5, -- Rank
   'Kiho', -- Type
   'Any master of the void knows that by mastering their energy they can turn anything into a deadly weapon.', -- Desc
@@ -1127,6 +1222,7 @@ VALUES
 -- 102
 (
   'Blessed Wind', -- Name
+  'Air',
   1, -- Rank
   'Invocation', -- Type
   'Obscure another with a powerful wind.', -- Desc
@@ -1138,6 +1234,7 @@ VALUES
 -- 103
 (
   'Call Upon the Wind', -- Name
+  'Air',
   2, -- Rank
   'Invocation', -- Type
   'Augmemnt your movement with the wind.', -- Desc
@@ -1149,6 +1246,7 @@ VALUES
 -- 104
 (
   'False Realm of the Fox Spirits', -- Name
+  'Air',
   4, -- Rank
   'Invocation', -- Type
   'Create illusory terrain.', -- Desc
@@ -1161,6 +1259,7 @@ VALUES
 -- 105
 (
   'Mask of Wind', -- Name
+  'Air',
   2, -- Rank
   'Invocation', -- Type
   'Disguise your face and voice.', -- Desc
@@ -1172,6 +1271,7 @@ VALUES
 -- 106
 (
   'Nature''s Touch', -- Name
+  'Air',
   1, -- Rank
   'Invocation', -- Type
   'Communicate with animals.', -- Desc
@@ -1184,6 +1284,7 @@ VALUES
 -- 107
 (
   'Secrets on the Wind', -- Name
+  'Air',
   2, -- Rank
   'Invocation', -- Type
   'Ask the Air Kami to listen in on some juicy gossip.', -- Desc
@@ -1195,6 +1296,7 @@ VALUES
 -- 108
 (
   'Summon Fog', -- Name
+  'Air',
   2, -- Rank
   'Invocation', -- Type
   'Create an [Obscuring] fog.', -- Desc
@@ -1206,6 +1308,7 @@ VALUES
 -- 109
 (
   'Vapor of Nightmares', -- Name
+  'Air',
   3, -- Rank
   'Invocation', -- Type
   'Use an illusion to prey on someone''s fear.', -- Desc
@@ -1218,6 +1321,7 @@ VALUES
 -- 110
 (
   'Wrath of Kaze no Kami', -- Name
+  'Air',
   5, -- Rank
   'Invocation', -- Type
   'Conjure the Wrath of the Wind Kami', -- Desc
@@ -1230,6 +1334,7 @@ VALUES
 -- 111
 (
   'Armor of Earth', -- Name
+  'Earth',
   1, -- Rank
   'Invocation', -- Type
   'Cover yourself with stone armor.', -- Desc
@@ -1242,6 +1347,7 @@ VALUES
 -- 112
 (
   'Bind the Shadow', -- Name
+  'Earth',
   2, -- Rank
   'Invocation', -- Type
   'Immobilize an unnatural being.', -- Desc
@@ -1254,6 +1360,7 @@ VALUES
 -- 113
 (
   'Caress of Earth', -- Name
+  'Earth',
   1, -- Rank
   'Invocation', -- Type
   'Repair broken objects with the assistance of Earth kami', -- Desc
@@ -1265,6 +1372,7 @@ VALUES
 -- 114
 (
   'Courage of Seven Thunders', -- Name
+  'Earth',
   1, -- Rank
   'Invocation', -- Type
   'Give the fortitude of the Earth kami to the resolve of your allies.', -- Desc
@@ -1276,6 +1384,7 @@ VALUES
 -- 115
 (
   'Earthquake', -- Name
+  'Earth',
   4, -- Rank
   'Invocation', -- Type
   'Split the ground asunder.', -- Desc
@@ -1288,6 +1397,7 @@ VALUES
 -- 116
 (
   'Earth Becomes Sky', -- Name
+  'Earth',
   3, -- Rank
   'Invocation', -- Type
   'Launch the earth itself at your enemy.', -- Desc
@@ -1299,6 +1409,7 @@ VALUES
 -- 117
 (
   'Embrace of Kenro Ji Jin', -- Name
+  'Earth',
   2, -- Rank
   'Invocation', -- Type
   'Travel along the surface of any stone or earthen soil.', -- Desc
@@ -1311,6 +1422,7 @@ VALUES
 -- 118
 (
   'Grasp of Earth', -- Name
+  'Earth',
   1, -- Rank
   'Invocation', -- Type
   'Rip the ground apart beneath a foe''s feet.', -- Desc
@@ -1322,6 +1434,7 @@ VALUES
 -- 119
 (
   'Jade Strike', -- Name
+  'Earth',
   1, -- Rank
   'Invocation', -- Type
   'Strike an evil with the power of Earth kami mimicking jade.', -- Desc
@@ -1333,6 +1446,7 @@ VALUES
 -- 120
 (
   'Jurojin''s Balm', -- Name
+  'Earth',
   1, -- Rank
   'Invocation', -- Type
   'Strengthen someone against poison and toxins.', -- Desc
@@ -1345,6 +1459,7 @@ VALUES
 -- 121
 (
   'Power of the Earth Dragon', -- Name
+  'Earth',
   3, -- Rank
   'Invocation', -- Type
   'Lend the strength of the Earth to someone''s endurance.', -- Desc
@@ -1356,6 +1471,7 @@ VALUES
 -- 122
 (
   'Rise, Earth', -- Name
+  'Earth',
   4, -- Rank
   'Invocation', -- Type
   'Call upon an Earth Kami to manifest.', -- Desc
@@ -1367,6 +1483,7 @@ VALUES
 -- 123
 (
   'Symbol of Earth', -- Name
+  'Earth',
   2, -- Rank
   'Invocation', -- Type
   'Ward an area with the help of Earth kami', -- Desc
@@ -1378,6 +1495,7 @@ VALUES
 -- 124
 (
   'Tetsubo of Earth', -- Name
+  'Earth',
   1, -- Rank
   'Invocation', -- Type
   'Create a stone pillar the shugenja can use as a weapon.', -- Desc
@@ -1389,6 +1507,7 @@ VALUES
 -- 125
 (
   'Tomb of Jade', -- Name
+  'Earth',
   5, -- Rank
   'Invocation', -- Type
   'Trap an evil spirit within a tomb made of jade.', -- Desc
@@ -1400,6 +1519,7 @@ VALUES
 -- 126
 (
   'Wall of Earth', -- Name
+  'Earth',
   1, -- Rank
   'Invocation', -- Type
   'A shugenja who can entreat the Earth Kami can erect a structure anywhere.', -- Desc
@@ -1411,6 +1531,7 @@ VALUES
 -- 127
 (
   'Armor of Radiance', -- Name
+  'Fire',
   2, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1423,6 +1544,7 @@ VALUES
 -- 128
 (
   'Biting Steel', -- Name
+  'Fire',
   1, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1434,6 +1556,7 @@ VALUES
 -- 129
 (
   'Breath of the Fire Dragon', -- Name
+  'Fire',
   3, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1445,6 +1568,7 @@ VALUES
 -- 130
 (
   'Extinguish', -- Name
+  'Fire',
   1, -- Rank
   'Invocation', -- Type
   'You know how to quiet the Fire Kami', -- Desc
@@ -1456,6 +1580,7 @@ VALUES
 -- 131
 (
   'Fukurokujin''s Wit', -- Name
+  'Fire',
   1, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1467,6 +1592,7 @@ VALUES
 -- 132
 (
   'Fury of Osano-wo', -- Name
+  'Fire',
   3, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1478,6 +1604,7 @@ VALUES
 -- 133
 (
   'Katana of Fire', -- Name
+  'Fire',
   1, -- Rank
   'Invocation', -- Type
   'Create a blade of pure flame.', -- Desc
@@ -1489,6 +1616,7 @@ VALUES
 -- 134
 (
   'Matsu''s Battlecry', -- Name
+  'Fire',
   1, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1500,6 +1628,7 @@ VALUES
 -- 135
 (
   'Ravenous Swarms', -- Name
+  'Fire',
   3, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1513,6 +1642,7 @@ VALUES
 -- 136
 (
   'Rise, Flame', -- Name
+  'Fire',
   4, -- Rank
   'Invocation', -- Type
   'Entreat a Fire Kami to manifest.', -- Desc
@@ -1524,6 +1654,7 @@ VALUES
 -- 137
 (
   'The Cleansing Fire', -- Name
+  'Fire',
   1, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1535,6 +1666,7 @@ VALUES
 -- 138
 (
   'The Fires from Within', -- Name
+  'Fire',
   1, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1546,6 +1678,7 @@ VALUES
 -- 139
 (
   'The Soul''s Blade', -- Name
+  'Fire',
   5, -- Rank
   'Invocation', -- Type
   '', -- Desc
@@ -1557,6 +1690,7 @@ VALUES
 -- 140
 (
   'Wall of Fire', -- Name
+  'Fire',
   2, -- Rank
   'Invocation', -- Type
   'Create a wall of flames.', -- Desc
@@ -1569,6 +1703,7 @@ VALUES
 -- 141
 (
   'Wings of the Phoenix', -- Name
+  'Fire',
   4, -- Rank
   'Invocation', -- Type
   'Be the best fiery bird you can.', -- Desc
@@ -1582,6 +1717,7 @@ VALUES
 -- 142
 (
   'Bo of Water', -- Name
+  'Water',
   1, -- Rank
   'Invocation', -- Type
   'Create a staff made out of surging water.', -- Desc
@@ -1594,6 +1730,7 @@ VALUES
 -- 143
 (
   'Dance of Seasons', -- Name
+  'Water',
   2, -- Rank
   'Invocation', -- Type
   'Use the adaptability of water and transform it.', -- Desc
@@ -1605,6 +1742,7 @@ VALUES
 -- 144
 (
   'Dominion of Suijin', -- Name
+  'Water',
   1, -- Rank
   'Invocation', -- Type
   'Scry through different bodies of water.', -- Desc
@@ -1616,6 +1754,7 @@ VALUES
 -- 145
 (
   'Ever Changing Waves', -- Name
+  'Water',
   5, -- Rank
   'Invocation', -- Type
   'Change shape into an animal, while retaining your mental capabilities.', -- Desc
@@ -1628,6 +1767,7 @@ VALUES
 -- 146
 (
   'Heart of the Water Dragon', -- Name
+  'Water',
   2, -- Rank
   'Invocation', -- Type
   'Entreat the protective healing powers of water.', -- Desc
@@ -1640,6 +1780,7 @@ VALUES
 -- 147
 (
   'Path to Inner Peace', -- Name
+  'Water',
   1, -- Rank
   'Invocation', -- Type
   'Soothe the body and muscles.', -- Desc
@@ -1652,6 +1793,7 @@ VALUES
 -- 148
 (
   'Rise, Water', -- Name
+  'Water',
   4, -- Rank
   'Invocation', -- Type
   'Entreat a Water Kami to manifest.', -- Desc
@@ -1663,6 +1805,7 @@ VALUES
 -- 149
 (
   'Stride the Waves', -- Name
+  'Water',
   2, -- Rank
   'Invocation', -- Type
   'Glide along a torrent of water.', -- Desc
@@ -1675,6 +1818,7 @@ VALUES
 -- 150
 (
   'Strike the Tsunami', -- Name
+  'Water',
   3, -- Rank
   'Invocation', -- Type
   'Strike an enemy with a sudden rush of water.', -- Desc
@@ -1686,6 +1830,7 @@ VALUES
 -- 151
 (
   'Suijin''s Embrace', -- Name
+  'Water',
   4, -- Rank
   'Invocation', -- Type
   'Inflict drowning on a foe.', -- Desc
@@ -1698,6 +1843,7 @@ VALUES
 -- 152
 (
   'Sympathetic Energies', -- Name
+  'Water',
   2, -- Rank
   'Invocation', -- Type
   'Spread an invocation effect between individuals.', -- Desc
@@ -1709,6 +1855,7 @@ VALUES
 -- 153
 (
   'The Rushing Wave', -- Name
+  'Water',
   1, -- Rank
   'Invocation', -- Type
   'Entreat the Water Kami for the fluid movement of water.', -- Desc
@@ -1721,6 +1868,7 @@ VALUES
 -- 154
 (
   'Artisan''s  Appraisal', -- Name
+  'Air',
   2, -- Rank
   'Shuji', -- Type
   'Learn about the creator of an object or [performance].', -- Desc
@@ -1732,6 +1880,7 @@ VALUES
 -- 155
 (
   'Bend with the Storm', -- Name
+  'Air',
   5, -- Rank
   'Shuji', -- Type
   'You can mislead someone to believe you have a quality you don''t.', -- Desc
@@ -1743,6 +1892,7 @@ VALUES
 -- 156
 (
   'Feigned Opening', -- Name
+  'Air',
   2, -- Rank
   'Shuji', -- Type
   'Lure an enemy into a false opening which you can take advantage of.', -- Desc
@@ -1754,6 +1904,7 @@ VALUES
 -- 157
 (
   'The Wind Blows Both Ways', -- Name
+  'Air',
   3, -- Rank
   'Shuji', -- Type
   'You know how to subtly inflate or deflate the accomplishments of others.', -- Desc
@@ -1765,6 +1916,7 @@ VALUES
 -- 158
 (
   'Wolf''s Proposal', -- Name
+  'Air',
   4, -- Rank
   'Shuji', -- Type
   'You know how to act like a true samurai, and a true scoundrel, wearing what suits you best at the time.', -- Desc
@@ -1777,6 +1929,7 @@ VALUES
 -- 159
 (
   'Ancestry Unearthed', -- Name
+  'Earth',
   1, -- Rank
   'Shuji', -- Type
   'You make note of the history of other samurai''s families and recall it in useful moments.', -- Desc
@@ -1788,6 +1941,7 @@ VALUES
 -- 160
 (
   'Civility Foremost', -- Name
+  'Earth',
   2, -- Rank
   'Shuji', -- Type
   'Vouch for why a particular person should not be harmed.', -- Desc
@@ -1800,6 +1954,7 @@ VALUES
 -- 161
 (
   'Honest Assessment', -- Name
+  'Earth',
   1, -- Rank
   'Shuji', -- Type
   'You can make an ally less conscious of their disadvantages by clearing the air about it.', -- Desc
@@ -1811,6 +1966,7 @@ VALUES
 -- 162
 (
   'Pillar of Calm', -- Name
+  'Earth',
   4, -- Rank
   'Shuji', -- Type
   'You know how to make calmer heads prevail in a way that will quell the need for more violence than necessary.', -- Desc
@@ -1822,6 +1978,7 @@ VALUES
 -- 163
 (
   'Stonewall Tactics', -- Name
+  'Earth',
   1, -- Rank
   'Shuji', -- Type
   'You know how to prevent someone from getting to who they really want to.', -- Desc
@@ -1833,6 +1990,7 @@ VALUES
 -- 164
 (
   'The Immovable Hand of Peace', -- Name
+  'Earth',
   5, -- Rank
   'Shuji', -- Type
   'Sometimes the right words can stop swords and find a resolution that suits both sides of a conflict.', -- Desc
@@ -1845,6 +2003,7 @@ VALUES
 -- 165
 (
   'Bravado', -- Name
+  'Fire',
   4, -- Rank
   'Shuji', -- Type
   'You can carry yourself as a well decorated samurai, or a worthless disappointment, to get the reaction from others you want.', -- Desc
@@ -1857,6 +2016,7 @@ VALUES
 -- 166
 (
   'Lightning Raid', -- Name
+  'Fire',
   2, -- Rank
   'Shuji', -- Type
   'You know how to mobilize people in order to shock your enemies with a sudden charge to overwhelm enemy forces.', -- Desc
@@ -1869,6 +2029,7 @@ VALUES
 -- 167
 (
   'Rallying Cry', -- Name
+  'Fire',
   3, -- Rank
   'Shuji', -- Type
   'You know how to rouse the spirits of your soldiers to seize [Opportunity] at any cost.', -- Desc
@@ -1881,6 +2042,7 @@ VALUES
 -- 168
 (
   'Sear the Wound', -- Name
+  'Fire',
   5, -- Rank
   'Shuji', -- Type
   'You know how to expose an enemy''s weaknesses in a way that others can''t help but capitalize on.', -- Desc
@@ -1892,6 +2054,7 @@ VALUES
 -- 169
 (
   'Sensational Distraction', -- Name
+  'Fire',
   1, -- Rank
   'Shuji', -- Type
   'You know how to get someone to be wary of you at the cost of lowering their guard to others.', -- Desc
@@ -1903,6 +2066,7 @@ VALUES
 -- 170
 (
   'All in Jest', -- Name
+  'Water',
   1, -- Rank
   'Shuji', -- Type
   'You know how to soften a discourteous phrase or come off as too eager to please such that the gravity of your breach of custom is less severe.', -- Desc
@@ -1914,6 +2078,7 @@ VALUES
 -- 171
 (
   'Buoyant Arrival', -- Name
+  'Water',
   5, -- Rank
   'Shuji', -- Type
   'You so casually fit in with any kind of company, such that others welcome your presence and forgive your missteps.', -- Desc
@@ -1925,6 +2090,7 @@ VALUES
 -- 172
 (
   'Ebb and Flow', -- Name
+  'Water',
   3, -- Rank
   'Shuji', -- Type
   'You coax your allies so they excel in spite of their weaknesses, while causing foes to lose confidence in their strengths.', -- Desc
@@ -1937,6 +2103,7 @@ VALUES
 -- 173
 (
   'Regal Bearing', -- Name
+  'Water',
   4, -- Rank
   'Shuji', -- Type
   'You know how those of great status treat others, as well as how those of low station maneuver in social situations; with ease you can wear the posture and mannerisms of either.', -- Desc
@@ -1949,6 +2116,7 @@ VALUES
 -- 174
 (
   'Shallow Waters', -- Name
+  'Water',
   1, -- Rank
   'Shuji', -- Type
   'When one is experienced in charming others, one gets a knack for knowing just what others are looking for from the smallest of hints.', -- Desc
@@ -1960,6 +2128,7 @@ VALUES
 -- 175
 (
   'Well of Desire', -- Name
+  'Water',
   1, -- Rank
   'Shuji', -- Type
   'Making an offer of a gift that can''t be refused is the sign of someone who truly understands the nature of gift giving in Rokugan.', -- Desc
@@ -1971,6 +2140,7 @@ VALUES
 -- 176
 (
   'All Arts Are One', -- Name
+  'Void',
   3, -- Rank
   'Shuji', -- Type
   'All samurai are trained to know that just as a Haiku captures more than the words chosen, wielding a new blade teaches more than just swordplay and performing a new dance teaches more than just choreography.', -- Desc
@@ -1982,6 +2152,7 @@ VALUES
 -- 177
 (
   'Rouse the Soul', -- Name
+  'Void',
   5, -- Rank
   'Shuji', -- Type
   'Sometimes, words contain the wisdom that allow others to shrug off worldly baggage that would otherwise hold them back.', -- Desc
@@ -1993,6 +2164,7 @@ VALUES
 -- 178
 (
   'Incite Haunting', -- Name
+  'Any',
   1, -- Rank
   'Maho', -- Type
   'The taint of Fu-Leng can be subtly spread to someone, clinging to their spirit and trying to drag them towards darker ends, if you are willing to pay kansen a small price.', -- Desc
@@ -2005,6 +2177,7 @@ VALUES
 -- 179
 (
   'Grip of Anguish', -- Name
+  'Water',
   1, -- Rank
   'Maho', -- Type
   'When a malevolent kansen is given a sufficient offering, they can wrack those they haunt with stinging pain, distracting visions, and sudden sickness.', -- Desc
@@ -2016,6 +2189,7 @@ VALUES
 -- 180
 (
   'Mark of Desecration', -- Name
+  'Earth',
   1, -- Rank
   'Maho', -- Type
   'The kansen can be entreated to make the dead walk and spread the taint of Fu-Leng as a putrid servant.', -- Desc
@@ -2027,6 +2201,7 @@ VALUES
 -- 181
 (
   'Unholy Fervor', -- Name
+  'Fire',
   1, -- Rank
   'Maho', -- Type
   'The kansen know best how to incite one into a blinded rage, a maho-tsukai just need pay the price.', -- Desc
@@ -2034,5 +2209,636 @@ VALUES
   'Curse the target to become [Enraged]. If they have any Taint [Disadvantages], it is augmented and applies as an advantage to all checks in the Ring of the disadvantage for the scene.', -- Effect
   'Core Rulebook', -- Book
   225 -- Pg
+),
+-- 182
+(
+  'Chaotic Scattering', -- Name
+  'Air',
+  2, -- rank
+  'Kata', -- type
+  '', -- desc
+  'Movement and Scheme Action, TN 2 (Air) [Survival] Check with a target area within 1-2 rangebands using a readied and improvised weapon.', -- activation
+  'Choose a [Terrain] quality from: [Dangerous], [Entangling], or [Obscuring]. With a success the [Terrain] in range 1 of the position gains that [Terrain] quality as the improvised weapon lands there. 
+  Effect lasts 1 + 1 for every 2 Bonus Successes rounds. On a failure, the weapon still lands at the location.', -- effect
+  'Path of Waves', --book
+  86 -- pg
+),
+-- 183
+(
+  'Iron Shell Style', -- Name
+  'Void, Earth',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When using the [Guard] action in [Void] or [Earth] stance and you have not moved in the same turn, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  86 -- pg
+),
+-- 184
+(
+  'Mind''s Edge', -- Name
+  'Void',
+  1, -- rank
+  'Kata', -- type
+  '', -- desc
+  'TN 1 (Void) [Meditation] Check, After performing an action without a check in [Void] stance. This can only activate once per scene.', -- activation
+  'Next time you gain strife, reduce the amount by 3 + 1 per 2 bonus successes. This lasts until your next turn.', -- effect
+  'Path of Waves', --book
+  86 -- pg
+),
+-- 185
+(
+  'Rider''s Haste', -- Name
+  'Any',
+  2, -- rank
+  'Kata', -- type
+  'You have mastered urging your mount forward through a battlefield.', -- desc
+  'Movement and Support Action, While on a mount without any check.', -- activation
+  'Give your mount fatigue up to your school rank, then move that many range bands + 1 on your mount, no further than 6 rangebands.', -- effect
+  'Path of Waves', --book
+  87 -- pg
+),
+-- 186
+(
+  'Thunderous Hooves Style', -- Name
+  'Any',
+  4, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When making a [Fitness] check as a Movement action, gain new opportunity spends.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  87 -- pg
+),
+-- 187
+(
+  'Void Embrace Style', -- Name
+  'Void',
+  5, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When making a [Meditation] [Void] check during a duel or skirmish, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  87 -- pg
+),
+-- 188
+(
+  'Improvised Assault', -- Name
+  'Water',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'Movement and Support Action, TN 2 ([Tactics] or [Smithing]) Water Check with an improvised weapon readied.', -- activation
+  'Choose a [Martial Arts Melee] weapon that is similar in shape to the readied weapon. Treat the improvised weapon as that weapon but with -1 damage and deadliness. Effect lasts for the scene, upon which the weapon gains [Destroyed].', -- effect
+  'Path of Waves', --book
+  87 -- pg
+),
+-- 189
+(
+  'Boar''s Wrath Style', -- Name
+  'Fire, Void',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When making a [Fire] or [Void] Check to resist a [Critical Strike] in a Skirmish while [Enraged] but not [Incapacitated], gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  87 -- pg
+),
+-- 190
+(
+  'Bonebreaker Style', -- Name
+  'Any',
+  5, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When making an Attack Action with a [Cumbersome] weapon, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  88 -- pg
+),
+-- 191
+(
+  'Daring Swing', -- Name
+  'Water',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'Attack and Movement Action, TN 3 (Water) [Martial Arts Melee] Check using a [Snaring] weapon with a target position in your weapon''s range. The GM decides if the position is valid.', -- activation
+  'Your weapon snags onto the terrain or a feature of it and then you move to that position by swinging or pole-vaulting.', -- effect
+  'Path of Waves', --book
+  88 -- pg
+),
+-- 192
+(
+  'Deflective Defense', -- Name
+  'Earth',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'Movement and Support Action, TN 2 (Earth) [Martial Arts Melee] Check using a readied [Cumbersome] weapon.', -- activation
+  'Treat your physical resistance against character''s attacking from range greater than 1 as increased by your [Fitness] ranks.', -- effect
+  'Path of Waves', --book
+  88 -- pg
+),
+-- 193
+(
+  'Flashing Steel Strike', -- Name
+  'Air, Fire',
+  2, -- rank
+  'Kata', -- type
+  'Create a flashy display of moves which can overwhelm inexperienced opponents just as much as it can throw off a trained soldier.', -- desc
+  'Attack and Scheme Action, TN (Vigilance of Target) (Air or Fire) [Martial Arts Melee] Check with one target character in range of a readied weapon.', -- activation
+  'The target must choose one of the two: 
+  Become [Dazed] and receive strife equal to your [Performance].
+  or
+  Suffer a [Critical Strike] with deadliness equal to the weapon used.', -- effect
+  'Path of Waves', --book
+  88 -- pg
+),
+-- 194
+(
+  'Iaijutsu Cut: Reverse Draw', -- Name
+  'Any',
+  4, -- rank
+  'Kata', -- type
+  'A risky draw using the offhand, which leaves the user exposed after but can surprise an opponent.', -- desc
+  'Attack, Movement and Scheme Action, TN (Vigilance of Target) [Martial Arts Melee] Check with one target character at 1 rangeband using a sheathed weapon with [Razor Edged].', -- activation
+  'The target character takes damage equal to the weapon''s deadliness +1 per 2 bonus successes. Whether you succeed or not, you draw and ready the weapon in one-handed grip and gain [Disoriented].', -- effect
+  'Path of Waves', --book
+  89 -- pg
+),
+-- 195
+(
+  'Iaijutsu Cut: Sword and Sheath', -- Name
+  'Any',
+  2, -- rank
+  'Kata', -- type
+  'A popular technique among ronin who like to use their sheath as an offhand weapon.', -- desc
+  'Attack and Movement Action, TN 2 [Martial Arts Melee] Check with a sheathed [Razor Edged] weapon targeting a character within 1 rangeband.', -- activation
+  'Deal 5 + bonus successes physical damage to the target character. This damage counts as having 2 deadliness. Whether you succeed or not, you draw and ready the weapon in a one-hand grip and the sheath in a one-hand grip in the other hand. Use the [Iron Sheath] profile for the sheath''s statistics.', -- effect
+  'Path of Waves', --book
+  89 -- pg
+),
+-- 196
+(
+  'Landslide Strike', -- Name
+  'Earth, Water',
+  2, -- rank
+  'Kata', -- type
+  '', -- desc
+  'Attack and Scheme Action, TN (Vigilance of Target) (Earth or Water) [Martial Arts Melee] Check with one target character within weapon range. Reduce the TN to 1 if the target is in terrain that is [Dangerous], [Entangling], or [Obscuring].', -- activation
+  'The target must choose one:
+  Gain fatigue equal to your [Fitness] ranks and become [Prone].
+  or
+  Switch to a new stance immediately and become [Immobilized].', -- effect
+  'Path of Waves', --book
+  89 -- pg
+),
+-- 197
+(
+  'Laughing Fox Style', -- Name
+  'Air',
+  4, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When targeted with an Attack action and one hand is empty, spend 1 void point to make a TN (Vigilance of Target) (Air) [Martial Arts Unarmed] Check with a target character within 1 rangebands that is not your attacker.', -- activation
+  'Your target is the target of the Attack action instead of you.', -- effect
+  'Path of Waves', --book
+  89 -- pg
+),
+-- 198
+(
+  'Piercing Bolt Style', -- Name
+  'Any',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When making Attack Actions with axe or polearm weapons, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  90 -- pg
+),
+-- 199
+(
+  'Reckless Lunge', -- Name
+  'Fire',
+  2, -- rank
+  'Kata', -- type
+  '', -- desc
+  'Attack and Movement Action, TN 3 (Fire) [Martial Arts Unarmed] Check using a [Kick] or [Punch] weapon profile with a target within 2-3 rangebands.', -- activation
+  'Your target takes damage equal to the punch or kick''s damage + your [Fitness] ranks. They must succeed a TN 3 (Water 2, Air 5) [Fitness] Check or become [Prone]. Whether you succeed or not, you become [Prone] at range 0 of your target and the TN of the next Attack they make against you is reduced by 1.', -- effect
+  'Path of Waves', --book
+  90 -- pg
+),
+-- 200
+(
+  'Rushing Ox Style', -- Name
+  'Fire, Water',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When you use the Maneuver skirmish action in [Fire] or [Water] stance, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  90 -- pg
+),
+-- 201
+(
+  'Snapping Branch Strike', -- Name
+  'Earth',
+  1, -- rank
+  'Kata', -- type
+  '', -- desc
+  'Attack and Support Action, TN 3 (Earth) [Fitness] Check with a target character within 1 range using a readied blunt or polearm weapon.', -- activation
+  'The target takes 5 + bonus successes physical damage. This damage has a deadliness of 2.', -- effect
+  'Path of Waves', --book
+  90 -- pg
+),
+-- 202
+(
+  'Swirling Tempest Style', -- Name
+  'Any',
+  5, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When making [Martial Arts Melee] Checks with a blunt or polearm weapon, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  90 -- pg
+),
+-- 203
+(
+  'Thunderous Blows Style', -- Name
+  'Fire',
+  2, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When making Attack Checks in [Fire] stance with a blunt weapon profile, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  90 -- pg
+),
+-- 204
+(
+  'Twin Streams Style', -- Name
+  'Any',
+  3, -- rank
+  'Kata', -- type
+  'You have trained to fight effectively with a bladed weapon in each hand.', -- desc
+  'When making Attack Checks with a sword or axe profile in one-handed grips in both hands, you gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  91 -- pg
+),
+-- 205
+(
+  'Wheeling Sweep', -- Name
+  'Water',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'Attack and Movement Action, TN (Vigilance of Target) (Water) [Martial Arts Unarmed] Check with a target character in 0 range not larger than 3 silhouette using the [Punch] profile.', -- activation
+  'Throw the target 1 + 1 per 2 bonus successes range bands in a direction you choose. The target counts as [Fall]ing that much in range bands.', -- effect
+  'Path of Waves', --book
+  91 -- pg
+),
+-- 206
+(
+  'Eyeless Sight Shot', -- Name
+  'Void',
+  4, -- rank
+  'Kata', -- type
+  'You are adept at placing shots even when you might not have direct line of sight to a target.', -- desc
+  'Attack and Movement Action, TN (Vigilance of Target) (Void) [Martial Arts Ranged] Check with a target character in a readied ranged weapon''s range but not in direct sight.', -- activation
+  'Deal your weapon''s damage to the target character, and they gain your bonus successes as strife.', -- effect
+  'Path of Waves', --book
+  91 -- pg
+),
+-- 207
+(
+  'Falling Heavens Shot', -- Name
+  'Void',
+  5, -- rank
+  'Kata', -- type
+  'You have such an instinctive and precise understanding of a projectile''s travel arc that you can fire nearly directly heavensward and know where it will land with stunning accuracy.', -- desc
+  'Attack and Move Action, TN (Vigilance of Target) (Void) [Martial Arts Ranged] Check with one target character in a readied ranged weapon''s range.', -- activation
+  'At the start of the target''s turn, deal a [Critical Strike] with severity equal to the weapon''s deadliness to the target.', -- effect
+  'Path of Waves', --book
+  91 -- pg
+),
+-- 208
+(
+  'Staggering Shot', -- Name
+  'Any',
+  2, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When you make a [Martial Arts Ranged] Check in any stance, gain new opportunity spends.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  91 -- pg
+),
+-- 209
+(
+  'Swirling Viper Style', -- Name
+  'Air, Water',
+  3, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When using a Maneuver Action in [Air] or [Water] stance in a [Skirmish], gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  92 -- pg
+),
+-- 210
+(
+  'Wasp''s Spite Style', -- Name
+  'Air, Void',
+  4, -- rank
+  'Kata', -- type
+  '', -- desc
+  'When making a [Martial Arts Ranged] Check in [Air] or [Void], gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  92 -- pg
+),
+-- 211
+(
+  'Bellow of Resolve', -- Name
+  'Earth',
+  1, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Support Action, TN 2 (Earth) [Command] Check with a target character who is [Compromised] or [Incapacitated]. This can be used once per scene.', -- activation
+  'If the target is [Compromised], reduce their strife to 1 below their [Composure]. If the target is [Incapacitated], reduce their fatigue to 1 below their [Endurance].', -- effect
+  'Path of Waves', --book
+  92 -- pg
+),
+-- 212
+(
+  'Look Out!', -- Name
+  'Earth',
+  3, -- rank
+  'Shuji', -- type
+  'Warning someone can save a life.', -- desc
+  'When you make an [Earth] resist check against an effect, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  92 -- pg
+),
+-- 213
+(
+  'Mentor''s Guidance', -- Name
+  'Earth',
+  5, -- rank
+  'Shuji', -- type
+  'A good instructor can make a willing rudimentary practicioner of their arts in a moment.', -- desc
+  'Support Action, TN 4 (Earth) [Command] or [Performance] Check with one target character. You can use this once per scene.', -- activation
+  'Choose one of your [Kata], [Ninjutsu], or [Shuji] that your target can now use for the duration of the scene.', -- effect
+  'Path of Waves', --book
+  93 -- pg
+),
+-- 214
+(
+  'Flowering Deceptions', -- Name
+  'Air',
+  1, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Scheme and Support Action, TN (Highest Vigilance of Targets) (Air) [Courtesy] or [Tactics] Check with two target characters who are not hostile between themselves. 
+  You can only use this once per scene.', -- activation
+  'You choose which target increases their next check''s TN by 2 while the other decreases their next check''s TN by 2. This lasts until your next turn ends.', -- effect
+  'Path of Waves', --book
+  93 -- pg
+),
+-- 215
+(
+  'Pack Gambit', -- Name
+  'Air',
+  3, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Scheme Action, TN 3 (Air) Social Check with one target character.', -- activation
+  'Until your next turn ends, anyone performing Attack or Scheme Actions on the target have your [Assistance].', -- effect
+  'Path of Waves', --book
+  93 -- pg
+),
+-- 216
+(
+  'Ruse of the Moon''s Reflection', -- Name
+  'Air',
+  5, -- rank
+  'Shuji', -- type
+  'By mastering subtleties in what you tell people, how you lead, and the terrain itself you can get large groups of people to align in ways required for your sure victory.', -- desc
+  'Scheme Action, Make a TN (Highest Vigilance of Targets) (Air) [Command] Check targeting any characters in the scene that are not hostile between them. If the scene is a [Mass Battle], you must target all commanders.', -- activation
+  'If a [Skirmish], [Duel], or [Intrigue] you can exchange the initiative values of any targets.
+  If a [Mass Battle], you reveal that two leaders in the same army have switched positions and their cohorts.', -- effect
+  'Path of Waves', --book
+  93 -- pg
+),
+-- 217
+(
+  'Eyes Up!', -- Name
+  'Water',
+  1, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Support Action once per session, TN 2 (Water) Scholar Check with one target character. You may also use this at the start of a scene if you have not used it in the session yet.', -- activation
+  'The target character reduces their [Focus] by 2, and increases their [Vigilance] by 2 until the scene ends.', -- effect
+  'Path of Waves', --book
+  93 -- pg
+),
+-- 218
+(
+  'Fluent Bargaining', -- Name
+  'Water',
+  2, -- rank
+  'Shuji', -- type
+  'You have sketchy merchant skills...', -- desc
+  'When making [Commerce] Checks with (Water) regarding payment for work, gain a new opportunity spend.', -- activation
+  '', -- effect
+  'Path of Waves', --book
+  94 -- pg
+),
+-- 219
+(
+  'Malleable Formation', -- Name
+  'Water',
+  3, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Movement and Support Action, TN 2 (Water) [Command] Check with two target characters within 2 rangebands of you that are willing and nothing prevents those characters from moving to each other''s locations. 
+  This can be used once per scene.', -- activation
+  'Targets all move up to 2 rangebands to switch places with each other. They may choose a new stance once they do.', -- effect
+  'Path of Waves', --book
+  94 -- pg
+),
+-- 220
+(
+  'Watch My Back', -- Name
+  'Water',
+  5, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Movement and Support Action, if in [Water] stance, call one target character within 2 rangebands to cover you.', -- activation
+  'The target may perform a [Guard] [Skirmish] action guarding you, ignoring range. If successful, move 2 range bands. Reduce your next action''s TN by 1 until end of your current turn.', -- effect
+  'Path of Waves', --book
+  94 -- pg
+),
+-- 221
+(
+  'Illuminate The Way', -- Name
+  'Fire',
+  1, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Support Action, TN 2 (Fire) Scholar Check with a target character in the scene. Can also be used at the start of a scene. This can only be used once per game session.', -- activation
+  'Treat the target''s vigilance as 2 lower, and their focus as 2 higher until the scene ends. The minimum vigilance is 1.', -- effect
+  'Path of Waves', --book
+  94 -- pg
+),
+-- 222
+(
+  'Goading Taunt', -- Name
+  'Fire',
+  3, -- rank
+  'Shuji', -- type
+  'Sometimes a scathing insult forces an opponent to respond, just be ready for their rebuttal.', -- desc
+  'Scheme Action, TN (Vigilance of Target) (Fire) [Performance] or [Tactics] Check with one target character. This can only be used once per scene.', -- activation
+  'For an [Intrigue] or [Duel], the character must choose either to forfeit 1 honor rank or gain that much strife.
+  For a [Skirmish], the character must choose either move up to 2 range bands closer to you or gain 3 + 1 per 2 bonus successes strife.
+  For a [Mass  Battle], the character must choose either to perform an Assault/Challenge against you on their next turn or gain 3 + 1 per 2 bonus successes strife.
+  Whether you succeeded or not, the character''s next check has the TN reduced by 1.', -- effect
+  'Path of Waves', --book
+  94 -- pg
+),
+-- 223
+(
+  'Roar of Encouragement', -- Name
+  'Fire',
+  5, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Support Action, TN 3 (Fire) [Command] Check with a target friendly character. This can be used only once per scene.', -- activation
+  'During a [Skirmish], your target can make a Strike action now with [Assistance] from you.
+  During a [Mass Battle], your target can make an Assault action now with [Assistance] from you.', -- effect
+  'Path of Waves', --book
+  95 -- pg
+),
+-- 224
+(
+  'Tonight, I Am Your Opponent', -- Name
+  'Void',
+  3, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Scheme and Support Action, TN 3 (Void) Social Check with a target of one character in a [Duel] or [Clash]. This can be used once per game session.', -- activation
+  'You take the place of your target in the [Duel] or [Clash], staking your own [Honor] and [Glory]. Your target loses half of what they staked as you interject, unless you share a bond with the target or their opponent.', -- effect
+  'Path of Waves', --book
+  95 -- pg
+),
+-- 225
+(
+  'Bond of Heroes', -- Name
+  'Void',
+  5, -- rank
+  'Shuji', -- type
+  '', -- desc
+  'Support Action, TN 5 (Void) [Performance] Check with a target of all characters you share a bond with in the scene. This can only be used once per game session.', -- activation
+  'The characters reduce their strife and fatigue by 5 + 1 per 2 bonus successes.', -- effect
+  'Path of Waves', --book
+  95 -- pg
+),
+-- 226
+(
+  'Wayfarer''s Path', -- Name
+  'Any',
+  2, -- rank
+  'Ritual', -- type
+  '', -- desc
+  'Downtime Action, TN 3 [Meditation] Check when your path ahead is unclear.', -- activation
+  'Based on the ring chosen for your check, you notice a tell about the direction you should take.
+  Earth: Direction to person you share a bond with.
+  Water: Direction to a chance to make money.
+  Fire: Direction to nearest large conflict.
+  Air: Direction to someone of your past or you desire.
+  Void: Direction to where you are most needed.', -- effect
+  'Path of Waves', --book
+  97 -- pg
+),
+-- 227
+(
+  'Assess Strengths', -- Name
+  'Air',
+  1, -- rank
+  'Shuji', -- type
+  'Through playing a game, you can gain insight into your opponent''s capabilities outside of the game as one art extends to all.', -- desc
+  'Scheme Action, TN (Vigilance of Target) (Air) [Games] Check with a target of one opponent who is playing a game with you.', -- activation
+  'Learn the character''s skill ranks in [Games], [Tactics], or a Martial Arts type skill.', -- effect
+  'Courts of Stone', --book
+  117 -- pg
+),
+-- 228
+(
+  'Formal Tea Ceremony', -- Name.
+  'Void',
+  5, -- Rank 
+  'Ritual', -- type
+  'You have spent a lifetime mastering the tea ceremony, communicating meaning in even the slightest movement and choice of word.', -- desc.
+  'Downtime Action once per game session, TN 5 (Void) [Performance] Check targeting self and characters up to your [Culture] ranks. Only one participant may give [Assistance].', -- act
+  'Each character gains a [Void Point]. Whether you succeeded or not, every target character loses 6 + bonus successes strife.', -- eff
+  'Courts of Stone', -- book
+  116 -- pg
+),
+-- 229
+(
+  'Essence of Jade', -- Name.
+  'Earth',
+  3, -- Rank 
+  'Invocation', -- type
+  '', -- desc.
+  'Support Action, TN 3 (Earth) [Theology] Check with a target location within 2 rangebands.', -- act
+  'Purify the area, removing [Defiled] from terrain in an area up to your [Earth] ring in rangebands from the target location. This lasts for 1 + 1 per bonus success rounds.', -- eff
+  'Shadowlands', -- book
+  114 -- pg
+);
+INSERT INTO techniques (name, prerequisite, rings, rank, type, description, activation, effect, book, pg)
+-- 230
+(
+  'Craft Shikigami', -- Name.
+  '(Shugenja)', -- Prereq
+  'Void',
+  2, -- Rank 
+  'Ritual', -- type
+  '', -- desc.
+  'Downtime Action, TN (Chosen by the Shugenja) (Void) [Artisan] Check using a consecrated vessel of no bigger than silhouette 0. The vessel should be made of material or appropriately related to the Artisan skill used.', -- act
+  'Choose a number of [Invocations] equal to the TN you chose that the [Shikigami] will have sealed in it. You cannot use these while the [Shikigami] exists, and if its physical form is destroyed its spiritual form returns to you with its memories and personality which you can reimbue into a new form.
+  Name the [Shikigami] (yes, really) and note the [Invocations] sealed in it that it can perform. It can communicate with the shugenja, and will usually obey them.
+  When it performs a sealed invocation, it uses your [Composition] skill ranks instead of [Theology]. A [Shikigami] uses its ring, which are all equal to the highest rank of invocation it knows of the Ring type or 1. For example: A [Shikigami] with sealed rank 3 and 2 Air Invocations will have an Air Ring of 3, and 1 in the rest
+  For more details on its actions, restrictions, and other statistics see page 115 in the Shadowlands rulebook.', -- eff
+  'Shadowlands', -- book
+  114 -- pg
+),
+-- 231
+(
+  'Blessing of Steel', -- Must have.
+  '(Artisan)', -- delete this entry if there is no prereq like clan, role, etc.
+  'Any',
+  2, -- Number. Rank of the technique
+  'Ritual', -- Text, must be one of: Kata, Kiho, Invocation, Shuji, Ritual, Maho
+  '', -- Short narrative example of what the technique does. Original work only.
+  'Downtime Action, TN 2 (Any) [Smithing] Check with targets of weapons and armor.', -- See mechanics. Says the type of check
+  'Depending on the ring, the effect of success changes as below:
+  Earth: Remove [Damaged] from it, or it gains [Durable] if you had nothing to remove.
+  Water: Increase damage and reduce deadliness by 1 of a weapon, or increase supernatural resistance and reduce physical resistance by 1 of an armor.
+  Air: Increase deadliness by 1 of a weapon.
+  Fire: Work with the GM to decide on an [Item Quality] the item could reasonably have, and it gains it for the duration.
+  Void: Reduce the TN by 1 for the next check a weapon is used in.
+  Only one effect can affect an item at one time, and this lasts only for the duration of the next scene the item is used in.', -- What happens, resist checks forced etc. See existing tech for guidelines
+  'Shadowlands', -- Core Rulebook, Celestial Realms, Shadowlands, etc.. leave blank for homebrew
+  114 -- Number. Blank for homebrew.
 )
-;
+; -- delete trailing comma above

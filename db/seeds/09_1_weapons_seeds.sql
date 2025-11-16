@@ -33,7 +33,7 @@ VALUES
   'Melee',
   '1',
   '3/-',
-  '5/-',
+  '6/-',
   6,
   '15 koku',
   'Core Rulebook',
@@ -457,7 +457,7 @@ VALUES
 ),
 -- 36
 (
-  'Hand',
+  'Punch',
   'Unarmed',
   'Unarmed',
   '0',
@@ -470,7 +470,7 @@ VALUES
 ),
 -- 37
 (
-  'Leg',
+  'Kick',
   'Unarmed',
   'Unarmed',
   '1',

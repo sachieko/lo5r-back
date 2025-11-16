@@ -44,6 +44,7 @@ INSERT INTO pagelinks (key, link) VALUES
 (  'Shuji', '/techniques/58?filter=shuji' ),
 (  'Rituals', '/techniques/1?filter=ritual' ),
 (  'Weapons', '/weapons/1'),
+(  'Terrain', '/terrains/1'),
 (  'Item Qualities', '/qualities/1' ),
 (  'Qualities', '/qualities/1' ),
 (  'Conditions', '/conditions/1' ),
