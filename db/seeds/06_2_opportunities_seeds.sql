@@ -297,7 +297,7 @@ VALUES
 (198, 'Any', 'Technique', '💮', 'Increase the deadliness of the weapon by the rangebands traveled this round by you + range bands traveled by the weapon if it was thrown.'), 
 (199, 'Any', 'Technique', '💮', 'If successful, target character receives your bonus successes as strife.'), 
 (199, 'Any', 'Technique', '💮💮', 'You do not become [Prone].'), 
-(200, 'Any', 'Technique', '💮💮', 'After moving, perform the Strike action using a readied melee or unarmed weapon on a target in range. The TN for the strike is the Vigilance of the Target Character. You cannot target character''s you did not move toward.'), 
+(200, 'Any', 'Technique', '💮💮', 'After moving, perform the Strike action using a readied melee or unarmed weapon on a target in range. The TN for the strike is the Vigilance of the Target Character. You cannot target characters you did not move toward.'), 
 (201, 'Earth', 'Technique', '💮💮+', 'Your target is pushed 1 range band away per 💮💮 spent unless they succeed a TN 4 (Air 2, Water 5) [Fitness] Check.'), 
 (202, 'Any', 'Technique', '💮+', 'Choose another target within weapon range to receive your weapon''s damage by spending 💮 equal to or greater than their vigilance. You may do this for multiple additional target''s.'), 
 (203, 'Fire', 'Technique', '💮💮+', 'Choose one character per 💮💮 spent within 1 range of your target to receive 1 fatigue, or 3 if they are currently [Dazed].'), 
