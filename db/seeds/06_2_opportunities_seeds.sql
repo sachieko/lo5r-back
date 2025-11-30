@@ -339,6 +339,6 @@ VALUES
 (230, 'Any', 'Technique', '💮', 'The [Shikigami] appears as though of a different form or material than it was crafted, but the same size.'), 
 (230, 'Any', 'Technique', '💮+', 'Increase its silhouette by 1 per 💮 spent like this.'), 
 (230, 'Any', 'Technique', '💮+', 'Give it ranks in one skill equal to 💮 spent. You can do this for multiple skills.'), 
-(230, 'Any', 'Technique', '💮+', 'Increase its [Endurance] or [Composure] by 2 per 💮 spent like this.'), 
-(230, 'Any', 'Technique', '💮+', '')
+(230, 'Any', 'Technique', '💮+', 'Increase its [Endurance] or [Composure] by 2 per 💮 spent like this.')
+-- (230, 'Any', 'Technique', '💮+', ''),
 ; -- remove trailing comma above
