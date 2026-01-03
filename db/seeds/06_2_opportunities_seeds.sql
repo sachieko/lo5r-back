@@ -312,7 +312,7 @@ VALUES
 (209, 'Any', 'Technique', '💮💮', 'After moving, perform a TN (Vigilance of Target) [Strike] Action using a readied ranged weapon on a character in its range you moved away from.'), 
 (210, 'Any', 'Technique', '💮💮', 'If you fail the roll, choose a target character within 2 rangebands of the original target. They take physical damage equal to your ranged weapon''s damage.'), 
 (211, 'Earth', 'Technique', '💮💮', 'You can use Bellow of Resolve one more time in the scene.'), 
-(211, 'Earth', 'Technique', '💮💮💮', 'Target any [Compromised] or [Incapacitated] character''s of your choice instead.'), 
+(211, 'Earth', 'Technique', '💮💮💮', 'Target any [Compromised] or [Incapacitated] characters of your choice instead.'), 
 (212, 'Earth', 'Technique', '💮+', 'One target character per 💮 spent like this can choose a new stance immediately.'), 
 (214, 'Air', 'Technique', '💮', 'Neither target realizes you are manipulating them.'), 
 (214, 'Air', 'Technique', '💮💮', 'You can use Flowering Deceptions one more time this scene.'), 
