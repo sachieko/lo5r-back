@@ -252,7 +252,7 @@ VALUES
 (167, 'Fire', 'Technique', '💮+', 'Give all enemies in the scene 1 strife per 💮 spent. You can only do this in a [Skirmish].'),
 (167, 'Fire', 'Technique', '💮+', 'Give the enemy army 1 panic per 💮 spent. You can only do this in a [Mass Battle].'),
 (168, 'Fire', 'Technique', '💮+', 'Choose a known [Disadvantage] of a target per 💮 spent that is applied to all of their checks for the duration of the scene.'),
-(169, 'Fire', 'Technique', '💮💮+', 'Target characters treat their vigilance as 1 higher per 💮 spent when interacting with you, or 1 lower per 💮 spent if not interacting with you. Effect lasts for the scene.'),
+(169, 'Fire', 'Technique', '💮+', 'Target characters treat their vigilance as 1 higher per 💮 spent when interacting with you, or 1 lower per 💮 spent if not interacting with you. Effect lasts for the scene.'),
 (170, 'Water', 'Technique', '💮+', 'When you forfeit honor for rudeness or appealing to a character''s desires such as greed, avarice, or pride; gain 1 honor per 💮 spent.'),
 (172, 'Water', 'Technique', '💮', 'Invert one additional [Advantage] or [Disadvantage] of your choice.'),
 (172, 'Water', 'Technique', '💮💮+', 'Target another character that does not have higher vigilance than the original target per 💮💮 spent.'),
