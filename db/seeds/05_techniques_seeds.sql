@@ -169,7 +169,7 @@ This lasts your Air Ring rounds.',
 -- 16
 (
   'Iaijutsu Cut: Rising Blade', -- Name
-  'Air',
+  'Any',
   2,                            -- Rank
   'Kata',                       -- Type
   'You draw your blade from the hip to catch an opponent''s sword as they strike at you, leaving them open for your own blade''s follow through.', -- Description

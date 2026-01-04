@@ -80,7 +80,7 @@ VALUES
 (47, 'Any', 'Technique', '💮', 'If you fail the check with a shortfall less than 3, the target still takes physical damage equal to your [Fitness] ranks.'),
 (47, 'Any', 'Technique', '💮', 'If you succeed and the target is [Prone], deal additional damage equal to your [Fitness] ranks.'),
 (48, 'Air', 'Technique', '💮+', 'Increase the TN to resist the knockback by 1.'),
-(49, 'Fire', 'Technique', '💮+', 'One target of the check that you know a [Distinction] of may reroll up to 3 dice when their [Distinction] applies to a check.'),
+(49, 'Fire', 'Technique', '💮+', 'One target of the check that you know a [Distinction] of may reroll up to 3 dice when their [Distinction] applies to a check this scene.'),
 (50, 'Any', 'Technique', '💮+', 'Choose a character at range 0-2 of your target that is not your target, and they gain strife equal to your ranged weapon''s damage.'),
 (51, 'Water', 'Technique', '💮', 'Each target benefits from all [Obscured] terrain as if it provides +2 to TN instead of +1 until the end of the scene.'),
 (52, 'Air', 'Technique', '💮', 'One character with vigilance not greater than your [Skulduggery] loses sight of you if you are in [Obscuring] terrain, a crowd, or there is some other narrative reason a character could lose sight of you.'),
