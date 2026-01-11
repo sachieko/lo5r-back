@@ -288,7 +288,7 @@ VALUES
 (191, 'Water', 'Technique', '💮+', 'If you spend 💮 greater than or equal to a character''s [Vigilance] at range 0 of the destination, deal physical damage equal to range bands moved this round + bonus successes on the roll.'), 
 (192, 'Earth', 'Technique', '💮💮', 'If you defend against physical damage from an attack by a character at range greater than 1, they gain 2 strife.'), 
 (193, 'Any', 'Technique', '💮💮+', 'If using a [Cumbersome] weapon, add another target with equal or less [Vigilance] to the original target per 💮💮 spent.'), 
-(194, 'Any', 'Technique', '💮💮', 'If the target becomes [Incapacited] due to the damage from the reverse draw, they take a [Critical Strike] of the weapon''s deadliness + bonus successes in severity.'), 
+(194, 'Any', 'Technique', '💮💮', 'If the target becomes [Incapacitated] due to the damage from the reverse draw, they take a [Critical Strike] of the weapon''s deadliness + bonus successes in severity.'), 
 (195, 'Any', 'Technique', '💮💮', 'If you succeeded, the target character becomes [Dazed].'), 
 (196, 'Any', 'Technique', '💮💮+', 'If using a [Cumbersome] weapon, add another target with equal or less [Vigilance] to the original target per 💮💮 spent.'), 
 (197, 'Air', 'Technique', '💮', 'If successful, move 1 rangeband away from your attacker.'), 
