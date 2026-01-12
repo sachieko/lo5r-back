@@ -72,4 +72,31 @@ Mechanics: Wounded comes as either Lightly wounded or Severely wounded and is al
 Lightly Wounded [Ring]: All checks have their TN increased by 1 in the wounded ring. This cannot stack in the same ring, so being lightly wounded in the same ring upgrades the wound to severely wounded or being severely wounded replaces lightly wounded.
 Severely Wounded [Ring]: All checks have their TN increased by 3 in the wounded ring. This cannot stack in the same ring, so being wounded of any type in the same ring upgrades the wound to a Permanent Injury as if they took a [Critical Strike] with 8 severity.
 This condition can be removed with a downtime action by making a TN 4 (Water) [Medicine] check. On a success, lightly wounded is removed or severely wounded is downgraded to lightly wounded. This can only be attempted once a week for each ring. The wounded character may also recover naturally, represented by a TN 3 [Fitness] check using the affected ring but without the TN penalty caused by the Wounded condition. This can also be done once per week for each ring.
-The rulebook suggests including thematic injuries depending on the ring, such as fire being a wound on the hands or arm, or water being a wound on the leg or eyes, to represent this condition. This is just a suggestion as those body parts are considered essential to many activities in those rings.', 'Core Rulebook', 273);
+The rulebook suggests including thematic injuries depending on the ring, such as fire being a wound on the hands or arm, or water being a wound on the leg or eyes, to represent this condition. This is just a suggestion as those body parts are considered essential to many activities in those rings.', 'Core Rulebook', 273),
+-- 17 Centered
+(
+  'Centered', 
+  'A state of focus.
+  Mechanics: Remove 2 strife symbols from roll results during a check. Centered is lost once they use it, or at the end of the scene.', 
+  'Children of the Five Winds', 
+  133 
+),
+-- 18 Emboldened
+(
+  'Emboldened', 
+  'The character is motivated to exert themselves beyond ordinary effort.
+  Mechanics: Receive 1 fatigue to keep 1 additional dice. Emboldened is lost once used, or at the end of the scene.
+  Shukumei: Use the Modify option on a roll and change a rolled dice to kept.',
+  'Children of the Five Winds', 
+  133 
+),
+-- 19 Possessed
+(
+  'Possessed', 
+  'The character is controlled by a supernatural power, which has some level of control over their actions now. In some cases, the entity may act for them - making some tasks difficult for the person seem to come naturally to them - but it is the entity performing them.
+  Mechanics: Possessing entity must state a goal when the condition is given. After any scene they disregarded the goal entirely during, the possessed gains 2 strife. If the character is [Compromised], they [Unmask] by ignoring all else except the goal for the rest of the scene. The possessed may use each of the supernatural source''s [Techniques], including [Invocations], once each per scene. They also may use the supernatural source''s skill ranks instead of their own during a check.
+  To remove this condition, the possessed must first pursue the spirit''s goal for one scene then make a TN (Focus of Possessor) (Void) [Meditation] check. Other character''s may remove this by completing the [Dispel Possession] social objective on pg.125 of Children of the Five Winds.', 
+  'Children of the Five Winds', 
+  133 
+)
+;
