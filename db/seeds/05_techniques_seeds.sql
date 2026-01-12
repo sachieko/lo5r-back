@@ -928,7 +928,7 @@ VALUES
   'Become more resistant to poisons, disease, and similar.', -- Desc
   'Support Action, TN 1 (Earth) [Theology] Check with an optional target of another character at range 0-1.', -- Activation
   'Enhancement: Reduce TN of any checks to resist effects of poison, disease, [Maho], tainted or otherworldly beings, or the [Defiled] terrain quality by your Earth Ring.
-  Burst: If you have at least 2 bonus successes you may remove one of the following: [Afflicted], [Bleeding], [Dazed], [Disoriented], [Dying], [Fatigued], [Intoxicated].', -- Effect
+  Burst: If you have at least 2 bonus successes you may remove one of the following: [Afflicted], [Bleeding], [Dazed], [Disoriented], [Dying], [Exhausted], [Intoxicated].', -- Effect
   'Core Rulebook', -- Book
   182 -- Pg
 ),
