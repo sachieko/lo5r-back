@@ -6,7 +6,7 @@ const router = Router();
 // GET /armors/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, armorsIdQuery, [id])
+  wolfQueryHandler(res, armorsIdQuery, [Number(id)])
 });
 
 // GET /armors

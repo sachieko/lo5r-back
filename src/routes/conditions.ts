@@ -6,7 +6,7 @@ const router = Router();
 // GET /conditions/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, conditionIdQuery, [id])
+  wolfQueryHandler(res, conditionIdQuery, [Number(id)])
 });
 
 // GET /conditions

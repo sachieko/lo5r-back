@@ -6,7 +6,7 @@ import { loreQuery, loreIdQuery } from "../queries/loreQueries";
 // GET /lore/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, loreIdQuery, [id]);
+  wolfQueryHandler(res, loreIdQuery, [id.toString()]);
 });
 
 // GET /lore

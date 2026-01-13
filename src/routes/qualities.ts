@@ -5,7 +5,7 @@ import { qualitiesIdQuery, qualitiesQuery } from "../queries/qualityQueries";
 // GET /conditions/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, qualitiesIdQuery, [id]);
+  wolfQueryHandler(res, qualitiesIdQuery, [Number(id)]);
 });
 
 // GET /conditions

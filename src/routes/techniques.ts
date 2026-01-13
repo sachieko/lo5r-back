@@ -6,7 +6,7 @@ import { techniqueAGGQuery, techniqueIdQuery } from "../queries/techniqueQueries
 // GET /techniques/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, techniqueIdQuery, [id]);
+  wolfQueryHandler(res, techniqueIdQuery, [Number(id)]);
 });
 
 // GET /techniques
