@@ -5,7 +5,7 @@ import { terrainsIdQuery, terrainsQuery } from "../queries/terrainQueries";
 // GET /terrains/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, terrainsIdQuery, [id])
+  wolfQueryHandler(res, terrainsIdQuery, [Number(id)])
 });
 
 // GET /terrains

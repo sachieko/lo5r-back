@@ -6,7 +6,7 @@ import { rulesQuery, rulesIdQuery } from "../queries/ruleQueries";
 // GET /rules/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, rulesIdQuery, [id]);
+  wolfQueryHandler(res, rulesIdQuery, [Number(id)]);
 });
 
 // GET /rules

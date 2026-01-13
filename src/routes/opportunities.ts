@@ -9,7 +9,7 @@ import {
 // GET /opportunities/id
 router.get("/:id", async (req: Request, res: Response) => {
   const id = req.params.id;
-  wolfQueryHandler(res, opportunityQuery, [id]);
+  wolfQueryHandler(res, opportunityQuery, [Number(id)]);
 });
 
 // GET /opportunities
