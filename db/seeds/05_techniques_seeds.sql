@@ -1402,7 +1402,7 @@ VALUES
   'Invocation', -- Type
   'Launch the earth itself at your enemy.', -- Desc
   'Attack Action, TN 3 (Earth) [Theology] Check with a target of a character within 3 rangebands.', -- Activation
-  'A bolder or similar smites the target for supernatural damage equal to your Earth Ring + bonus successes. The target must pass a TN 3 (Air 1, Water 4) [Fitness] Check or become [Prone]. Double the damage if the target is already [Prone].', -- Effect
+  'A boulder or similar smites the target for supernatural damage equal to your Earth Ring + bonus successes. The target must pass a TN 3 (Air 1, Water 4) [Fitness] Check or become [Prone]. Double the damage if the target is already [Prone].', -- Effect
   'Core Rulebook', -- Book 
   198 -- Pg
 ),
