@@ -754,7 +754,7 @@ VALUES
   2, -- Rank
   'Kata', -- Type
   'This fighting style has one practice with [Snaring] weapons to control an opponent''s weapons or movement.', -- Desc
-  'Gain a new way to spent [Opportunity] when you use a [Martial Arts Melee] or [Martial Arts Unarmed] check with a [Snaring] weapon.', -- Activation
+  'Gain a new way to spend [Opportunity] when you use a [Martial Arts Melee] or [Martial Arts Unarmed] check with a [Snaring] weapon.', -- Activation
   '', -- Effect
   'Core Rulebook', -- Book
   179 -- Pg
