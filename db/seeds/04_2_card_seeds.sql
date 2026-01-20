@@ -55,7 +55,7 @@ Massive: Murdering someone of equal or higher status, lying to your lord for you
 Examples of upholding Righteousness: 
 Minor: Delivering bad news to your lord without putting blame on others. Taking responsibility on behalf of a subordinate''s failure.
 Major: Retiring from a station you can no longer fill, returning a large gift or claim to your lord.
-Massive: Refusing to deny true allegations which would cause you to forfeiti 9 or more glory or status.'),
+Massive: Refusing to deny true allegations which would cause you to forfeit 9 or more glory or status.'),
 (1, ' Sincerity (誠, Makoto)', 'When warriors say that they will perform an action, it is as good as done. Nothing will stop them from completing what they say they will do. They do not have to ''give their word''. They do not have to ''promise''. Speaking and doing are the same action.
 Example breaches of Sincerity:
 Minor: Breaking your word to someone of less or equal status, misleading a friend.
