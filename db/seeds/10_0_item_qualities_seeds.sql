@@ -233,5 +233,11 @@ VALUES
   'Attacks with this weapon gain opportunity spends. (Any)💮: Ignore TN increases from shields on the target. (Any)💮+: Decrease target''s physical resistance by 1.',
   'Children of the Five Winds',
   116
+),
+-- 36 Razor Edged for only 2H grip
+(
+  'Razor Edged (2H)',
+  'Weapon gains the following opportunity spend 💮+: Increase deadliness by 1. If a weapon with this quality has its damage reduced to 0 by armor and deals no fatigue, it gains damaged.',
+  'Core Rulebook', 241
 )
 ;
