@@ -273,7 +273,7 @@ VALUES
 (180, 'Earth', 'Technique', '💮💮', 'Each round, one zombie uses your skill ranks instead for one check.'),
 (180, 'Earth', 'Technique', '💮💮+', 'One target corpse that was a warrior is summoned as a [Bushi Skeleton] (Pg. 318 Core Rulebook) instead per 💮💮 spent.'),
 (181, 'Fire', 'Technique', '💮', 'Increase the strife and reduce the fatigue of all target character''s by your Fire Ring.'),
-(181, 'Fire', 'Technique', '💮💮+', 'Target another character per 💮 spent.'),
+(181, 'Fire', 'Technique', '💮+', 'Target another character per 💮 spent.'),
 (182, 'Air', 'Technique', '💮💮', 'Apply one additional [Terrain] quality from the choices.'), 
 (183, 'Any', 'Technique', '💮💮+', 'Choose one character per 💮💮. Next time you would defend damage against that character, your fatigue cannot exceed endurance. This effect lasts until end of your next turn.'), 
 (184, 'Void', 'Technique', '💮', 'The effect applies every time you would receive strife during its effect instead.'), 
