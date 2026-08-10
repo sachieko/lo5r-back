@@ -2804,7 +2804,229 @@ VALUES
   'Purify the area, removing [Defiled] from terrain in an area up to your [Earth] ring in rangebands from the target location. This lasts for 1 + 1 per bonus success rounds.', -- eff
   'Shadowlands', -- book
   114 -- pg
-);
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore [Terrain Qualities] or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Trip the Leg', -- 
+  'Any', -- 
+  1, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack Action, TN 2 [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
+  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+
+;
 INSERT INTO techniques (name, prerequisite, rings, rank, type, description, activation, effect, book, pg)
 VALUES
 -- 230
