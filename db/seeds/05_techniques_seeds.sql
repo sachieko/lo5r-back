@@ -2865,7 +2865,7 @@ VALUES
   1, -- 
   'Kata', -- 
   '', -- 
-  'Attack Action, TN 2 [Martial Arts Melee] check with a target character at range 1-2.', -- 
+  'Attack Action, TN 2 [Martial Arts Melee] check with a target character at range 1-2 using a readied polearm weapon.', -- 
   'Target character gains the [Prone] condition.', -- 
   'Court of Stones', -- 
   113 -- 
