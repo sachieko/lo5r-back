@@ -3097,8 +3097,19 @@ VALUES
   'Shuji', -- 
   '', -- 
   'Support Action, TN 1 (Void) [Artisan] skill check.', -- 
-  'You foresaw the need of an item with rarity 1 + bonus successes. You may spend a [Void Point] to reveal one such item if the GM deems it reasonable that you had the means to craft it and it would reasonably be accessible to have.
-  For example, you have your attendant bring it from your quarters and you had the materials to create it for many weeks.', -- 
+  E'You foresaw the need of an item with rarity 1 + bonus successes. You may spend a [Void Point] to reveal one such item if the GM deems it reasonable that you had the means to craft it and it would reasonably be accessible to have. \nFor example, you have your attendant bring it from your quarters and you had the materials to create it for many weeks.', -- 
   'Court of Stones', -- 
   119 -- 
 );
+--253
+-- (
+--   '', -- 
+--   'Any', -- 
+--   2, -- 
+--   'Kata', -- 
+--   '', -- 
+--   '.', -- 
+--   '.', -- 
+--   'Court of Stones', -- 
+--   119 -- 
+-- ),
