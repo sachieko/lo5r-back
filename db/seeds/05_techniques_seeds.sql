@@ -17,7 +17,7 @@ VALUES
  'Ritual', 
  'The ritualist aligns themself with an element so they may appeal to the kami in their environment for aid.', 
  'Downtime Action or Support Action, TN 1 [Theology] Check using the ring of the kami you would like to commune with. Supernatural entities without an element are void.', 
- E'If you succeed, choose an effect:\n\nSense the Kami: Detect kami and the use of their magic by any shugenja within range bands equal to the ring used + bonus successes.\nSpiritual Knowledge: Learn a fact about the area from the kami.\nElemental Gift: The kami deliver some of the element used to you in some way, such as you coming across the gift as you travel in the area or a brief instance of rain or wind.', 
+ E'If you succeed, choose an effect:\n\nSense the Kami: Detect kami and the use of their magic by any shugenja within range bands equal to the ring used + bonus successes.\n\nSpiritual Knowledge: Learn a fact about the area from the kami.\n\nElemental Gift: The kami deliver some of the element used to you in some way, such as you coming across the gift as you travel in the area or a brief instance of rain or wind.', 
 'Core Rulebook',
  212),
 -- 3
@@ -44,7 +44,7 @@ E'Choose an omen when you succeed:\n\nOmen of the Azure Dragon: The next time th
 'Ritual', 
 'Ward a threshold or entrance against a certain kind of being, either causing them not to notice its presence or repelled mentally at trying to pass through.', 
 'Downtime Action, TN 2 [Theology] Check targeting a gate within 0-1 rangebands.', 
-E'On a success, certain beings are repulsed by your barrier for hours equal to 1 + bonus successes. If the being tries to pass the threshold, it must succeed a TN 3 (Void) [Meditation] check or be unable to pass. The ritualist is aware when a being tries to pass through the threshold, whether it succeeds or not. The type of being is determined by the ring chosen:\n\nAir: Spirits, ghosts, yokai or similar.\nEarth: Tainted beings that are alive.\nFire: Undead beings with a tangible form.\nWater: Animals.\nVoid: Humans.', 
+E'On a success, certain beings are repulsed by your barrier for hours equal to 1 + bonus successes. If the being tries to pass the threshold, it must succeed a TN 3 (Void) [Meditation] check or be unable to pass. The ritualist is aware when a being tries to pass through the threshold, whether it succeeds or not. The type of being is determined by the ring chosen:\n\nAir: Spirits, ghosts, yokai or similar.\n\nEarth: Tainted beings that are alive.\n\nFire: Undead beings with a tangible form.\n\nWater: Animals.\n\nVoid: Humans.', 
 'Core Rulebook',
  213),
 -- Kata Start
@@ -845,7 +845,7 @@ VALUES
   'Shuji', -- Type
   'Saying the right words when someone is at their breaking point can seem polite to everyone while pushing that person over the edge.', -- Desc
   'Scheme Action, TN 1 (Air) [Courtesy] Check with a target who is [Compromised].', -- Activation
-  E'On a success the target chooses one option:\n\n1. [Unmask] immediately in the manner of the target''s choosing that suits the circumstance.\n\n2. Lose glory equal to your Air ring + bonus successes on the check as they leave the scene immediately.', -- Effect
+  E'On a success the target chooses one option:\n\n1. [Unmask] immediately in the manner of the target''s choosing that suits the circumstance.\n\nor\n\n2. Lose glory equal to your Air ring + bonus successes on the check as they leave the scene immediately.', -- Effect
   'Core Rulebook', -- Book
   215 -- Pg
 ),
@@ -1722,7 +1722,7 @@ VALUES
   'Invocation', -- Type
   'Soothe the body and muscles.', -- Desc
   'Support Action, TN 2 (Water) [Theology] Check with one target character within 2 rangebands or yourself.', -- Activation
-  E'Mend your target, removing fatigue up to your Water Ring + bonus successes.\nA character can only benefit from this once per scene.', -- Effect
+  E'Mend your target, removing fatigue up to your Water Ring + bonus successes.\n\nA character can only benefit from this once per scene.', -- Effect
   'Core Rulebook', -- Book
   209 -- Pg
 ),
@@ -1770,7 +1770,7 @@ VALUES
   'Invocation', -- Type
   'Inflict drowning on a foe.', -- Desc
   'Attack Action, TN 4 (Water) [Theology] Check with a target of a character between rangebands 1-3.', -- Activation
-  E'Smite your target, dealing your Water Ring + Double the bonus successes supernatural damage.\nIf they become [Incapacitated] this way, they [Suffocate] (Pg. 269 Core Rulebook) for your Water Ring + bonus successes rounds. You can end this as a Support Action', -- Effect
+  E'Smite your target, dealing your Water Ring + Double the bonus successes supernatural damage.\n\nIf they become [Incapacitated] this way, they [Suffocate] (Pg. 269 Core Rulebook) for your Water Ring + bonus successes rounds. You can end this as a Support Action', -- Effect
   'Core Rulebook', -- Book
   211 -- Pg
 ),
@@ -1854,7 +1854,7 @@ VALUES
   'Shuji', -- Type
   'You know how to act like a true samurai, and a true scoundrel, wearing what suits you best at the time.', -- Desc
   'Scheme Action, TN (Highest Vigilance of Targets) (Air) [Courtesy] or [Performance] Check targeting up to all characters in the scene.', -- Activation
-  E'Targeted Characters treat you as though your honor is 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 5, Fire 2) [Sentiment] Check to learn your actual honor.\nEffect lasts for the scene.', -- Effect
+  E'Targeted Characters treat you as though your honor is 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 5, Fire 2) [Sentiment] Check to learn your actual honor.\n\nEffect lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   215 -- Pg
 ),
@@ -1926,8 +1926,7 @@ VALUES
   'Shuji', -- Type
   'Sometimes the right words can stop swords and find a resolution that suits both sides of a conflict.', -- Desc
   'Scheme Action, TN 5 (Earth) [Command] Check that targets all characters in the scene. This can be used once per session during a [duel] or [Skirmish] only.', -- Activation
-  'The scene becomes an [Intrigue] between you and important characters, ie: generally not minions. If a peaceful agreement is reached during this effect, it does not return to the original state.
-  Effect lasts 1 + bonus successes rounds. ', -- Effect
+  E'The scene becomes an [Intrigue] between you and important characters, ie: generally not minions. If a peaceful agreement is reached during this effect, it does not return to the original state.\n\nEffect lasts 1 + bonus successes rounds. ', -- Effect
   'Core Rulebook', -- Book
   217 -- Pg
 ),
@@ -1939,7 +1938,7 @@ VALUES
   'Shuji', -- Type
   'You can carry yourself as a well decorated samurai, or a worthless disappointment, to get the reaction from others you want.', -- Desc
   'Scheme Action, TN (Highest Vigilance of Targets) (Fire) [Games] or [Performance] Check with targets up to all characters in the scene.', -- Activation
-  E'Targeted Characters treat your glory as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Air 5, Water 2) [Sentiment] Check to learn your actual glory.\nEffect lasts for the scene.', -- Effect
+  E'Targeted Characters treat your glory as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Air 5, Water 2) [Sentiment] Check to learn your actual glory.\n\nEffect lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   218 -- Pg
 ),
@@ -1963,7 +1962,7 @@ VALUES
   'Shuji', -- Type
   'You know how to rouse the spirits of your soldiers to seize [Opportunity] at any cost.', -- Desc
   'Support Action, TN 2 (Fire) [Command] or [Performance] Check with targets up to all characters in the scene or a cohort if in a [Mass Battle].', -- Activation
-  E'After target characters choose kept dice for a check, they add a ring dice set to [Opportunity] strife to their kept dice.\nEffect lasts until your next turn ends.', -- Effect
+  E'After target characters choose kept dice for a check, they add a ring dice set to [Opportunity] strife to their kept dice.\n\nEffect lasts until your next turn ends.', -- Effect
   'Core Rulebook', -- Book
   219 -- Pg
 ),
@@ -2035,7 +2034,7 @@ VALUES
   'Shuji', -- Type
   'You know how those of great status treat others, as well as how those of low station maneuver in social situations; with ease you can wear the posture and mannerisms of either.', -- Desc
   'Scheme Action, TN (Highest Vigilance of Targets) (Water) [Command] or [Performance] Check with targets up to all characters in the scene.', -- Activation
-  E'Targeted Characters treat your status as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 2, Fire 5) [Sentiment] Check to learn your actual status.\nEffect lasts for the scene.', -- Effect
+  E'Targeted Characters treat your status as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 2, Fire 5) [Sentiment] Check to learn your actual status.\n\nEffect lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   220 -- Pg
 ),
@@ -2587,7 +2586,7 @@ VALUES
   3, -- rank
   'Shuji', -- type
   '', -- desc
-  E'Movement and Support Action, TN 2 (Water) [Command] Check with two target characters within 2 rangebands of you that are willing and nothing prevents those characters from moving to each other''s locations.\nThis can be used once per scene.', -- activation
+  E'Movement and Support Action, TN 2 (Water) [Command] Check with two target characters within 2 rangebands of you that are willing and nothing prevents those characters from moving to each other''s locations.\n\nThis can be used only once per scene.', -- activation
   'Targets all move up to 2 rangebands to switch places with each other. They may choose a new stance once they do.', -- effect
   'Path of Waves', --book
   94 -- pg
@@ -2624,7 +2623,7 @@ VALUES
   'Shuji', -- type
   'Sometimes a scathing insult forces an opponent to respond, just be ready for their rebuttal.', -- desc
   'Scheme Action, TN (Vigilance of Target) (Fire) [Performance] or [Tactics] Check with one target character. This can only be used once per scene.', -- activation
-  E'For an [Intrigue] or [Duel], the character must choose either to forfeit 1 honor rank or gain that much strife.\n\nFor a [Skirmish], the character must choose either move up to 2 range bands closer to you or gain 3 + 1 per 2 bonus successes strife.n\nFor a [Mass  Battle], the character must choose either to perform an Assault/Challenge against you on their next turn or gain 3 + 1 per 2 bonus successes strife.\n\nWhether you succeeded or not, the character''s next check has the TN reduced by 1.', -- effect
+  E'[Intrigue] or [Duel]: the character must choose either to forfeit 1 honor rank or gain that much strife.\n\n[Skirmish]: The character must choose either move up to 2 range bands closer to you or gain 3 + 1 per 2 bonus successes strife.\n\n[Mass  Battle], the character must choose either to perform an Assault/Challenge against you on their next turn or gain 3 + 1 per 2 bonus successes strife.\n\nWhether you succeeded or not, the character''s next check has the TN reduced by 1.', -- effect
   'Path of Waves', --book
   94 -- pg
 ),
@@ -2636,7 +2635,7 @@ VALUES
   'Shuji', -- type
   '', -- desc
   'Support Action, TN 3 (Fire) [Command] Check with a target friendly character. This can be used only once per scene.', -- activation
-  E'During a [Skirmish], your target can make a Strike action now with [Assistance] from you.\n\nDuring a [Mass Battle], your target can make an Assault action now with [Assistance] from you.', -- effect
+  E'[Skirmish]: your target can make a Strike action now with [Assistance] from you.\n\n[Mass Battle]: your target can make an Assault action now with [Assistance] from you.', -- effect
   'Path of Waves', --book
   95 -- pg
 ),
@@ -2672,7 +2671,7 @@ VALUES
   'Ritual', -- type
   '', -- desc
   'Downtime Action, TN 3 [Meditation] Check when your path ahead is unclear.', -- activation
-  E'Based on the ring chosen for your check, you notice a tell about the direction you should take.\n\nEarth: Direction to person you share a bond with.\nWater: Direction to a chance to make money.\nFire: Direction to nearest large conflict.\nAir: Direction to someone of your past or you desire.\nVoid: Direction to where you are most needed.', -- effect
+  E'Based on the ring chosen for your check, you notice a tell about the direction you should take.\n\nEarth: Direction to person you share a bond with.\n\nWater: Direction to a chance to make money.\n\nFire: Direction to nearest large conflict.\n\nAir: Direction to someone of your past or you desire.\n\nVoid: Direction to where you are most needed.', -- effect
   'Path of Waves', --book
   97 -- pg
 ),
@@ -2723,7 +2722,7 @@ VALUES
   'Ritual', -- type
   '', -- desc.
   'Downtime Action, TN (Chosen by the Shugenja) (Void) [Artisan] Check using a consecrated vessel of no bigger than silhouette 0. The vessel should be made of material or appropriately related to the Artisan skill used.', -- act
-  E'Choose a number of [Invocations] equal to the TN you chose that the [Shikigami] will have sealed in it. You cannot use these while the [Shikigami] exists, and if its physical form is destroyed its spiritual form returns to you with its memories and personality which you can reimbue into a new form.\n\nName the [Shikigami] (yes, really) and note the [Invocations] sealed in it that it can perform. It can communicate with the shugenja, and will usually obey them.\n\nWhen it performs a sealed invocation, it uses your [Composition] skill ranks instead of [Theology]. A [Shikigami] uses its ring, which are all equal to the highest rank of invocation it knows of the Ring type or 1. For example: A [Shikigami] with sealed rank 3 and 2 Air Invocations will have an Air Ring of 3, and 1 in the rest.\nFor more details on its actions, restrictions, and other statistics see page 115 in the Shadowlands rulebook.', -- eff
+  E'Choose a number of [Invocations] equal to the TN you chose that the [Shikigami] will have sealed in it. You cannot use these while the [Shikigami] exists, and if its physical form is destroyed its spiritual form returns to you with its memories and personality which you can reimbue into a new form.\n\nName the [Shikigami] (yes, really) and note the [Invocations] sealed in it that it can perform. It can communicate with the shugenja, and will usually obey them.\n\nWhen it performs a sealed invocation, it uses your [Composition] skill ranks instead of [Theology]. A [Shikigami] uses its ring, which are all equal to the highest rank of invocation it knows of the Ring type or 1.\n\nFor example: A [Shikigami] with sealed rank 3 and 2 Air Invocations will have an Air Ring of 3, and 1 in the rest.\n\nFor more details on its actions, restrictions, and other statistics see page 115 in the Shadowlands rulebook.', -- eff
   'Shadowlands', -- book
   114 -- pg
 ),
@@ -2736,7 +2735,7 @@ VALUES
   'Ritual', -- Text, must be one of: Kata, Kiho, Invocation, Shuji, Ritual, Maho
   '', -- Short narrative example of what the technique does. Original work only.
   'Downtime Action, TN 2 (Any) [Smithing] Check with targets of weapons and armor.', -- See mechanics. Says the type of check
-  E'Depending on the ring, the effect of success changes as below:\n\nEarth: Remove [Damaged] from it, or it gains [Durable] if you had nothing to remove.\nWater: Increase damage and reduce deadliness by 1 of a weapon, or increase supernatural resistance and reduce physical resistance by 1 of an armor.\nAir: Increase deadliness by 1 of a weapon.\nFire: Work with the GM to decide on an [Item Quality] the item could reasonably have, and it gains it for the duration.\nVoid: Reduce the TN by 1 for the next check a weapon is used in.\n\nOnly one effect can affect an item at one time, and this lasts only for the duration of the next scene the item is used in.', -- What happens, resist checks forced etc. See existing tech for guidelines
+  E'\n\nEarth: Remove [Damaged] from it, or it gains [Durable] if you had nothing to remove.\n\nWater: Increase damage and reduce deadliness by 1 of a weapon, or increase supernatural resistance and reduce physical resistance by 1 of an armor.\n\nAir: Increase deadliness by 1 of a weapon.\n\nFire: Work with the GM to decide on an [Item Quality] the item could reasonably have, and it gains it for the duration.\n\nVoid: Reduce the TN by 1 for the next check a weapon is used in.\n\nOnly one effect can affect an item at one time, and this lasts only for the duration of the next scene the item is used in.', -- What happens, resist checks forced etc. See existing tech for guidelines
   'Shadowlands', -- Core Rulebook, Celestial Realms, Shadowlands, etc.. leave blank for homebrew
   114 -- Number. Blank for homebrew.
 )
@@ -2752,7 +2751,7 @@ VALUES
   'Kata', -- 
   '', -- 
   'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target character at range 3-4.', -- 
-  'You move to range 2 of the character, and ignore [Terrain Qualities] or unntraversible terrain between. If successful, deal weapon damage + bonus successes to the character. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  E'You move to range 2 of the character, and ignore [Terrain Qualities] or unntraversible terrain between. If successful, deal weapon damage + bonus successes to the character.\n\nOn failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
   'Court of Stones', -- 
   113 -- 
 ),
@@ -2824,7 +2823,7 @@ VALUES
   'Ninjutsu', -- 
   '', -- 
   E'Attack and Movement Action, TN 3 [Martial Arts Melee] or [Martial Arts Unarmed] check with a living target character not bigger than [Silhouette] 2 in weapon range.\nThe base TN is 1 if this action was successful on the target last round.', -- 
-  'The character is [Immobilized] and [Silenced] and is dragged to range 0. All attack actions the character makes during their next turn must use [Martial Arts Unarmed] and target you, and the TN of these actions are increased by 1.', -- 
+  E'The character is [Immobilized] and [Silenced] and is dragged to range 0.\n\nAll attack actions the character makes during their next turn must use [Martial Arts Unarmed] and target you, and the TN of these actions are increased by 1.', -- 
   'Court of Stones', -- 
   115 -- 
 ),
@@ -2860,7 +2859,7 @@ VALUES
   'Ninjutsu', -- 
   '', -- 
   'Attack and Movement Action, TN 3 (Fire) [Martial Arts Melee] check with one target character within range 1 using a readied weapon that is not [Cumbersome].', -- 
-  'Target character takes your weapon''s damage. If they are [Dazed], you can choose to steal an item the character has in their possession that the GM deems reasonable to steal. If it is a weapon, the target resists with a TN 3 (Air 5, Water 2) [Fitness] check.', -- 
+  E'Target character takes your weapon''s damage. If they are [Dazed], you can choose to steal an item the character has in their possession that the GM deems reasonable to steal.\n\nIf it is a weapon, the target resists with a TN 3 (Air 5, Water 2) [Fitness] check.', -- 
   'Court of Stones', -- 
   116 -- 
 ),
@@ -2872,7 +2871,7 @@ VALUES
   'Ritual', -- 
   '', -- 
   E'Downtime Action, TN 2 (Fire) [Composition] check to write an agreement only once per game session.\nIf successful, then you may make a TN 3 (Air) [Government] check targeting any characters you designate that are participating willingly. No more than 3 target characters may provide [Assistance] during this.', -- 
-  'All target characters are assured there are no errors or loopholes, and accept the agreement. 10 honor is staked by yourself and all targets on upholding the agreement. Whoever breaks the agreement first loses their staked honor. This is in addition to any other breaches of [Bushido].', -- 
+  E'All target characters are assured there are no errors or loopholes, and accept the agreement. 10 honor is staked by yourself and all targets on upholding the agreement.\n\nWhoever breaks the agreement first loses their staked honor. This is in addition to any other breaches of [Bushido].', -- 
   'Court of Stones', -- 
   116 -- 
 ),
@@ -2992,7 +2991,7 @@ VALUES
   'Shuji', -- 
   '', -- 
   'Support Action, TN 1 (Void) [Artisan] skill check.', -- 
-  E'You foresaw the need of an item with rarity 1 + bonus successes. You may spend a [Void Point] to reveal one such item if the GM deems it reasonable that you had the means to craft it and it would reasonably be accessible to have. \n\nFor example, you have your attendant bring it from your quarters and you had the materials to create it for many weeks.', -- 
+  E'You foresaw the need of an item with rarity 1 + bonus successes. You may spend a [Void Point] to reveal one such item if the GM deems it reasonable that you had the means to craft it and it would reasonably be accessible to have.\n\nFor example, you have your attendant bring it from your quarters and you had the materials to create it for many weeks.', -- 
   'Court of Stones', -- 
   119 -- 
 );
