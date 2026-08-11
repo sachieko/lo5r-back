@@ -2804,229 +2804,7 @@ VALUES
   'Purify the area, removing [Defiled] from terrain in an area up to your [Earth] ring in rangebands from the target location. This lasts for 1 + 1 per bonus success rounds.', -- eff
   'Shadowlands', -- book
   114 -- pg
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore [Terrain Qualities] or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Trip the Leg', -- 
-  'Any', -- 
-  1, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack Action, TN 2 [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-(
-  'Pole Vault', -- 
-  'Air, Water', -- 
-  3, -- 
-  'Kata', -- 
-  '', -- 
-  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target at range 3-4.', -- 
-  'You move to range 2 of the target, and ignore terrain or unntraversible terrain between. If successful, deal weapon damage + bonus successes. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
-  'Court of Stones', -- 
-  113 -- 
-),
-
-;
+);
 INSERT INTO techniques (name, prerequisite, rings, rank, type, description, activation, effect, book, pg)
 VALUES
 -- 230
@@ -3065,3 +2843,262 @@ VALUES
   114 -- Number. Blank for homebrew.
 )
 ; -- delete trailing comma above
+
+INSERT INTO techniques (name, rings, rank, type, description, activation, effect, book, pg)
+VALUES
+-- 232
+(
+  'Pole Vault', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] check with a target character at range 3-4.', -- 
+  'You move to range 2 of the character, and ignore [Terrain Qualities] or unntraversible terrain between. If successful, deal weapon damage + bonus successes to the character. On failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+-- 233
+(
+  'Trip the Leg', -- 
+  'Any', -- 
+  1, -- 
+  'Kata', -- 
+  '', -- 
+  'Attack Action, TN 2 [Martial Arts Melee] check with a target character at range 1-2.', -- 
+  'Target character gains the [Prone] condition.', -- 
+  'Court of Stones', -- 
+  113 -- 
+),
+-- 234
+(
+  'Artful Alibi', -- 
+  'Air, Water', -- 
+  3, -- 
+  'Ninjutsu', -- 
+  '', -- 
+  'When you make [Skulduggery] checks to do dastardly things during downtime, gain a new [Opportunity] spend.', -- 
+  '', -- 
+  'Court of Stones', -- 
+  114 -- 
+),
+-- 235
+(
+  'Cunning Distraction', -- 
+  'Any', -- 
+  2, -- 
+  'Ninjutsu', -- 
+  '', -- 
+  'Scheme Action, TN 2 [Skulduggery] check during a [Duel] or [Clash], targeting a character participating in it.', -- 
+  'Switch the initiative of both participants in the [Duel] or [Clash]. This is dishonorable, and anyone in the audience or fight notice this action if their vigilance is at least 2.', -- 
+  'Court of Stones', -- 
+  114 -- 
+),
+-- 236
+(
+  'Like a Ghost', -- 
+  'Air, Water', -- 
+  2, -- 
+  'Ninjutsu', -- 
+  'Hardcore Parkour.', -- 
+  'Movement and Scheme Action, TN 2 (Air or Water) [Fitness] check.', -- 
+  'Move 1 range band + 1 per 2 bonus successes. Ignore any terrain effects and move vertically or across gaps as GM allows.', -- 
+  'Court of Stones', -- 
+  114 -- 
+),
+-- 237
+(
+  'Slicing Wind Kick', -- 
+  'Air', -- 
+  3, -- 
+  'Ninjutsu', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Air) [Martial Arts Unarmed] check with a target character at range 1-2 using the [Kick] profile. A readied polearm is required to perform this action.', -- 
+  'Deal physical damage equal to 2 + bonus successes and the character is [Disoriented].', -- 
+  'Court of Stones', -- 
+  115 -- 
+),
+--238
+(
+  'Silent Elimination', -- 
+  'Any', -- 
+  3, -- 
+  'Ninjutsu', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 [Martial Arts Melee] or [Martial Arts Unarmed] check with a living target character not bigger than [Silhouette] 2 in weapon range. 
+  The base TN is 1 if this action was successful on the target last round.', -- 
+  'The character is [Immobilized] and [Silenced] and is dragged to range 0. All attack actions the character makes during their next turn must use [Martial Arts Unarmed] and target you, and the TN of these actions are increased by 1.', -- 
+  'Court of Stones', -- 
+  115 -- 
+),
+--239
+(
+  'Stillness of Death', -- 
+  'Any', -- 
+  5, -- 
+  'Ninjutsu', -- 
+  '', -- 
+  'When using a [Ninjutsu] technique, gain a new [Opportunity] spend.', -- 
+  '', -- 
+  'Court of Stones', -- 
+  115 -- 
+),
+--240
+(
+  'To Float or Sink', -- 
+  'Earth, Water', -- 
+  2, -- 
+  'Ninjutsu', -- 
+  '', -- 
+  'During (Earth or Water) [Martial] skill checks, gain new [Opportunity] spends.', -- 
+  '', -- 
+  'Court of Stones', -- 
+  115 -- 
+),
+--241
+(
+  'What''s Yours Is Mine', -- 
+  'Fire', -- 
+  2, -- 
+  'Ninjutsu', -- 
+  '', -- 
+  'Attack and Movement Action, TN 3 (Fire) [Martial Arts Melee] check with one target character within range 1 using a readied weapon that is not [Cumbersome].', -- 
+  'Target character takes your weapon''s damage. If they are [Dazed], you can choose to steal an item the character has in their possession that the GM deems reasonable to steal. If it is a weapon, the target resists with a TN 3 (Air 5, Water 2) [Fitness] check.', -- 
+  'Court of Stones', -- 
+  116 -- 
+),
+--242
+(
+  'Treaty Signing', -- 
+  'Air, Fire', -- 
+  2, -- 
+  'Ritual', -- 
+  '', -- 
+  'Downtime Action, TN 2 (Fire) [Composition] check to write an agreement only once per game session. 
+  If successful, then you may make a TN 3 (Air) [Government] check targeting any characters you designate that are participating willingly. No more than 3 target characters may provide [Assistance] during this.', -- 
+  'All target characters are assured there are no errors or loopholes, and accept the agreement. 10 honor is staked by yourself and all targets on upholding the agreement. Whoever breaks the agreement first loses their staked honor. This is in addition to any other breaches of [Bushido].', -- 
+  'Court of Stones', -- 
+  116 -- 
+),
+--243
+(
+  'The Ties that Bind', -- 
+  'Void', -- 
+  4, -- 
+  'Ritual', -- 
+  '', -- 
+  'Downtime Action, TN 3 (Void) [Sentiment] check with one target character', -- 
+  'Learn the kind of character who would be a good match for your target, whether that is a good match in marriage, friendship, alliance, or patronage. You also learn details about them such as where they live, their social status, family, or other clues as the GM decides. The clues should be obvious enough to identify the character if you meet them.
+  If using [Bond] rules on Pg. 136 of Courts of Stone, the XP cost of forming a bond for the target and their match is reduced to 1.', -- 
+  'Court of Stones', -- 
+  117 -- 
+),
+--244
+(
+  'Hidden in Smoke', -- 
+  'Air', -- 
+  4, -- 
+  'Shuji', -- 
+  '', -- 
+  'Scheme Action, TN (Vigilance of Target) (Air) [Social] skill check targeting one character. Once per scene only.', -- 
+  'Hide your true objective from this person. Actions or abilities that would reveal your goal to them instead reveal a false objective approved by the GM until the scene ends. In an [Intrigue], gain 1 momentum toward your related objective.', -- 
+  'Court of Stones', -- 
+  117 -- 
+),
+--245
+(
+  'Unyielding Terms', -- 
+  'Earth', -- 
+  2, -- 
+  'Shuji', -- 
+  '', -- 
+  'Scheme Action, TN 4 (Earth) [Culture] check when determining method and stakes of a [Duel] either as a judge or participant. Can only be performed once per scene.', -- 
+  'Choose the method, such as the weapons or way in which the duel will be fought, or the stakes, such as what determines victory (first blood, first hit, death, etc).', -- 
+  'Court of Stones', -- 
+  117 -- 
+),
+--246
+(
+  'All Shall Fear Me', -- 
+  'Fire', -- 
+  3, -- 
+  'Shuji', -- 
+  '', -- 
+  'Scheme Action, TN 4 (Fire) [Command] or [Performance] check with any number of target characters in scene.', -- 
+  'Each character gains 2 strife if they target you with [Social] skill checks until end of scene. If you failed, you gain 4 strife instead.', -- 
+  'Court of Stones', -- 
+  118 -- 
+),
+--247
+(
+  'Crackling Laughter', -- 
+  'Fire', -- 
+  3, -- 
+  'Shuji', -- 
+  '', -- 
+  'Scheme Action, TN 3 (Fire) [Performance] check with up to your Fire ring target characters.', -- 
+  'Each character gains 2 strife and makes a TN 5 (Air 6, Water 3) [Meditation] check. If they fail they gain shortfall strife in addition. If you fail, gain 3 strife instead.', -- 
+  'Court of Stones', -- 
+  118 -- 
+),
+--248
+(
+  'Offend the Sensibilities', -- 
+  'Fire', -- 
+  2, -- 
+  'Shuji', -- 
+  '', -- 
+  'When making a (Fire) [Artisan] skill check, gain a new [Opportunity] spend.', -- 
+  '', -- 
+  'Court of Stones', -- 
+  118 -- 
+),
+--249
+(
+  'Spiteful Loss', -- 
+  'Fire', -- 
+  1, -- 
+  'Shuji', -- 
+  '', -- 
+  'When making a (Fire) [Games] check, gain a new [Opportunity] spend.', -- 
+  '', -- 
+  'Court of Stones', -- 
+  118 -- 
+),
+--250
+(
+  'Beware the Smallest Mouse', -- 
+  'Water', -- 
+  1, -- 
+  'Shuji', -- 
+  '', -- 
+  'When making a (Water) [Social] skill check with a target character, gain a new [Opportunity] spend.', -- 
+  '', -- 
+  'Court of Stones', -- 
+  118 -- 
+),
+--251
+(
+  'Fun and Games', -- 
+  'Water', -- 
+  1, -- 
+  'Shuji', -- 
+  '', -- 
+  'When making a (Water) [Games] check, gain new [Opportunity] spends.', -- 
+  '', -- 
+  'Court of Stones', -- 
+  119 -- 
+),
+--252
+(
+  'Foreseen Need', -- 
+  'Void', -- 
+  4, -- 
+  'Shuji', -- 
+  '', -- 
+  'Support Action, TN 1 (Void) [Artisan] skill check.', -- 
+  'You foresaw the need of an item with rarity 1 + bonus successes. You may spend a [Void Point] to reveal one such item if the GM deems it reasonable that you had the means to craft it and it would reasonably be accessible to have.
+  For example, you have your attendant bring it from your quarters and you had the materials to create it for many weeks.', -- 
+  'Court of Stones', -- 
+  119 -- 
+);
