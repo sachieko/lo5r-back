@@ -69,8 +69,7 @@ VALUES
 -- 12
 (
   'Sacred',
-  'The TN to make attack and scheme actions by an Otherworldly being against the holder of a sacred item is increased by 1. A weapon with this quality ignores resistances of both otherworldly or tainted beings. 
-  If the holder would gain [Afflicted], one item with Sacred must gain damaged instead.',
+  E'The TN to make attack and scheme actions by an Otherworldly being against the holder of a sacred item is increased by 1. A weapon with this quality ignores resistances of both otherworldly or tainted beings.\n\nIf the holder would gain [Afflicted], one item with Sacred must gain damaged instead.',
   'Core Rulebook', 241
 ),
 -- 13
@@ -212,11 +211,7 @@ VALUES
 -- 33 Soul-Star arrow qualities
 (
   'Arrow - Element',
-  'This arrow has different effects based on its element. 
-  Air: 3 rangebands of area from its point of impact is now [Obscuring] until end of character''s next turn.
-  Earth: Otherworldly beings make a TN 3 [Fitness] (Air 2, Water 4) Check or gain 4 strife and [Immobilized] and [Silenced] until end of character''s next turn.
-  Water: 3 rangebands of area from its point of impact is now [Entangling] until end of character''s next turn. 
-  Fire: 3 rangebands of area from its point of impact is now [Dangerous], and gives [Burning] to Otherworldly targets on [Critical Strike]s.',
+  E'This arrow has different effects based on its element.\n\nAir: 3 rangebands of area from its point of impact is now [Obscuring] until end of character''s next turn.\n\nEarth: Otherworldly beings make a TN 3 [Fitness] (Air 2, Water 4) Check or gain 4 strife and [Immobilized] and [Silenced] until end of character''s next turn.\n\nWater: 3 rangebands of area from its point of impact is now [Entangling] until end of character''s next turn. \n\nFire: 3 rangebands of area from its point of impact is now [Dangerous], and gives [Burning] to Otherworldly targets on [Critical Strike]s.',
   'Celestial Realms',
   97
 ),
