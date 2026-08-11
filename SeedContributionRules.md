@@ -84,7 +84,7 @@ Cards:
 ),
 ```
 
-Lore is very freeflow and the easiest to contribute to as you 
+Lore is very freeflow and the easiest to contribute to
 
 #### Techniques
 
@@ -95,7 +95,7 @@ Lore is very freeflow and the easiest to contribute to as you
   'rings', -- Any rings the technique is restricted to. ie: `Any` or `Earth, Water` etc.
   rank, -- Number. Rank of the technique
   'type', -- Text, must be one of: Kata, Kiho, Invocation, Shuji, Ritual, Maho
-  'description', -- Short narrative example of what the technique does. Original work only.
+  'desc', -- Sub-categorization, useful descriptive search techniques
   'activation', -- See mechanics. Says the type of check
   'effect', -- What happens, resist checks forced etc. See existing tech for guidelines
   'book', -- Core Rulebook, Celestial Realms, Shadowlands, etc.. leave blank for homebrew

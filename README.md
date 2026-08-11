@@ -1,10 +1,10 @@
-# LO5R Backend Server v1.4.0
+# LO5R Backend Server v2.0.0
 
 This navigates the backend interactions with the database for the [L5RSRD front end](https://github.com/sachieko/lo5r-app) using Typescript and an Express server with Postgres SQL. Most updates and news will be posted there, or on the [website itself](https://lo5r.yuseiko.org).
 
-To install and run, make sure you are using node v23.6.1 which is the current version as of developing this app. 
+To install and run, this was built starting with node v20 something, but now works on node24.11.1
 
-Then use `npm i` to install dependencies and `npm run dev` to start the server. `npm start` should do the same.
+`npm i` to install dependencies and `npm run dev` to start the server. `npm start` should do the same. To populate the database you will need to set up your database variables in your own .env file, then seed it with `npm run db:reset`.
 
 ## Server Deploy
 
