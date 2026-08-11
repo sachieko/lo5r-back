@@ -17,10 +17,7 @@ VALUES
  'Ritual', 
  'The ritualist aligns themself with an element so they may appeal to the kami in their environment for aid.', 
  'Downtime Action or Support Action, TN 1 [Theology] Check using the ring of the kami you would like to commune with. Supernatural entities without an element are void.', 
- 'If you succeed, choose an effect:
-Sense the Kami: Detect kami and the use of their magic by any shugenja within range bands equal to the ring used + bonus successes.
-Spiritual Knowledge: Learn a fact about the area from the kami.
-Elemental Gift: The kami deliver some of the element used to you in some way, such as you coming across the gift as you travel in the area or a brief instance of rain or wind.', 
+ E'If you succeed, choose an effect:\n\nSense the Kami: Detect kami and the use of their magic by any shugenja within range bands equal to the ring used + bonus successes.\nSpiritual Knowledge: Learn a fact about the area from the kami.\nElemental Gift: The kami deliver some of the element used to you in some way, such as you coming across the gift as you travel in the area or a brief instance of rain or wind.', 
 'Core Rulebook',
  212),
 -- 3
@@ -29,13 +26,7 @@ Elemental Gift: The kami deliver some of the element used to you in some way, su
 'Ritual', 
 'Using omens that can be read, such as the stars or tea leaves or other methods, learn something about a person''s fate.', 
 'Downtime Action, TN 2 (Void) [Theology] check targeting one person.', 
-'Choose an omen when you succeed:
-Omen of the Azure Dragon: The next time the character makes an [Artisan] skill check this session, add a kept ring die set to "💮🔥"
-Omen of the Black Tortoise: The next time the character makes a Scholar skill check this session, add a kept ring die set to "💮🔥"
-Omen of the White Tiger: The next time the character makes a Martial skill check this session, add a kept ring die set to "💮🔥"
-Omen of the Vermilion Bird: The next time the character makes a Social skill check this session, add a kept ring die set to "💮🔥"
-Omen of the Weaver and Cowherd: The next time the character makes a Trade skill check this session, add a kept ring die set to "💮🔥"
-In the case of failure, the Storyteller choosen an omen. The character cannot have their fate divined again until next session.', 
+E'Choose an omen when you succeed:\n\nOmen of the Azure Dragon: The next time the character makes an [Artisan] skill check this session, add a kept ring die set to "💮🔥"\nOmen of the Black Tortoise: The next time the character makes a Scholar skill check this session, add a kept ring die set to "💮🔥"\nOmen of the White Tiger: The next time the character makes a Martial skill check this session, add a kept ring die set to "💮🔥"\nOmen of the Vermilion Bird: The next time the character makes a Social skill check this session, add a kept ring die set to "💮🔥"\nOmen of the Weaver and Cowherd: The next time the character makes a Trade skill check this session, add a kept ring die set to "💮🔥"\n\nIn the case of failure, the Storyteller choosen an omen. The character cannot have their fate divined again until next session.', 
 'Core Rulebook',
  212),
 -- 4
@@ -53,12 +44,7 @@ In the case of failure, the Storyteller choosen an omen. The character cannot ha
 'Ritual', 
 'Ward a threshold or entrance against a certain kind of being, either causing them not to notice its presence or repelled mentally at trying to pass through.', 
 'Downtime Action, TN 2 [Theology] Check targeting a gate within 0-1 rangebands.', 
-'On a success, certain beings are repulsed by your barrier for hours equal to 1 + bonus successes. If the being tries to pass the threshold, it must succeed a TN 3 (Void) [Meditation] check or be unable to pass. The ritualist is aware when a being tries to pass through the threshold, whether it succeeds or not. The type of being is determined by the ring chosen:
-Air: Spirits, ghosts, yokai or similar.
-Earth: Tainted beings that are alive.
-Fire: Undead beings with a tangible form.
-Water: Animals.
-Void: Humans.', 
+E'On a success, certain beings are repulsed by your barrier for hours equal to 1 + bonus successes. If the being tries to pass the threshold, it must succeed a TN 3 (Void) [Meditation] check or be unable to pass. The ritualist is aware when a being tries to pass through the threshold, whether it succeeds or not. The type of being is determined by the ring chosen:\n\nAir: Spirits, ghosts, yokai or similar.\nEarth: Tainted beings that are alive.\nFire: Undead beings with a tangible form.\nWater: Animals.\nVoid: Humans.', 
 'Core Rulebook',
  213),
 -- Kata Start
@@ -110,8 +96,7 @@ VALUES
  'Maho', 
 'A Kansen knows how to wear down the mental barriers that an otherwise upstanding person might keep against them, to the point even their darkest secrets can be uncovered.', 
 'Attack and Scheme Action, TN (Vigilance of Target) [Theology] (Air) Check targeting one character with the [Afflicted] condition at up to 4 range bands. This requires a sacrifice.', 
-'Curse the target, during which they must answer any questions you ask honestly and do not find it questionable to do so during this time. 
-This lasts your Air Ring rounds.', 
+E'Curse the target, during which they must answer any questions you ask honestly and do not find it questionable to do so during this time.\n\nThis lasts your Air Ring rounds.', 
 'Core Rulebook',
  225),
 -- 11
@@ -524,8 +509,7 @@ VALUES
   'Shuji', -- Type
   'Despite odds being stacked against you, rouse others to fight even despite overwhelming odds.', -- Desc
   'Support Action, TN 5 (Void) [Command] Check targeting your cohort in a [Mass Battle], or characters who can hear you up to your [Meditation] ranks. If all targets are in [Confining] or [Entangling] terrain, the TN is reduced to 2. You can only use this once per session.', -- Activation
-  'In a [Mass Battle], your army functions normally if panic exceeds discipline and cannot have morale collapse, for 1 round + 1 for every 3 bonus successes. 
-  In a conflict that is not a [Mass Battle], targets ignore the [Compromised] condition for 1 round + 1 for every 2 bonus successes.', -- Effect
+  E'In a [Mass Battle], your army functions normally if panic exceeds discipline and cannot have morale collapse, for 1 round + 1 for every 3 bonus successes.\n\nIn a conflict that is not a [Mass Battle], targets ignore the [Compromised] condition for 1 round + 1 for every 2 bonus successes.', -- Effect
   'Fields of Victory', -- Book
   103 -- Pg
 ),
@@ -585,8 +569,7 @@ VALUES
   'Shuji', -- Type
   'Take advantage of terrain by signaling a change in formation of your group or cohort.', -- Desc
   'Movement and Support Action, TN 2 (Water) [Command] Check targeting your cohort or any friendly characters whom you can communicate to if in a [Skirmish].', -- Activation
-  'For a [Skirmish], choose an area of terrain in sight. All targets can choose to move 1 range band towards it immediately as part of this [Shuji]. In addition, the terrain counts as [Obscured] for anyone targeting your targets until end of the scene.
-  In a [Mass Battle], choose an area of terrain in sight. Your cohort can immediately move towards it, and if unoccupied they can occupy it. Attacks targeting your cohort in this terrain treat your cohort as being in [Obscured] until end of the scene.', -- Effect
+  E'[Skirmish]: choose an area of terrain in sight. All targets can choose to move 1 range band towards it immediately as part of this [Shuji]. In addition, the terrain counts as [Obscured] for anyone targeting your targets until end of the scene.\n\n[Mass Battle]: choose an area of terrain in sight. Your cohort can immediately move towards it, and if unoccupied they can occupy it. Attacks targeting your cohort in this terrain treat your cohort as being in [Obscured] until end of the scene.', -- Effect
   'Core Rulebook', -- Book
   221 -- Pg
 ),
@@ -646,8 +629,7 @@ VALUES
   'Shuji', -- Type
   'As a leader, you set an example of courage and inspire others to persevere when they might give into panic.', -- Desc
   'Support Action, TN 4 (Earth) [Command] Check targeting any characters who can perceive you in some way, or your cohort if in a [Mass Battle].', -- Activation
-  'Each target increases their composure temporarily by your Earth ring until end of scene.
-  In a [Mass Battle]: Instead increase your army''s discipline by your Earth ring + bonus successes until end of scene.', -- Effect
+  E'Each target increases their composure temporarily by your Earth ring until end of scene.\n\n[Mass Battle]: Instead increase your army''s discipline by your Earth ring + bonus successes until end of scene.', -- Effect
   'Core Rulebook', -- Book
   217 -- Pg
 ),
@@ -863,9 +845,7 @@ VALUES
   'Shuji', -- Type
   'Saying the right words when someone is at their breaking point can seem polite to everyone while pushing that person over the edge.', -- Desc
   'Scheme Action, TN 1 (Air) [Courtesy] Check with a target who is [Compromised].', -- Activation
-  'On a success the target chooses one option:
-  1. [Unmask] immediately in the manner of the target''s choosing that suits the circumstance.
-  2. Lose glory equal to your Air ring + bonus successes on the check as they leave the scene immediately.', -- Effect
+  E'On a success the target chooses one option:\n\n1. [Unmask] immediately in the manner of the target''s choosing that suits the circumstance.\n\n2. Lose glory equal to your Air ring + bonus successes on the check as they leave the scene immediately.', -- Effect
   'Core Rulebook', -- Book
   215 -- Pg
 ),
@@ -877,8 +857,7 @@ VALUES
   'Shuji', -- Type
   'Inspiring your fellows to fight as if they have accepted death can allow forces to fight well past the limits of those clinging to hopes of [survival].', -- Desc
   'Action, TN 5 (Void) [Command] Check targeting up to anyone who can perceive you or your cohort if you are in a [Mass Battle].', -- Activation
-  'On a success in a [Skirmish]: All targets ignore [Critical Strike]s that have a severity less than your Void Ring + bonus successes until end of scene, then immediately suffer the effects of any [Critical Strike]s ignored this way.
-  On a success in a [Mass Battle]: The army counts as having the Fearless Army quality until end of scene. The ability granted by fearless army is: At the end of the round, remove panic from the army equal to your glory rank.', -- Effect
+  E'[Skirmish]: All targets ignore [Critical Strike]s that have a severity less than your Void Ring + bonus successes until end of scene, then immediately suffer the effects of any [Critical Strike]s ignored this way.\n\n[Mass Battle]: The army counts as having the Fearless Army quality until end of scene. The ability granted by fearless army is: At the end of the round, remove panic from the army equal to your glory rank.', -- Effect
   'Core Rulebook', -- Book
   222 -- Pg
 ),
@@ -890,7 +869,7 @@ VALUES
   'Invocation', -- Type
   'Ask the fire kami for a ray of sunlight.', -- Desc
   'Support Action, TN 1 (Fire) [Theology] check. 1 target which is [Silhouette] 2 or smaller within 3 rangebands of you.', -- Activation
-  'A sunbeam follows and provides the target light centered on the target out to 2 rangebands. Lasts 1 round, with 1 additional per bonus success.', -- Effect
+  E'A sunbeam follows and provides the target light centered on the target out to 2 rangebands.\n\nLasts 1 round, with 1 additional per bonus success.', -- Effect
   'Celestial Realms', -- Book
   108 -- Pg
 ),
@@ -902,7 +881,7 @@ VALUES
   'Invocation', -- Type
   'Supernatural flames follow a target supportively.', -- Desc
   'Support Action, TN 2 (Fire) [Theology] check. 1 target within 3 rangebands of you.', -- Activation
-  'An area extending a number of rangebands equal to your Fire Ring becomes [Dangerous] terrain to everyone other than your target. Lasts 1 round, with 1 additional per bonus success.', -- Effect
+  E'An area extending a number of rangebands equal to your Fire Ring becomes [Dangerous] terrain to everyone other than your target.\n\nLasts 1 round, with 1 additional per bonus success.', -- Effect
   'Celestial Realms', -- Book
   108 -- Pg
 ),
@@ -914,8 +893,7 @@ VALUES
   'Invocation', -- Type
   'A ball of flame that smites tainted beings while aiding the non-tainted.', -- Desc
   'Attack and Support Action, TN 5 (Fire) [Theology] check. Target location within 3 rangebands of yourself.', -- Activation
-  'A ball of flame is summoned at the location and gives bright light to a range equal to your Fire Ring. At the end of each round in a conflict, tainted creatures are smited for 3 fatigue while non-tainted creatures remove 1 fatigue and 1 strife instead.
-  Lasts 1 round, with 1 additional round per bonus success.', -- Effect
+  E'A ball of flame is summoned at the location and gives bright light to a range equal to your Fire Ring. At the end of each round in a conflict, tainted creatures are smited for 3 fatigue while non-tainted creatures remove 1 fatigue and 1 strife instead.\n\nLasts 1 round, with 1 additional round per bonus success.', -- Effect
   'Celestial Realms', -- Book
   108 -- Pg
 ),
@@ -927,8 +905,7 @@ VALUES
   'Kiho', -- Type
   'Become more resistant to poisons, disease, and similar.', -- Desc
   'Support Action, TN 1 (Earth) [Theology] Check with an optional target of another character at range 0-1.', -- Activation
-  'Enhancement: Reduce TN of any checks to resist effects of poison, disease, [Maho], tainted or otherworldly beings, or the [Defiled] terrain quality by your Earth Ring.
-  Burst: If you have at least 2 bonus successes you may remove one of the following: [Afflicted], [Bleeding], [Dazed], [Disoriented], [Dying], [Exhausted], [Intoxicated].', -- Effect
+  E'Enhancement: Reduce TN of any checks to resist effects of poison, disease, [Maho], tainted or otherworldly beings, or the [Defiled] terrain quality by your Earth Ring.\n\nBurst: If you have at least 2 bonus successes you may remove one of the following: [Afflicted], [Bleeding], [Dazed], [Disoriented], [Dying], [Exhausted], [Intoxicated].', -- Effect
   'Core Rulebook', -- Book
   182 -- Pg
 ),
@@ -940,8 +917,7 @@ VALUES
   'Kiho', -- Type
   'You do not need to rely on sight to see.', -- Desc
   'Support Action, TN 1 (Earth) [Meditation] check.', -- Activation
-  'Enhancement: Increase vigilance by Earth Ring, and you can see anything in contact with the earth within a number of range bands equal to Earth Ring.
-  Burst: If you have 3 or more bonus successes, you become aware of all living creatures and objects in contact with the earth up to range bands equal to Earth Ring + Bonus Successes.', -- Effect
+  E'Enhancement: Increase vigilance by Earth Ring, and you can see anything in contact with the earth within a number of range bands equal to Earth Ring.\n\nBurst: If you have 3 or more bonus successes, you become aware of all living creatures and objects in contact with the earth up to range bands equal to Earth Ring + Bonus Successes.', -- Effect
   'Core Rulebook', -- Book
   182 -- Pg
 ),
@@ -953,8 +929,7 @@ VALUES
   'Kiho', -- Type
   'Increase your resistance and unarmed profile damage.', -- Desc
   'Attack and Support Action, TN 1 (Earth) [Martial Arts Unarmed] check with an optional target of another character at range 0-1.', -- Activation
-  'Enhancement: Increase physical resistance by 1 and the damage of your punch and kick by your Earth Ring.
-  Burst: If you have at least 2 bonus successes, deal physical damage equal to your Earth Ring to the target. The target must make a TN 4 (Air 2, Water 5) [Fitness] check or become [Prone].', -- Effect
+  E'Enhancement: Increase physical resistance by 1 and the damage of your punch and kick by your Earth Ring.\n\nBurst: If you have at least 2 bonus successes, deal physical damage equal to your Earth Ring to the target. The target must make a TN 4 (Air 2, Water 5) [Fitness] check or become [Prone].', -- Effect
   'Core Rulebook', -- Book
   183 -- Pg
 ),
@@ -966,8 +941,7 @@ VALUES
   'Kiho', -- Type
   'Become difficult to be attacked physically.', -- Desc
   'Movement and Support Action, TN 2 (Earth) [Meditation] check.', -- Activation
-  'Enhancement: Reduce severity of [Critical Strike]s from weapons that do physical damage by your Earth Ring. You may spend 1 void point after attacked by a character to cause them fatigue equal to your [Fitness].
-  Burst: If you have at least 3 bonus successes, reduce all physical damage you would take to 1 per instance. If a character deals physical damage to you, they become [Prone]. This burst effect lasts until the end of your next turn.', -- Effect
+  E'Enhancement: Reduce severity of [Critical Strike]s from weapons that do physical damage by your Earth Ring. You may spend 1 void point after attacked by a character to cause them fatigue equal to your [Fitness].\n\nBurst: If you have at least 3 bonus successes, reduce all physical damage you would take to 1 per instance. If a character deals physical damage to you, they become [Prone]. This burst effect lasts until the end of your next turn.', -- Effect
   'Core Rulebook', -- Book
   183 -- Pg
 ),
@@ -979,8 +953,7 @@ VALUES
   'Kiho', -- Type
   'Bolster your attacks with the strength of the Earth.', -- Desc
   'Attack and Support Action, TN 2 (Earth) [Martials Arts Unarmed] check with optional targets from any characters in range 0-1.', -- Activation
-  'Enhancement: After you perform an Attack or Support action or defend damage, choose a character at range 0-2. They must make a TN 4 (Air 2, Water 5) [Fitness] check or become [Prone] and take damage equal to your Earth Ring.
-  Burst: If you have at least 2 bonus successes, each chosen target takes physical damage of your Earth Ring. If they are [Prone], they take extra damage equal to your bonus successes and become [Immobilized].', -- Effect
+  E'Enhancement: After you perform an Attack or Support action or defend damage, choose a character at range 0-2. They must make a TN 4 (Air 2, Water 5) [Fitness] check or become [Prone] and take damage equal to your Earth Ring.\n\nBurst: If you have at least 2 bonus successes, each chosen target takes physical damage of your Earth Ring. If they are [Prone], they take extra damage equal to your bonus successes and become [Immobilized].', -- Effect
   'Core Rulebook', -- Book
   183 -- Pg
 ),
@@ -992,8 +965,7 @@ VALUES
   'Kiho', -- Type
   'Increase the range of your attacks.', -- Desc
   'Attack and Support Action, TN 1 (Air) [Martial Arts Unarmed] Check with an optional target of 1 character at range 0-1.', -- Activation
-  'Enhancement: Your punch and kick unarmed profiles have a maximum range band equal to your Air Ring.
-  Burst: If you have at least 2 bonus successes, deal physical damage equal to your Air Ring to the target. The target must make a TN 4 (Earth 5, Fire 2) [Fitness] check or be pushed away range bands equal to shortfall + 1.', -- Effect
+  E'Enhancement: Your punch and kick unarmed profiles have a maximum range band equal to your Air Ring.\n\nBurst: If you have at least 2 bonus successes, deal physical damage equal to your Air Ring to the target. The target must make a TN 4 (Earth 5, Fire 2) [Fitness] check or be pushed away range bands equal to shortfall + 1.', -- Effect
   'Core Rulebook', -- Book
   183 -- Pg
 ),
@@ -1005,8 +977,7 @@ VALUES
   'Kiho', -- Type
   'Alter your movement with the air.', -- Desc
   'Movement and Support Action, TN 2 (Air) [Meditation] Check.', -- Activation
-  'Enhancement: When you move at least 1 range band, move an additional range band, and one of those range bands does not need to be made along the surface you are travelling. Ignore terrain effects while moving and [Fall]s count as a fall of only 1 range band. 
-  Burst: If you have at least 1 bonus success, you may immediately move 1 range band and 1 more for each bonus success. This movement can be vertical or horizontal.', -- Effect
+  E'Enhancement: When you move at least 1 range band, move an additional range band, and one of those range bands does not need to be made along the surface you are travelling. Ignore terrain effects while moving and [Fall]s count as a fall of only 1 range band.\n\nBurst: If you have at least 1 bonus success, you may immediately move 1 range band and 1 more for each bonus success. This movement can be vertical or horizontal.', -- Effect
   'Core Rulebook', -- Book
   184 -- Pg
 ),
@@ -1018,8 +989,7 @@ VALUES
   'Kiho', -- Type
   'Create an area of silence by stilling air.', -- Desc
   'Scheme and Support Action, TN 1 (Air) [Theology] Check.', -- Activation
-  'Enhancement: Scheme actions targeting you have their TN increased by 1 + your [Command] ranks.
-  Burst: If you have at least 2 bonus successes, characters within 3 range bands are [Silenced] and [Deafened]. This lasts until your next turn.', -- Effect
+  E'Enhancement: Scheme actions targeting you have their TN increased by 1 + your [Command] ranks.\n\nBurst: If you have at least 2 bonus successes, characters within 3 range bands are [Silenced] and [Deafened]. This lasts until your next turn.', -- Effect
   'Core Rulebook', -- Book
   184 -- Pg
 ),
@@ -1031,8 +1001,7 @@ VALUES
   'Kiho', -- Type
   'Make yourself more difficult to strike.', -- Desc
   'Movement and Support Action, TN 3 (Air) [Meditation] Check.', -- Activation
-  'Enhancement: When targeted by an attack action, reduce damage you take by 2 for each explosive success on the other character''s kept dice.
-  Burst: If you have at least 2 bonus successes, the TN of attack actions against you are increased by your ranks in [Meditation] until your next turn.', -- Effect
+  E'Enhancement: When targeted by an attack action, reduce damage you take by 2 for each explosive success on the other character''s kept dice.\n\nBurst: If you have at least 2 bonus successes, the TN of attack actions against you are increased by your ranks in [Meditation] until your next turn.', -- Effect
   'Core Rulebook', -- Book
   184 -- Pg
 ),
@@ -1044,8 +1013,7 @@ VALUES
   'Kiho', -- Type
   'Enhance your strikes with fiery blows against objects.', -- Desc
   'Attack and Support Action, TN 1 (Fire) [Martial Arts Unarmed] Check with an optional target of an object at range 0-1.', -- Activation
-  'Enhancement: When you succeed on an attack action, choose a worn armor or readied weapon of one target to gain [Damaged], which the target can negate if they choose to take 2 fatigue. 
-  Burst: If you have at least 2 bonus successes, the target gains [Damaged]. If the GM agrees, you can also use it to destroy a wooden or earthen object - such as a door or a tree. If you have at least 4 bonus successes, the object gains [Destroyed]. If the GM agrees, it can destroy an object made of metal or stone instead.', -- Effect
+  E'Enhancement: When you succeed on an attack action, choose a worn armor or readied weapon of one target to gain [Damaged], which the target can negate if they choose to take 2 fatigue.\n\nBurst: If you have at least 2 bonus successes, the target gains [Damaged]. If the GM agrees, you can also use it to destroy a wooden or earthen object - such as a door or a tree. If you have at least 4 bonus successes, the object gains [Destroyed]. If the GM agrees, it can destroy an object made of metal or stone instead.', -- Effect
   'Core Rulebook', -- Book
   184 -- Pg
 ),
@@ -1057,8 +1025,7 @@ VALUES
   'Kiho', -- Type
   'Become resistant to extreme temperatures.', -- Desc
   'Attack and Support Action, TN 2 (Fire) [Meditation] Check with the optional target of all other characters at range 0-1.', -- Activation
-  'Enhancement: You succeed on all checks to resist extreme weather with bonus successes equal to your Fire Ring. You may spend a void point to prevent damage from fire and instead remove fatigue equal to the damage you prevented.
-  Burst: If you have at least 2 bonus successes, your targets gain the [Burning] condition and take physical damage equal to your Fire Ring unless they succeed on a TN 4 (Air 5, Water 2) [Fitness] check. The GM may have this technique cause terrain to gain the [Dangerous] condition as it catches flame.', -- Effect
+  E'Enhancement: You succeed on all checks to resist extreme weather with bonus successes equal to your Fire Ring. You may spend a void point to prevent damage from fire and instead remove fatigue equal to the damage you prevented.\n\nBurst: If you have at least 2 bonus successes, your targets gain the [Burning] condition and take physical damage equal to your Fire Ring unless they succeed on a TN 4 (Air 5, Water 2) [Fitness] check. The GM may have this technique cause terrain to gain the [Dangerous] condition as it catches flame.', -- Effect
   'Core Rulebook', -- Book
   185 -- Pg
 ),
@@ -1070,8 +1037,7 @@ VALUES
   'Kiho', -- Type
   'Enhance your strikes with flame, making them more deadly.', -- Desc
   'Attack and Support Action, TN 1 (Fire) [Martial Arts Unarmed] Check with an optional target of a character in range 0-1.', -- Activation
-  'Enhancement: The deadliness of kick and punch unarmed weapons are increased by your Fire Ring and do supernatural damage instead.
-  Burst: If you have at least 2 bonus successes, the target takes physical damage equal to your Fire Ring. They also gain [Dazed] unless they succeed on a TN 4 (Air 5, Water 2) [Fitness] check.', -- Effect
+  E'Enhancement: The deadliness of kick and punch unarmed weapons are increased by your Fire Ring and do supernatural damage instead.\n\nBurst: If you have at least 2 bonus successes, the target takes physical damage equal to your Fire Ring. They also gain [Dazed] unless they succeed on a TN 4 (Air 5, Water 2) [Fitness] check.', -- Effect
   'Core Rulebook', -- Book
   185 -- Pg
 ),
@@ -1083,8 +1049,7 @@ VALUES
   'Kiho', -- Type
   'Counter attacks against you with a fiery expulsion of energy.', -- Desc
   'Movement and Support Action, TN 3 (Fire) [Meditation] Check with an optional target of one character at range 0-2.', -- Activation
-  'Enhancement: When you defend against damage from an attack, your attacker takes supernatural damage equal to your Fire Ring and gains [Dazed]. 
-  Burst: If you have at least 2 bonus successes, reduce damage you would take from your target by your Fire Ring. If you defend the damage, the target gains [Burning] and one weapon used in the attack becomes [Damaged].', -- Effect
+  E'Enhancement: When you defend against damage from an attack, your attacker takes supernatural damage equal to your Fire Ring and gains [Dazed].\n\nBurst: If you have at least 2 bonus successes, reduce damage you would take from your target by your Fire Ring. If you defend the damage, the target gains [Burning] and one weapon used in the attack becomes [Damaged].', -- Effect
   'Core Rulebook', -- Book
   186 -- Pg
 ),
@@ -1096,8 +1061,7 @@ VALUES
   'Kiho', -- Type
   'Your strikes require more effort to evade from.', -- Desc
   'Attack and Support Action, TN 3 (Fire) [Martial Arts Unarmed] Check with an optional target of one character at range 0-2.', -- Activation
-  'Enhancement: When you attack a [Dazed] target with a punch or kick profile, increase the damage by your Fire Ring.
-  Burst: If you have at least 3 bonus successes, deal supernatural damage equal to your Fire Ring + [Fitness] ranks to the target. Then they gain [Burning] and [Dazed] unless they succeed at a TN 5 (Air 6, Water 3) [Fitness] check.', -- Effect
+  E'Enhancement: When you attack a [Dazed] target with a punch or kick profile, increase the damage by your Fire Ring.\n\nBurst: If you have at least 3 bonus successes, deal supernatural damage equal to your Fire Ring + [Fitness] ranks to the target. Then they gain [Burning] and [Dazed] unless they succeed at a TN 5 (Air 6, Water 3) [Fitness] check.', -- Effect
   'Core Rulebook', -- Book
   186 -- Pg
 ),
@@ -1109,8 +1073,7 @@ VALUES
   'Kiho', -- Type
   'Your attacks can cause the blood in the targets body to freeze.', -- Desc
   'Attack and Support Action, TN 2 (Water) [Martial Arts Unarmed] check with an optional target of one character at range 0-1.', -- Activation
-  'Enhancement: When a character defends against damage you deal with a punch or kick profile, they gain [Immobilized] unless they choose to gain 3 fatigue.
-  Burst: If you have at least 2 bonus successes, deal supernatural damage to the target equal to your Water Ring and ignore resistance. The target also gains [Immobilized]. If you have at least 4 bonus successes, you deal a [Critical Strike] to the target with deadliness equal to your Water Ring + [Medicine] ranks instead.', -- Effect
+  E'Enhancement: When a character defends against damage you deal with a punch or kick profile, they gain [Immobilized] unless they choose to gain 3 fatigue.\n\nBurst: If you have at least 2 bonus successes, deal supernatural damage to the target equal to your Water Ring and ignore resistance. The target also gains [Immobilized]. If you have at least 4 bonus successes, you deal a [Critical Strike] to the target with deadliness equal to your Water Ring + [Medicine] ranks instead.', -- Effect
   'Core Rulebook', -- Book
   186 -- Pg
 ),
@@ -1122,8 +1085,7 @@ VALUES
   'Kiho', -- Type
   'Help another recover by correcting the flow of their energy.', -- Desc
   'Movement and Support Action, TN 1 (Water) [Meditation] Check with an optional target of one character at range 0-1.', -- Activation
-  'Enhancement: The [Calming Breath] action removes 1 extra fatigue (but not below half of your endurance). When you perform an action, you can spend 1 void point to reduce fatigue by your [Medicine] ranks from another character at range 0-1.
-  Burst: If you have at least 2 bonus successes, remove fatigue from your target equal to your [Medicine] ranks + bonus successes. That target cannot be affected by this burst effect again this scene.', -- Effect
+  E'Enhancement: The [Calming Breath] action removes 1 extra fatigue (but not below half of your endurance). When you perform an action, you can spend 1 void point to reduce fatigue by your [Medicine] ranks from another character at range 0-1.\n\nBurst: If you have at least 2 bonus successes, remove fatigue from your target equal to your [Medicine] ranks + bonus successes. That target cannot be affected by this burst effect again this scene.', -- Effect
   'Core Rulebook', -- Book
   186 -- Pg
 ),
@@ -1135,9 +1097,7 @@ VALUES
   'Kiho', -- Type
   'Mystical attacks find you much more difficult to affect.', -- Desc
   'Movement and Support Action, TN 3 (Water) [Meditation] Check.', -- Activation
-  'Enhancement: The TN of [Invocations], [Maho], or [Kiho] targeting you are increased by your [Meditation] ranks.
-  The GM may allow you to pass through wards or barriers without triggering effects or alerts from them in addition.
-  Burst: If you have at least 2 bonus successes, remove any other persistent effects from supernatural sources from yourself. If you have at least 4 bonus successes, remove any other persistent effects of supernatural sources from all characters in range 0-2.', -- Effect
+  E'Enhancement: The TN of [Invocations], [Maho], or [Kiho] targeting you are increased by your [Meditation] ranks.\nThe GM may allow you to pass through wards or barriers without triggering effects or alerts from them in addition.\n\nBurst: If you have at least 2 bonus successes, remove any other persistent effects from supernatural sources from yourself. If you have at least 4 bonus successes, remove any other persistent effects of supernatural sources from all characters in range 0-2.', -- Effect
   'Core Rulebook', -- Book
   187 -- Pg
 ),
@@ -1149,8 +1109,7 @@ VALUES
   'Kiho', -- Type
   'Alter your unarmed strikes with water that slips past armor.', -- Desc
   'Attack and Support Action, TN 1 (Water) [Martial Arts Unarmed] Check with an optional target of one character at range 0-3 who is touching a same surface as you.', -- Activation
-  'Enhancement: Attacks with a punch or kick profile ignore physical resistance equal to double your Water Ring. You may spend 1 void point to allow you to perform an attack with a punch or kick profile against any target that is in contact with a surface you are also in contact with, from a maximum range equal to your Water Ring.
-  Burst: If successful, deal physical damage equal to your Water Ring to the target.', -- Effect
+  E'Enhancement: Attacks with a punch or kick profile ignore physical resistance equal to double your Water Ring. You may spend 1 void point to allow you to perform an attack with a punch or kick profile against any target that is in contact with a surface you are also in contact with, from a maximum range equal to your Water Ring.\n\nBurst: If successful, deal physical damage equal to your Water Ring to the target.', -- Effect
   'Core Rulebook', -- Book
   187 -- Pg
 ),
@@ -1162,8 +1121,7 @@ VALUES
   'Kiho', -- Type
   'Allow yourself to walk on the surface of water.', -- Desc
   'Movement and Support Action, TN 1 (Water) [Meditation] Check.', -- Activation
-  'Enhancement: You can walk on water like it was a solid surface.
-  Burst: If you have at least 2 bonus successes, remove [Prone] and [Immobilized] from yourself. Then you may choose to enter a new stance before immediately moving 2 range bands.', -- Effect
+  E'Enhancement: You can walk on water like it was a solid surface.\n\nBurst: If you have at least 2 bonus successes, remove [Prone] and [Immobilized] from yourself. Then you may choose to enter a new stance before immediately moving 2 range bands.', -- Effect
   'Core Rulebook', -- Book
   187 -- Pg
 ),
@@ -1175,8 +1133,7 @@ VALUES
   'Kiho', -- Type
   'Kill someone with a single touch, just like in your anime.', -- Desc
   'Attack and Support Action, TN 3 (Void) [Martial Arts Unarmed] Check with an optional target of one character at range 0-1.', -- Activation
-  'Enhancement: When you attack with a punch or kick profile, the target cannot defend against damage dealt by you unless they spend a void point.
-  Burst: If you have at least 3 bonus successes, the optional target becomes [Dazed] and [Disoriented]. They then gain unconscious unless they succeed a TN 4 [Fitness] Check. If you have at least 4 bonus successes against a minion NPC, you slay them instantly.', -- Effect
+  E'Enhancement: When you attack with a punch or kick profile, the target cannot defend against damage dealt by you unless they spend a void point.\n\nBurst: If you have at least 3 bonus successes, the optional target becomes [Dazed] and [Disoriented]. They then gain unconscious unless they succeed a TN 4 [Fitness] Check. If you have at least 4 bonus successes against a minion NPC, you slay them instantly.', -- Effect
   'Core Rulebook', -- Book
   188 -- Pg
 ),
@@ -1188,8 +1145,7 @@ VALUES
   'Kiho', -- Type
   'Use the stillness of the Void to take away another''s strength.', -- Desc
   'Scheme and Support Action, TN 4 (Void) [Meditation] Check. Choose a Ring other than Void.', -- Activation
-  'Enhancement: When a check with the chosen Ring targets you, after they choose kept dice change one die to a blank face. You may spend a void point to choose additional dice to change to blank faces up to your [Meditation] ranks.
-  Burst: If you have at least 2 bonus successes, the terrain within 3 range bands becomes [Imbalanced] in the chosen Ring until the scene ends.', -- Effect
+  E'Enhancement: When a check with the chosen Ring targets you, after they choose kept dice change one die to a blank face. You may spend a void point to choose additional dice to change to blank faces up to your [Meditation] ranks.\n\nBurst: If you have at least 2 bonus successes, the terrain within 3 range bands becomes [Imbalanced] in the chosen Ring until the scene ends.', -- Effect
   'Core Rulebook', -- Book
   188 -- Pg
 ),
@@ -1201,8 +1157,7 @@ VALUES
   'Kiho', -- Type
   'Use the void to shape your actions in any approach.', -- Desc
   'Support Action, TN 4 (Void) [Meditation] Check.', -- Activation
-  'Enhancement: You may spend 💮 in Void as if you were in any elemental approach. You may spend 💮 in rings other than Void as if you were using a Void approach.
-  Burst: If you have at least 2 bonus successes, gain a void point. You cannot benefit from this effect again this scene.', -- Effect
+  E'Enhancement: You may spend 💮 in Void as if you were in any elemental approach. You may spend 💮 in rings other than Void as if you were using a Void approach.\n\nBurst: If you have at least 2 bonus successes, gain a void point. You cannot benefit from this effect again this scene.', -- Effect
   'Core Rulebook', -- Book
   188 -- Pg
 ),
@@ -1214,8 +1169,7 @@ VALUES
   'Kiho', -- Type
   'Any master of the void knows that by mastering their energy they can turn anything into a deadly weapon.', -- Desc
   'Attack and Support Action, TN 3 [Meditation] Check with an optional target of any characters you choose within range 0-1. ', -- Activation
-  'Enhancement: The base damage and deadliness of any unarmed or improvised weapon profiles are equal to your [Martial Arts Unarmed] ranks + Void Ring. While wielding them they have the [Durable] and [Razor Edged] qualities.
-  Burst: If you have at least 2 bonus successes, chosen targets suffer a [Critical Strike] with severity of your Void Ring + [Martial Arts Unarmed] ranks.', -- Effect
+  E'Enhancement: The base damage and deadliness of any unarmed or improvised weapon profiles are equal to your [Martial Arts Unarmed] ranks + Void Ring. While wielding them they have the [Durable] and [Razor Edged] qualities.\n\nBurst: If you have at least 2 bonus successes, chosen targets suffer a [Critical Strike] with severity of your Void Ring + [Martial Arts Unarmed] ranks.', -- Effect
   'Core Rulebook', -- Book
   188 -- Pg
 ),
@@ -1251,8 +1205,7 @@ VALUES
   'Invocation', -- Type
   'Create illusory terrain.', -- Desc
   'Scheme Action,  TN 5 (Air) [Theology] Check with a target of a position within 4 rangebands.', -- Activation
-  'Summon a deceptive vision of terrain that is as large as your Air Ring in range. To realize it is an illusion from far away, a character must pass a TN 4 (Earth 5, Fire 2) [Survival] Check. Touching the illusion makes it obvious that it is fake. 
-  Lasts for Air Ring + bonus successes rounds in a [Conflict] or that many minutes narratively.', -- Effect
+  E'Summon a deceptive vision of terrain that is as large as your Air Ring in range. To realize it is an illusion from far away, a character must pass a TN 4 (Earth 5, Fire 2) [Survival] Check. Touching the illusion makes it obvious that it is fake.\n\nLasts for Air Ring + bonus successes rounds in a [Conflict] or that many minutes narratively.', -- Effect
   'Core Rulebook', -- Book
   193 -- Pg
 ),
@@ -1276,8 +1229,7 @@ VALUES
   'Invocation', -- Type
   'Communicate with animals.', -- Desc
   'Support Action,  TN 1 (Air) [Theology] Check with a target of yourself.', -- Activation
-  'You are augmented with the ability to talk to untainted natural animals but not understand them, and they will not understand human concepts, your duty, etc. 
-  Lasts for a scene.', -- Effect
+  E'You are augmented with the ability to talk to untainted natural animals but not understand them, and they will not understand human concepts, your duty, etc.\n\nLasts for a scene.', -- Effect
   'Core Rulebook', -- Book
   194 -- Pg
 ),
@@ -1313,8 +1265,7 @@ VALUES
   'Invocation', -- Type
   'Use an illusion to prey on someone''s fear.', -- Desc
   'Attack Action, TN 4 (Air) [Theology] Check targetting a character at 2-3 rangebands.', -- Activation
-  'Summon an illusion of their worst fear. Target must resist with a TN 4 (Earth 5, Fire 2) [Meditation] Check or gain strife equal to your Air Ring + bonus successes. If this gives the target [Compromised], they unmask and must either attack, flee from, or yell at the illusion as long as they see it. 
-  Lasts for your Air Ring rounds.', -- Effect
+  E'Summon an illusion of their worst fear. Target must resist with a TN 4 (Earth 5, Fire 2) [Meditation] Check or gain strife equal to your Air Ring + bonus successes. If this gives the target [Compromised], they unmask and must either attack, flee from, or yell at the illusion as long as they see it.\n\nLasts for your Air Ring rounds.', -- Effect
   'Core Rulebook', -- Book
   195 -- Pg
 ),
@@ -1326,8 +1277,7 @@ VALUES
   'Invocation', -- Type
   'Conjure the Wrath of the Wind Kami', -- Desc
   'Attack Action, TN 5 (Air) [Theology] Check that targets everyone within rangebands 2-4.', -- Activation
-  'You summon a hurricane. When your turn ends, targets in range must make a TN 4 (Earth 5, Fire 2) [Fitness] Check or take your Air Ring as supernatural damage and become [Disoriented]. 
-  Lasts for your Air Ring rounds, and may destroy objects if the GM wishes.', -- Effect
+  E'You summon a hurricane. When your turn ends, targets in range must make a TN 4 (Earth 5, Fire 2) [Fitness] Check or take your Air Ring as supernatural damage and become [Disoriented].\n\nLasts for your Air Ring rounds, and may destroy objects if the GM wishes.', -- Effect
   'Core Rulebook', -- Book
   196 -- Pg
 ),
@@ -1339,8 +1289,7 @@ VALUES
   'Invocation', -- Type
   'Cover yourself with stone armor.', -- Desc
   'Support Action, TN 2 (Earth) [Theology] Check with a target of yourself.', -- Activation
-  'Summon and equip stone with your Earth Ring + bonus successes physical resistance. It has [Cumbersome] and [Wargear]. 
-  Lasts for your Earth Ring rounds.', -- Effect
+  E'Summon and equip stone with your Earth Ring + bonus successes physical resistance. It has [Cumbersome] and [Wargear].\n\nLasts for your Earth Ring rounds.', -- Effect
   'Core Rulebook', -- Book
   197 -- Pg
 ),
@@ -1352,8 +1301,7 @@ VALUES
   'Invocation', -- Type
   'Immobilize an unnatural being.', -- Desc
   'Attack Action, TN 3 (Earth) [Theology] Check with a target of one Otherworldly character within 2 rangebands.', -- Activation
-  'Smite and purify the target which it resists with a TN 4 (Air 2, Water 5) [Fitness] Check or gains [Silenced] and [Immobilized]. 
-  Lasts for your Earth Ring rounds.', -- Effect
+  E'Smite and purify the target which it resists with a TN 4 (Air 2, Water 5) [Fitness] Check or gains [Silenced] and [Immobilized].\n\nLasts for your Earth Ring rounds.', -- Effect
   'Core Rulebook', -- Book
   197 -- Pg
 ),
@@ -1389,8 +1337,7 @@ VALUES
   'Invocation', -- Type
   'Split the ground asunder.', -- Desc
   'Attack Action, TN 5 (Earth) [Theology] Check that targets all other characters within 3 rangebands of you.', -- Activation
-  'Summon an earthquake centered on your position and 3 rangebands in size. When your turns end, others must resist with a TN 5 (Air 3, Water 6) [Fitness] Check or become [Prone] and suffer twice your Earth Ring as supernatural damage. 
-  Lasts for your Earth Ring rounds.', -- Effect
+  E'Summon an earthquake centered on your position and 3 rangebands in size. When your turns end, others must resist with a TN 5 (Air 3, Water 6) [Fitness] Check or become [Prone] and suffer twice your Earth Ring as supernatural damage.\n\nLasts for your Earth Ring rounds.', -- Effect
   'Core Rulebook', -- Book
   198 -- Pg
 ),
@@ -1414,8 +1361,7 @@ VALUES
   'Invocation', -- Type
   'Travel along the surface of any stone or earthen soil.', -- Desc
   'Support Action, TN 2 (Earth) [Theology] Check with a target of yourself.', -- Activation
-  'You can travel along surfaces made of stone and solid earth even if it is vertical. 
-  Lasts for 1 + bonus successes rounds or a minute narratively.', -- Effect
+  E'You can travel along surfaces made of stone and solid earth even if it is vertical.\n\nLasts for 1 + bonus successes rounds or a minute narratively.', -- Effect
   'Core Rulebook', -- Book
   198 -- Pg
 ),
@@ -1451,8 +1397,7 @@ VALUES
   'Invocation', -- Type
   'Strengthen someone against poison and toxins.', -- Desc
   'Support Action, TN 1 (Earth) [Theology] Check targeting a character within 1 rangeband.', -- Activation
-  'The character is augmented, reduce the TN of any resist checks against poison or disease by 2, but not lower than 1. They cannot gain [Intoxicated] by drinking. 
-  Lasts for the scene.', -- Effect
+  E'The character is augmented, reduce the TN of any resist checks against poison or disease by 2, but not lower than 1. They cannot gain [Intoxicated] by drinking.\n\nLasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   199 -- Pg
 ),
@@ -1633,9 +1578,7 @@ VALUES
   'Invocation', -- Type
   '', -- Desc
   'Support Action, TN 3 (Fire) [Theology] Check with a target of one position within 1 rangeband that is flammable.', -- Activation
-  'Summon fire motes equal to Fire Ring + ([Silhouette] of the flammable target/object) that follow you. They set fire to objects close by occasionally.
-  When you make an Attack Action and succeed, you may spend motes up to school rank to add a bonus success per mote. Gain another mote if you cast any fire [Invocations].
-  Lasts for the scene.', -- Effect
+  E'Summon fire motes equal to Fire Ring + ([Silhouette] of the flammable target/object) that follow you. They set fire to objects close by occasionally.\n\nWhen you make an Attack Action and succeed, you may spend motes up to school rank to add a bonus success per mote. Gain another mote if you cast any fire [Invocations].\n\nLasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   204 -- Pg
 ),
@@ -1695,8 +1638,7 @@ VALUES
   'Invocation', -- Type
   'Create a wall of flames.', -- Desc
   'Attack and Support Action, TN 4 (Fire) [Theology] Check with a target of two locations within 2-4 rangebands.', -- Activation
-  'Summon a wall of fire between the locations. It is 1 rangeband wide, and 3 rangebands tall. It has the [Dangerous] terrain quality. Characters in the wall''s area gain [Dazed] and if they fail a TN 4 (Air 3, Water 1) [Fitness] Check they take your Fire Ring supernatural damage and gain [Burning].
-  Lasts for 1 + bonus successes rounds.', -- Effect
+  E'Summon a wall of fire between the locations. It is 1 rangeband wide, and 3 rangebands tall. It has the [Dangerous] terrain quality. Characters in the wall''s area gain [Dazed] and if they fail a TN 4 (Air 3, Water 1) [Fitness] Check they take your Fire Ring supernatural damage and gain [Burning].\n\nLasts for 1 + bonus successes rounds.', -- Effect
   'Core Rulebook', -- Book
   205 -- Pg
 ),
@@ -1708,9 +1650,7 @@ VALUES
   'Invocation', -- Type
   'Be the best fiery bird you can.', -- Desc
   'Support Action, TN 4 (Fire) [Theology] Check with a target of yourself.', -- Activation
-  'Augment yourself with wings of flame. Ignore effects of terrain, and can move in any direction. 
-  Terrain you are flying over within 3 rangebands becomes [Dangerous] until your next turn. If a character is in the area, they gain [Dazed] and must pass a TN 2 (Air 3, Water 1) [Fitness] Check or take your Fire Ring supernatural damage and gain [Burning].
-  Lasts for 1 + bonus successes rounds.', -- Effect
+  E'Augment yourself with wings of flame. Ignore effects of terrain, and can move in any direction.\nTerrain you are flying over within 3 rangebands becomes [Dangerous] until your next turn. If a character is in the area, they gain [Dazed] and must pass a TN 2 (Air 3, Water 1) [Fitness] Check or take your Fire Ring supernatural damage and gain [Burning].\n\nLasts for 1 + bonus successes rounds.', -- Effect
   'Core Rulebook', -- Book
   206 -- Pg
 ),
@@ -1722,8 +1662,7 @@ VALUES
   'Invocation', -- Type
   'Create a staff made out of surging water.', -- Desc
   'Support Action, TN 1 (Water) [Theology] Check.', -- Activation
-  'Summon a [Bo] staff from a source of water or water vapour that has [Snaring]. When a round ends, you may transform it into another melee weapon instead.
-  Lasts for the scene or until the end of a turn if it left your grip.', -- Effect
+  E'Summon a [Bo] staff from a source of water or water vapour that has [Snaring]. When a round ends, you may transform it into another melee weapon instead.\n\nLasts for the scene or until the end of a turn if it left your grip.', -- Effect
   'Core Rulebook', -- Book
   207 -- Pg
 ),
@@ -1759,8 +1698,7 @@ VALUES
   'Invocation', -- Type
   'Change shape into an animal, while retaining your mental capabilities.', -- Desc
   'Support Action, TN 4 (Water) [Theology] Check with a target of yourself.', -- Activation
-  'Augment yourself into an animal of [Silhouette] 2 (Pg. 325 of Core Rulebook, or other book with GM approval.), keeping your skill ranks and any mental or spiritual advantages. You use the rings, derived attributes, abilities, and physical or social advantages.
-  Lasts until you are unconscious or choose to end it. Any fatigue or strife you suffered is kept when it ends, which may give [Compromised] or [Incapacitated]. If [Incapacitated] this way, you take a [Critical Strike] with 5 deadliness.', -- Effect
+  E'Augment yourself into an animal of [Silhouette] 2 (Pg. 325 of Core Rulebook, or other book with GM approval.), keeping your skill ranks and any mental or spiritual advantages. You use the rings, derived attributes, abilities, and physical or social advantages.\n\nLasts until you are unconscious or choose to end it. Any fatigue or strife you suffered is kept when it ends, which may give [Compromised] or [Incapacitated]. If [Incapacitated] this way, you take a [Critical Strike] with 5 deadliness.', -- Effect
   'Core Rulebook', -- Book
   208 -- Pg
 ),
@@ -1772,8 +1710,7 @@ VALUES
   'Invocation', -- Type
   'Entreat the protective healing powers of water.', -- Desc
   'Support Action, TN 3 (Water) [Theology] Check targeting a character within 2 rangebands.', -- Activation
-  'Augment the target character, giving them supernatural resistance equal to your Water Ring. At the end of each round of a [Conflict], they also recover 1 fatigue.
-  Lasts 1 + bonus successes rounds. A character can only be a target of this once per scene.', -- Effect
+  E'Augment the target character, giving them supernatural resistance equal to your Water Ring. At the end of each round of a [Conflict], they also recover 1 fatigue.\nLasts 1 + bonus successes rounds. A character can only be a target of this once per scene.', -- Effect
   'Core Rulebook', -- Book
   208 -- Pg
 ),
@@ -1785,8 +1722,7 @@ VALUES
   'Invocation', -- Type
   'Soothe the body and muscles.', -- Desc
   'Support Action, TN 2 (Water) [Theology] Check with one target character within 2 rangebands or yourself.', -- Activation
-  'Mend your target, removing fatigue up to your Water Ring + bonus successes. 
-  A character can only benefit from this once per scene.', -- Effect
+  E'Mend your target, removing fatigue up to your Water Ring + bonus successes.\nA character can only benefit from this once per scene.', -- Effect
   'Core Rulebook', -- Book
   209 -- Pg
 ),
@@ -1810,8 +1746,7 @@ VALUES
   'Invocation', -- Type
   'Glide along a torrent of water.', -- Desc
   'Support Action, TN 2 (Water) [Theology] Check with a target of a character within 2 rangebands.', -- Activation
-  'Summon a torrent of water that the target can move along or within by will regardless of swimming ability. They ignore terrain effects and do not suffocate from water.
-  Effect lasts for the scene.', -- Effect
+  E'Summon a torrent of water that the target can move along or within by will regardless of swimming ability. They ignore terrain effects and do not suffocate from water.\nEffect lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   211 -- Pg
 ),
@@ -1835,8 +1770,7 @@ VALUES
   'Invocation', -- Type
   'Inflict drowning on a foe.', -- Desc
   'Attack Action, TN 4 (Water) [Theology] Check with a target of a character between rangebands 1-3.', -- Activation
-  'Smite your target, dealing your Water Ring + Double the bonus successes supernatural damage. 
-  If they become [Incapacitated] this way, they [Suffocate] (Pg. 269 Core Rulebook) for your Water Ring + bonus successes rounds. You can end this as a Support Action', -- Effect
+  E'Smite your target, dealing your Water Ring + Double the bonus successes supernatural damage.\nIf they become [Incapacitated] this way, they [Suffocate] (Pg. 269 Core Rulebook) for your Water Ring + bonus successes rounds. You can end this as a Support Action', -- Effect
   'Core Rulebook', -- Book
   211 -- Pg
 ),
@@ -1860,8 +1794,7 @@ VALUES
   'Invocation', -- Type
   'Entreat the Water Kami for the fluid movement of water.', -- Desc
   'Movement Action, TN 2 (Water) [Theology] Check with a target of a character within 1 rangeband. Requires a large amount of water close by.', -- Activation
-  'During a [Skirmish]: Summon a wave of water, allowing the character to move 1 + bonus successes range bands immediately.
-  During a narrative or downtime scene: Summon a gentle wave. For the rest of the scene the character moves twice as fast on or in the water, whether on foot or by boat.', -- Effect
+  E'During a [Skirmish]: Summon a wave of water, allowing the character to move 1 + bonus successes range bands immediately.\n\nDuring a narrative or downtime scene: Summon a gentle wave. For the rest of the scene the character moves twice as fast on or in the water, whether on foot or by boat.', -- Effect
   'Core Rulebook', -- Book
   211 -- Pg
 ),
@@ -1921,8 +1854,7 @@ VALUES
   'Shuji', -- Type
   'You know how to act like a true samurai, and a true scoundrel, wearing what suits you best at the time.', -- Desc
   'Scheme Action, TN (Highest Vigilance of Targets) (Air) [Courtesy] or [Performance] Check targeting up to all characters in the scene.', -- Activation
-  'Targeted Characters treat you as though your honor is 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 5, Fire 2) [Sentiment] Check to learn your actual honor.
-  Effect lasts for the scene.', -- Effect
+  E'Targeted Characters treat you as though your honor is 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 5, Fire 2) [Sentiment] Check to learn your actual honor.\nEffect lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   215 -- Pg
 ),
@@ -1946,8 +1878,7 @@ VALUES
   'Shuji', -- Type
   'Vouch for why a particular person should not be harmed.', -- Desc
   'Scheme Action, TN (Vigilance of Target) (Earth) [Command] or [Courtesy] Check with a target of one character in the scene, and one character you wish to defend in the scene.', -- Activation
-  'Target character must forfeit your Earth Ring + bonus successes honor and gain as much strife to make an Attack or Scheme Action that targets the character you argue should be protected from harm.
-  Effect lasts for the scene, or until the target character uses an Attack or Scheme Action.', -- Effect
+  E'Target character must forfeit your Earth Ring + bonus successes honor and gain as much strife to make an Attack or Scheme Action that targets the character you argue should be protected from harm.\nEffect lasts for the scene, or until the target character uses an Attack or Scheme Action.', -- Effect
   'Core Rulebook', -- Book
   216 -- Pg
 ),
@@ -2008,8 +1939,7 @@ VALUES
   'Shuji', -- Type
   'You can carry yourself as a well decorated samurai, or a worthless disappointment, to get the reaction from others you want.', -- Desc
   'Scheme Action, TN (Highest Vigilance of Targets) (Fire) [Games] or [Performance] Check with targets up to all characters in the scene.', -- Activation
-  'Targeted Characters treat your glory as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Air 5, Water 2) [Sentiment] Check to learn your actual glory.
-  Effect lasts for the scene.', -- Effect
+  E'Targeted Characters treat your glory as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Air 5, Water 2) [Sentiment] Check to learn your actual glory.\nEffect lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   218 -- Pg
 ),
@@ -2021,8 +1951,7 @@ VALUES
   'Shuji', -- Type
   'You know how to mobilize people in order to shock your enemies with a sudden charge to overwhelm enemy forces.', -- Desc
   'Attack and Movement Action, TN 3 (Fire) [Command] Check with targets up to all characters in the scene or a cohort if in a [Mass Battle]. This can be used only once per scene.', -- Activation
-  'Target characters increase their initiative by your Fire Ring + bonus successes at the start of next round. 
-  If in a [Mass Battle], give the target cohort your Fire Ring + bonus successes panic instead.', -- Effect
+  E'Target characters increase their initiative by your Fire Ring + bonus successes at the start of next round.\n\nIf in a [Mass Battle], give the target cohort your Fire Ring + bonus successes panic instead.', -- Effect
   'Core Rulebook', -- Book
   218 -- Pg
 ),
@@ -2034,8 +1963,7 @@ VALUES
   'Shuji', -- Type
   'You know how to rouse the spirits of your soldiers to seize [Opportunity] at any cost.', -- Desc
   'Support Action, TN 2 (Fire) [Command] or [Performance] Check with targets up to all characters in the scene or a cohort if in a [Mass Battle].', -- Activation
-  'After target characters choose kept dice for a check, they add a ring dice set to [Opportunity] strife to their kept dice.
-  Effect lasts until your next turn ends.', -- Effect
+  E'After target characters choose kept dice for a check, they add a ring dice set to [Opportunity] strife to their kept dice.\nEffect lasts until your next turn ends.', -- Effect
   'Core Rulebook', -- Book
   219 -- Pg
 ),
@@ -2095,8 +2023,7 @@ VALUES
   'Shuji', -- Type
   'You coax your allies so they excel in spite of their weaknesses, while causing foes to lose confidence in their strengths.', -- Desc
   'Scheme or Support Action, TN (Vigilance of Target) (Water) [Courtesy], [Games] or [Command] Check with one target character.', -- Activation
-  'For a Scheme Action, choose an [Advantage] of the character you know to invert every time it applies this scene.
-  For a Support Action, choose a [Disadvantage] of the character you know to invert every time it applies this scene.', -- Effect
+  E'For a Scheme Action, choose an [Advantage] of the character you know to invert every time it applies this scene.\n\nFor a Support Action, choose a [Disadvantage] of the character you know to invert every time it applies this scene.', -- Effect
   'Core Rulebook', -- Book
   220 -- Pg
 ),
@@ -2108,8 +2035,7 @@ VALUES
   'Shuji', -- Type
   'You know how those of great status treat others, as well as how those of low station maneuver in social situations; with ease you can wear the posture and mannerisms of either.', -- Desc
   'Scheme Action, TN (Highest Vigilance of Targets) (Water) [Command] or [Performance] Check with targets up to all characters in the scene.', -- Activation
-  'Targeted Characters treat your status as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 2, Fire 5) [Sentiment] Check to learn your actual status.
-  Effect lasts for the scene.', -- Effect
+  E'Targeted Characters treat your status as 10 + 10 per bonus success higher or lower. If you do something that seems contrary to this, characters can pass a TN 4 (Earth 2, Fire 5) [Sentiment] Check to learn your actual status.\nEffect lasts for the scene.', -- Effect
   'Core Rulebook', -- Book
   220 -- Pg
 ),
@@ -2169,8 +2095,7 @@ VALUES
   'Maho', -- Type
   'The taint of Fu-Leng can be subtly spread to someone, clinging to their spirit and trying to drag them towards darker ends, if you are willing to pay kansen a small price.', -- Desc
   'Attack and Scheme Action, TN (Vigilance of Target) (Any) [Theology] Check with a target of one character within 1 rangeband.', -- Activation
-  'Curse the target with [Afflicted].
-  If you failed with at least 2 shortfall, the character is aware you attempted to curse them.', -- Effect
+  'Curse the target with [Afflicted]. If you fail with at least 2 shortfall, the character is aware you attempted to curse them.', -- Effect
   'Core Rulebook', -- Book
   224 -- Pg
 ),
@@ -2218,8 +2143,7 @@ VALUES
   'Kata', -- type
   '', -- desc
   'Movement and Scheme Action, TN 2 (Air) [Survival] Check with a target area within 1-2 rangebands using a readied and improvised weapon.', -- activation
-  'Choose a [Terrain] quality from: [Dangerous], [Entangling], or [Obscuring]. With a success the [Terrain] in range 1 of the position gains that [Terrain] quality as the improvised weapon lands there. 
-  Effect lasts 1 + 1 for every 2 Bonus Successes rounds. On a failure, the weapon still lands at the location.', -- effect
+  E'Choose a [Terrain] quality from: [Dangerous], [Entangling], or [Obscuring]. With a success the [Terrain] in range 1 of the position gains that [Terrain] quality as the improvised weapon lands there.\n\nEffect lasts 1 + 1 for every 2 Bonus Successes rounds. On a failure, the weapon still lands at the location.', -- effect
   'Path of Waves', --book
   86 -- pg
 ),
@@ -2351,10 +2275,7 @@ VALUES
   'Kata', -- type
   'Create a flashy display of moves which can overwhelm inexperienced opponents just as much as it can throw off a trained soldier.', -- desc
   'Attack and Scheme Action, TN (Vigilance of Target) (Air or Fire) [Martial Arts Melee] Check with one target character in range of a readied weapon.', -- activation
-  'The target must choose one of the two: 
-  Become [Dazed] and receive strife equal to your [Performance].
-  or
-  Suffer a [Critical Strike] with deadliness equal to the weapon used.', -- effect
+  E'The target must choose one of the two:\n\nBecome [Dazed] and receive strife equal to your [Performance].\n\nor\n\nSuffer a [Critical Strike] with deadliness equal to the weapon used.', -- effect
   'Path of Waves', --book
   88 -- pg
 ),
@@ -2390,10 +2311,7 @@ VALUES
   'Kata', -- type
   '', -- desc
   'Attack and Scheme Action, TN (Vigilance of Target) (Earth or Water) [Martial Arts Melee] Check with one target character within weapon range. Reduce the TN to 1 if the target is in terrain that is [Dangerous], [Entangling], or [Obscuring].', -- activation
-  'The target must choose one:
-  Gain fatigue equal to your [Fitness] ranks and become [Prone].
-  or
-  Switch to a new stance immediately and become [Immobilized].', -- effect
+  E'The target must choose one:\n\nGain fatigue equal to your [Fitness] ranks and become [Prone].\n\nor\n\nSwitch to a new stance immediately and become [Immobilized].', -- effect
   'Path of Waves', --book
   89 -- pg
 ),
@@ -2634,8 +2552,7 @@ VALUES
   'Shuji', -- type
   'By mastering subtleties in what you tell people, how you lead, and the terrain itself you can get large groups of people to align in ways required for your sure victory.', -- desc
   'Scheme Action, Make a TN (Highest Vigilance of Targets) (Air) [Command] Check targeting any characters in the scene that are not hostile between them. If the scene is a [Mass Battle], you must target all commanders.', -- activation
-  'If a [Skirmish], [Duel], or [Intrigue] you can exchange the initiative values of any targets.
-  If a [Mass Battle], you reveal that two leaders in the same army have switched positions and their cohorts.', -- effect
+  E'If a [Skirmish], [Duel], or [Intrigue] you can exchange the initiative values of any targets.\n\nIf a [Mass Battle], you reveal that two leaders in the same army have switched positions and their cohorts.', -- effect
   'Path of Waves', --book
   93 -- pg
 ),
@@ -2670,8 +2587,7 @@ VALUES
   3, -- rank
   'Shuji', -- type
   '', -- desc
-  'Movement and Support Action, TN 2 (Water) [Command] Check with two target characters within 2 rangebands of you that are willing and nothing prevents those characters from moving to each other''s locations. 
-  This can be used once per scene.', -- activation
+  E'Movement and Support Action, TN 2 (Water) [Command] Check with two target characters within 2 rangebands of you that are willing and nothing prevents those characters from moving to each other''s locations.\nThis can be used once per scene.', -- activation
   'Targets all move up to 2 rangebands to switch places with each other. They may choose a new stance once they do.', -- effect
   'Path of Waves', --book
   94 -- pg
@@ -2708,10 +2624,7 @@ VALUES
   'Shuji', -- type
   'Sometimes a scathing insult forces an opponent to respond, just be ready for their rebuttal.', -- desc
   'Scheme Action, TN (Vigilance of Target) (Fire) [Performance] or [Tactics] Check with one target character. This can only be used once per scene.', -- activation
-  'For an [Intrigue] or [Duel], the character must choose either to forfeit 1 honor rank or gain that much strife.
-  For a [Skirmish], the character must choose either move up to 2 range bands closer to you or gain 3 + 1 per 2 bonus successes strife.
-  For a [Mass  Battle], the character must choose either to perform an Assault/Challenge against you on their next turn or gain 3 + 1 per 2 bonus successes strife.
-  Whether you succeeded or not, the character''s next check has the TN reduced by 1.', -- effect
+  E'For an [Intrigue] or [Duel], the character must choose either to forfeit 1 honor rank or gain that much strife.\n\nFor a [Skirmish], the character must choose either move up to 2 range bands closer to you or gain 3 + 1 per 2 bonus successes strife.n\nFor a [Mass  Battle], the character must choose either to perform an Assault/Challenge against you on their next turn or gain 3 + 1 per 2 bonus successes strife.\n\nWhether you succeeded or not, the character''s next check has the TN reduced by 1.', -- effect
   'Path of Waves', --book
   94 -- pg
 ),
@@ -2723,8 +2636,7 @@ VALUES
   'Shuji', -- type
   '', -- desc
   'Support Action, TN 3 (Fire) [Command] Check with a target friendly character. This can be used only once per scene.', -- activation
-  'During a [Skirmish], your target can make a Strike action now with [Assistance] from you.
-  During a [Mass Battle], your target can make an Assault action now with [Assistance] from you.', -- effect
+  E'During a [Skirmish], your target can make a Strike action now with [Assistance] from you.\n\nDuring a [Mass Battle], your target can make an Assault action now with [Assistance] from you.', -- effect
   'Path of Waves', --book
   95 -- pg
 ),
@@ -2760,12 +2672,7 @@ VALUES
   'Ritual', -- type
   '', -- desc
   'Downtime Action, TN 3 [Meditation] Check when your path ahead is unclear.', -- activation
-  'Based on the ring chosen for your check, you notice a tell about the direction you should take.
-  Earth: Direction to person you share a bond with.
-  Water: Direction to a chance to make money.
-  Fire: Direction to nearest large conflict.
-  Air: Direction to someone of your past or you desire.
-  Void: Direction to where you are most needed.', -- effect
+  E'Based on the ring chosen for your check, you notice a tell about the direction you should take.\n\nEarth: Direction to person you share a bond with.\nWater: Direction to a chance to make money.\nFire: Direction to nearest large conflict.\nAir: Direction to someone of your past or you desire.\nVoid: Direction to where you are most needed.', -- effect
   'Path of Waves', --book
   97 -- pg
 ),
@@ -2816,10 +2723,7 @@ VALUES
   'Ritual', -- type
   '', -- desc.
   'Downtime Action, TN (Chosen by the Shugenja) (Void) [Artisan] Check using a consecrated vessel of no bigger than silhouette 0. The vessel should be made of material or appropriately related to the Artisan skill used.', -- act
-  'Choose a number of [Invocations] equal to the TN you chose that the [Shikigami] will have sealed in it. You cannot use these while the [Shikigami] exists, and if its physical form is destroyed its spiritual form returns to you with its memories and personality which you can reimbue into a new form.
-  Name the [Shikigami] (yes, really) and note the [Invocations] sealed in it that it can perform. It can communicate with the shugenja, and will usually obey them.
-  When it performs a sealed invocation, it uses your [Composition] skill ranks instead of [Theology]. A [Shikigami] uses its ring, which are all equal to the highest rank of invocation it knows of the Ring type or 1. For example: A [Shikigami] with sealed rank 3 and 2 Air Invocations will have an Air Ring of 3, and 1 in the rest
-  For more details on its actions, restrictions, and other statistics see page 115 in the Shadowlands rulebook.', -- eff
+  E'Choose a number of [Invocations] equal to the TN you chose that the [Shikigami] will have sealed in it. You cannot use these while the [Shikigami] exists, and if its physical form is destroyed its spiritual form returns to you with its memories and personality which you can reimbue into a new form.\n\nName the [Shikigami] (yes, really) and note the [Invocations] sealed in it that it can perform. It can communicate with the shugenja, and will usually obey them.\n\nWhen it performs a sealed invocation, it uses your [Composition] skill ranks instead of [Theology]. A [Shikigami] uses its ring, which are all equal to the highest rank of invocation it knows of the Ring type or 1. For example: A [Shikigami] with sealed rank 3 and 2 Air Invocations will have an Air Ring of 3, and 1 in the rest.\nFor more details on its actions, restrictions, and other statistics see page 115 in the Shadowlands rulebook.', -- eff
   'Shadowlands', -- book
   114 -- pg
 ),
@@ -2832,13 +2736,7 @@ VALUES
   'Ritual', -- Text, must be one of: Kata, Kiho, Invocation, Shuji, Ritual, Maho
   '', -- Short narrative example of what the technique does. Original work only.
   'Downtime Action, TN 2 (Any) [Smithing] Check with targets of weapons and armor.', -- See mechanics. Says the type of check
-  'Depending on the ring, the effect of success changes as below:
-  Earth: Remove [Damaged] from it, or it gains [Durable] if you had nothing to remove.
-  Water: Increase damage and reduce deadliness by 1 of a weapon, or increase supernatural resistance and reduce physical resistance by 1 of an armor.
-  Air: Increase deadliness by 1 of a weapon.
-  Fire: Work with the GM to decide on an [Item Quality] the item could reasonably have, and it gains it for the duration.
-  Void: Reduce the TN by 1 for the next check a weapon is used in.
-  Only one effect can affect an item at one time, and this lasts only for the duration of the next scene the item is used in.', -- What happens, resist checks forced etc. See existing tech for guidelines
+  E'Depending on the ring, the effect of success changes as below:\n\nEarth: Remove [Damaged] from it, or it gains [Durable] if you had nothing to remove.\nWater: Increase damage and reduce deadliness by 1 of a weapon, or increase supernatural resistance and reduce physical resistance by 1 of an armor.\nAir: Increase deadliness by 1 of a weapon.\nFire: Work with the GM to decide on an [Item Quality] the item could reasonably have, and it gains it for the duration.\nVoid: Reduce the TN by 1 for the next check a weapon is used in.\n\nOnly one effect can affect an item at one time, and this lasts only for the duration of the next scene the item is used in.', -- What happens, resist checks forced etc. See existing tech for guidelines
   'Shadowlands', -- Core Rulebook, Celestial Realms, Shadowlands, etc.. leave blank for homebrew
   114 -- Number. Blank for homebrew.
 )
@@ -2925,8 +2823,7 @@ VALUES
   3, -- 
   'Ninjutsu', -- 
   '', -- 
-  'Attack and Movement Action, TN 3 [Martial Arts Melee] or [Martial Arts Unarmed] check with a living target character not bigger than [Silhouette] 2 in weapon range. 
-  The base TN is 1 if this action was successful on the target last round.', -- 
+  E'Attack and Movement Action, TN 3 [Martial Arts Melee] or [Martial Arts Unarmed] check with a living target character not bigger than [Silhouette] 2 in weapon range.\nThe base TN is 1 if this action was successful on the target last round.', -- 
   'The character is [Immobilized] and [Silenced] and is dragged to range 0. All attack actions the character makes during their next turn must use [Martial Arts Unarmed] and target you, and the TN of these actions are increased by 1.', -- 
   'Court of Stones', -- 
   115 -- 
@@ -2974,8 +2871,7 @@ VALUES
   2, -- 
   'Ritual', -- 
   '', -- 
-  'Downtime Action, TN 2 (Fire) [Composition] check to write an agreement only once per game session. 
-  If successful, then you may make a TN 3 (Air) [Government] check targeting any characters you designate that are participating willingly. No more than 3 target characters may provide [Assistance] during this.', -- 
+  E'Downtime Action, TN 2 (Fire) [Composition] check to write an agreement only once per game session.\nIf successful, then you may make a TN 3 (Air) [Government] check targeting any characters you designate that are participating willingly. No more than 3 target characters may provide [Assistance] during this.', -- 
   'All target characters are assured there are no errors or loopholes, and accept the agreement. 10 honor is staked by yourself and all targets on upholding the agreement. Whoever breaks the agreement first loses their staked honor. This is in addition to any other breaches of [Bushido].', -- 
   'Court of Stones', -- 
   116 -- 
@@ -2988,8 +2884,7 @@ VALUES
   'Ritual', -- 
   '', -- 
   'Downtime Action, TN 3 (Void) [Sentiment] check with one target character', -- 
-  'Learn the kind of character who would be a good match for your target, whether that is a good match in marriage, friendship, alliance, or patronage. You also learn details about them such as where they live, their social status, family, or other clues as the GM decides. The clues should be obvious enough to identify the character if you meet them.
-  If using [Bond] rules on Pg. 136 of Courts of Stone, the XP cost of forming a bond for the target and their match is reduced to 1.', -- 
+  E'Learn the kind of character who would be a good match for your target, whether that is a good match in marriage, friendship, alliance, or patronage. You also learn details about them such as where they live, their social status, family, or other clues as the GM decides. The clues should be obvious enough to identify the character if you meet them. \n\nIf using [Bond] rules on Pg. 136 of Courts of Stone, the XP cost of forming a bond for the target and their match is reduced to 1.', -- 
   'Court of Stones', -- 
   117 -- 
 ),
@@ -3097,7 +2992,7 @@ VALUES
   'Shuji', -- 
   '', -- 
   'Support Action, TN 1 (Void) [Artisan] skill check.', -- 
-  E'You foresaw the need of an item with rarity 1 + bonus successes. You may spend a [Void Point] to reveal one such item if the GM deems it reasonable that you had the means to craft it and it would reasonably be accessible to have. \nFor example, you have your attendant bring it from your quarters and you had the materials to create it for many weeks.', -- 
+  E'You foresaw the need of an item with rarity 1 + bonus successes. You may spend a [Void Point] to reveal one such item if the GM deems it reasonable that you had the means to craft it and it would reasonably be accessible to have. \n\nFor example, you have your attendant bring it from your quarters and you had the materials to create it for many weeks.', -- 
   'Court of Stones', -- 
   119 -- 
 );
