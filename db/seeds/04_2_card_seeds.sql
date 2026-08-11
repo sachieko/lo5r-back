@@ -1,4 +1,4 @@
--- For cards that relate to lore only in these seeds
+-- For cards that relate to LORE only in these seeds
 INSERT INTO cards (lore_id, header, content)
 VALUES
 -- 1 Lore: Bushido
