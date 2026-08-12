@@ -1,4 +1,4 @@
-# LO5R Backend Server v2.1.0
+# LO5R Backend Server v2.1.3
 
 This navigates the backend interactions with the database for the [L5RSRD front end](https://github.com/sachieko/lo5r-app) using Typescript and an Express server with Postgres SQL. Most updates and news will be posted there, or on the [website itself](https://lo5r.yuseiko.org).
 

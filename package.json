@@ -1,6 +1,6 @@
 {
   "name": "lo5r-backend",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "main": "src/application.js",
   "scripts": {
     "dev": "npx tsc && node build/application.js",
