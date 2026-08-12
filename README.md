@@ -1,4 +1,4 @@
-# LO5R Backend Server v2.0.0
+# LO5R Backend Server v2.1.0
 
 This navigates the backend interactions with the database for the [L5RSRD front end](https://github.com/sachieko/lo5r-app) using Typescript and an Express server with Postgres SQL. Most updates and news will be posted there, or on the [website itself](https://lo5r.yuseiko.org).
 
@@ -11,9 +11,11 @@ To install and run, this was built starting with node v20 something, but now wor
 You will need a postgres database, as some of the SQL syntax is specific to postgres and is slightly different for MySQL, etc.
 
 
-## DB Schema - Out of Date
+## DB Schema
 
-The `database.dbml` file included is out of date ever since the emergency migration of the backend and it's a very low priority to update it right now. 
+The `database.dbml` file included is out of date ever since the emergency migration of the backend and it's a very low priority to update it right now. I also don't like relying on an external service that is getting more aggressive with advertising.
+
+In its place please see `SeedContributionRules.md` for a general idea of the database schema.
 
 ## Using the API
 
