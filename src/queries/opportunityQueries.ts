@@ -13,3 +13,7 @@ export const opportunityQuery = `
   WHERE opportunities.id = $1
   GROUP BY opportunities.id
   LIMIT 1;`;
+
+export const generalOppQuery = `
+SELECT * FROM opportunities WHERE technique_id IS NULL
+ORDER BY category, ring, cost, id;`;
