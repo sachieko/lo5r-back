@@ -33,23 +33,23 @@ FROM weapons
 UNION
 SELECT name AS key, '/armors/' || id AS link
 FROM armors;
-
+-- The numbers below are all magic based on how they got sorted. Fun.
 INSERT INTO pagelinks (key, link) VALUES 
-(  'Techniques', '/techniques/1' ),
+(  'Techniques', '/techniques/63' ),
 (  'Maho', '/techniques/179?filter=maho' ),
 (  'Kiho', '/techniques/79?filter=kiho' ),  -- spooky that 179 and 79 are maho and kiho...
 (  'Invocations', '/techniques/76?filter=invocation' ),
-(  'Kata', '/techniques/14?filter=kata' ),
-(  'Ninjutsu', '/techniques/52?filter=ninjutsu' ),
-(  'Shuji', '/techniques/58?filter=shuji' ),
-(  'Rituals', '/techniques/1?filter=ritual' ),
-(  'Weapons', '/weapons/1'),
-(  'Terrain', '/terrains/1'),
-(  'Item Qualities', '/qualities/1' ),
-(  'Qualities', '/qualities/1' ),
+(  'Kata', '/techniques/63?filter=kata' ),
+(  'Ninjutsu', '/techniques/279?filter=ninjutsu' ),
+(  'Shuji', '/techniques/211?filter=shuji' ),
+(  'Rituals', '/techniques/257?filter=ritual' ),
+(  'Weapons', '/weapons/73'),
+(  'Terrain', '/terrains/7'),
+(  'Item Qualities', '/qualities/25' ),
+(  'Qualities', '/qualities/25' ),
 (  'Conditions', '/conditions/1' ),
 (  'Skills', '/rules/3' ),
-(  'Armors', '/Armors/1' ),
+(  'Armors', '/Armors/7' ),
 (  'Opportunity', '/opps/39' )
 ;
 
