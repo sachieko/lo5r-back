@@ -567,7 +567,7 @@ VALUES
   'Water',
   2, -- Rank
   'Shuji', -- Type
-  'Terrain, [Command]', -- Desc
+  '[Terrain], [Command]', -- Desc
   'Movement and Support Action, TN 2 (Water) [Command] Check targeting your cohort or any friendly characters whom you can communicate to if in a [Skirmish].', -- Activation
   E'[Skirmish]: choose an area of terrain in sight. All targets can choose to move 1 range band towards it immediately as part of this [Shuji]. In addition, the terrain counts as [Obscured] for anyone targeting your targets until end of the scene.\n\n[Mass Battle]: choose an area of terrain in sight. Your cohort can immediately move towards it, and if unoccupied they can occupy it. Attacks targeting your cohort in this terrain treat your cohort as being in [Obscured] until end of the scene.', -- Effect
   'Core Rulebook', -- Book
@@ -879,7 +879,7 @@ VALUES
   'Fire',
   2, -- Rank
   'Invocation', -- Type
-  'Augment, Terrain', -- Desc
+  'Augment, [Terrain]', -- Desc
   'Support Action, TN 2 (Fire) [Theology] Check. 1 target within 3 rangebands of you.', -- Activation
   E'An area extending a number of rangebands equal to your Fire Ring becomes [Dangerous] terrain to everyone other than your target.\n\nLasts 1 round, with 1 additional per bonus success.', -- Effect
   'Celestial Realms', -- Book
@@ -1672,7 +1672,7 @@ VALUES
   'Water',
   2, -- Rank
   'Invocation', -- Type
-  'Summon, Terrain', -- Desc
+  'Summon, [Terrain]', -- Desc
   'Movement and Support Action, TN 3 (Water) [Theology] Check with a target location that contains a source of water in 1-3 rangebands.', -- Activation
   'Summon water within 1 rangebands of the location to change state such as evaporating, freezing, condensing, or thawing it. Ice is [Dangerous] terrain, mist is [Obscuring], mud is [Entangling], and so on. You cannot affect the water in bodies this way.', -- Effect
   'Core Rulebook', -- Book
@@ -2748,7 +2748,7 @@ VALUES
   'Air, Water', -- 
   3, -- 
   'Kata', -- 
-  'Close Combat Kata, Terrain, Polearm', -- 
+  'Close Combat Kata, [Terrain], Polearm', -- 
   'Attack and Movement Action, TN 3 (Air or Water) [Martial Arts Melee] Check with a target character at range 3-4 using a polearm..', -- 
   E'You move to range 2 of the character, and ignore [Terrain Qualities] or unntraversible terrain between. If successful, deal weapon damage + bonus successes to the character.\n\nOn failure with more than 1 shortfall, gain [Prone] and 2 [Fatigue] and [Strife].', -- 
   'Court of Stones', -- 
@@ -2993,16 +2993,377 @@ VALUES
   E'You foresaw the need of an item with rarity 1 + bonus successes. You may spend a [Void Point] to reveal one such item if the GM deems it reasonable that you had the means to craft it and it would reasonably be accessible to have.\n\nFor example, you have your attendant bring it from your quarters and you had the materials to create it for many weeks.', -- 
   'Court of Stones', -- 
   119 -- 
-);
+),
 --253
--- (
---   '', -- 
---   'Any', -- 
---   2, -- 
---   'Kata', -- 
---   '', -- 
---   '.', -- 
---   '.', -- 
---   'Court of Stones', -- 
---   119 -- 
--- ),
+(
+  'Fierce Badger Style', -- 
+  'Any', -- 
+  2, -- 
+  'Kata', -- 
+  'Close Combat Kata, [Unarmed]', -- 
+  'When you make [Martial Arts Unarmed] Checks, gain new [Opportunity] spends.', -- 
+  '', -- 
+  'Fields of Victory', -- 
+  95 -- 
+),
+--254
+(
+  'Thicket''s Embrace Style', -- 
+  'Any', -- 
+  3, -- 
+  'Kata', -- 
+  'Close Combat Kata, [Unarmed], [Fitness], [Terrain]', -- 
+  'When you make [Martial Arts Unarmed] or [Fitness] Checks, gain new [Opportunity] spends.', -- 
+  '', -- 
+  'Fields of Victory', -- 
+  95 -- 
+),
+--255
+(
+  'Shattering Tide Style', -- 
+  'Any', -- 
+  3, -- 
+  'Kata', -- 
+  'Close Combat Kata, [Unarmed], [Terrain]', -- 
+  'When you make a [Martial Arts Unarmed] Check, gain new [Opportunity] spends.', -- 
+  '', -- 
+  'Fields of Victory', -- 
+  95 -- 
+),
+--256
+(
+  'Beseech Akodo''s Judgment', -- 
+  'Void', -- 
+  3, -- 
+  'Ritual', -- 
+  '[Tactics], [Glory], [Mass Battle]', -- 
+  E'Support Action, TN 3 (Void) [Tactics] Check with a target terrain feature or battle zone in a [Mass Battle].\n\nCan be used once a game session.', -- 
+  'Increase army discipline by [Glory] rank + [Command] ranks as long as a cohort in your army occupies the target area. Lasts until scene end or if none of your cohorts occupy it.', -- 
+  'Fields of Victory', -- 
+  96 -- 
+),
+--257
+(
+  'Beseech Bayushi''s Absolution', -- 
+  'Air', -- 
+  4, -- 
+  'Ritual', -- 
+  '[Sentiment], Downtime', -- 
+  'Downtime Action, TN 3 (Air) [Sentiment] Check that targets your character. Once a game session only.', -- 
+  'Next time you gain strife or fatigue, reduce it by your [Focus]. Effect lasts until the next scene ends.', -- 
+  'Fields of Victory', -- 
+  96 -- 
+),
+--258
+(
+  'Beseech Doji''s Wisdom', -- 
+  'Any', -- 
+  2, -- 
+  'Ritual', -- 
+  'Downtime, [Composition]', -- 
+  'Downtime Action, TN 3 Composition Check to transcribe a historical record of an event your character observed personally before it is well known.', -- 
+  'Create a record that reads as true and not omitting important detail. If a reader has less vigilance than your [Honor] rank the events read as true or written in good faith.', -- 
+  'Fields of Victory', -- 
+  96 -- 
+),
+--259
+(
+  'Beseech Hida''s Might', -- 
+  'Fire', -- 
+  2, -- 
+  'Ritual', -- 
+  'Downtime, Arena, [Meditation]', -- 
+  'Downtime or Support Action, TN 2 (Fire) [Meditation] Check that targets the area 3 rangebands around your character.', -- 
+  E'The target area is an arena now. When characters make [Martial Arts] Checks in the arena and do not gain strife during a check, their next check''s TN is reduced by 1.\n\nLasts until end of the next scene. ', -- 
+  'Fields of Victory', -- 
+  97 -- 
+),
+--260
+(
+  'Beseech Shiba''s Calm', -- 
+  'Void', -- 
+  3, -- 
+  'Ritual', -- 
+  '[Mass Battle], Downtime', -- 
+  'Downtime Action or After [Mass Battle], TN 3 (Void) [Theology] Check that targets the area where the battle was fought. Once a game session only.', -- 
+  'Remove [Defiled] from the area.', -- 
+  'Fields of Victory', -- 
+  97 -- 
+),
+--261
+(
+  'Beseech Shinjo''s Empathy', -- 
+  'Water', -- 
+  2, -- 
+  'Ritual', -- 
+  'Downtime, [Survival], [Animal Bond]', -- 
+  E'Downtime or Support Action, TN (Conflict Rank of Animal) (Water) [Survival] Check that targets a friendly animal within 1 rangeband.\n\nIf you have an [Animal Bond] reduce the TN by 2.', -- 
+  'Remove 3 + 1 per bonus success [Fatigue] from the animal.', -- 
+  'Fields of Victory', -- 
+  98 -- 
+),
+--262
+(
+  'Beseech Togashi''s Vision', -- 
+  'Void', -- 
+  3, -- 
+  'Ritual', -- 
+  'Downtime, [Meditation], [Mass Battle]', -- 
+  E'Downtime Action or Scheme and Support Action in a [Mass Battle], TN 3 (Void) [Meditation] Check with a target other character you perceive or commands an army in the scene.\n\nCan only be used as a Downtime Action once a game session.', -- 
+  'Once before the next scene ends, immediately after the target character performs an action, you can perform one action.', -- 
+  'Fields of Victory', -- 
+  98 -- 
+),
+--263
+(
+  'Imbue Thunder', -- 
+  'Any', -- 
+  4, -- 
+  'Ritual', -- 
+  'Item, Explosive, Downtime', -- 
+  'Downtime Action, TN 4 [Medicine] Check requiring 10 koku of rarity 6 materials consisting of charred wood, saltpeter, flammable pollen. These materials are consumed whether you succeed or fail.', -- 
+  E'Create 10 + 10 per 2 bonus successes [Brilliant Flare]s.\n\nor\n\n1 + 1 per 2 bonus successes [Blasting Powder].\n\nSee Page 90 of FoV for item details.', -- 
+  'Fields of Victory', -- 
+  98 -- 
+),
+--264
+(
+  'Borrowed Courage', -- 
+  'Air', -- 
+  1, -- 
+  'Shuji', -- 
+  '[Performance], Downtime, [Mass Battle]', -- 
+  'Downtime Action, TN 4 (Air) [Performance] Check with a target army or characters in earshot up to your [Sentiment] ranks. Stake up to 3 honor to reduce the TN by that much.', -- 
+  E'You spread a convincing rumour of the enemy''s vulnerability, or a secret that should ensure victory. Next time the target gains [Panic] or [Strife] next scene, reduce it by your [Performance] ranks.\n\nRegardless of success, if you lose the battle, you lose your staked [Honor] and there may be other consequences for boasting as the GM deems fit.', -- 
+  'Fields of Victory', -- 
+  99 -- 
+),
+--265
+(
+  'Clouds Parted by Steel', -- 
+  'Air', -- 
+  2, -- 
+  'Shuji', -- 
+  'Strike, [Mass Battle]', -- 
+  'When making a Strike action ([Skirmish] or [Duel]) or an Assault action [Mass Battle], gain a new Air [Opportunity] spend.', -- 
+  '', -- 
+  'Fields of Victory', -- 
+  99 -- 
+),
+--266
+(
+  'Entice with Falsehoods', -- 
+  'Air', -- 
+  4, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Tactics]', -- 
+  E'Scheme Action, TN [Vigilance of Target] (Air) [Tactics] Check with a target enemy army commander during a [Mass Battle]. Reduce the TN by 2 in [Obscuring] terrain.\n\nIf you are not the commander of your army, you stake 5 [Glory] and [Honor] on succeeding. ', -- 
+  'Change your army''s [Strategic Goal] immediately to one of your choosing. All momentum already gained transfer. Lose your stakes if you failed instead.', -- 
+  'Fields of Victory', -- 
+  99 -- 
+),
+--267
+(
+  'Fortress of Necessity', -- 
+  'Earth', -- 
+  1, -- 
+  'Shuji', -- 
+  '[Command], Downtime, [Mass Battle], [Terrain]', -- 
+  'Downtime Action or [Mass Battle] Support Action, TN 3 (Earth) [Command] Check with a target area you can get to with supplies the GM deems appropriate.', -- 
+  E'[Mass Battle]:Create a [Fortification] with difficulty value equal to bonus successes + [Labor] ranks. Reduces [Attrition] by 2 for an occupying cohort.\n\n[Skirmish]: Create a structure that counts as [Obscuring] terrain for anyone attacking those inside.\n\nThe structure must be maintained with a Downtime Action TN 2 (Earth) [Labor] Check or it degrades after a few days subject to weather and GM whims.', -- 
+  'Fields of Victory', -- 
+  100 -- 
+),
+--268
+(
+  'Great Anvil''s Measure', -- 
+  'Earth', -- 
+  2, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Guard], [Reinforce]', -- 
+  E'[Mass Battle]: When making a check to [Reinforce] gain a new [Opportunity Spend]\n\n[Skirmish]: When making a check to [Guard] gain a new [Opportunity] spend.', -- 
+  '', -- 
+  'Fields of Victory', -- 
+  100 -- 
+),
+--269
+(
+  'Steady the Hammer', -- 
+  'Earth', -- 
+  4, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Tactics]', -- 
+  'Attack and Support Action in [Mass Battle], TN 5 (Earth) [Tactics] Check with a target enemy cohort that made an Attack Action targeting your cohort this round. The TN is 2 if the target is in [Confining], [Entangling], or [Recessed] terrain.', -- 
+  E'Decreate the TN of the next Attack action targeting their cohort by an ally by 1 + bonus successes. If the ally succeeds their check, add bonus successes equal to your [Command] ranks.\n\nLasts until the round ends.', -- 
+  'Fields of Victory', -- 
+  100 -- 
+),
+--270
+(
+  'Call of the Wild', -- 
+  'Fire', -- 
+  3, -- 
+  'Shuji', -- 
+  'Incite True Nature, [Survival]', -- 
+  'Support Action, TN (Conflict Rank of Target) (Fire) [Survival] Check that targets a friendly animal or manifest Kami within range 2.', -- 
+  'Increase the [Damage] and [Deadliness] of the target''s weapon profiles by 1 + 1 at 3 bonus successes, increased by 1 for every 2 bonus successes after. Lasts for the scene.', -- 
+  'Fields of Victory', -- 
+  101 -- 
+),
+--271
+(
+  'Righteous Example', -- 
+  'Fire', -- 
+  1, -- 
+  'Shuji', -- 
+  '[Mass Battle]', -- 
+  'Attack and Support Action in a [Mass Battle], TN 3 (Fire) [Martial Arts] Check that targets an enemy cohort.', -- 
+  E'Deal 1 + bonus successes [Attrition] and [Panic] to the target''s army. Ally leaders reduce the TN of Attack Actions by 1 until your next turn ends.\n\nOn a failure, Attack and Scheme Actions targeting your cohort lower their TN by 1 until your next turn ends instead.', -- 
+  'Fields of Victory', -- 
+  101 -- 
+),
+--272
+(
+  'Sting of Warrior''s Pride', -- 
+  'Fire', -- 
+  2, -- 
+  'Shuji', -- 
+  '[Mass Battle], Downtime, [Performance]', -- 
+  'Downtime Action, TN 4 (Fire) [Performance] Check with a target army or character in earshot. [Stake] up to 3 [Glory] to reduce the TN by the same number.', -- 
+  E'In the next scene the next time they gain [Attrition] or [Damage], reduce it by your [Performance] ranks, 0 minimum instead of 1.\n\nRegardless of success, if you act in a manner that breaches [Courage] in that scene you lose your staked [Glory].', -- 
+  'Fields of Victory', -- 
+  102 -- 
+),
+--273
+(
+  'To Smash the Heart', -- 
+  'Fire', -- 
+  4, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Tactics]', -- 
+  'TN 4 (Fire) [Tactics] Check immediately after a character gains [Compromised] or is killed that targets that character. Once a scene.', -- 
+  E'Each lower [Status] ally character of the target gains your [Sentiment] ranks + bonus successes [Strife].\n\n[Mass Battle]: Instead, the army of the target gains your [Sentiment] ranks + bonus successes [Panic].', -- 
+  'Fields of Victory', -- 
+  102 -- 
+),
+--274
+(
+  'Coursing March Chant', -- 
+  'Water', -- 
+  1, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Command]', -- 
+  'Downtime Action, TN 4 (Water) [Performance] Check with a target army or characters up to your [Command] rank. You may consume a days rations for the target(s) to reduce the TN by 2.', -- 
+  'You and target(s) can march twice as far in the same time.', -- 
+  'Fields of Victory', -- 
+  102 -- 
+),
+--275
+(
+  'Preserve Strength', -- 
+  'Water', -- 
+  2, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Medicine]', -- 
+  'Downtime or Support Action, TN 3 (Water) [Medicine] Check with a target army or characters up to your [Command] rank within range 3. Once a scene.', -- 
+  E'[Mass Battle]: Remove 5 + 1 per 2 bonus successes [Casualties] from the army.\n\nIf targeting characters, reduce the TN of their next [Medicine] Check by 2 + 1 per 2 bonus successes.', -- 
+  'Fields of Victory', -- 
+  103 -- 
+),
+--276
+(
+  'Your Enemy''s Arrows', -- 
+  'Water', -- 
+  4, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Tactics]', -- 
+  E'Scheme Action, TN [Target''s Focus] (Water) [Tactics] Check with a target character in sight. You can [Stake] up to 3 [Glory] to reduce the TN by that much.\n\nOnce a scene.', -- 
+  E'Next time the target gains momentum for an objective, add those to your objective instead.\n\nFor failure, lose the staked [Glory] instead.', -- 
+  'Fields of Victory', -- 
+  103 -- 
+),
+--277
+(
+  'Moment of Glory', -- 
+  'Void', -- 
+  3, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Meditation]', -- 
+  E'Movement and Support Action in a [Mass Battle], TN 4 (Void) [Meditation] Check. The TN is 2 if in [Confining] or [Obscuring] terrain.\n\nOnce a scene.', -- 
+  E'When an Attack Action targets your cohort, instead of receiving [Attrition], gain that much [Fatigue]. The [Severity] of a [Critical Strike] dealt by this is 16.\n\nLasts until your next turn starts.', -- 
+  'Fields of Victory', -- 
+  104 -- 
+),
+--278
+(
+  'Victory Without a Sword', -- 
+  'Void', -- 
+  6, -- 
+  'Shuji', -- 
+  '[Mass Battle], [Tactics]', -- 
+  E'Attack, Movement, Scheme, and Support Action in a [Mass Battle], TN 6 (Void) [Tactics] Check with a target enemy commander. If all enemy cohorts are in [Dangerous], [Entangling], or [Obscuring] terrain reduce the TN to 4.\n\nYou can attempt this once per army a scene.', -- 
+  E'Target commander makes a TN 5 (3 Void) + (1 per 10 army strength your army has above theirs) [Command] Check. On their failure, their army takes 10 panic per 1 shortfall. If morale collapses, they surrender. Leaders can withdraw or hold the line as they choose.\n\nOn a failure, Attack Checks targeting your army cohorts reduce their TN by 2 until end of scene.', -- 
+  'Fields of Victory', -- 
+  104 -- 
+),
+--279
+(
+  'Employ Terrible Thunder', -- 
+  'Any', -- 
+  2, -- 
+  'Ninjutsu', -- 
+  'Explosive, [Skulduggery], [Mass Battle]', -- 
+  'Movement and Support Action, TN 4 [Skulduggery] Check expending 1 [Blasting Powder] at a position within 1 range. Forfeit half your [Honor] rank unless in the Shadowlands and the GM decrees so.', -- 
+  E'[Blasting Powder] explodes at the end of next round.\n\n[Mass Battle]: When it explodes, cohorts in the zone get 5 + 1 per bonus success [Attrition] and [Panic].\n\[nFortifications] in the zone reduce their difficulty by 1 + 1 per bonus success.\n\nOne leader in the area gains Lightly [Wounded] and [Immobilized].\n\nOtherwise: All characters within 2 range take 10 + 1 per bonus success physical [Damage], gain [Dazed], and 5 [Strife].\n\nAll items within 2 range or structures within 1 range gain [Damaged].', -- 
+  'Fields of Victory', -- 
+  105 -- 
+),
+--280
+(
+  'Swift Scouting', -- 
+  'Water', -- 
+  1, -- 
+  'Ninjutsu', -- 
+  'Downtime, [Terrain], [Mass Battle]', -- 
+  E'Downtime or Movement and Support Action, TN 3 (Water) [Trade] Skill Check appropriate for the environment.\n\n[Survival] for wilderness, [Seafaring] for ocean, [Skulduggery] for urban, etc.', -- 
+  E'Learn all [Terrain] qualities of the area in the scene or of a few kilometres in all directions. You also learn of any [Fortifications] present.\n\nCharacters with vigilance equal to your [Air] ring + bonus successes can detect your scouting.', -- 
+  'Fields of Victory', -- 
+  106 -- 
+),
+--281
+(
+  'The Patient Viper', -- 
+  'Earth', -- 
+  2, -- 
+  'Ninjutsu', -- 
+  'Downtime, [Mass Battle]', -- 
+  'Downtime Action, TN 4 (Earth) [Fitness] Check that targets your cohort or yourself and characters up to your [Command] rank in [Dangerous], [Entangling], or [Obscuring] terrain.', -- 
+  E'Targets can only be noticed by characters with [Vigilance] higher than your Earth ring + bonus successes. They cannot be targeted by Attack Actions during this.\n\nLasts until end of your next turn or one of the targets performs an Attack or Movement Action.', -- 
+  'Fields of Victory', -- 
+  106 -- 
+),
+--282
+(
+  'Vanish in the Shadows', -- 
+  'Air', -- 
+  3, -- 
+  'Ninjutsu', -- 
+  'Downtime, [Trade], [Mass Battle]', -- 
+  E'Downtime Action or Movement and Support Action, TN 5 (Air) [Trade] Skill Check depending on environment that targets your cohort or yourself and characters up to your [Command] rank in [Confining], [Entangling], or [Obscuring] terrain. Once a scene only.\n\nUse [Skulduggery] for urban environments, [Survival] for natural, [Seafaring] for ocean, etc.', -- 
+  E'Targets can only be noticed by characters with [Vigilance] higher than your Air ring + bonus successes. They cannot be targeted by Attack Actions. Lasts until end of your next turn, or any target uses an Attack Action.', -- 
+  'Fields of Victory', -- 
+  106 -- 
+),
+--283
+(
+  'Wreak Havoc', -- 
+  'Fire', -- 
+  4, -- 
+  'Ninjutsu', -- 
+  '[Mass Battle], [Skulduggery]', -- 
+  E'Attack and Movement Action in a [Mass Battle], TN (Vigilance of enemy cohort) (Fire) [Skulduggery] Check with a target enemy cohort. Once a game session only.\n\nYou may spend 1 [Blasting Powder] charge and half your [Honor] rank in honor to reduce the TN by 2.', -- 
+  E'Target leader resists with a TN 5 (Air 6, Water 5) [Command] Check or gain your [Performance] ranks + shortfall panic. Then choose one with GM approval:\n\n Reduce difficulty of a [Fortification] the cohort is in by 4 + bonus successes. If reduced to 0, destroy it and any cohort in it gains bonus successes [Attrition], and any leaders inside suffer a [Critical Strike] of [Severity] 6 + bonus successes.\n\nRemove [Confining] and [Entangling] from a [Fortification] the cohort is in. It gains [Dangerous] and [Obscuring] as it burns.\n\nRemove one cohort ability from the cohort until they resupply with a [Maintenance] Check (Page 115. of FoV).', -- 
+  'Fields of Victory', -- 
+  106 -- 
+)
+; -- delete trailing comma above
