@@ -965,7 +965,7 @@ VALUES
   'Kiho', -- Type
   '[Martial Arts Unarmed]', -- Desc
   'Attack and Support Action, TN 1 (Air) [Martial Arts Unarmed] Check with an optional target of 1 character at range 0-1.', -- Activation
-  E'Enhancement: Your punch and kick unarmed profiles have a maximum range band equal to your Air Ring.\n\nBurst: If you have at least 2 bonus successes, deal physical damage equal to your Air Ring to the target. The target must make a TN 4 (Earth 5, Fire 2) [Fitness] Check or be pushed away range bands equal to shortfall + 1.', -- Effect
+  E'Enhancement: Your [Punch] and [Kick] unarmed profiles have a maximum range band equal to your Air Ring.\n\nBurst: If you have at least 2 bonus successes, deal physical damage equal to your Air Ring to the target. The target must make a TN 4 (Earth 5, Fire 2) [Fitness] Check or be pushed away range bands equal to shortfall + 1.', -- Effect
   'Core Rulebook', -- Book
   183 -- Pg
 ),
